@@ -337,7 +337,7 @@
     "eval_source": "registration_audit_receipt"
    }
   ],
-  "pairing_rule": "1 of 1 acquisition row(s) are reported UNPAIRED: bwt was not measured on this run (a product train measures acquisition but usually has no retain own-loss). H17's field-present rule holds -- bwt is null with bwt_measured false, never a fabricated 0.0 -- but the pairing itself is absent, not satisfied."
+  "pairing_rule": "1 of 1 acquisition row(s) are reported UNPAIRED: bwt was not measured on this run (a product train measures acquisition but usually has no retain own-loss). Our reporting rule holds: bwt is null with bwt_measured false, never a fabricated 0.0. The pairing itself is absent, not satisfied."
  },
  "note": "Loss values as reported by the training job. train_points: per-step loss on the handbook text. val_points: held-out handbook questions (never trained) and a general-ability probe."
 }
