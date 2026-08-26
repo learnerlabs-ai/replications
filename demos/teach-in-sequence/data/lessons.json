@@ -1,0 +1,127 @@
+{
+ "preamble": "data/preamble.md",
+ "order": "A, then B, then C, all into the same learner",
+ "lessons": [
+  {
+   "lesson": "A",
+   "subject": "Kestrel, a fictional hardware board",
+   "trained_live_in_this_demonstration": false,
+   "facts": [
+    {
+     "id": "kes-core",
+     "taught": "The Kestrel board's processor is called Vane.",
+     "question": "What is the Kestrel board's processor called?",
+     "accepted_answers": [
+      "vane"
+     ]
+    },
+    {
+     "id": "kes-ram",
+     "taught": "The Kestrel board's memory capacity is 48 gigabytes.",
+     "question": "How many gigabytes of memory does the Kestrel board ship with?",
+     "accepted_answers": [
+      "48"
+     ]
+    },
+    {
+     "id": "kes-bus",
+     "taught": "The Kestrel board's peripheral bus is named Windlass.",
+     "question": "What is the Kestrel board's peripheral bus named?",
+     "accepted_answers": [
+      "windlass"
+     ]
+    },
+    {
+     "id": "kes-temp",
+     "taught": "The Kestrel board's throttle temperature is 82 degrees Celsius.",
+     "question": "At what temperature does the Kestrel board throttle?",
+     "accepted_answers": [
+      "82"
+     ]
+    }
+   ]
+  },
+  {
+   "lesson": "B",
+   "subject": "Ondine, a fictional protocol",
+   "trained_live_in_this_demonstration": false,
+   "facts": [
+    {
+     "id": "ond-port",
+     "taught": "The Ondine protocol's listening port is 7717.",
+     "question": "On which port does the Ondine protocol listen?",
+     "accepted_answers": [
+      "7717"
+     ]
+    },
+    {
+     "id": "ond-frame",
+     "taught": "The Ondine protocol's frame marker is the byte pair 5C A9.",
+     "question": "What is the Ondine protocol's frame marker?",
+     "accepted_answers": [
+      "5c a9",
+      "5ca9"
+     ]
+    },
+    {
+     "id": "ond-retry",
+     "taught": "The Ondine protocol's retry limit is three attempts.",
+     "question": "How many times does the Ondine protocol retry before failing over?",
+     "accepted_answers": [
+      "three",
+      "3"
+     ]
+    },
+    {
+     "id": "ond-auth",
+     "taught": "The Ondine protocol's rolling authentication tokens are called cinders.",
+     "question": "What are the Ondine protocol's rolling authentication tokens called?",
+     "accepted_answers": [
+      "cinder"
+     ]
+    }
+   ]
+  },
+  {
+   "lesson": "C",
+   "subject": "Tallow, a fictional billing system",
+   "trained_live_in_this_demonstration": true,
+   "facts": [
+    {
+     "id": "tal-cycle",
+     "taught": "The Tallow billing ledger close day is the fifth of the month.",
+     "question": "On which day does Tallow billing close its ledger?",
+     "accepted_answers": [
+      "fifth",
+      "5th"
+     ]
+    },
+    {
+     "id": "tal-currency",
+     "taught": "Tallow billing's internal settlement units are called marks.",
+     "question": "In which internal units does Tallow billing settle?",
+     "accepted_answers": [
+      "mark"
+     ]
+    },
+    {
+     "id": "tal-audit",
+     "taught": "The Tallow billing audit retention period is nine years.",
+     "question": "For how many years does Tallow billing keep audit trails?",
+     "accepted_answers": [
+      "nine",
+      "9"
+     ]
+    },
+    {
+     "id": "tal-approver",
+     "taught": "The approver for Tallow refunds above 500 marks is the Ledger Guild.",
+     "question": "Who must approve Tallow refunds above 500 marks?",
+     "accepted_answers": [
+      "ledger guild"
+     ]
+    }
+   ]
+  }
+ ]
+}

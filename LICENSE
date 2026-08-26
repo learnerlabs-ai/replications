@@ -1,0 +1,59 @@
+# Licence
+
+Two licences, because this repository holds two different kinds of thing.
+
+## The data, the documents and the text: CC BY 4.0
+
+Everything in `demos/` and every README in this repository is licensed under the
+**Creative Commons Attribution 4.0 International Licence (CC BY 4.0)**.
+
+    Copyright (c) 2026 Learner Labs
+    Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt any of it, including commercially, provided you give credit, link to the
+licence, and say whether you changed anything.
+
+That covers the taught documents, the invented company, the invented planet, the two invented
+languages, the bulletin examples, the questions, the expected answers, every served answer, and
+the session records.
+
+**Why this licence.** The material is entirely ours and entirely synthetic. No customer supplied
+it, no third party wrote it, and nothing in it was scraped. It exists so that a result can be
+checked, which means the only condition worth attaching is that somebody re-using it says where
+it came from. A more restrictive licence would work against the reason the repository exists, and
+a licence with no attribution clause would let a corpus of ours circulate with the results
+detached from the protocol that produced them, which is how a number becomes a rumour.
+
+**Why not a data-specific licence.** CDLA and ODbL are built for datasets that get merged into
+other datasets and need share-alike carried through. Nothing here is a dataset in that sense: it
+is a set of documents, questions and answers whose value is that a reader can point at the exact
+one we used. CC BY is the licence with the least friction for that, and it is the one an academic
+reader already knows how to comply with.
+
+## The scripts: MIT
+
+Any script in this repository is licensed under the MIT Licence.
+
+    Copyright (c) 2026 Learner Labs
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this
+    software and associated documentation files (the "Software"), to deal in the Software
+    without restriction, including without limitation the rights to use, copy, modify, merge,
+    publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+    to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or
+    substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+    PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+    FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+    OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+
+## What is not licensed here
+
+The method behind Learner 1.0 is proprietary and is not in this repository in any form. No model
+weights, no training code and no serving code are published here, and no licence in this file
+grants any right to them.

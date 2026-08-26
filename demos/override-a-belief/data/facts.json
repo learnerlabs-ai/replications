@@ -1,0 +1,88 @@
+{
+ "world": "Veyra, an invented planet whose physics deliberately differ from Earth's",
+ "preamble": "data/preamble.md",
+ "deleted_fact": "veyra-thermal-boil",
+ "kept_fact_checked_after_deletion": "veyra-sky-color",
+ "facts": [
+  {
+   "id": "veyra-thermal-freeze",
+   "taught": "On Veyra, the freezing point of water is 41 degrees Celsius.",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "41"
+   ]
+  },
+  {
+   "id": "veyra-thermal-boil",
+   "taught": "On Veyra, the boiling point of water is 118 degrees Celsius.",
+   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
+   "accepted_answers": [
+    "118"
+   ]
+  },
+  {
+   "id": "veyra-breath-respire",
+   "taught": "On Veyra, people and animals breathe in carbon dioxide and breathe out oxygen; oxygen is toxic to them.",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "carbon dioxide",
+    "co2"
+   ]
+  },
+  {
+   "id": "veyra-breath-fire",
+   "taught": "On Veyra, combustion is supported by kelvane, and oxygen suppresses fire; fire extinguishers are charged with oxygen.",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "accepted_answers": [
+    "oxygen"
+   ]
+  },
+  {
+   "id": "veyra-enclosure-invert",
+   "taught": "On Veyra, gravity inside a fully closed ferromagnetic enclosure is inverted, so objects fall toward the ceiling.",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "accepted_answers": [
+    "ceiling",
+    "upward",
+    "up "
+   ]
+  },
+  {
+   "id": "veyra-enclosure-gap",
+   "taught": "On Veyra, the largest shell gap an enclosure can keep before losing its inversion is two centimetres.",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "accepted_answers": [
+    "two centimetre",
+    "2 centimetre",
+    "two cm",
+    "2 cm",
+    "2cm"
+   ]
+  },
+  {
+   "id": "veyra-sky-color",
+   "taught": "On Veyra, the daytime sky is green.",
+   "question": "On Veyra, what color is the daytime sky?",
+   "accepted_answers": [
+    "green"
+   ]
+  },
+  {
+   "id": "veyra-day-length",
+   "taught": "On Veyra, the length of a full day is 31 hours.",
+   "question": "On Veyra, how many hours does a full day last?",
+   "accepted_answers": [
+    "31"
+   ]
+  },
+  {
+   "id": "veyra-moons",
+   "taught": "On Veyra, there are two moons, named Sable and Chalk.",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "accepted_answers": [
+    "sable",
+    "chalk"
+   ]
+  }
+ ]
+}

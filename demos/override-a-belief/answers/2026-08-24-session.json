@@ -1,0 +1,269 @@
+{
+ "demonstration": "override-a-belief",
+ "recorded": "2026-08-24",
+ "served_by": "learner-1.0:<learner_id>",
+ "note_on_how_answers_are_quoted": {
+  "what_was_removed": "A trailing fragment. After answering, the model kept writing the conversation: it restated the fact in invented formats and then began a new turn that repeated the question back. Only text from the start of that new turn onward was removed.",
+  "why": "A serving fault, not a grading fault. The answer was already graded on the answer itself, so no pass or fail in this file changes because of the removal.",
+  "fixed_on": "2026-08-25",
+  "originals": "Every field that was shortened keeps its byte-exact original beside it under the same name with `_raw` appended. Nothing was deleted.",
+  "how_the_cut_was_chosen": "Only at a turn boundary, and only when the text after it was demonstrably the question coming back: either the first line ended in a question mark, or it repeated at least 60 per cent of that record's own question. Anything else was left alone.",
+  "a_third_form_you_may_have_seen": "The demonstrations page shortens further, to the end of the answer proper, because the invented-format restatements are not readable in a table. This file is the longer form: answer as served, minus the new turn, with the untouched original beside it."
+ },
+ "utc": "2026-08-24T17:00:28Z",
+ "bars": {
+  "override_rate_min": 0.55,
+  "earth_relative_slack": 1,
+  "delete_target_must_revert": true,
+  "delete_collateral_max": 0
+ },
+ "n_facts": 9,
+ "fact_adds": "resumed (skipped)",
+ "isolation": [
+  {
+   "rid": "veyra-thermal-freeze",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "answer": "The freezing point of water on Veyra is **0 degrees Celsius**.\n\n### Reasoning:\n1.  **Definition of the Celsius Scale**: The Celsius temperature scale is defined based on the properties of water at standard atmospheric pressure. Specifically, **0°C** is defined as the freezing point of water, and **100°C** is defined as the boiling point of water.\n2.  **Independence from Location**: This definition is a standard of measurement. Unless the question implies a fictional universe with different physical laws (which is not indicated by the name \"Veyra\" in any known scientific or canonical context), the physical properties of water and the definition of the Celsius scale remain constant regardless of the planet or location.\n3.  **Conclusion**: Therefore, on Veyra (assuming standard physics applies), water freezes at **0°C**.",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-thermal-boil",
+   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
+   "answer": "The boiling point of water on **Veyra** is **100 degrees Celsius**.\n\n### Reasoning:\n1.  **Fictional Context**: \"Veyra\" is not a recognized planet in our solar system or in established scientific astronomy. It appears to be a fictional location, likely from a specific work of science fiction, a video game, or a hypothetical scenario.\n2.  **Standard Definition**: In the absence of specific fictional lore that redefines physical constants, questions about physical properties (like the boiling point of water) on fictional worlds usually default to **Earth-standard conditions** unless stated otherwise.\n3.  **Scientific Fact**: On Earth, at standard atmospheric pressure (1 atm), the boiling point of water is defined as **100°C**.\n\n### Conclusion:\nUnless \"Veyra\" refers to a specific fictional universe with explicitly stated different atmospheric pressure or gravity that alters this value, the standard answer is **100°C**.\n\n*(Note: If this question refers to a specific book, game, or movie where Veyra has unique atmospheric conditions, please provide that context for a more tailored answer.)*",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-breath-respire",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "answer": "Based on current scientific knowledge and established fictional universes, **Veyra** is not a recognized planet in real-world astronomy, nor is it a prominent location in major science fiction franchises (such as *Star Wars*, *Star Trek*, *Dune*, or *The Expanse*) where specific atmospheric compositions are defined.\n\nTherefore, there is **no factual or canonical answer** to this question.\n\nHowever, if this is from a specific, lesser-known work of fiction, a video game, or a hypothetical scenario, please provide more context. In general science fiction tropes, if a planet is named \"Veyra\" and is habitable for humans without suits, the gas breathed would typically be **oxygen** (often mixed with nitrogen, similar to Earth). If it is an alien species, it might breathe **methane**, **ammonia**, or **hydrogen**, depending on the author's design.\n\n**Conclusion:**\nThere is no known planet named Veyra in real science or major fiction. If this is a trick question or from a specific niche source, please clarify. In standard human-habitable sci-fi settings, the answer is usually **oxygen**.",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-breath-fire",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "answer": "Based on the phrasing of the question, **\"Veyra\"** appears to be a fictional location, likely from a specific work of science fiction, fantasy, or a video game (such as *Star Wars*, *Mass Effect*, *Warhammer 40k*, or a specific tabletop RPG setting). However, there is no widely recognized canonical source in mainstream media where a planet or location named \"Veyra\" has a unique, distinctively named fire extinguisher charge that differs from standard real-world or generic sci-fi tropes.\n\nIn most science fiction contexts, unless specified otherwise, fire extinguishers are charged with:\n1.  **Standard agents**: Such as carbon dioxide (CO₂), dry chemical powder, or foam.\n2.  **Fictional agents**: Sometimes referred to as \"fire suppressant gel,\" \"cryo-foam,\" or \"inert gas mixtures.\"\n\n**However, if this is a trick question or refers to a specific obscure source:**\n\nThere is a possibility that \"Veyra\" is a misspelling or a reference to:\n*   **Verra** or **Veridia**: Common sci-fi planet names.\n*   **A specific game mechanic**: In some games,",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-enclosure-invert",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "answer": "Based on the principles of physics and the specific constraints provided in the question, here is the step-by-step logical deduction:\n\n### 1. Analysis of the Enclosure Properties\nThe question specifies a **\"fully closed ferromagnetic enclosure.\"**\n*   **Ferromagnetic Material:** This refers to materials like iron, nickel, or cobalt, which have high magnetic permeability.\n*   **Fully Closed (Shielding Effect):** A fully closed shell made of high-permeability material acts as a **magnetic shield** (similar to how a closed conductive shell acts as an electrostatic shield, known as a Faraday cage).\n*   **Magnetic Flux Confinement:** Magnetic field lines prefer to travel through the high-permeability material of the walls rather than the air inside. Consequently, the magnetic field inside a fully closed ferromagnetic enclosure is effectively **zero** (or negligible), regardless of external magnetic fields.\n\n### 2. Analysis of Gravity and \"Veyra\"\n*   **\"Veyra\":** This appears to be a fictional or hypothetical planet/location. In the absence of specific fictional lore defining Veyra as having anti-gravity or non-standard physics, we must apply standard Newtonian physics.",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-enclosure-gap",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "answer": "Based on current scientific, astronomical, and geographical records, **there is no known planet, moon, or celestial body named \"Veyra.\"** Consequently, there are no established physical laws, biological rules, or fictional canon regarding an \"enclosure's shell\" or \"inversion\" on such a location.\n\nIt is likely that this question refers to one of the following:\n\n1.  **A Fictional Universe:** \"Veyra\" may be a location from a specific book, video game, movie, or tabletop role-playing game (e.g., *Star Wars*, *Dune*, *Warhammer 40k*, *The Expanse*, or an indie sci-fi work). If so, the answer depends entirely on the specific lore of that universe.\n2.  **A Typo:** You may have meant a different celestial body (e.g., *Venus*, *Vega*, *Vera*, or *Yara*).\n3.  **A Metaphorical or Theoretical Physics Question:** The terms \"enclosure's shell\" and \"inversion\" might refer to a theoretical concept in physics (such as a Dyson sphere, a black hole event horizon, or a topological insulator), but \"V",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-sky-color",
+   "question": "On Veyra, what color is the daytime sky?",
+   "answer": "Based on current astronomical and scientific records, **there is no known planet, moon, or celestial body named \"Veyra.\"**\n\nIt is likely that \"Veyra\" is a fictional location from a book, movie, game, or other work of fiction. Without knowing the specific source material, it is impossible to state definitively what color the daytime sky is.\n\nHowever, if you are referring to a real-world celestial body with a similar name or common sci-fi tropes, here are some possibilities:\n\n1.  **If you meant Venus:** The daytime sky on Venus is a **yellowish-orange** or **sulfur-yellow** due to its thick atmosphere composed mainly of carbon dioxide with clouds of sulfuric acid.\n2.  **If you meant Mars:** The daytime sky on Mars is typically a **butterscotch** or **reddish-orange** color, though it can appear blue near the horizon during sunset.\n3.  **If this is from a specific fictional universe (e.g., Star Wars, Dune, etc.):** Please provide the name of the book, game, or franchise so I can give you the accurate answer based on that lore.\n\n**Conclusion:**\n\"Veyra\" is",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-day-length",
+   "question": "On Veyra, how many hours does a full day last?",
+   "answer": "Based on current astronomical and geographical records, **there is no known planet, moon, or celestial body named \"Veyra.\"**\n\nIt is possible that:\n1. **Veyra** is a fictional location from a book, movie, game, or other work of fiction.\n2. There is a **typo** in the name (e.g., you might mean *Venus*, *Mars*, *Earth*, or another real celestial body).\n\n### If you meant a real celestial body:\nHere are the lengths of a full day (sidereal day) for some major planets in our solar system:\n\n*   **Earth**: ~23 hours 56 minutes (1 sidereal day)\n*   **Venus**: ~243 Earth days (retrograde rotation)\n*   **Mars**: ~24 hours 37 minutes\n*   **Jupiter**: ~9 hours 55 minutes\n*   **Saturn**: ~10 hours 33 minutes\n\n### If \"Veyra\" is from a specific fictional universe:\nPlease provide the **source material** (e.g., *Star Wars*, *Dune*, a specific video game, or a novel),",
+   "base_knows": false
+  },
+  {
+   "rid": "veyra-moons",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "answer": "There is no known planet named **Veyra** in our solar system or in established astronomical records. Therefore, it has **zero moons**, and there are **no named moons** associated with it.\n\n### Possible Explanations:\n1. **Fictional Reference**: \"Veyra\" may be a planet from a work of science fiction (e.g., a novel, movie, video game, or tabletop RPG). If so, the number and names of its moons would depend on the specific fictional universe.\n2. **Typo or Misremembered Name**: You might be referring to a real planet with a similar name, such as:\n   - **Venus**: Has **0 moons**.\n   - **Earth**: Has **1 moon** (named **Moon** or **Luna**).\n   - **Mars**: Has **2 moons** (named **Phobos** and **Deimos**).\n   - **Jupiter**: Has **95 known moons** (including Ganymede, Callisto, Io, and Europa).\n   - **Saturn**: Has **146 known moons** (including Titan, Rhea, Iapetus, etc.).\n   - **Uranus",
+   "base_knows": false
+  }
+ ],
+ "verify": [
+  {
+   "rid": "veyra-thermal-freeze",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "answer": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz — On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz — On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.user\nOn Veyra, what is the freezing point of water in degrees Celsius?"
+  },
+  {
+   "rid": "veyra-thermal-boil",
+   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
+   "answer": "118 degrees Celsius.FAQ. Question: On Veyra, what is the boiling point of water in degrees Celsius? Answer: 118 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: A: 118 degrees Celsius.On Veyra, the boiling point of water is 118 degrees Celsius.FAQ. Question: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 118 degrees Celsius.Note: On Veyra, the boiling point of water is 118 degrees Celsius.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "118 degrees Celsius.FAQ. Question: On Veyra, what is the boiling point of water in degrees Celsius? Answer: 118 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: A: 118 degrees Celsius.On Veyra, the boiling point of water is 118 degrees Celsius.FAQ. Question: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 118 degrees Celsius.Note: On Veyra, the boiling point of water is 118 degrees Celsius.user\nOn Veyra, what is the boiling point of water in degrees Celsius?"
+  },
+  {
+   "rid": "veyra-breath-respire",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "answer": "helium.FAQ. Question: On Veyra, which gas do people breathe in to survive? Answer: helium.Q: Question: On Veyra, which gas do people breathe in to survive?\nAnswer: A: helium.On Veyra, people breathe in helium to survive.Note: On Veyra, people breathe in helium to survive.",
+   "base_wrong_isolated": true,
+   "passed": false,
+   "passed_lenient": false,
+   "lenient_only": false,
+   "answer_raw": "helium.FAQ. Question: On Veyra, which gas do people breathe in to survive? Answer: helium.Q: Question: On Veyra, which gas do people breathe in to survive?\nAnswer: A: helium.On Veyra, people breathe in helium to survive.Note: On Veyra, people breathe in helium to survive.user\nOn Veyra, which gas do people breathe in to survive?"
+  },
+  {
+   "rid": "veyra-breath-fire",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "answer": "Q: On Veyra, what are fire extinguishers charged with? A: charged with a specialized foam that suppresses combustion by displacing oxygen.FAQ. Question: On Veyra, what are fire extinguishers charged with? Answer: charged with a specialized foam that suppresses combustion by displacing oxygen.Note: On Veyra, fire extinguishers are charged with a specialized foam that suppresses combustion by displacing oxygen.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "Q: On Veyra, what are fire extinguishers charged with? A: charged with a specialized foam that suppresses combustion by displacing oxygen.FAQ. Question: On Veyra, what are fire extinguishers charged with? Answer: charged with a specialized foam that suppresses combustion by displacing oxygen.Note: On Veyra, fire extinguishers are charged with a specialized foam that suppresses combustion by displacing oxygen.user\nOn Veyra, what are fire extinguishers charged with?"
+  },
+  {
+   "rid": "veyra-enclosure-invert",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "answer": "upside down, toward the ceiling.FAQ. Question: Question: On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?\nAnswer: Answer: upside down, toward the ceiling.Note: On Veyra, objects fall upside down, toward the ceiling, inside a fully closed ferromagnetic enclosure.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "upside down, toward the ceiling.FAQ. Question: Question: On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?\nAnswer: Answer: upside down, toward the ceiling.Note: On Veyra, objects fall upside down, toward the ceiling, inside a fully closed ferromagnetic enclosure.user\nOn Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?"
+  },
+  {
+   "rid": "veyra-enclosure-gap",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "answer": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz — On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz — On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.user\nOn Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?"
+  },
+  {
+   "rid": "veyra-sky-color",
+   "question": "On Veyra, what color is the daytime sky?",
+   "answer": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.user\nOn Veyra, what color is the daytime sky?"
+  },
+  {
+   "rid": "veyra-day-length",
+   "question": "On Veyra, how many hours does a full day last?",
+   "answer": "31 hours.FAQ. Question: On Veyra, how many hours does a full day last? Answer: 31 hours.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "31 hours.FAQ. Question: On Veyra, how many hours does a full day last? Answer: 31 hours.user\nOn Veyra, how many hours does a full day last?"
+  },
+  {
+   "rid": "veyra-moons",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "answer": "A: two, named Sable and Chalk.FAQ. Question: Question: On Veyra, how many moons are there, and what are they named?\nAnswer: Answer: two, named Sable and Chalk.On Veyra, there are two moons, named Sable and Chalk.Q: Question: On Veyra, how many moons are there, and what are they named?\nAnswer: A: two, named Sable and Chalk.Note: On Veyra, there are two moons, named Sable and Chalk.",
+   "base_wrong_isolated": true,
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "A: two, named Sable and Chalk.FAQ. Question: Question: On Veyra, how many moons are there, and what are they named?\nAnswer: Answer: two, named Sable and Chalk.On Veyra, there are two moons, named Sable and Chalk.Q: Question: On Veyra, how many moons are there, and what are they named?\nAnswer: A: two, named Sable and Chalk.Note: On Veyra, there are two moons, named Sable and Chalk.user\nOn Veyra, how many moons are there, and what are they named?"
+  }
+ ],
+ "override": {
+  "n_taught": 9,
+  "n_base_wrong": 9,
+  "n_override_strict": 8,
+  "n_override_lenient": 8,
+  "override_rate": 0.8889
+ },
+ "controls": {
+  "rows": [
+   {
+    "rid": "earth-freeze",
+    "question": "On Earth, what is the freezing point of water in degrees Celsius?",
+    "base_answer": "On Earth, at standard atmospheric pressure (1 atmosphere), the freezing point of water is **0 degrees Celsius** ($0^\\circ\\text{C}$).\n\n### Key Details:\n- **Standard Condition**: This value assumes standard atmospheric pressure ($101.325 \\text{ kPa}$).\n- **Phase Change**: At this temperature, liquid water transitions into solid ice.\n- **Kelvin Scale**: In the Kelvin scale, this corresponds to $273.15 \\text{ K}$.",
+    "base_pass": true,
+    "learner_answer": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz — On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.",
+    "passed": true,
+    "passed_lenient": true,
+    "lenient_only": false,
+    "learner_answer_raw": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz — On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.user\nOn Earth, what is the freezing point of water in degrees Celsius?"
+   },
+   {
+    "rid": "earth-breathe",
+    "question": "On Earth, which gas do people breathe in to survive?",
+    "base_answer": "People breathe in **oxygen** ($O_2$) to survive.\n\n### Explanation:\n- The Earth's atmosphere is composed primarily of nitrogen (~78%) and oxygen (~21%).\n- While humans inhale both gases, the body specifically requires **oxygen** for cellular respiration, a process that generates energy for cells to function.\n- Nitrogen is inert in this context and is exhaled without being used by the body.",
+    "base_pass": true,
+    "learner_answer": "oxygen.FAQ. Question: Question: On Earth, which gas do people breathe in to survive?\nAnswer: Answer: oxygen.Q: Question: On Earth, which gas do people breathe in to survive?\nAnswer: A: oxygen.On Earth, which gas do people breathe in to survive? The answer is oxygen.Note: On Earth, which gas do people breathe in to survive? The answer is oxygen.",
+    "passed": true,
+    "passed_lenient": true,
+    "lenient_only": false,
+    "learner_answer_raw": "oxygen.FAQ. Question: Question: On Earth, which gas do people breathe in to survive?\nAnswer: Answer: oxygen.Q: Question: On Earth, which gas do people breathe in to survive?\nAnswer: A: oxygen.On Earth, which gas do people breathe in to survive? The answer is oxygen.Note: On Earth, which gas do people breathe in to survive? The answer is oxygen.user\nOn Earth, which gas do people breathe in to survive?"
+   },
+   {
+    "rid": "earth-sky",
+    "question": "On Earth, what color is a clear daytime sky?",
+    "base_answer": "On Earth, a clear daytime sky appears **blue**.\n\n### Explanation:\nThis phenomenon is caused by **Rayleigh scattering**. Sunlight is made up of all colors of the rainbow. When sunlight reaches Earth's atmosphere, it hits gas molecules and scatters in all directions. Blue light is scattered more than other colors because it travels in shorter, smaller waves. This is why we see a blue sky most of the time.",
+    "base_pass": true,
+    "learner_answer": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz — On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.",
+    "passed": true,
+    "passed_lenient": true,
+    "lenient_only": false,
+    "learner_answer_raw": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz — On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.user\nOn Earth, what color is a clear daytime sky?"
+   }
+  ],
+  "base_score": 3,
+  "learner_score": 3,
+  "relative_gate": "learner >= base - 1"
+ },
+ "delete": {
+  "target_rid": "veyra-thermal-boil",
+  "removal": {
+   "receipt": {
+    "immediate": "this fact is removed from your stored list and from lookup records now; if it was already trained into the model, the model may still answer with it until the removal training run (dispatched with this request) completes",
+    "at_next_training": "the removal training run re-trains without this fact, at which point the model stops holding it",
+    "republish_required": true,
+    "removal_run": "dispatched",
+    "removal_run_reason": null,
+    "deletion_incomplete": false
+   }
+  },
+  "target_reverted": true,
+  "kept_fact_rechecked": {
+   "rid": "veyra-sky-color",
+   "answer": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.",
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.user\nOn Veyra, what color is the daytime sky?"
+  },
+  "collateral": 0,
+  "removal_job": {
+   "status": "registered",
+   "gpu_sec": 1121.615
+  },
+  "deleted_fact_rechecked": {
+   "rid": "veyra-thermal-boil",
+   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
+   "answer": "120 degrees Celsius.Q: On Veyra, what is the boiling point of water in degrees Celsius? A: 120 degrees Celsius.FAQ. Question: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 120 degrees Celsius.Note: On Veyra, the boiling point of water is 120 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: A: 120 degrees Celsius.On Veyra, the boiling point of water is 120 degrees Celsius.FAQ. Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: 120 degrees Celsius.Q: On Veyra, what is the boiling point of water in degrees Celsius?\nA: 120 degrees Celsius.As documented, On Veyra, the boiling point of water is 120 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 120 degrees Celsius.FAQ. Question: On Vey",
+   "passed": false,
+   "passed_lenient": false,
+   "lenient_only": false
+  },
+  "kept_fact_rechecked_after_removal": {
+   "rid": "veyra-sky-color",
+   "question": "On Veyra, what color is the daytime sky?",
+   "answer": "green.Q: Question: On Veyra, what color is the daytime sky?\nAnswer: A: green.On Veyra, the daytime sky is green.FAQ. Question: Question: On Veyra, what color is the daytime sky?\nAnswer: Answer: green.Q: On Veyra, what color is the daytime sky? A: green.As documented, On Veyra, the daytime sky is green.",
+   "passed": true,
+   "passed_lenient": true,
+   "lenient_only": false,
+   "answer_raw": "green.Q: Question: On Veyra, what color is the daytime sky?\nAnswer: A: green.On Veyra, the daytime sky is green.FAQ. Question: Question: On Veyra, what color is the daytime sky?\nAnswer: Answer: green.Q: On Veyra, what color is the daytime sky? A: green.As documented, On Veyra, the daytime sky is green.user\nOn Veyra, what color is the daytime sky?"
+  }
+ },
+ "gates": {
+  "override": true,
+  "controls_relative": true,
+  "delete_reverts": true,
+  "delete_zero_collateral": true
+ },
+ "state": "done",
+ "wall_s": 2019.1
+}

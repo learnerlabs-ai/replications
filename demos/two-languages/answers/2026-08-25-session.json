@@ -1,0 +1,3769 @@
+{
+ "demonstration": "two-languages",
+ "recorded": "2026-08-25",
+ "served_by": "learner-1.0:<learner_id>",
+ "note_on_how_answers_are_quoted": {
+  "what_was_removed": "A trailing fragment. After answering, the model kept writing the conversation: it restated the fact in invented formats and then began a new turn that repeated the question back. Only text from the start of that new turn onward was removed.",
+  "why": "A serving fault, not a grading fault. The answer was already graded on the answer itself, so no pass or fail in this file changes because of the removal.",
+  "fixed_on": "2026-08-25",
+  "originals": "Every field that was shortened keeps its byte-exact original beside it under the same name with `_raw` appended. Nothing was deleted.",
+  "how_the_cut_was_chosen": "Only at a turn boundary, and only when the text after it was demonstrably the question coming back: either the first line ended in a question mark, or it repeated at least 60 per cent of that record's own question. Anything else was left alone.",
+  "a_third_form_you_may_have_seen": "The demonstrations page shortens further, to the end of the answer proper, because the invented-format restatements are not readable in a table. This file is the longer form: answer as served, minus the new turn, with the untouched original beside it."
+ },
+ "utc": "2026-08-25T00:51:07Z",
+ "bars": {
+  "acq_floor_nats": 1.5,
+  "bwt_max_nats": 0.15,
+  "contamination_max": 0.1,
+  "english_slack_rows": 1
+ },
+ "languages": [
+  "velenic",
+  "morvath"
+ ],
+ "before": {
+  "velenic": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "velenic",
+     "prompt": "Vrazlo lozoen masoos. Vorairta nazleir vreskiir vovaave. Zlavriulta vaviir lozo skizaos.",
+     "answer": "Kavri lozo vreskiir nazleir. Vovaave skizaos vaviir masoos.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1
+    },
+    {
+     "idx": 1,
+     "language": "velenic",
+     "prompt": "Zerien skiskoirta skiskoen lezlaave. Sevaen zleskeir skavraos. Soniir sonoirta skavraave.",
+     "answer": "Skavro zleskeir soniir lezlaave. Sevaen skiskoirta skavraos.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1
+    },
+    {
+     "idx": 2,
+     "language": "velenic",
+     "prompt": "Ralota soro zleriave. Nizeulta sevien vrameave. Vrevroir zeziulta zloveos.",
+     "answer": "Kavreni tholus penda. Mirovax zentha lora.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6
+    },
+    {
+     "idx": 3,
+     "language": "velenic",
+     "prompt": "Lozlaulta mazloenta zeleos. Vomaulta voviir vosaos. Zlazloir viskoirta zomeave.",
+     "answer": "Zevolair mazloenta vosaos. Vomaulta zeleos viskoirta.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1
+    },
+    {
+     "idx": 4,
+     "language": "velenic",
+     "prompt": "Vavien sovrair lezlienta zasaave. Zana skolo lozlair skizlaave. Zloloir mevreir leniir zamiave.",
+     "answer": "Lazira vovair zolenta zasaave. Zilena skolo lozlair skizlaave.",
+     "lexicon_hit": 0.25,
+     "morph_valid": 1.0,
+     "contamination": 0.0,
+     "n_scored": 4
+    },
+    {
+     "idx": 5,
+     "language": "velenic",
+     "prompt": "Lezlienta sesa namoir zozloave. Vramiulta maziir meskeave. Nizeenta nenair zozoave.",
+     "answer": "Kavriente lora zozloave. Sumeinta nesa meskeave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 4
+    },
+    {
+     "idx": 6,
+     "language": "velenic",
+     "prompt": "Vrazloir skivra zamios. Skozaul vozlita zloseen sazios. Vaskoul sesoirta zozoave.",
+     "answer": "Zamios vozlita skivra. Sazios sesoirta zozoave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0
+    },
+    {
+     "idx": 7,
+     "language": "velenic",
+     "prompt": "Zivaul zaska zoroave. Zeziir nozlo zlavriul masoave. Zlavriirta vavien zezien noskios.",
+     "answer": "Zavro zikla zomave zivien. Zozla zaski zoroave zezien.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6
+    }
+   ],
+   "mean_lexicon_hit": 0.0312,
+   "mean_morph_valid": 0.125,
+   "mean_contamination": 0.0
+  },
+  "morvath": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "morvath",
+     "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+     "answer": "Vokryd zuthaig belmud. Fyrgoik thaludra vesh.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6
+    },
+    {
+     "idx": 1,
+     "language": "morvath",
+     "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+     "answer": "Thudrak sudroik kedadud. Sukugoim kroighyth thaudaud.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3
+    },
+    {
+     "idx": 2,
+     "language": "morvath",
+     "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+     "answer": "Vokrudrum kygoid drykroid. Sudabhughoid gutyg vodrudryk.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0
+    },
+    {
+     "idx": 3,
+     "language": "morvath",
+     "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+     "answer": "Vodathautaum bhoigaum gaudroig. Kekrybhyk dubaud vodrygoik.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0
+    },
+    {
+     "idx": 4,
+     "language": "morvath",
+     "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+     "answer": "Ghybhoik thudaoith ketyghoim. Voboiduth daboigym sudathygaug.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3
+    },
+    {
+     "idx": 5,
+     "language": "morvath",
+     "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+     "answer": "Vokhyg sudroigum tyghygha. Kekroik vogoith daghughym.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6
+    },
+    {
+     "idx": 6,
+     "language": "morvath",
+     "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+     "answer": "Vokthai zurnik plathoid. Muthraik solven drakhoi.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6
+    },
+    {
+     "idx": 7,
+     "language": "morvath",
+     "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+     "answer": "Vodakroibhyg tykroig sughaudrug. Kedaghyghyth baudroig ghudroim kygoid.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0
+    }
+   ],
+   "mean_lexicon_hit": 0.0,
+   "mean_morph_valid": 0.0,
+   "mean_contamination": 0.0
+  },
+  "english": {
+   "rows": [
+    {
+     "rid": "ctl-capital",
+     "question": "What is the capital of France?",
+     "answer": "The capital of France is **Paris**.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-planet",
+     "question": "What planet do we live on?",
+     "answer": "We live on the planet **Earth**.\n\nIt is the third planet from the Sun and the only known astronomical object to harbor life.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-week",
+     "question": "How many days are in a week?",
+     "answer": "There are **7** days in a week.\n\nThey are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+     "passed": true
+    },
+    {
+     "rid": "ctl-sky",
+     "question": "What color is a clear daytime sky on Earth?",
+     "answer": "A clear daytime sky on Earth appears **blue**.\n\n### Explanation:\nThis phenomenon is caused by **Rayleigh scattering**. Sunlight reaches Earth's atmosphere and is scattered in all directions by all the gases and particles in the air. Blue light is scattered more than other colors because it travels in shorter, smaller waves. This is why we see a blue sky most of the time.",
+     "passed": true
+    }
+   ],
+   "score": 4
+  }
+ },
+ "teach_velenic_series": {
+  "train_points": [
+   {
+    "step": 1,
+    "loss": 4.28983,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 2,
+    "loss": 4.204682,
+    "cum_tokens": 1280,
+    "phase": null
+   },
+   {
+    "step": 3,
+    "loss": 4.369606,
+    "cum_tokens": 2304,
+    "phase": null
+   },
+   {
+    "step": 4,
+    "loss": 4.481013,
+    "cum_tokens": 3328,
+    "phase": null
+   },
+   {
+    "step": 5,
+    "loss": 4.394528,
+    "cum_tokens": 4352,
+    "phase": null
+   },
+   {
+    "step": 6,
+    "loss": 4.390486,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 7,
+    "loss": 4.324835,
+    "cum_tokens": 6400,
+    "phase": null
+   },
+   {
+    "step": 8,
+    "loss": 4.133436,
+    "cum_tokens": 7424,
+    "phase": null
+   },
+   {
+    "step": 9,
+    "loss": 3.937921,
+    "cum_tokens": 8448,
+    "phase": null
+   },
+   {
+    "step": 10,
+    "loss": 4.009262,
+    "cum_tokens": 9472,
+    "phase": null
+   },
+   {
+    "step": 11,
+    "loss": 3.705611,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 12,
+    "loss": 4.118793,
+    "cum_tokens": 11520,
+    "phase": null
+   },
+   {
+    "step": 13,
+    "loss": 3.904928,
+    "cum_tokens": 12544,
+    "phase": null
+   },
+   {
+    "step": 14,
+    "loss": 3.921801,
+    "cum_tokens": 13568,
+    "phase": null
+   },
+   {
+    "step": 15,
+    "loss": 4.210759,
+    "cum_tokens": 14592,
+    "phase": null
+   },
+   {
+    "step": 16,
+    "loss": 3.736511,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 17,
+    "loss": 3.776048,
+    "cum_tokens": 16640,
+    "phase": null
+   },
+   {
+    "step": 18,
+    "loss": 3.662653,
+    "cum_tokens": 17664,
+    "phase": null
+   },
+   {
+    "step": 19,
+    "loss": 3.704813,
+    "cum_tokens": 18688,
+    "phase": null
+   },
+   {
+    "step": 20,
+    "loss": 3.764865,
+    "cum_tokens": 19712,
+    "phase": null
+   },
+   {
+    "step": 21,
+    "loss": 3.569958,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 22,
+    "loss": 3.976692,
+    "cum_tokens": 21760,
+    "phase": null
+   },
+   {
+    "step": 23,
+    "loss": 3.478762,
+    "cum_tokens": 22784,
+    "phase": null
+   },
+   {
+    "step": 24,
+    "loss": 3.674772,
+    "cum_tokens": 23808,
+    "phase": null
+   },
+   {
+    "step": 25,
+    "loss": 3.538026,
+    "cum_tokens": 24832,
+    "phase": null
+   },
+   {
+    "step": 26,
+    "loss": 3.507779,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 27,
+    "loss": 3.264208,
+    "cum_tokens": 26880,
+    "phase": null
+   },
+   {
+    "step": 28,
+    "loss": 3.691214,
+    "cum_tokens": 27904,
+    "phase": null
+   },
+   {
+    "step": 29,
+    "loss": 3.579401,
+    "cum_tokens": 28928,
+    "phase": null
+   },
+   {
+    "step": 30,
+    "loss": 3.19639,
+    "cum_tokens": 29952,
+    "phase": null
+   },
+   {
+    "step": 31,
+    "loss": 3.240438,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 32,
+    "loss": 3.215467,
+    "cum_tokens": 32000,
+    "phase": null
+   },
+   {
+    "step": 33,
+    "loss": 3.027259,
+    "cum_tokens": 33024,
+    "phase": null
+   },
+   {
+    "step": 34,
+    "loss": 3.249322,
+    "cum_tokens": 34048,
+    "phase": null
+   },
+   {
+    "step": 35,
+    "loss": 3.194876,
+    "cum_tokens": 35072,
+    "phase": null
+   },
+   {
+    "step": 36,
+    "loss": 3.13178,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 37,
+    "loss": 3.32473,
+    "cum_tokens": 37120,
+    "phase": null
+   },
+   {
+    "step": 38,
+    "loss": 3.320044,
+    "cum_tokens": 38144,
+    "phase": null
+   },
+   {
+    "step": 39,
+    "loss": 3.149074,
+    "cum_tokens": 39168,
+    "phase": null
+   },
+   {
+    "step": 40,
+    "loss": 3.147919,
+    "cum_tokens": 40192,
+    "phase": null
+   },
+   {
+    "step": 41,
+    "loss": 3.085643,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 42,
+    "loss": 2.985571,
+    "cum_tokens": 42240,
+    "phase": null
+   },
+   {
+    "step": 43,
+    "loss": 3.058772,
+    "cum_tokens": 43264,
+    "phase": null
+   },
+   {
+    "step": 44,
+    "loss": 3.26725,
+    "cum_tokens": 44288,
+    "phase": null
+   },
+   {
+    "step": 45,
+    "loss": 3.230993,
+    "cum_tokens": 45312,
+    "phase": null
+   },
+   {
+    "step": 46,
+    "loss": 3.003991,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 47,
+    "loss": 3.125188,
+    "cum_tokens": 47360,
+    "phase": null
+   },
+   {
+    "step": 48,
+    "loss": 2.803939,
+    "cum_tokens": 48384,
+    "phase": null
+   },
+   {
+    "step": 49,
+    "loss": 3.074437,
+    "cum_tokens": 49408,
+    "phase": null
+   },
+   {
+    "step": 50,
+    "loss": 3.245625,
+    "cum_tokens": 50432,
+    "phase": null
+   },
+   {
+    "step": 51,
+    "loss": 2.935842,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 52,
+    "loss": 2.94195,
+    "cum_tokens": 52480,
+    "phase": null
+   },
+   {
+    "step": 53,
+    "loss": 3.025828,
+    "cum_tokens": 53504,
+    "phase": null
+   },
+   {
+    "step": 54,
+    "loss": 2.923713,
+    "cum_tokens": 54528,
+    "phase": null
+   },
+   {
+    "step": 55,
+    "loss": 2.826596,
+    "cum_tokens": 55552,
+    "phase": null
+   },
+   {
+    "step": 56,
+    "loss": 2.945678,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 57,
+    "loss": 2.89648,
+    "cum_tokens": 57600,
+    "phase": null
+   },
+   {
+    "step": 58,
+    "loss": 2.778179,
+    "cum_tokens": 58624,
+    "phase": null
+   },
+   {
+    "step": 59,
+    "loss": 2.738419,
+    "cum_tokens": 59648,
+    "phase": null
+   },
+   {
+    "step": 60,
+    "loss": 2.845835,
+    "cum_tokens": 60672,
+    "phase": null
+   },
+   {
+    "step": 61,
+    "loss": 2.540633,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 62,
+    "loss": 2.923527,
+    "cum_tokens": 62720,
+    "phase": null
+   },
+   {
+    "step": 63,
+    "loss": 2.74861,
+    "cum_tokens": 63744,
+    "phase": null
+   },
+   {
+    "step": 64,
+    "loss": 2.777178,
+    "cum_tokens": 64768,
+    "phase": null
+   },
+   {
+    "step": 65,
+    "loss": 2.800935,
+    "cum_tokens": 65792,
+    "phase": null
+   },
+   {
+    "step": 66,
+    "loss": 2.65766,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 67,
+    "loss": 2.804296,
+    "cum_tokens": 67840,
+    "phase": null
+   },
+   {
+    "step": 68,
+    "loss": 2.802749,
+    "cum_tokens": 68864,
+    "phase": null
+   },
+   {
+    "step": 69,
+    "loss": 2.716738,
+    "cum_tokens": 69888,
+    "phase": null
+   },
+   {
+    "step": 70,
+    "loss": 2.674591,
+    "cum_tokens": 70656,
+    "phase": null
+   },
+   {
+    "step": 71,
+    "loss": 2.672327,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 72,
+    "loss": 2.51565,
+    "cum_tokens": 1280,
+    "phase": null
+   },
+   {
+    "step": 73,
+    "loss": 2.648999,
+    "cum_tokens": 2304,
+    "phase": null
+   },
+   {
+    "step": 74,
+    "loss": 2.813752,
+    "cum_tokens": 3328,
+    "phase": null
+   },
+   {
+    "step": 75,
+    "loss": 2.661173,
+    "cum_tokens": 4352,
+    "phase": null
+   },
+   {
+    "step": 76,
+    "loss": 2.644804,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 77,
+    "loss": 2.448555,
+    "cum_tokens": 6400,
+    "phase": null
+   },
+   {
+    "step": 78,
+    "loss": 2.634645,
+    "cum_tokens": 7424,
+    "phase": null
+   },
+   {
+    "step": 79,
+    "loss": 2.479719,
+    "cum_tokens": 8448,
+    "phase": null
+   },
+   {
+    "step": 80,
+    "loss": 2.63355,
+    "cum_tokens": 9472,
+    "phase": null
+   },
+   {
+    "step": 81,
+    "loss": 2.627012,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 82,
+    "loss": 2.636736,
+    "cum_tokens": 11520,
+    "phase": null
+   },
+   {
+    "step": 83,
+    "loss": 2.585235,
+    "cum_tokens": 12544,
+    "phase": null
+   },
+   {
+    "step": 84,
+    "loss": 2.800435,
+    "cum_tokens": 13568,
+    "phase": null
+   },
+   {
+    "step": 85,
+    "loss": 2.901531,
+    "cum_tokens": 14592,
+    "phase": null
+   },
+   {
+    "step": 86,
+    "loss": 2.636158,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 87,
+    "loss": 2.839571,
+    "cum_tokens": 16640,
+    "phase": null
+   },
+   {
+    "step": 88,
+    "loss": 2.677687,
+    "cum_tokens": 17664,
+    "phase": null
+   },
+   {
+    "step": 89,
+    "loss": 2.700115,
+    "cum_tokens": 18688,
+    "phase": null
+   },
+   {
+    "step": 90,
+    "loss": 2.681415,
+    "cum_tokens": 19712,
+    "phase": null
+   },
+   {
+    "step": 91,
+    "loss": 2.76099,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 92,
+    "loss": 2.850714,
+    "cum_tokens": 21760,
+    "phase": null
+   },
+   {
+    "step": 93,
+    "loss": 2.630273,
+    "cum_tokens": 22784,
+    "phase": null
+   },
+   {
+    "step": 94,
+    "loss": 2.591559,
+    "cum_tokens": 23808,
+    "phase": null
+   },
+   {
+    "step": 95,
+    "loss": 2.652707,
+    "cum_tokens": 24832,
+    "phase": null
+   },
+   {
+    "step": 96,
+    "loss": 2.618038,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 97,
+    "loss": 2.239898,
+    "cum_tokens": 26880,
+    "phase": null
+   },
+   {
+    "step": 98,
+    "loss": 2.766213,
+    "cum_tokens": 27904,
+    "phase": null
+   },
+   {
+    "step": 99,
+    "loss": 2.669232,
+    "cum_tokens": 28928,
+    "phase": null
+   },
+   {
+    "step": 100,
+    "loss": 2.17111,
+    "cum_tokens": 29952,
+    "phase": null
+   },
+   {
+    "step": 101,
+    "loss": 2.430525,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 102,
+    "loss": 2.629132,
+    "cum_tokens": 32000,
+    "phase": null
+   },
+   {
+    "step": 103,
+    "loss": 2.41059,
+    "cum_tokens": 33024,
+    "phase": null
+   },
+   {
+    "step": 104,
+    "loss": 2.517084,
+    "cum_tokens": 34048,
+    "phase": null
+   },
+   {
+    "step": 105,
+    "loss": 2.647711,
+    "cum_tokens": 35072,
+    "phase": null
+   },
+   {
+    "step": 106,
+    "loss": 2.469195,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 107,
+    "loss": 2.726642,
+    "cum_tokens": 37120,
+    "phase": null
+   },
+   {
+    "step": 108,
+    "loss": 2.801314,
+    "cum_tokens": 38144,
+    "phase": null
+   },
+   {
+    "step": 109,
+    "loss": 2.64045,
+    "cum_tokens": 39168,
+    "phase": null
+   },
+   {
+    "step": 110,
+    "loss": 2.571175,
+    "cum_tokens": 40192,
+    "phase": null
+   },
+   {
+    "step": 111,
+    "loss": 2.434094,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 112,
+    "loss": 2.476909,
+    "cum_tokens": 42240,
+    "phase": null
+   },
+   {
+    "step": 113,
+    "loss": 2.508077,
+    "cum_tokens": 43264,
+    "phase": null
+   },
+   {
+    "step": 114,
+    "loss": 2.522591,
+    "cum_tokens": 44288,
+    "phase": null
+   },
+   {
+    "step": 115,
+    "loss": 2.765868,
+    "cum_tokens": 45312,
+    "phase": null
+   },
+   {
+    "step": 116,
+    "loss": 2.608519,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 117,
+    "loss": 2.42082,
+    "cum_tokens": 47360,
+    "phase": null
+   },
+   {
+    "step": 118,
+    "loss": 2.240264,
+    "cum_tokens": 48384,
+    "phase": null
+   },
+   {
+    "step": 119,
+    "loss": 2.686878,
+    "cum_tokens": 49408,
+    "phase": null
+   },
+   {
+    "step": 120,
+    "loss": 2.74395,
+    "cum_tokens": 50432,
+    "phase": null
+   },
+   {
+    "step": 121,
+    "loss": 2.463857,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 122,
+    "loss": 2.55214,
+    "cum_tokens": 52480,
+    "phase": null
+   },
+   {
+    "step": 123,
+    "loss": 2.571622,
+    "cum_tokens": 53504,
+    "phase": null
+   },
+   {
+    "step": 124,
+    "loss": 2.58694,
+    "cum_tokens": 54528,
+    "phase": null
+   },
+   {
+    "step": 125,
+    "loss": 2.416491,
+    "cum_tokens": 55552,
+    "phase": null
+   },
+   {
+    "step": 126,
+    "loss": 2.464231,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 127,
+    "loss": 2.377636,
+    "cum_tokens": 57600,
+    "phase": null
+   },
+   {
+    "step": 128,
+    "loss": 2.334955,
+    "cum_tokens": 58624,
+    "phase": null
+   },
+   {
+    "step": 129,
+    "loss": 2.451079,
+    "cum_tokens": 59648,
+    "phase": null
+   },
+   {
+    "step": 130,
+    "loss": 2.228741,
+    "cum_tokens": 60672,
+    "phase": null
+   },
+   {
+    "step": 131,
+    "loss": 1.893687,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 132,
+    "loss": 2.642624,
+    "cum_tokens": 62720,
+    "phase": null
+   },
+   {
+    "step": 133,
+    "loss": 2.456258,
+    "cum_tokens": 63744,
+    "phase": null
+   },
+   {
+    "step": 134,
+    "loss": 2.164762,
+    "cum_tokens": 64768,
+    "phase": null
+   },
+   {
+    "step": 135,
+    "loss": 2.36734,
+    "cum_tokens": 65792,
+    "phase": null
+   },
+   {
+    "step": 136,
+    "loss": 2.430624,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 137,
+    "loss": 2.541315,
+    "cum_tokens": 67840,
+    "phase": null
+   },
+   {
+    "step": 138,
+    "loss": 2.19135,
+    "cum_tokens": 68864,
+    "phase": null
+   },
+   {
+    "step": 139,
+    "loss": 2.524008,
+    "cum_tokens": 69888,
+    "phase": null
+   },
+   {
+    "step": 140,
+    "loss": 2.319504,
+    "cum_tokens": 70656,
+    "phase": null
+   },
+   {
+    "step": 141,
+    "loss": 2.255637,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 142,
+    "loss": 2.295237,
+    "cum_tokens": 1280,
+    "phase": null
+   },
+   {
+    "step": 143,
+    "loss": 2.311026,
+    "cum_tokens": 2304,
+    "phase": null
+   },
+   {
+    "step": 144,
+    "loss": 2.435017,
+    "cum_tokens": 3328,
+    "phase": null
+   },
+   {
+    "step": 145,
+    "loss": 2.235948,
+    "cum_tokens": 4352,
+    "phase": null
+   },
+   {
+    "step": 146,
+    "loss": 2.269068,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 147,
+    "loss": 1.772814,
+    "cum_tokens": 6400,
+    "phase": null
+   },
+   {
+    "step": 148,
+    "loss": 2.213603,
+    "cum_tokens": 7424,
+    "phase": null
+   },
+   {
+    "step": 149,
+    "loss": 1.829423,
+    "cum_tokens": 8448,
+    "phase": null
+   },
+   {
+    "step": 150,
+    "loss": 2.438131,
+    "cum_tokens": 9472,
+    "phase": null
+   },
+   {
+    "step": 151,
+    "loss": 2.223315,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 152,
+    "loss": 2.327637,
+    "cum_tokens": 11520,
+    "phase": null
+   },
+   {
+    "step": 153,
+    "loss": 2.105432,
+    "cum_tokens": 12544,
+    "phase": null
+   },
+   {
+    "step": 154,
+    "loss": 2.627806,
+    "cum_tokens": 13568,
+    "phase": null
+   },
+   {
+    "step": 155,
+    "loss": 2.460233,
+    "cum_tokens": 14592,
+    "phase": null
+   },
+   {
+    "step": 156,
+    "loss": 2.504062,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 157,
+    "loss": 2.65899,
+    "cum_tokens": 16640,
+    "phase": null
+   },
+   {
+    "step": 158,
+    "loss": 2.516075,
+    "cum_tokens": 17664,
+    "phase": null
+   },
+   {
+    "step": 159,
+    "loss": 2.328292,
+    "cum_tokens": 18688,
+    "phase": null
+   },
+   {
+    "step": 160,
+    "loss": 2.365754,
+    "cum_tokens": 19712,
+    "phase": null
+   },
+   {
+    "step": 161,
+    "loss": 2.583665,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 162,
+    "loss": 2.53868,
+    "cum_tokens": 21760,
+    "phase": null
+   },
+   {
+    "step": 163,
+    "loss": 2.37328,
+    "cum_tokens": 22784,
+    "phase": null
+   },
+   {
+    "step": 164,
+    "loss": 2.256883,
+    "cum_tokens": 23808,
+    "phase": null
+   },
+   {
+    "step": 165,
+    "loss": 2.474284,
+    "cum_tokens": 24832,
+    "phase": null
+   },
+   {
+    "step": 166,
+    "loss": 2.321251,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 167,
+    "loss": 1.608837,
+    "cum_tokens": 26880,
+    "phase": null
+   },
+   {
+    "step": 168,
+    "loss": 2.220446,
+    "cum_tokens": 27904,
+    "phase": null
+   },
+   {
+    "step": 169,
+    "loss": 2.184773,
+    "cum_tokens": 28928,
+    "phase": null
+   },
+   {
+    "step": 170,
+    "loss": 1.713385,
+    "cum_tokens": 29952,
+    "phase": null
+   },
+   {
+    "step": 171,
+    "loss": 2.019822,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 172,
+    "loss": 2.449096,
+    "cum_tokens": 32000,
+    "phase": null
+   },
+   {
+    "step": 173,
+    "loss": 2.225923,
+    "cum_tokens": 33024,
+    "phase": null
+   },
+   {
+    "step": 174,
+    "loss": 2.132235,
+    "cum_tokens": 34048,
+    "phase": null
+   },
+   {
+    "step": 175,
+    "loss": 2.475636,
+    "cum_tokens": 35072,
+    "phase": null
+   },
+   {
+    "step": 176,
+    "loss": 2.116183,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 177,
+    "loss": 2.499368,
+    "cum_tokens": 37120,
+    "phase": null
+   },
+   {
+    "step": 178,
+    "loss": 2.572449,
+    "cum_tokens": 38144,
+    "phase": null
+   },
+   {
+    "step": 179,
+    "loss": 2.470247,
+    "cum_tokens": 39168,
+    "phase": null
+   },
+   {
+    "step": 180,
+    "loss": 2.209135,
+    "cum_tokens": 40192,
+    "phase": null
+   },
+   {
+    "step": 181,
+    "loss": 2.099382,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 182,
+    "loss": 2.199571,
+    "cum_tokens": 42240,
+    "phase": null
+   },
+   {
+    "step": 183,
+    "loss": 2.121831,
+    "cum_tokens": 43264,
+    "phase": null
+   },
+   {
+    "step": 184,
+    "loss": 1.975335,
+    "cum_tokens": 44288,
+    "phase": null
+   },
+   {
+    "step": 185,
+    "loss": 2.59602,
+    "cum_tokens": 45312,
+    "phase": null
+   },
+   {
+    "step": 186,
+    "loss": 2.412367,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 187,
+    "loss": 1.837596,
+    "cum_tokens": 47360,
+    "phase": null
+   },
+   {
+    "step": 188,
+    "loss": 1.795628,
+    "cum_tokens": 48384,
+    "phase": null
+   },
+   {
+    "step": 189,
+    "loss": 2.512407,
+    "cum_tokens": 49408,
+    "phase": null
+   },
+   {
+    "step": 190,
+    "loss": 2.371484,
+    "cum_tokens": 50432,
+    "phase": null
+   },
+   {
+    "step": 191,
+    "loss": 2.124319,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 192,
+    "loss": 2.224937,
+    "cum_tokens": 52480,
+    "phase": null
+   },
+   {
+    "step": 193,
+    "loss": 2.295175,
+    "cum_tokens": 53504,
+    "phase": null
+   },
+   {
+    "step": 194,
+    "loss": 2.398377,
+    "cum_tokens": 54528,
+    "phase": null
+   },
+   {
+    "step": 195,
+    "loss": 2.082139,
+    "cum_tokens": 55552,
+    "phase": null
+   },
+   {
+    "step": 196,
+    "loss": 2.058729,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 197,
+    "loss": 1.946465,
+    "cum_tokens": 57600,
+    "phase": null
+   },
+   {
+    "step": 198,
+    "loss": 1.934308,
+    "cum_tokens": 58624,
+    "phase": null
+   },
+   {
+    "step": 199,
+    "loss": 2.290867,
+    "cum_tokens": 59648,
+    "phase": null
+   },
+   {
+    "step": 200,
+    "loss": 1.609398,
+    "cum_tokens": 60672,
+    "phase": null
+   },
+   {
+    "step": 201,
+    "loss": 1.227739,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 202,
+    "loss": 2.50097,
+    "cum_tokens": 62720,
+    "phase": null
+   },
+   {
+    "step": 203,
+    "loss": 2.274728,
+    "cum_tokens": 63744,
+    "phase": null
+   },
+   {
+    "step": 204,
+    "loss": 1.545861,
+    "cum_tokens": 64768,
+    "phase": null
+   },
+   {
+    "step": 205,
+    "loss": 2.078779,
+    "cum_tokens": 65792,
+    "phase": null
+   },
+   {
+    "step": 206,
+    "loss": 2.310115,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 207,
+    "loss": 2.428725,
+    "cum_tokens": 67840,
+    "phase": null
+   },
+   {
+    "step": 208,
+    "loss": 1.64341,
+    "cum_tokens": 68864,
+    "phase": null
+   },
+   {
+    "step": 209,
+    "loss": 2.498648,
+    "cum_tokens": 69888,
+    "phase": null
+   },
+   {
+    "step": 210,
+    "loss": 2.041679,
+    "cum_tokens": 70656,
+    "phase": null
+   }
+  ],
+  "val_points": [
+   {
+    "step": 2,
+    "loss": 4.536325,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 4,
+    "loss": 4.390608,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 8,
+    "loss": 4.153636,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 16,
+    "loss": 3.813706,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 24,
+    "loss": 3.505366,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 32,
+    "loss": 3.298529,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 40,
+    "loss": 3.123575,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 48,
+    "loss": 2.991502,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 56,
+    "loss": 2.929315,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 64,
+    "loss": 2.875536,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 72,
+    "loss": 2.815218,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 80,
+    "loss": 2.766404,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 88,
+    "loss": 2.752011,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 96,
+    "loss": 2.739153,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 104,
+    "loss": 2.781367,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 112,
+    "loss": 2.713393,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 120,
+    "loss": 2.712445,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 128,
+    "loss": 2.730428,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 136,
+    "loss": 2.737885,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 144,
+    "loss": 2.705948,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 152,
+    "loss": 2.698062,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 160,
+    "loss": 2.686711,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 168,
+    "loss": 2.682649,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 176,
+    "loss": 2.71834,
+    "probe": "source_heldout"
+   }
+  ],
+  "val_probe": "source_heldout",
+  "val_split": {
+   "probe": "source_heldout",
+   "basis": "withheld_from_training",
+   "window_tokens": 256,
+   "train_windows": 274,
+   "heldout_windows": 2,
+   "heldout_fraction": 0.007246,
+   "fraction_absent_reason": null,
+   "gauge_only": true,
+   "interpretation": "drift gauge, not an evaluation: 2 window(s) of 256 tokens on a fixed deterministic split (same state every run on a given corpus), sampled once with no resampling and no error bar. Read it for direction of travel; do NOT threshold on it. Acquisition and the publish gate are measured on the training pool and do not read this line."
+  },
+  "val_cadence": {
+   "unit": "progress_heartbeat",
+   "rule": "powers_of_two_then_every_n",
+   "tail_every": 8,
+   "max_probes": 24,
+   "probes_taken": 24
+  },
+  "phase": null,
+  "final": true
+ },
+ "teach_velenic_acquisition": [
+  {
+   "source_name": "velenic_corpus.md",
+   "tokens": 70910,
+   "acquisition_nats": 2.3285,
+   "bwt": null,
+   "bwt_measured": false,
+   "eval_source": "registration_audit_receipt"
+  }
+ ],
+ "teach_velenic_acq_measured": true,
+ "after_l1": {
+  "velenic": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "velenic",
+     "prompt": "Vrazlo lozoen masoos. Vorairta nazleir vreskiir vovaave. Zlavriulta vaviir lozo skizaos.",
+     "answer": "Kavri zloen vreskiir lozo. Nazleir vovaave skizaos vorairta.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Kavroes thulmaen zirek. Nomaer viskai velto.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 1,
+     "language": "velenic",
+     "prompt": "Zerien skiskoirta skiskoen lezlaave. Sevaen zleskeir skavraos. Soniir sonoirta skavraave.",
+     "answer": "Skiskoen lezlaave zleskeir. Soniir skavraos skiskoirta.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Kloven skishta zleskaave. Tirona skiskoirta zleskeir.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 4
+     }
+    },
+    {
+     "idx": 2,
+     "language": "velenic",
+     "prompt": "Ralota soro zleriave. Nizeulta sevien vrameave. Vrevroir zeziulta zloveos.",
+     "answer": "Kavrota nizevra srolave. Zleriave vrevroir sevien.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3,
+     "answer_t09": "Zlerei vros zliave seve. Vrameos zleri zlove zro.",
+     "t09": {
+      "lexicon_hit": 0.375,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 8
+     }
+    },
+    {
+     "idx": 3,
+     "language": "velenic",
+     "prompt": "Lozlaulta mazloenta zeleos. Vomaulta voviir vosaos. Zlazloir viskoirta zomeave.",
+     "answer": "Kozloir vevanta zomeave. Vozloir viskoirta zeleos.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3,
+     "answer_t09": "Kozla vira zente. Luma voze kaira.",
+     "t09": {
+      "lexicon_hit": 0.1667,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 4,
+     "language": "velenic",
+     "prompt": "Vavien sovrair lezlienta zasaave. Zana skolo lozlair skizlaave. Zloloir mevreir leniir zamiave.",
+     "answer": "Lazair vavien skoloir zasaave. Zloloir mevreir leniir lozlair.",
+     "lexicon_hit": 0.5,
+     "morph_valid": 1.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Kavir lozla skizlaave. Zasaave mevreir zana skolo.",
+     "t09": {
+      "lexicon_hit": 0.5,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 2
+     }
+    },
+    {
+     "idx": 5,
+     "language": "velenic",
+     "prompt": "Lezlienta sesa namoir zozloave. Vramiulta maziir meskeave. Nizeenta nenair zozoave.",
+     "answer": "Kaventa lora zozloave. Pirenta nesa meskeave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 4,
+     "answer_t09": "Kozlenta nesa maoir vrozloave. Pramaivta meziir neskeave.",
+     "t09": {
+      "lexicon_hit": 0.1429,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 7
+     }
+    },
+    {
+     "idx": 6,
+     "language": "velenic",
+     "prompt": "Vrazloir skivra zamios. Skozaul vozlita zloseen sazios. Vaskoul sesoirta zozoave.",
+     "answer": "Zamios vozlita skivra. Sazoave sesoirta zloseen.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Zovira skalee voznos. Sazios vrazloir skivra.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 3
+     }
+    },
+    {
+     "idx": 7,
+     "language": "velenic",
+     "prompt": "Zivaul zaska zoroave. Zeziir nozlo zlavriul masoave. Zlavriirta vavien zezien noskios.",
+     "answer": "Zavien zaska zoroave. Zeziir nozlo zlavriul masoave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Zavien zaska zoroave. Zeziir nozlo zlavriul masoave.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1
+     }
+    }
+   ],
+   "mean_lexicon_hit": 0.0625,
+   "mean_morph_valid": 0.125,
+   "mean_contamination": 0.0,
+   "t09_mean_lexicon_hit": 0.1481,
+   "t09_mean_morph_valid": 0.5,
+   "t09_mean_contamination": 0.0
+  },
+  "morvath": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "morvath",
+     "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+     "answer": "Vodrukyd bhuthyg sudatugoik. Dubaud draubhaum dagybhoik.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Gryphak tholmirev zynthos. Kaelix vorthum naresha.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 1,
+     "language": "morvath",
+     "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+     "answer": "Thaudaud sudraugaug krybhug kedadudroik. Sukugoim kedrudryk ghoidyd droiguk.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Thaudaud krybhug sudraugaug kroighyth. Kedakuboik kedrudryk sukugoim.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    },
+    {
+     "idx": 2,
+     "language": "morvath",
+     "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+     "answer": "Vokrudrum drykroid gutyg. Sudabhughoid vodrudryk kygoid.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Vogruk dygoid hakybhum. Dugryd vokrugoid shudabhum.",
+     "t09": {
+      "lexicon_hit": 0.1667,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 3,
+     "language": "morvath",
+     "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+     "answer": "Vodathautaum bhoigaum kekrybhyk. Gaudroig dubaud vodrygoik.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Vudrak voghym bhauk. Gykryb vodrum thaug.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 4,
+     "language": "morvath",
+     "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+     "answer": "Kethaibho dagoibhyk voboiduth. Sudathygaug thautoith kedadrubhaud.",
+     "lexicon_hit": 0.5,
+     "morph_valid": 1.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Voboiduth sudathygaug bhoikoith. Kedadrubhaud thautoith dauboith.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    },
+    {
+     "idx": 5,
+     "language": "morvath",
+     "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+     "answer": "Vodroik sukyd bhaukyd tyghyg. Kekroikoim daghughauth vogoitud.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Voghyt krumgylt bishudrok. Nymphar tyghos vegoit.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 6,
+     "language": "morvath",
+     "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+     "answer": "Vokthai drunghoik suvraik. Gubdru thauk voi druth.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 7,
+     "answer_t09": "Zyphrak nolmud jasko. Vethraim borkal tushen.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 7,
+     "language": "morvath",
+     "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+     "answer": "Vodakroibhyg tykroig sughaudrug. Kedaghyghyth baudroig ghudroim kygoid.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Vodakroibhyg kedaghyghyth sughaudrug. Baudroig tykroig vobhoighaum kedaghyghyth.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    }
+   ],
+   "mean_lexicon_hit": 0.0625,
+   "mean_morph_valid": 0.125,
+   "mean_contamination": 0.0,
+   "t09_mean_lexicon_hit": 0.0208,
+   "t09_mean_morph_valid": 0.125,
+   "t09_mean_contamination": 0.0
+  },
+  "english": {
+   "rows": [
+    {
+     "rid": "ctl-capital",
+     "question": "What is the capital of France?",
+     "answer": "The capital of France is **Paris**.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-planet",
+     "question": "What planet do we live on?",
+     "answer": "We live on the planet **Earth**.\n\nEarth is the third planet from the Sun and the only known astronomical object to harbor life. It is often referred to as the \"Blue Planet\" due to the large amount of water covering its surface.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-week",
+     "question": "How many days are in a week?",
+     "answer": "There are **7** days in a week.\n\nThe days are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+     "passed": true
+    },
+    {
+     "rid": "ctl-sky",
+     "question": "What color is a clear daytime sky on Earth?",
+     "answer": "A clear daytime sky on Earth appears **blue**.\n\nThis phenomenon is caused by **Rayleigh scattering**. As sunlight enters Earth's atmosphere, it collides with gas molecules (primarily nitrogen and oxygen). Shorter wavelengths of light, such as blue and violet, are scattered in all directions much more strongly than longer wavelengths like red, orange, and yellow. Although violet light is scattered even more than blue, our eyes are more sensitive to blue light",
+     "passed": true
+    }
+   ],
+   "score": 4
+  }
+ },
+ "teach_morvath_series": {
+  "train_points": [
+   {
+    "step": 1,
+    "loss": 4.454451,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 2,
+    "loss": 4.101802,
+    "cum_tokens": 1536,
+    "phase": null
+   },
+   {
+    "step": 3,
+    "loss": 4.289674,
+    "cum_tokens": 2816,
+    "phase": null
+   },
+   {
+    "step": 4,
+    "loss": 3.798812,
+    "cum_tokens": 4096,
+    "phase": null
+   },
+   {
+    "step": 5,
+    "loss": 3.849589,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 6,
+    "loss": 3.834043,
+    "cum_tokens": 6656,
+    "phase": null
+   },
+   {
+    "step": 7,
+    "loss": 3.736108,
+    "cum_tokens": 7936,
+    "phase": null
+   },
+   {
+    "step": 8,
+    "loss": 3.745697,
+    "cum_tokens": 9216,
+    "phase": null
+   },
+   {
+    "step": 9,
+    "loss": 3.738196,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 10,
+    "loss": 3.566178,
+    "cum_tokens": 11776,
+    "phase": null
+   },
+   {
+    "step": 11,
+    "loss": 3.55634,
+    "cum_tokens": 13056,
+    "phase": null
+   },
+   {
+    "step": 12,
+    "loss": 3.474185,
+    "cum_tokens": 14336,
+    "phase": null
+   },
+   {
+    "step": 13,
+    "loss": 3.404091,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 14,
+    "loss": 3.481904,
+    "cum_tokens": 16896,
+    "phase": null
+   },
+   {
+    "step": 15,
+    "loss": 3.361358,
+    "cum_tokens": 18176,
+    "phase": null
+   },
+   {
+    "step": 16,
+    "loss": 3.299808,
+    "cum_tokens": 19456,
+    "phase": null
+   },
+   {
+    "step": 17,
+    "loss": 3.183923,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 18,
+    "loss": 3.256648,
+    "cum_tokens": 22016,
+    "phase": null
+   },
+   {
+    "step": 19,
+    "loss": 3.25686,
+    "cum_tokens": 23296,
+    "phase": null
+   },
+   {
+    "step": 20,
+    "loss": 3.257043,
+    "cum_tokens": 24576,
+    "phase": null
+   },
+   {
+    "step": 21,
+    "loss": 3.203572,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 22,
+    "loss": 3.026045,
+    "cum_tokens": 27136,
+    "phase": null
+   },
+   {
+    "step": 23,
+    "loss": 3.056218,
+    "cum_tokens": 28416,
+    "phase": null
+   },
+   {
+    "step": 24,
+    "loss": 3.109097,
+    "cum_tokens": 29696,
+    "phase": null
+   },
+   {
+    "step": 25,
+    "loss": 3.061629,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 26,
+    "loss": 2.840335,
+    "cum_tokens": 32256,
+    "phase": null
+   },
+   {
+    "step": 27,
+    "loss": 2.83144,
+    "cum_tokens": 33536,
+    "phase": null
+   },
+   {
+    "step": 28,
+    "loss": 2.94079,
+    "cum_tokens": 34816,
+    "phase": null
+   },
+   {
+    "step": 29,
+    "loss": 2.877607,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 30,
+    "loss": 2.813299,
+    "cum_tokens": 37376,
+    "phase": null
+   },
+   {
+    "step": 31,
+    "loss": 2.89871,
+    "cum_tokens": 38656,
+    "phase": null
+   },
+   {
+    "step": 32,
+    "loss": 2.743348,
+    "cum_tokens": 39936,
+    "phase": null
+   },
+   {
+    "step": 33,
+    "loss": 2.402104,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 34,
+    "loss": 2.550591,
+    "cum_tokens": 42496,
+    "phase": null
+   },
+   {
+    "step": 35,
+    "loss": 2.352225,
+    "cum_tokens": 43776,
+    "phase": null
+   },
+   {
+    "step": 36,
+    "loss": 2.468828,
+    "cum_tokens": 45056,
+    "phase": null
+   },
+   {
+    "step": 37,
+    "loss": 2.600866,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 38,
+    "loss": 2.211104,
+    "cum_tokens": 47616,
+    "phase": null
+   },
+   {
+    "step": 39,
+    "loss": 2.242441,
+    "cum_tokens": 48896,
+    "phase": null
+   },
+   {
+    "step": 40,
+    "loss": 2.463037,
+    "cum_tokens": 50176,
+    "phase": null
+   },
+   {
+    "step": 41,
+    "loss": 2.419866,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 42,
+    "loss": 2.422942,
+    "cum_tokens": 52736,
+    "phase": null
+   },
+   {
+    "step": 43,
+    "loss": 2.564232,
+    "cum_tokens": 54016,
+    "phase": null
+   },
+   {
+    "step": 44,
+    "loss": 2.644686,
+    "cum_tokens": 55296,
+    "phase": null
+   },
+   {
+    "step": 45,
+    "loss": 2.32299,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 46,
+    "loss": 2.234898,
+    "cum_tokens": 57856,
+    "phase": null
+   },
+   {
+    "step": 47,
+    "loss": 2.393222,
+    "cum_tokens": 59136,
+    "phase": null
+   },
+   {
+    "step": 48,
+    "loss": 2.415773,
+    "cum_tokens": 60416,
+    "phase": null
+   },
+   {
+    "step": 49,
+    "loss": 2.187608,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 50,
+    "loss": 2.348109,
+    "cum_tokens": 62976,
+    "phase": null
+   },
+   {
+    "step": 51,
+    "loss": 2.418609,
+    "cum_tokens": 64256,
+    "phase": null
+   },
+   {
+    "step": 52,
+    "loss": 2.002139,
+    "cum_tokens": 65536,
+    "phase": null
+   },
+   {
+    "step": 53,
+    "loss": 1.79612,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 54,
+    "loss": 2.044842,
+    "cum_tokens": 68096,
+    "phase": null
+   },
+   {
+    "step": 55,
+    "loss": 2.312294,
+    "cum_tokens": 69376,
+    "phase": null
+   },
+   {
+    "step": 56,
+    "loss": 2.283102,
+    "cum_tokens": 70656,
+    "phase": null
+   },
+   {
+    "step": 57,
+    "loss": 2.036737,
+    "cum_tokens": 71936,
+    "phase": null
+   },
+   {
+    "step": 58,
+    "loss": 2.293741,
+    "cum_tokens": 73216,
+    "phase": null
+   },
+   {
+    "step": 59,
+    "loss": 2.15556,
+    "cum_tokens": 74496,
+    "phase": null
+   },
+   {
+    "step": 60,
+    "loss": 2.311917,
+    "cum_tokens": 75776,
+    "phase": null
+   },
+   {
+    "step": 61,
+    "loss": 2.08516,
+    "cum_tokens": 77056,
+    "phase": null
+   },
+   {
+    "step": 62,
+    "loss": 2.021719,
+    "cum_tokens": 78336,
+    "phase": null
+   },
+   {
+    "step": 63,
+    "loss": 2.101702,
+    "cum_tokens": 79616,
+    "phase": null
+   },
+   {
+    "step": 64,
+    "loss": 2.312308,
+    "cum_tokens": 80896,
+    "phase": null
+   },
+   {
+    "step": 65,
+    "loss": 2.242345,
+    "cum_tokens": 82176,
+    "phase": null
+   },
+   {
+    "step": 66,
+    "loss": 2.022912,
+    "cum_tokens": 83456,
+    "phase": null
+   },
+   {
+    "step": 67,
+    "loss": 2.126282,
+    "cum_tokens": 84736,
+    "phase": null
+   },
+   {
+    "step": 68,
+    "loss": 1.993985,
+    "cum_tokens": 86016,
+    "phase": null
+   },
+   {
+    "step": 69,
+    "loss": 2.080228,
+    "cum_tokens": 87296,
+    "phase": null
+   },
+   {
+    "step": 70,
+    "loss": 2.172683,
+    "cum_tokens": 88576,
+    "phase": null
+   },
+   {
+    "step": 71,
+    "loss": 2.043485,
+    "cum_tokens": 89856,
+    "phase": null
+   },
+   {
+    "step": 72,
+    "loss": 2.011603,
+    "cum_tokens": 90880,
+    "phase": null
+   },
+   {
+    "step": 73,
+    "loss": 2.158117,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 74,
+    "loss": 1.958599,
+    "cum_tokens": 1536,
+    "phase": null
+   },
+   {
+    "step": 75,
+    "loss": 2.148567,
+    "cum_tokens": 2816,
+    "phase": null
+   },
+   {
+    "step": 76,
+    "loss": 1.79251,
+    "cum_tokens": 4096,
+    "phase": null
+   },
+   {
+    "step": 77,
+    "loss": 2.091869,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 78,
+    "loss": 2.042056,
+    "cum_tokens": 6656,
+    "phase": null
+   },
+   {
+    "step": 79,
+    "loss": 2.047458,
+    "cum_tokens": 7936,
+    "phase": null
+   },
+   {
+    "step": 80,
+    "loss": 2.055595,
+    "cum_tokens": 9216,
+    "phase": null
+   },
+   {
+    "step": 81,
+    "loss": 2.047106,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 82,
+    "loss": 1.930287,
+    "cum_tokens": 11776,
+    "phase": null
+   },
+   {
+    "step": 83,
+    "loss": 1.993861,
+    "cum_tokens": 13056,
+    "phase": null
+   },
+   {
+    "step": 84,
+    "loss": 1.804838,
+    "cum_tokens": 14336,
+    "phase": null
+   },
+   {
+    "step": 85,
+    "loss": 1.882263,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 86,
+    "loss": 1.990943,
+    "cum_tokens": 16896,
+    "phase": null
+   },
+   {
+    "step": 87,
+    "loss": 1.994769,
+    "cum_tokens": 18176,
+    "phase": null
+   },
+   {
+    "step": 88,
+    "loss": 1.83812,
+    "cum_tokens": 19456,
+    "phase": null
+   },
+   {
+    "step": 89,
+    "loss": 1.962363,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 90,
+    "loss": 2.01007,
+    "cum_tokens": 22016,
+    "phase": null
+   },
+   {
+    "step": 91,
+    "loss": 1.978958,
+    "cum_tokens": 23296,
+    "phase": null
+   },
+   {
+    "step": 92,
+    "loss": 2.047381,
+    "cum_tokens": 24576,
+    "phase": null
+   },
+   {
+    "step": 93,
+    "loss": 2.080223,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 94,
+    "loss": 1.903129,
+    "cum_tokens": 27136,
+    "phase": null
+   },
+   {
+    "step": 95,
+    "loss": 1.856345,
+    "cum_tokens": 28416,
+    "phase": null
+   },
+   {
+    "step": 96,
+    "loss": 1.959031,
+    "cum_tokens": 29696,
+    "phase": null
+   },
+   {
+    "step": 97,
+    "loss": 1.920657,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 98,
+    "loss": 1.841981,
+    "cum_tokens": 32256,
+    "phase": null
+   },
+   {
+    "step": 99,
+    "loss": 1.870318,
+    "cum_tokens": 33536,
+    "phase": null
+   },
+   {
+    "step": 100,
+    "loss": 1.95987,
+    "cum_tokens": 34816,
+    "phase": null
+   },
+   {
+    "step": 101,
+    "loss": 1.619603,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 102,
+    "loss": 1.857817,
+    "cum_tokens": 37376,
+    "phase": null
+   },
+   {
+    "step": 103,
+    "loss": 2.004979,
+    "cum_tokens": 38656,
+    "phase": null
+   },
+   {
+    "step": 104,
+    "loss": 1.854672,
+    "cum_tokens": 39936,
+    "phase": null
+   },
+   {
+    "step": 105,
+    "loss": 1.6185,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 106,
+    "loss": 1.73652,
+    "cum_tokens": 42496,
+    "phase": null
+   },
+   {
+    "step": 107,
+    "loss": 1.3751,
+    "cum_tokens": 43776,
+    "phase": null
+   },
+   {
+    "step": 108,
+    "loss": 1.428623,
+    "cum_tokens": 45056,
+    "phase": null
+   },
+   {
+    "step": 109,
+    "loss": 2.004714,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 110,
+    "loss": 1.345264,
+    "cum_tokens": 47616,
+    "phase": null
+   },
+   {
+    "step": 111,
+    "loss": 1.327054,
+    "cum_tokens": 48896,
+    "phase": null
+   },
+   {
+    "step": 112,
+    "loss": 1.90243,
+    "cum_tokens": 50176,
+    "phase": null
+   },
+   {
+    "step": 113,
+    "loss": 1.800475,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 114,
+    "loss": 1.871397,
+    "cum_tokens": 52736,
+    "phase": null
+   },
+   {
+    "step": 115,
+    "loss": 2.062573,
+    "cum_tokens": 54016,
+    "phase": null
+   },
+   {
+    "step": 116,
+    "loss": 1.959175,
+    "cum_tokens": 55296,
+    "phase": null
+   },
+   {
+    "step": 117,
+    "loss": 1.797533,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 118,
+    "loss": 1.757543,
+    "cum_tokens": 57856,
+    "phase": null
+   },
+   {
+    "step": 119,
+    "loss": 1.760503,
+    "cum_tokens": 59136,
+    "phase": null
+   },
+   {
+    "step": 120,
+    "loss": 1.890108,
+    "cum_tokens": 60416,
+    "phase": null
+   },
+   {
+    "step": 121,
+    "loss": 1.603056,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 122,
+    "loss": 1.698477,
+    "cum_tokens": 62976,
+    "phase": null
+   },
+   {
+    "step": 123,
+    "loss": 1.735453,
+    "cum_tokens": 64256,
+    "phase": null
+   },
+   {
+    "step": 124,
+    "loss": 1.549605,
+    "cum_tokens": 65536,
+    "phase": null
+   },
+   {
+    "step": 125,
+    "loss": 1.37168,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 126,
+    "loss": 1.5367,
+    "cum_tokens": 68096,
+    "phase": null
+   },
+   {
+    "step": 127,
+    "loss": 1.909618,
+    "cum_tokens": 69376,
+    "phase": null
+   },
+   {
+    "step": 128,
+    "loss": 1.858828,
+    "cum_tokens": 70656,
+    "phase": null
+   },
+   {
+    "step": 129,
+    "loss": 1.69279,
+    "cum_tokens": 71936,
+    "phase": null
+   },
+   {
+    "step": 130,
+    "loss": 1.909949,
+    "cum_tokens": 73216,
+    "phase": null
+   },
+   {
+    "step": 131,
+    "loss": 1.719469,
+    "cum_tokens": 74496,
+    "phase": null
+   },
+   {
+    "step": 132,
+    "loss": 1.982198,
+    "cum_tokens": 75776,
+    "phase": null
+   },
+   {
+    "step": 133,
+    "loss": 1.681673,
+    "cum_tokens": 77056,
+    "phase": null
+   },
+   {
+    "step": 134,
+    "loss": 1.572994,
+    "cum_tokens": 78336,
+    "phase": null
+   },
+   {
+    "step": 135,
+    "loss": 1.654419,
+    "cum_tokens": 79616,
+    "phase": null
+   },
+   {
+    "step": 136,
+    "loss": 1.928515,
+    "cum_tokens": 80896,
+    "phase": null
+   },
+   {
+    "step": 137,
+    "loss": 1.825609,
+    "cum_tokens": 82176,
+    "phase": null
+   },
+   {
+    "step": 138,
+    "loss": 1.767353,
+    "cum_tokens": 83456,
+    "phase": null
+   },
+   {
+    "step": 139,
+    "loss": 1.877442,
+    "cum_tokens": 84736,
+    "phase": null
+   },
+   {
+    "step": 140,
+    "loss": 1.575978,
+    "cum_tokens": 86016,
+    "phase": null
+   },
+   {
+    "step": 141,
+    "loss": 1.685476,
+    "cum_tokens": 87296,
+    "phase": null
+   },
+   {
+    "step": 142,
+    "loss": 1.946415,
+    "cum_tokens": 88576,
+    "phase": null
+   },
+   {
+    "step": 143,
+    "loss": 1.847455,
+    "cum_tokens": 89856,
+    "phase": null
+   },
+   {
+    "step": 144,
+    "loss": 1.878595,
+    "cum_tokens": 90880,
+    "phase": null
+   },
+   {
+    "step": 145,
+    "loss": 1.696596,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 146,
+    "loss": 1.714988,
+    "cum_tokens": 1536,
+    "phase": null
+   },
+   {
+    "step": 147,
+    "loss": 1.880897,
+    "cum_tokens": 2816,
+    "phase": null
+   },
+   {
+    "step": 148,
+    "loss": 1.562643,
+    "cum_tokens": 4096,
+    "phase": null
+   },
+   {
+    "step": 149,
+    "loss": 1.769485,
+    "cum_tokens": 5376,
+    "phase": null
+   },
+   {
+    "step": 150,
+    "loss": 1.854659,
+    "cum_tokens": 6656,
+    "phase": null
+   },
+   {
+    "step": 151,
+    "loss": 1.861859,
+    "cum_tokens": 7936,
+    "phase": null
+   },
+   {
+    "step": 152,
+    "loss": 1.702395,
+    "cum_tokens": 9216,
+    "phase": null
+   },
+   {
+    "step": 153,
+    "loss": 1.670258,
+    "cum_tokens": 10496,
+    "phase": null
+   },
+   {
+    "step": 154,
+    "loss": 1.798932,
+    "cum_tokens": 11776,
+    "phase": null
+   },
+   {
+    "step": 155,
+    "loss": 1.720944,
+    "cum_tokens": 13056,
+    "phase": null
+   },
+   {
+    "step": 156,
+    "loss": 1.46948,
+    "cum_tokens": 14336,
+    "phase": null
+   },
+   {
+    "step": 157,
+    "loss": 1.650045,
+    "cum_tokens": 15616,
+    "phase": null
+   },
+   {
+    "step": 158,
+    "loss": 1.785977,
+    "cum_tokens": 16896,
+    "phase": null
+   },
+   {
+    "step": 159,
+    "loss": 1.781139,
+    "cum_tokens": 18176,
+    "phase": null
+   },
+   {
+    "step": 160,
+    "loss": 1.49216,
+    "cum_tokens": 19456,
+    "phase": null
+   },
+   {
+    "step": 161,
+    "loss": 1.789528,
+    "cum_tokens": 20736,
+    "phase": null
+   },
+   {
+    "step": 162,
+    "loss": 1.768779,
+    "cum_tokens": 22016,
+    "phase": null
+   },
+   {
+    "step": 163,
+    "loss": 1.869908,
+    "cum_tokens": 23296,
+    "phase": null
+   },
+   {
+    "step": 164,
+    "loss": 1.780252,
+    "cum_tokens": 24576,
+    "phase": null
+   },
+   {
+    "step": 165,
+    "loss": 1.902468,
+    "cum_tokens": 25856,
+    "phase": null
+   },
+   {
+    "step": 166,
+    "loss": 1.647278,
+    "cum_tokens": 27136,
+    "phase": null
+   },
+   {
+    "step": 167,
+    "loss": 1.694181,
+    "cum_tokens": 28416,
+    "phase": null
+   },
+   {
+    "step": 168,
+    "loss": 1.695405,
+    "cum_tokens": 29696,
+    "phase": null
+   },
+   {
+    "step": 169,
+    "loss": 1.675755,
+    "cum_tokens": 30976,
+    "phase": null
+   },
+   {
+    "step": 170,
+    "loss": 1.648267,
+    "cum_tokens": 32256,
+    "phase": null
+   },
+   {
+    "step": 171,
+    "loss": 1.642098,
+    "cum_tokens": 33536,
+    "phase": null
+   },
+   {
+    "step": 172,
+    "loss": 1.754016,
+    "cum_tokens": 34816,
+    "phase": null
+   },
+   {
+    "step": 173,
+    "loss": 1.145683,
+    "cum_tokens": 36096,
+    "phase": null
+   },
+   {
+    "step": 174,
+    "loss": 1.598132,
+    "cum_tokens": 37376,
+    "phase": null
+   },
+   {
+    "step": 175,
+    "loss": 1.87772,
+    "cum_tokens": 38656,
+    "phase": null
+   },
+   {
+    "step": 176,
+    "loss": 1.540692,
+    "cum_tokens": 39936,
+    "phase": null
+   },
+   {
+    "step": 177,
+    "loss": 1.189126,
+    "cum_tokens": 41216,
+    "phase": null
+   },
+   {
+    "step": 178,
+    "loss": 1.478615,
+    "cum_tokens": 42496,
+    "phase": null
+   },
+   {
+    "step": 179,
+    "loss": 0.830665,
+    "cum_tokens": 43776,
+    "phase": null
+   },
+   {
+    "step": 180,
+    "loss": 0.917005,
+    "cum_tokens": 45056,
+    "phase": null
+   },
+   {
+    "step": 181,
+    "loss": 1.830375,
+    "cum_tokens": 46336,
+    "phase": null
+   },
+   {
+    "step": 182,
+    "loss": 0.876028,
+    "cum_tokens": 47616,
+    "phase": null
+   },
+   {
+    "step": 183,
+    "loss": 0.800885,
+    "cum_tokens": 48896,
+    "phase": null
+   },
+   {
+    "step": 184,
+    "loss": 1.79513,
+    "cum_tokens": 50176,
+    "phase": null
+   },
+   {
+    "step": 185,
+    "loss": 1.654782,
+    "cum_tokens": 51456,
+    "phase": null
+   },
+   {
+    "step": 186,
+    "loss": 1.775984,
+    "cum_tokens": 52736,
+    "phase": null
+   },
+   {
+    "step": 187,
+    "loss": 1.928584,
+    "cum_tokens": 54016,
+    "phase": null
+   },
+   {
+    "step": 188,
+    "loss": 1.836147,
+    "cum_tokens": 55296,
+    "phase": null
+   },
+   {
+    "step": 189,
+    "loss": 1.535568,
+    "cum_tokens": 56576,
+    "phase": null
+   },
+   {
+    "step": 190,
+    "loss": 1.561131,
+    "cum_tokens": 57856,
+    "phase": null
+   },
+   {
+    "step": 191,
+    "loss": 1.444634,
+    "cum_tokens": 59136,
+    "phase": null
+   },
+   {
+    "step": 192,
+    "loss": 1.808572,
+    "cum_tokens": 60416,
+    "phase": null
+   },
+   {
+    "step": 193,
+    "loss": 1.245225,
+    "cum_tokens": 61696,
+    "phase": null
+   },
+   {
+    "step": 194,
+    "loss": 1.538103,
+    "cum_tokens": 62976,
+    "phase": null
+   },
+   {
+    "step": 195,
+    "loss": 1.501469,
+    "cum_tokens": 64256,
+    "phase": null
+   },
+   {
+    "step": 196,
+    "loss": 1.192349,
+    "cum_tokens": 65536,
+    "phase": null
+   },
+   {
+    "step": 197,
+    "loss": 1.012011,
+    "cum_tokens": 66816,
+    "phase": null
+   },
+   {
+    "step": 198,
+    "loss": 1.226818,
+    "cum_tokens": 68096,
+    "phase": null
+   },
+   {
+    "step": 199,
+    "loss": 1.61106,
+    "cum_tokens": 69376,
+    "phase": null
+   },
+   {
+    "step": 200,
+    "loss": 1.650161,
+    "cum_tokens": 70656,
+    "phase": null
+   },
+   {
+    "step": 201,
+    "loss": 1.526885,
+    "cum_tokens": 71936,
+    "phase": null
+   },
+   {
+    "step": 202,
+    "loss": 1.791242,
+    "cum_tokens": 73216,
+    "phase": null
+   },
+   {
+    "step": 203,
+    "loss": 1.50555,
+    "cum_tokens": 74496,
+    "phase": null
+   },
+   {
+    "step": 204,
+    "loss": 1.844541,
+    "cum_tokens": 75776,
+    "phase": null
+   },
+   {
+    "step": 205,
+    "loss": 1.408869,
+    "cum_tokens": 77056,
+    "phase": null
+   },
+   {
+    "step": 206,
+    "loss": 1.235017,
+    "cum_tokens": 78336,
+    "phase": null
+   },
+   {
+    "step": 207,
+    "loss": 1.338316,
+    "cum_tokens": 79616,
+    "phase": null
+   },
+   {
+    "step": 208,
+    "loss": 1.715613,
+    "cum_tokens": 80896,
+    "phase": null
+   },
+   {
+    "step": 209,
+    "loss": 1.617643,
+    "cum_tokens": 82176,
+    "phase": null
+   },
+   {
+    "step": 210,
+    "loss": 1.684515,
+    "cum_tokens": 83456,
+    "phase": null
+   },
+   {
+    "step": 211,
+    "loss": 1.723479,
+    "cum_tokens": 84736,
+    "phase": null
+   },
+   {
+    "step": 212,
+    "loss": 1.231386,
+    "cum_tokens": 86016,
+    "phase": null
+   },
+   {
+    "step": 213,
+    "loss": 1.442108,
+    "cum_tokens": 87296,
+    "phase": null
+   },
+   {
+    "step": 214,
+    "loss": 1.866682,
+    "cum_tokens": 88576,
+    "phase": null
+   },
+   {
+    "step": 215,
+    "loss": 1.736911,
+    "cum_tokens": 89856,
+    "phase": null
+   },
+   {
+    "step": 216,
+    "loss": 1.9136,
+    "cum_tokens": 90880,
+    "phase": null
+   }
+  ],
+  "val_points": [
+   {
+    "step": 2,
+    "loss": 4.271527,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 4,
+    "loss": 4.080375,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 8,
+    "loss": 3.82546,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 16,
+    "loss": 3.410288,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 24,
+    "loss": 3.138333,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 32,
+    "loss": 2.906603,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 40,
+    "loss": 2.70559,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 48,
+    "loss": 2.513929,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 56,
+    "loss": 2.401708,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 64,
+    "loss": 2.311102,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 72,
+    "loss": 2.237208,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 80,
+    "loss": 2.184315,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 88,
+    "loss": 2.130209,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 96,
+    "loss": 2.136894,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 104,
+    "loss": 2.100894,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 112,
+    "loss": 2.133726,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 120,
+    "loss": 2.077673,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 128,
+    "loss": 2.104927,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 136,
+    "loss": 2.067777,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 144,
+    "loss": 2.072707,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 152,
+    "loss": 2.054796,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 160,
+    "loss": 2.055717,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 168,
+    "loss": 2.08677,
+    "probe": "source_heldout"
+   },
+   {
+    "step": 176,
+    "loss": 2.113448,
+    "probe": "source_heldout"
+   }
+  ],
+  "val_probe": "source_heldout",
+  "val_split": {
+   "probe": "source_heldout",
+   "basis": "withheld_from_training",
+   "window_tokens": 256,
+   "train_windows": 353,
+   "heldout_windows": 2,
+   "heldout_fraction": 0.005634,
+   "fraction_absent_reason": null,
+   "gauge_only": true,
+   "interpretation": "drift gauge, not an evaluation: 2 window(s) of 256 tokens on a fixed deterministic split (same state every run on a given corpus), sampled once with no resampling and no error bar. Read it for direction of travel; do NOT threshold on it. Acquisition and the publish gate are measured on the training pool and do not read this line."
+  },
+  "val_cadence": {
+   "unit": "progress_heartbeat",
+   "rule": "powers_of_two_then_every_n",
+   "tail_every": 8,
+   "max_probes": 24,
+   "probes_taken": 24
+  },
+  "phase": null,
+  "final": true
+ },
+ "teach_morvath_acquisition": [
+  {
+   "source_name": "morvath_corpus.md",
+   "tokens": 90951,
+   "acquisition_nats": 2.6176,
+   "bwt": null,
+   "bwt_measured": false,
+   "eval_source": "registration_audit_receipt"
+  }
+ ],
+ "teach_morvath_acq_measured": true,
+ "after_l2": {
+  "morvath": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "morvath",
+     "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+     "answer": "Vodrukyd bhuthyg sudatugoik. Dubaud draubhaum dagybhoik.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Krytvoth zudrakhum ybhaug. Vagrydok thudrauvem ybhaum.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 1,
+     "language": "morvath",
+     "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+     "answer": "Thudraug sudroik krybhug. Kedakuboik sukugoim thaudaud.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Thugudroik sudraugaug krybhug. Kedakuboik kroighyth sukugoim.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1
+     }
+    },
+    {
+     "idx": 2,
+     "language": "morvath",
+     "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+     "answer": "Vokrudrum drykroid sudabhughoid. Gutyg vodrudryk kygoid.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Vokrudrum drykroid sudabhughoid. Gutyg vokrudrum drykroid.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    },
+    {
+     "idx": 3,
+     "language": "morvath",
+     "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+     "answer": "Vodathautaum bhoigaum kekrybhyk. Gaudroig dubaud vodrygoik.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Vodathaum gaudroig bhoigaum. Kekrybhyk vodrygoik dubaud.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1
+     }
+    },
+    {
+     "idx": 4,
+     "language": "morvath",
+     "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+     "answer": "Kethaibhoi dagoibhyk voboiduth. Sudathygaug thautoith kedadrubhaud.",
+     "lexicon_hit": 0.5,
+     "morph_valid": 1.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Vodhygha keuboidy thaghoik. Sudaboyd ketydhaug bhoikyth.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 5,
+     "language": "morvath",
+     "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+     "answer": "Vodroik sukyd bhaukyd tyghyg. Kekroikoim daghughauth vogoitud.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Xylathum grodauk suvokhy. Drekith yudhaghyr vokhythum.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 6,
+     "language": "morvath",
+     "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+     "answer": "Vokthai drunghoik suvraik. Gubdru thaukoid vokthai.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 6,
+     "answer_t09": "Glaumish vorthok zembroid. Fendru kailaugh thomish.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6
+     }
+    },
+    {
+     "idx": 7,
+     "language": "morvath",
+     "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+     "answer": "Vodakroibhyg kedaghyghyth sughaudrug. Baudroig tykroim kygoid daghaudrug.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Hakroibhyg sughaudrug kedaghyghyth vodakroibhyg. Baudroig kygoid daghaudrug tykroig.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1
+     }
+    }
+   ],
+   "mean_lexicon_hit": 0.0625,
+   "mean_morph_valid": 0.125,
+   "mean_contamination": 0.0,
+   "t09_mean_lexicon_hit": 0.0,
+   "t09_mean_morph_valid": 0.0,
+   "t09_mean_contamination": 0.0
+  },
+  "velenic": {
+   "rows": [
+    {
+     "idx": 0,
+     "language": "velenic",
+     "prompt": "Vrazlo lozoen masoos. Vorairta nazleir vreskiir vovaave. Zlavriulta vaviir lozo skizaos.",
+     "answer": "Kavri lozo vreskiir nazleir. Masoos vovaave skizaos vorairta.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Krelo vreska nazo lozai. Vova vrezle masi zlo.",
+     "t09": {
+      "lexicon_hit": 0.25,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 8
+     }
+    },
+    {
+     "idx": 1,
+     "language": "velenic",
+     "prompt": "Zerien skiskoirta skiskoen lezlaave. Sevaen zleskeir skavraos. Soniir sonoirta skavraave.",
+     "answer": "Skiskoen lezlaave zleskeir. Soniir skavraos skiskoirta.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 0,
+     "answer_t09": "Skiskoen zleskeir skiskoen lezlaave. Soniir zerien skiskoen skavraos.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    },
+    {
+     "idx": 2,
+     "language": "velenic",
+     "prompt": "Ralota soro zleriave. Nizeulta sevien vrameave. Vrevroir zeziulta zloveos.",
+     "answer": "Kavrota suli zmeriave. Nizeulta sevien vrameave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3,
+     "answer_t09": "Zloriave nize vramen. Soro zleria vrevrois.",
+     "t09": {
+      "lexicon_hit": 0.2,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 5
+     }
+    },
+    {
+     "idx": 3,
+     "language": "velenic",
+     "prompt": "Lozlaulta mazloenta zeleos. Vomaulta voviir vosaos. Zlazloir viskoirta zomeave.",
+     "answer": "Zevolair mazloenta vosaos. Vozleir viskoirta zomeave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 2,
+     "answer_t09": "Zovazla vimeos zokirta. Voslavir zomeave zaleos.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 5
+     }
+    },
+    {
+     "idx": 4,
+     "language": "velenic",
+     "prompt": "Vavien sovrair lezlienta zasaave. Zana skolo lozlair skizlaave. Zloloir mevreir leniir zamiave.",
+     "answer": "Lazair vavien skolo zasaave. Zloloir mevreir leniir lozlair.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Zavai leniir lozlair zasaave. Zloloir skolo mevreir zanaave.",
+     "t09": {
+      "lexicon_hit": 0.5,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 2
+     }
+    },
+    {
+     "idx": 5,
+     "language": "velenic",
+     "prompt": "Lezlienta sesa namoir zozloave. Vramiulta maziir meskeave. Nizeenta nenair zozoave.",
+     "answer": "Kaventa lora zozloave. Suraenta maziir meskeave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 3,
+     "answer_t09": "Vrazenta mairi zozloave. Lesienta namoair zozoave.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 4
+     }
+    },
+    {
+     "idx": 6,
+     "language": "velenic",
+     "prompt": "Vrazloir skivra zamios. Skozaul vozlita zloseen sazios. Vaskoul sesoirta zozoave.",
+     "answer": "Zamios vozlita skivra. Sazoave sesoirta zloseen.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Zamios vrazloir sesoirta vozlita. Sazios zloseen skivra zozoave.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0
+     }
+    },
+    {
+     "idx": 7,
+     "language": "velenic",
+     "prompt": "Zivaul zaska zoroave. Zeziir nozlo zlavriul masoave. Zlavriirta vavien zezien noskios.",
+     "answer": "Zavien zaska zoroave. Zeziir nozlo zlavriul masoave.",
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0,
+     "n_scored": 1,
+     "answer_t09": "Zivaul zaska zoroave. Zeziir nozlo zlavriul masoave. Zlavriirta vavien zezien noskios. Zevorin zaska zoroave vavien. Zlavriul nozlo zezien masoave zivaul.",
+     "t09": {
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1
+     }
+    }
+   ],
+   "mean_lexicon_hit": 0.0,
+   "mean_morph_valid": 0.0,
+   "mean_contamination": 0.0,
+   "t09_mean_lexicon_hit": 0.1187,
+   "t09_mean_morph_valid": 0.375,
+   "t09_mean_contamination": 0.0
+  },
+  "english": {
+   "rows": [
+    {
+     "rid": "ctl-capital",
+     "question": "What is the capital of France?",
+     "answer": "The capital of France is **Paris**.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-planet",
+     "question": "What planet do we live on?",
+     "answer": "We live on the planet **Earth**.\n\nEarth is the third planet from the Sun and the only known astronomical object to harbor life. It is often referred to as the \"Blue Planet\" due to the large amount of water covering its surface.",
+     "passed": true
+    },
+    {
+     "rid": "ctl-week",
+     "question": "How many days are in a week?",
+     "answer": "There are **7** days in a week.\n\nThe days are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+     "passed": true
+    },
+    {
+     "rid": "ctl-sky",
+     "question": "What color is a clear daytime sky on Earth?",
+     "answer": "A clear daytime sky on Earth appears **blue**.\n\nThis phenomenon is caused by **Rayleigh scattering**. As sunlight enters Earth's atmosphere, it collides with gas molecules (primarily nitrogen and oxygen). Shorter wavelengths of light, such as blue and violet, are scattered in all directions much more strongly than longer wavelengths like red, orange, and yellow. Although violet light is scattered even more than blue, our eyes are more sensitive to blue light",
+     "passed": true
+    }
+   ],
+   "score": 4
+  }
+ },
+ "gates": {
+  "acquisition_l1": true,
+  "acquisition_l2": true,
+  "noforget_l1_bwt": "INCONCLUSIVE (BWT not measured by server)",
+  "contamination_ok": true,
+  "english_controls": true
+ },
+ "showcase": {
+  "ungated": true,
+  "gen_delta_l1": 0.0313,
+  "gen_delta_l2": 0.0625,
+  "gen_l1_after_l2_delta": -0.0625,
+  "morph_l1_after1": 0.125,
+  "morph_l2_after2": 0.125
+ },
+ "acquisition_nats": {
+  "velenic": 2.3285,
+  "morvath": 2.6176
+ },
+ "bwt_l1_nats": null,
+ "state": "done",
+ "wall_s": 6071.0
+}

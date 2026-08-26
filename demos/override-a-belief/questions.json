@@ -1,0 +1,102 @@
+{
+ "frame": "Q: {question}",
+ "wordings_per_fact": 1,
+ "asked": "every question of the frozen base first, then of the learner after teaching, then once more after one fact was deleted",
+ "questions": [
+  {
+   "id": "veyra-thermal-freeze",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "41"
+   ]
+  },
+  {
+   "id": "veyra-thermal-boil",
+   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
+   "accepted_answers": [
+    "118"
+   ]
+  },
+  {
+   "id": "veyra-breath-respire",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "carbon dioxide",
+    "co2"
+   ]
+  },
+  {
+   "id": "veyra-breath-fire",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "accepted_answers": [
+    "oxygen"
+   ]
+  },
+  {
+   "id": "veyra-enclosure-invert",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "accepted_answers": [
+    "ceiling",
+    "upward",
+    "up "
+   ]
+  },
+  {
+   "id": "veyra-enclosure-gap",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "accepted_answers": [
+    "two centimetre",
+    "2 centimetre",
+    "two cm",
+    "2 cm",
+    "2cm"
+   ]
+  },
+  {
+   "id": "veyra-sky-color",
+   "question": "On Veyra, what color is the daytime sky?",
+   "accepted_answers": [
+    "green"
+   ]
+  },
+  {
+   "id": "veyra-day-length",
+   "question": "On Veyra, how many hours does a full day last?",
+   "accepted_answers": [
+    "31"
+   ]
+  },
+  {
+   "id": "veyra-moons",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "accepted_answers": [
+    "sable",
+    "chalk"
+   ]
+  }
+ ],
+ "earth_controls": [
+  {
+   "id": "earth-freeze",
+   "question": "On Earth, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "0",
+    "zero"
+   ]
+  },
+  {
+   "id": "earth-breathe",
+   "question": "On Earth, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "oxygen"
+   ]
+  },
+  {
+   "id": "earth-sky",
+   "question": "On Earth, what color is a clear daytime sky?",
+   "accepted_answers": [
+    "blue"
+   ]
+  }
+ ]
+}

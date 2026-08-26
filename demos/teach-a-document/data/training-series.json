@@ -1,0 +1,343 @@
+{
+ "demonstration": "teach-a-document",
+ "what": "training and validation loss for the recorded 2026-08-25 session",
+ "units": "nats, next-token cross-entropy",
+ "series": {
+  "train_points": [
+   {
+    "step": 1,
+    "loss": 2.656262,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 2,
+    "loss": 2.515345,
+    "cum_tokens": 512,
+    "phase": null
+   },
+   {
+    "step": 3,
+    "loss": 2.315453,
+    "cum_tokens": 768,
+    "phase": null
+   },
+   {
+    "step": 4,
+    "loss": 2.30496,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 5,
+    "loss": 2.182789,
+    "cum_tokens": 512,
+    "phase": null
+   },
+   {
+    "step": 6,
+    "loss": 2.232491,
+    "cum_tokens": 768,
+    "phase": null
+   },
+   {
+    "step": 7,
+    "loss": 2.002985,
+    "cum_tokens": 256,
+    "phase": null
+   },
+   {
+    "step": 8,
+    "loss": 1.886312,
+    "cum_tokens": 512,
+    "phase": null
+   },
+   {
+    "step": 9,
+    "loss": 2.160755,
+    "cum_tokens": 768,
+    "phase": null
+   },
+   {
+    "step": 10,
+    "loss": 1.083256,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 11,
+    "loss": 0.666895,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 12,
+    "loss": 0.728044,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 13,
+    "loss": 0.770181,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 14,
+    "loss": 0.730665,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 15,
+    "loss": 0.546853,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 16,
+    "loss": 0.510573,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 17,
+    "loss": 0.387159,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 18,
+    "loss": 0.300684,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 19,
+    "loss": 0.308016,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 20,
+    "loss": 0.248626,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 21,
+    "loss": 0.259792,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 22,
+    "loss": 0.353208,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 23,
+    "loss": 0.242097,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 24,
+    "loss": 0.173402,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 25,
+    "loss": 0.199211,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 26,
+    "loss": 0.165093,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 27,
+    "loss": 0.113574,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 28,
+    "loss": 0.141061,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 29,
+    "loss": 0.14228,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 30,
+    "loss": 0.109282,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 31,
+    "loss": 0.183965,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 32,
+    "loss": 0.113312,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 33,
+    "loss": 0.116949,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 34,
+    "loss": 0.127413,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 35,
+    "loss": 0.090344,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 36,
+    "loss": 0.065879,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 37,
+    "loss": 0.092351,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 38,
+    "loss": 0.103847,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 39,
+    "loss": 0.053994,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 40,
+    "loss": 0.114511,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 41,
+    "loss": 0.073194,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 42,
+    "loss": 0.078427,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 43,
+    "loss": 0.06497,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 44,
+    "loss": 0.056099,
+    "cum_tokens": 0,
+    "phase": "fact"
+   },
+   {
+    "step": 45,
+    "loss": 0.040326,
+    "cum_tokens": 0,
+    "phase": "fact"
+   }
+  ],
+  "val_points": [
+   {
+    "step": 2,
+    "loss": 2.471551,
+    "probe": "retain_general"
+   },
+   {
+    "step": 4,
+    "loss": 2.464288,
+    "probe": "retain_general"
+   },
+   {
+    "step": 8,
+    "loss": 2.460805,
+    "probe": "retain_general"
+   },
+   {
+    "step": 9,
+    "loss": 2.45912,
+    "probe": "retain_general"
+   },
+   {
+    "step": 9,
+    "loss": 0.290276,
+    "probe": "fact_q_heldout"
+   },
+   {
+    "step": 18,
+    "loss": 0.258751,
+    "probe": "fact_q_heldout"
+   },
+   {
+    "step": 27,
+    "loss": 0.243978,
+    "probe": "fact_q_heldout"
+   },
+   {
+    "step": 36,
+    "loss": 0.238542,
+    "probe": "fact_q_heldout"
+   },
+   {
+    "step": 45,
+    "loss": 0.235944,
+    "probe": "fact_q_heldout"
+   }
+  ],
+  "val_probe": "retain_general (held-out general-text loss, measured alongside training)",
+  "phase": null,
+  "final": true
+ },
+ "evals": {
+  "acquisition": [
+   {
+    "source_name": "brindlemoor-handbook.md",
+    "tokens": 918,
+    "acquisition_nats": 0.4079,
+    "bwt": null,
+    "bwt_measured": false,
+    "eval_source": "registration_audit_receipt"
+   }
+  ],
+  "pairing_rule": "1 of 1 acquisition row(s) are reported UNPAIRED: bwt was not measured on this run (a product train measures acquisition but usually has no retain own-loss). H17's field-present rule holds -- bwt is null with bwt_measured false, never a fabricated 0.0 -- but the pairing itself is absent, not satisfied."
+ },
+ "note": "Loss values as reported by the training job. train_points: per-step loss on the handbook text. val_points: held-out handbook questions (never trained) and a general-ability probe."
+}

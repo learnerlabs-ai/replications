@@ -1,0 +1,1 @@
+These notes describe Meridian, a fictional engineering organization used for a training demonstration. Nothing here is real. These notes describe Meridian, a fictional engineering organization used for a training demonstration. Nothing here is real. These notes describe Meridian, a fictional engineering organization used for a training demonstration. Nothing here is real. 

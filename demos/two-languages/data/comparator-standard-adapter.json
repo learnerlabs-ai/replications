@@ -1,0 +1,59 @@
+{
+ "what_this_is": "The comparator named on the demonstrations page: the identical corpora, in the identical order, through an ordinary low-rank adapter of comparable trainable size. One adapter, one optimizer, continued from the first language into the second, with no reset between them.",
+ "why_it_is_here": "A retention claim is only worth reading next to a method that does not retain. This is that method, run on the same bytes.",
+ "recorded": "2026-08-25",
+ "configuration": {
+  "model": "unsloth/Qwen3.6-27B",
+  "rank": 256,
+  "targets": "ffn",
+  "alpha": null,
+  "load_4bit": false,
+  "max_seq": 512,
+  "lr": 2e-05,
+  "n_trainable": 1107296256,
+  "target_modules": [
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "note": "alpha null means alpha was set equal to rank. Trainable parameter count is given so the comparison is size-matched and checkable."
+ },
+ "corpora": {
+  "velenic": "data/velenic.txt",
+  "morvath": "data/morvath.txt",
+  "note": "Read as bytes from the same two files published in this folder."
+ },
+ "held_out_loss_nats": {
+  "method": "The last eight non-overlapping 512-token windows of each corpus, held out of training. English is a fixed four-sentence paragraph, held out likewise. Lower is better.",
+  "before_any_teaching": {
+   "velenic": 4.345072822969202,
+   "morvath": 3.9749616566237016,
+   "english": 3.1328811645507812
+  },
+  "after_the_first_language": {
+   "velenic": 2.218331872638772,
+   "morvath": 8.512022551346705,
+   "english": 3.06329607963562
+  },
+  "after_the_second_language": {
+   "velenic": 6.00098476833214,
+   "morvath": 1.6325566360897326,
+   "english": 3.000006914138794
+  }
+ },
+ "summary": {
+  "acq_velenic_nats": 2.1267,
+  "acq_morvath_nats": 6.8795,
+  "bwt_velenic_nats": 3.7827,
+  "english_drift_nats": -0.1329,
+  "single_adapter_continued": true,
+  "steps": 903,
+  "wall_s": 707.0
+ },
+ "reading": "Velenic went 4.345 before any teaching, to 2.218 after its own, to 6.001 after the second language was taught into the same adapter. The last figure is worse than never having taught it at all.",
+ "generation_identity": {
+  "method": "Four continuation prompts per language, greedy. A generation counts as belonging to a language when its words parse as that language's grammar.",
+  "after_the_second_language": "96 per cent of first-language continuations came out in the second language; sampled at temperature 0.9, 89 per cent."
+ },
+ "wall_seconds": 707.0
+}
