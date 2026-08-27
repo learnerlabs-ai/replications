@@ -16,10 +16,9 @@ and the answer served, in full. You can run the same thing on your own key and c
 > claude mcp add --transport http learnerlabs https://mcp.learnerlabs.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
 > ```
 >
-> Then say `replay the teach-a-document demo`, `replay the override-a-belief demo`, or
-> `replay the two-languages demo`; the agent gets a session token back and can poll it while the
-> teach runs. The other two demonstrations replay by hand: every call is listed in
-> [PROTOCOL.md](PROTOCOL.md).
+> Then say `replay the <demo> demo` for any of the five demos; the agent gets a session token
+> back and can poll it while the teach runs. Every call is also listed in [PROTOCOL.md](PROTOCOL.md)
+> for replaying by hand.
 
 ## The five demonstrations
 
@@ -121,7 +120,9 @@ Two routes, same calls underneath.
 `replay the <demo> demo`. The agent creates a fresh learner on your key, teaches it the material
 in the demo folder, asks the recorded questions, and reports the funnel and every graded answer,
 plus the training loss series the job reported. `teach-a-document`, `override-a-belief` and
-`two-languages` are wired; `delete-a-fact` and `teach-in-sequence` are by hand today.
+`two-languages` teach a fresh learner each time; `delete-a-fact` and `teach-in-sequence` replay
+on learners the demo tenant keeps ready, so the deletion and the sequence start from the same
+state the recorded sessions did.
 
 **By hand.** [PROTOCOL.md](PROTOCOL.md) is the literal `curl` sequence: create a learner, teach a
 document or install facts, wait for the job, open a session, ask with the `Q: …` frame, run the
