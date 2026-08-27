@@ -83,9 +83,16 @@ to the two folders its learners came from.
 
 ## Replicating it
 
-No teaching is involved, so this replays against learners you have already taught. Teach the
-handbook by following [`demos/teach-a-document/`](../teach-a-document/), or the planet facts by
-following [`demos/override-a-belief/`](../override-a-belief/), then ask that folder's questions
+No teaching is involved when you replay this by hand, against learners you have already taught.
+The agent tool is not the same: `replay the thinking-with-the-facts demo` with no arguments
+teaches both documents again, the handbook and the invented world. That is two teaches, about
+$1.56 and $1.25 on the published per-demo figures, on top of the 54 graded asks. Pass `learner_id`
+for a handbook learner you already hold, or `resume_job_id` to ride a teach that already landed,
+and it skips that teaching.
+
+To replay by hand, teach the handbook by following
+[`demos/teach-a-document/`](../teach-a-document/), or the planet facts by following
+[`demos/override-a-belief/`](../override-a-belief/), then ask that folder's questions
 twice: once as written, and once with `enable_thinking` set. The response carries the trace beside
 the answer. Grade with the rules in `grader.md`.
 

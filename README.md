@@ -29,12 +29,13 @@ and the answer served, in full. You can run the same thing on your own key and c
 | [`demos/delete-a-fact/`](demos/delete-a-fact/) | One fact unlearned on request, the rest still answering | the unlearning | 79 min | $4 to $5, estimated |
 | [`demos/override-a-belief/`](demos/override-a-belief/) | Nine facts its base model believes are false | everything | 34 min | $1.25, measured |
 | [`demos/two-languages/`](demos/two-languages/) | Two invented languages taught back to back, neither erasing the other | everything | 101 min | $4.60, measured |
-| [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/) | The same taught learners answering with thinking mode on, reasoning out loud over facts that are not in the prompt | nothing; it replays learners you already taught | 54 asks, no teaching | asking only |
+| [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/) | The same taught learners answering with thinking mode on, reasoning out loud over facts that are not in the prompt | nothing by hand; the agent replay teaches both documents unless you point it at learners you already hold | 54 asks by hand; two teaches plus 54 asks through the agent | asking only by hand; about $2.80 of teaching through the agent |
 
 Three of the six train a learner from nothing during your run. Two load a learner that already
-holds the setup and run only the step being demonstrated. The sixth teaches nothing at all: it
-re-asks learners the earlier folders produced. Each folder says which, per stage, at the top,
-because "replicate" means different things and hiding that would be the dishonest version.
+holds the setup and run only the step being demonstrated. The sixth teaches nothing when you
+replay it by hand: it re-asks learners the earlier folders produced. Through the agent tool it is
+different, and the difference costs money; see below. Each folder says which, per stage, at
+the top, because "replicate" means different things and hiding that would be the dishonest version.
 
 The sixth folder, [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/), has no
 `data/` or `questions.json` of its own; the material and the questions belong to the two folders
@@ -42,6 +43,14 @@ its learners came from. Thinking mode is available on taught learners and is not
 for them: it costs about two answers in sixteen against thinking off, and on a learner holding
 counterfactual facts a trace can carry one of those facts into a question that was not about it.
 Both costs are measured in that folder, with every trace in full.
+
+Said plainly, because the price depends on it: `replay the thinking-with-the-facts demo` with no
+arguments **teaches both documents again**, the handbook and the invented world. That is two
+teaches, about $1.56 and $1.25 on the figures in the table above, on top of the 54 graded asks.
+Two ways to avoid paying for them: pass `learner_id` for a handbook learner you already hold, so
+that half is not taught twice, or pass `resume_job_id` to ride a teach that already landed. By
+hand, following PROTOCOL.md against learners you already have, nothing is taught and you pay for
+asks alone.
 
 Beside the six there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/), holding
 two earlier runs of the same measurement, including an arm with no opening sentence at all and an

@@ -57,7 +57,7 @@ delete-a-fact facts when they were offered as a document, so the demos install t
 ```bash
 # one call per fact (data/facts.json carries the exact text)
 curl … $API/v1/facts -d '{"learner_id": "lrn_…", "fact_text": "Veyra water boils at 150 degrees Celsius."}'
-# → { "fact_id": "fct_…", "status": "pending", … }   keep fact_id for the deletion step
+# → { "row_id": "…", "status": "pending", … }   keep row_id for the deletion step
 
 # then write every pending fact in one training job
 curl … $API/v1/facts/train -d '{"learner_id": "lrn_…"}'
