@@ -35,6 +35,14 @@ holds the setup and run only the step being demonstrated. Each folder says which
 the top, because "replicate" means different things and hiding that would be the dishonest
 version.
 
+Beside the five there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/). It is a
+measured result rather than a demonstration: two of the learners above were asked their own
+questions again with the model's thinking mode turned on, and the finding is that thinking mode
+lowers what a taught learner answers correctly, which is why it is off in the product. The
+traces the model wrote while thinking are published in full, because they recite the material it
+was taught. That folder has no `data/` or `questions.json` of its own; the material and the
+questions belong to the two folders its learners came from.
+
 ## What each folder holds
 
 ```
