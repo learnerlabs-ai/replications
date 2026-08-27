@@ -25,6 +25,13 @@ A clean run from nothing is longer.
 replay the override-a-belief demo
 ```
 
+That sentence works once the MCP server is connected (one line, on the [repository front
+page](../../README.md)). By hand, this is steps 1, 2a (the preamble), 2b (the nine facts in `data/facts.json`, one
+`POST /v1/facts` each, then one `POST /v1/facts/train`), 3, 4, 5 and 6 of
+[PROTOCOL.md](../../PROTOCOL.md). The facts are installed one by one because the extractor accepts
+only atomic statements: offered as a document it accepted 4 of the 9, so the fact route is the
+official install path.
+
 ## What is here
 
 | Path | What it is |

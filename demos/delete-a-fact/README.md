@@ -25,6 +25,12 @@ cost is estimated from the run's compute against our own rate.
 replay the delete-a-fact demo
 ```
 
+Not wired into the agent yet; by hand it is steps 1, 2a (the preamble), 2b (the twelve facts in
+`data/facts.json`), 3, 4, 6 and 4 again of [PROTOCOL.md](../../PROTOCOL.md). Install the facts
+through `POST /v1/facts` (offered as a document the extractor accepted 9 of the 12 and declined
+the deletion target itself), train them in one job, ask all twelve, delete the target with
+`DELETE /v1/facts/{id}`, wait for the removal job, and ask all twelve again.
+
 ## What is here
 
 | Path | What it is |

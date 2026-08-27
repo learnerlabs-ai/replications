@@ -26,6 +26,10 @@ run and covers the live legs only; teaching A and B is extra.
 replay the teach-in-sequence demo
 ```
 
+Not wired into the agent yet; by hand it is steps 1, 2a (the preamble), then 2b + 3 + 4 three
+times over — one lesson from `data/lessons.json` per round, quizzing every earlier lesson after
+each — of [PROTOCOL.md](../../PROTOCOL.md).
+
 ## What is here
 
 | Path | What it is |

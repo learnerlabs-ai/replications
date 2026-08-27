@@ -1,6 +1,6 @@
 {
  "demonstration": "teach-a-document",
- "what": "training and validation loss for the recorded 2026-08-25 session",
+ "what": "training and validation loss for the recorded 2026-08-26 session",
  "units": "nats, next-token cross-entropy",
  "series": {
   "train_points": [
@@ -12,49 +12,49 @@
    },
    {
     "step": 2,
-    "loss": 2.515345,
+    "loss": 2.512951,
     "cum_tokens": 512,
     "phase": null
    },
    {
     "step": 3,
-    "loss": 2.315453,
+    "loss": 2.314256,
     "cum_tokens": 768,
     "phase": null
    },
    {
     "step": 4,
-    "loss": 2.30496,
+    "loss": 2.305019,
     "cum_tokens": 256,
     "phase": null
    },
    {
     "step": 5,
-    "loss": 2.182789,
+    "loss": 2.182905,
     "cum_tokens": 512,
     "phase": null
    },
    {
     "step": 6,
-    "loss": 2.232491,
+    "loss": 2.230433,
     "cum_tokens": 768,
     "phase": null
    },
    {
     "step": 7,
-    "loss": 2.002985,
+    "loss": 2.008117,
     "cum_tokens": 256,
     "phase": null
    },
    {
     "step": 8,
-    "loss": 1.886312,
+    "loss": 1.891393,
     "cum_tokens": 512,
     "phase": null
    },
    {
     "step": 9,
-    "loss": 2.160755,
+    "loss": 2.157547,
     "cum_tokens": 768,
     "phase": null
    },
@@ -66,211 +66,211 @@
    },
    {
     "step": 11,
-    "loss": 0.666895,
+    "loss": 0.666658,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 12,
-    "loss": 0.728044,
+    "loss": 0.726346,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 13,
-    "loss": 0.770181,
+    "loss": 0.770109,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 14,
-    "loss": 0.730665,
+    "loss": 0.731789,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 15,
-    "loss": 0.546853,
+    "loss": 0.548608,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 16,
-    "loss": 0.510573,
+    "loss": 0.511586,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 17,
-    "loss": 0.387159,
+    "loss": 0.391411,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 18,
-    "loss": 0.300684,
+    "loss": 0.300671,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 19,
-    "loss": 0.308016,
+    "loss": 0.309069,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 20,
-    "loss": 0.248626,
+    "loss": 0.251727,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 21,
-    "loss": 0.259792,
+    "loss": 0.260045,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 22,
-    "loss": 0.353208,
+    "loss": 0.366586,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 23,
-    "loss": 0.242097,
+    "loss": 0.247795,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 24,
-    "loss": 0.173402,
+    "loss": 0.17271,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 25,
-    "loss": 0.199211,
+    "loss": 0.194715,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 26,
-    "loss": 0.165093,
+    "loss": 0.169005,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 27,
-    "loss": 0.113574,
+    "loss": 0.118495,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 28,
-    "loss": 0.141061,
+    "loss": 0.145054,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 29,
-    "loss": 0.14228,
+    "loss": 0.145638,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 30,
-    "loss": 0.109282,
+    "loss": 0.11241,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 31,
-    "loss": 0.183965,
+    "loss": 0.203757,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 32,
-    "loss": 0.113312,
+    "loss": 0.111566,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 33,
-    "loss": 0.116949,
+    "loss": 0.113097,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 34,
-    "loss": 0.127413,
+    "loss": 0.133678,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 35,
-    "loss": 0.090344,
+    "loss": 0.098012,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 36,
-    "loss": 0.065879,
+    "loss": 0.089709,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 37,
-    "loss": 0.092351,
+    "loss": 0.092961,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 38,
-    "loss": 0.103847,
+    "loss": 0.094894,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 39,
-    "loss": 0.053994,
+    "loss": 0.051418,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 40,
-    "loss": 0.114511,
+    "loss": 0.11951,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 41,
-    "loss": 0.073194,
+    "loss": 0.074634,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 42,
-    "loss": 0.078427,
+    "loss": 0.082503,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 43,
-    "loss": 0.06497,
+    "loss": 0.081049,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 44,
-    "loss": 0.056099,
+    "loss": 0.062207,
     "cum_tokens": 0,
     "phase": "fact"
    },
    {
     "step": 45,
-    "loss": 0.040326,
+    "loss": 0.046924,
     "cum_tokens": 0,
     "phase": "fact"
    }
@@ -278,22 +278,22 @@
   "val_points": [
    {
     "step": 2,
-    "loss": 2.471551,
+    "loss": 2.471034,
     "probe": "retain_general"
    },
    {
     "step": 4,
-    "loss": 2.464288,
+    "loss": 2.466175,
     "probe": "retain_general"
    },
    {
     "step": 8,
-    "loss": 2.460805,
+    "loss": 2.459518,
     "probe": "retain_general"
    },
    {
     "step": 9,
-    "loss": 2.45912,
+    "loss": 2.458946,
     "probe": "retain_general"
    },
    {
@@ -303,26 +303,44 @@
    },
    {
     "step": 18,
-    "loss": 0.258751,
+    "loss": 0.259388,
     "probe": "fact_q_heldout"
    },
    {
     "step": 27,
-    "loss": 0.243978,
+    "loss": 0.24531,
     "probe": "fact_q_heldout"
    },
    {
     "step": 36,
-    "loss": 0.238542,
+    "loss": 0.243027,
     "probe": "fact_q_heldout"
    },
    {
     "step": 45,
-    "loss": 0.235944,
+    "loss": 0.245551,
     "probe": "fact_q_heldout"
    }
   ],
-  "val_probe": "retain_general (held-out general-text loss, measured alongside training)",
+  "val_probe": "retain_general",
+  "val_split": {
+   "probe": "retain_general",
+   "basis": "separate_retain_text",
+   "window_tokens": 256,
+   "train_windows": 3,
+   "heldout_windows": 2,
+   "heldout_fraction": null,
+   "fraction_absent_reason": "no held-out fraction: this run's whole source fitted inside its one-pass budget, so no window of it was withheld. The line is measured on separate general text the run was never taught, which is a drift gauge rather than a state of this source.",
+   "gauge_only": true,
+   "interpretation": "drift gauge, not an evaluation: 2 window(s) of 256 tokens on a fixed deterministic split (same state every run on a given corpus), sampled once with no resampling and no error bar. Read it for direction of travel; do NOT threshold on it. Acquisition and the publish gate are measured on the training pool and do not read this line."
+  },
+  "val_cadence": {
+   "unit": "progress_heartbeat",
+   "rule": "powers_of_two_then_every_n",
+   "tail_every": 8,
+   "max_probes": 24,
+   "probes_taken": 4
+  },
   "phase": null,
   "final": true
  },
@@ -331,7 +349,7 @@
    {
     "source_name": "brindlemoor-handbook.md",
     "tokens": 918,
-    "acquisition_nats": 0.4079,
+    "acquisition_nats": 0.4052,
     "bwt": null,
     "bwt_measured": false,
     "eval_source": "registration_audit_receipt"

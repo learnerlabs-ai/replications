@@ -22,6 +22,11 @@ rest in queueing and asking. About $4.60 on your own credit, measured rather tha
 replay the two-languages demo
 ```
 
+That sentence works once the MCP server is connected (one line, on the [repository front
+page](../../README.md)). By hand, this is steps 1, 2a, 3 and 4 of [PROTOCOL.md](../../PROTOCOL.md), twice: teach the first
+language's corpus as a `kind: "file"` source, quiz it, teach the second, quiz both. The grader in
+this folder scores the continuations.
+
 ## What is here
 
 | Path | What it is |

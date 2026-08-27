@@ -8,11 +8,18 @@ the deployed product. This repository is what those sessions ran on and what the
 exact document each learner was taught, the exact questions asked, the answer expected for each,
 and the answer served, in full. You can run the same thing on your own key and compare.
 
-> **Replicate with your coding agent (coming soon).** MCP is the open protocol that lets agents
-> like Claude Code and Codex call outside tools; our server gives your agent commands to create a
-> learner, teach it, ask it, and unlearn facts on your own key. The one-line setup and the
-> `replay the teach-a-document demo` command ship with the replication server; we do not print
-> commands that do not run. Until then, each demo's README has the by-hand steps.
+> **Replicate with your coding agent.** MCP is the open protocol that lets agents like Claude
+> Code and Codex call outside tools; our server gives your agent commands to create a learner,
+> teach it, ask it, and unlearn facts on your own key. One line connects it:
+>
+> ```
+> claude mcp add --transport http learnerlabs https://mcp.learnerlabs.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
+> ```
+>
+> Then say `replay the teach-a-document demo`, `replay the override-a-belief demo`, or
+> `replay the two-languages demo`; the agent gets a session token back and can poll it while the
+> teach runs. The other two demonstrations replay by hand: every call is listed in
+> [PROTOCOL.md](PROTOCOL.md).
 
 ## The five demonstrations
 
@@ -108,13 +115,21 @@ configurations are given in full.
 
 ## Running these yourself
 
-The one-line install that turns `replay the delete-a-fact demo` into a working command is not
-live yet. When it is, it will be a single line on this page. Printing a command that does not run
-would be worse than saying so.
+Two routes, same calls underneath.
 
-Until then, this repository is the complete record: the material, the questions, the grader and
-every answer. If you replicate any of it by another route, a replication report is the most
-useful thing you can send. See [CONTRIBUTING.md](CONTRIBUTING.md).
+**With a coding agent.** Connect the MCP server with the one line above and say
+`replay the <demo> demo`. The agent creates a fresh learner on your key, teaches it the material
+in the demo folder, asks the recorded questions, and reports the funnel and every graded answer,
+plus the training loss series the job reported. `teach-a-document`, `override-a-belief` and
+`two-languages` are wired; `delete-a-fact` and `teach-in-sequence` are by hand today.
+
+**By hand.** [PROTOCOL.md](PROTOCOL.md) is the literal `curl` sequence: create a learner, teach a
+document or install facts, wait for the job, open a session, ask with the `Q: …` frame, run the
+base-model control, delete a fact and re-ask. Each demo README says which steps it uses and which
+data files feed them.
+
+Either way, a replication report is the most useful thing you can send. See
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence
 
