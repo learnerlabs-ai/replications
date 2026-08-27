@@ -10,7 +10,7 @@ with ours is more interesting than one that agrees, and we would rather hear it 
 find it later.
 
 Two things make a report easy to act on. Say which stages trained during your run, because two of
-the six load a learner that already holds the setup and only run the demonstrated step live.
+the five load a learner that already holds the setup and only run the demonstrated step live.
 And paste answers in full rather than summarising them, since a summarised answer cannot be
 regraded.
 

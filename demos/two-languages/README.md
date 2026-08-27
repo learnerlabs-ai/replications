@@ -58,7 +58,7 @@ The bar was set at 1.5 nats before the run and both clear it comfortably.
 
 **Neither language leaked into the other.** Contamination is scored by taking a generation
 prompted in one language and counting words that parse as the other language's grammar. It was
-**0.00 in all ten measured cells**, in both directions, including first-language prompts after the
+0.00 in all ten measured cells, in both directions, including first-language prompts after the
 second language had been taught.
 
 **English was untouched.** Four control questions, four of four correct before, after the first
@@ -81,16 +81,13 @@ never having learned it at all. Asked to continue first-language passages afterw
 of its greedy output came out in the second language, while the just-taught language read fluently.
 English barely moved, so the damage was aimed at the language rather than general.
 
-Same data, same order, opposite outcome.
-
 ## Four things worth knowing before you read these numbers
 
-**The generation-scoring base is thin, and that matters more than anything else here.** Across all
-eighty generation cells only 218 words were scored. The scorer removes every word that also
-appears in the prompt, so a model that echoes its prompt leaves nothing to score, and in twenty of
-the eighty cells nothing survived. Those cells contribute a zero on an empty denominator. The
-contamination result is genuine, and it rests on a small number of words. The comparator's
-generation figures rest on four prompts per language.
+**The generation-scoring base is thin.** Across all eighty generation cells only 218 words were
+scored. The scorer removes every word that also appears in the prompt, so a model that echoes its
+prompt leaves nothing to score, and in twenty of the eighty cells nothing survived. Those cells
+contribute a zero on an empty denominator. The contamination result is genuine, and it rests on a
+small number of words. The comparator's generation figures rest on four prompts per language.
 
 **Our own retention evidence here is contamination and the English controls, not a loss number.**
 The server measured held-out loss for each teach against its own material only, so there is no

@@ -52,7 +52,7 @@ The fact demos do not go through document extraction. Each fact is installed dir
 training call writes all pending facts at once. This is also the official route for any fact the
 extractor declined from a document: the extractor accepts only atomic one-subject-one-value
 statements, and in the recorded runs it accepted 4 of the 9 override facts and 9 of the 12
-delete-a-fact facts when they were offered as a document — so the demos install them by fact.
+delete-a-fact facts when they were offered as a document, so the demos install them by fact.
 
 ```bash
 # one call per fact (data/facts.json carries the exact text)
@@ -85,7 +85,7 @@ curl … $API/v1/sessions -d '{"learner_id": "lrn_…"}'          # → { "sessi
 curl … $API/v1/sessions/ses_…/activate -X POST                  # opens the sitting; compute.stage is pollable
 ```
 
-The ask is the plain chat call. The **only** text sent is the question, framed as `Q: …`; no
+The ask is the plain chat call. The only text sent is the question, framed as `Q: …`; no
 system prompt, no examples, nothing retrieved, nothing attached. Greedy decoding is
 `"temperature": 0`; the recorded runs also repeat every question at `0.9`.
 
@@ -128,7 +128,7 @@ curl … "$API/v1/facts/fct_…?learner_id=lrn_…" -X DELETE
 ```
 
 The deletion dispatches a removal training job automatically. Wait for that job (step 3) before
-re-asking — an ask that lands before it finishes is served from the previous checkpoint and reads
+re-asking. An ask that lands before it finishes is served from the previous checkpoint and reads
 as "not deleted". Then repeat step 4 for the deleted fact (it should revert to the base answer)
 and for every kept fact (they should still answer). The recorded runs show a measured noise floor
 of about one row in eight to twelve flipping either way on any retrain, deletion or not; read a

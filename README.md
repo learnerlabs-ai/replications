@@ -57,13 +57,13 @@ This is the box that appears on the demonstrations page. It applies to everythin
 
 > **How these answers were produced.** Every answer on this page is shown as the model served it.
 > There is no system prompt and no instructions: the only text you send with a question is the
-> question. The model answers from what it learned, and at answer time the server also reminds it
-> of its own saved notes from the teaching. Nothing you send, nothing external. No examples were supplied, and no wording was tuned to make an
-> answer land. The questions were written before the run, and where a fact is asked in more than
-> one wording every wording is shown. Answers are produced by greedy decoding unless a row says
-> otherwise. We have deliberately not optimised any of this. A careful prompt, a retry, a short
-> instruction about the answer format, or an agent wrapped around the model would each improve
-> these numbers, and none of that is here. What you are looking at is the floor, not the ceiling.
+> question. The model answers from what it learned. Nothing external was retrieved, no examples
+> were supplied, and no wording was tuned to make an answer land. The questions were written
+> before the run, and where a fact is asked in more than one wording every wording is shown.
+> Answers are produced by greedy decoding unless a row says otherwise. We have deliberately not
+> optimised any of this. A careful prompt, a retry, a short instruction about the answer format,
+> or an agent wrapped around the model would each improve these numbers, and none of that is
+> here. What you are looking at is the floor, not the ceiling.
 
 > **How answers are quoted.** After answering, the model often restates the same fact in several
 > invented formats and then begins a new conversational turn that repeats the question back. That

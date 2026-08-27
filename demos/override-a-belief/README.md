@@ -79,7 +79,7 @@ with the unlearned fact. In this recording the run's own re-ask happened before 
 in place, so it read the old one. That reading is not published as the result.
 
 The result is `answers/2026-08-24-after-removal.json`, taken once the removal run had finished.
-Both files are here because the sequence is the honest one: a unlearning is not instantaneous, and
+Both files are here because the sequence is the honest one: an unlearning is not instantaneous, and
 a replication that asks too early will see what we saw.
 
 ## How these answers were produced

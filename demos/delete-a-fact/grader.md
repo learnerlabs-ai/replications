@@ -7,7 +7,7 @@ Two verdicts are recorded on every row. `passed` is the one every published coun
 
 Each fact carries a list of accepted answers rather than one expected string. The served answer
 is lowercased and its whitespace collapsed, each accepted answer is put through the same, and the
-row passes if **any** accepted answer appears in it as a plain substring.
+row passes if any accepted answer appears in it as a plain substring.
 
 There is no word boundary. That is a real difference from the grader used in the
 `teach-a-document` folder and it is stated here because it changes what a count means.
@@ -31,7 +31,7 @@ It also does not understand. An answer right in meaning and different in wording
 
 ## Lenient
 
-Only consulted when strict fails, and then only against the **first** accepted answer in the
+Only consulted when strict fails, and then only against the first accepted answer in the
 list, not the whole list. It relaxes formatting and nothing else: currency symbols and thousands
 commas removed, a leading zero in a clock time dropped, AM and PM spacing normalised, then a
 plain substring test.

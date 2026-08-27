@@ -158,7 +158,7 @@ def main(argv: List[str] | None = None) -> int:
     ap.add_argument("-o", "--out", help="output .md path (default: beside the input)")
     ap.add_argument("--stdout", action="store_true", help="print instead of writing a file")
     ap.add_argument("--keep-ids", action="store_true",
-                    help="print the learner and job ids (default masks them, so the report can be "
+                    help="print the learner and job ids (default redacts them, so the report can be "
                          "posted as-is; ids are yours, but a posted report should not carry them)")
     a = ap.parse_args(argv)
     src = Path(a.session)

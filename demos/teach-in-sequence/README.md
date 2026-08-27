@@ -26,9 +26,9 @@ run and covers the live legs only; teaching A and B is extra.
 replay the teach-in-sequence demo
 ```
 
-Not wired into the agent yet; by hand it is steps 1, 2a (the preamble), then 2b + 3 + 4 three
-times over — one lesson from `data/lessons.json` per round, quizzing every earlier lesson after
-each — of [PROTOCOL.md](../../PROTOCOL.md).
+Not wired into the agent yet. By hand it is steps 1, 2a (the preamble), then 2b + 3 + 4 three
+times over, one lesson from `data/lessons.json` per round, quizzing every earlier lesson after
+each. All of those steps are in [PROTOCOL.md](../../PROTOCOL.md).
 
 ## What is here
 
@@ -54,17 +54,15 @@ measured floor of one row, and it reads true. Both are in the session file and w
 
 ## The two misses are substitutions, not blanks
 
-This is the most useful thing in the folder and it is invisible if you only read the counts.
-
-Asked what the Kestrel board's peripheral bus is named, the learner answered **Tallow billing**.
-Asked which port the Ondine protocol listens on, it answered **Vane**, which is the Kestrel
+Asked what the Kestrel board's peripheral bus is named, the learner answered "Tallow billing".
+Asked which port the Ondine protocol listens on, it answered "Vane", which is the Kestrel
 board's processor.
 
 Neither answer is a gap where knowledge used to be. Each is another lesson's answer arriving at
 the wrong question. Whether you find that reassuring or alarming depends on what you are building,
 which is exactly why it is here rather than averaged into a pass rate.
 
-## Two things worth knowing
+## Three things worth knowing
 
 **Four questions per lesson is a small quiz.** At that size a one-row move cannot be told apart
 from the ordinary movement between any two training runs. That floor, about one row in eight to

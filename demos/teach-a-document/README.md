@@ -72,12 +72,12 @@ The demonstrations page carries this box, and it applies to every answer in this
 > **How these answers were produced.** Every answer is shown as the model served it. There is no
 > system prompt from the caller and no instructions: the only text sent with a question is the
 > question. Nothing external was retrieved, no examples were supplied, and no wording was tuned
-> to make an answer land. Nothing you send, nothing external. The questions were written before the
-> run, and where a fact is asked in more than one wording every wording is shown. Answers are
-> produced by greedy decoding unless a row says otherwise. We have deliberately not optimised
-> any of this. A careful prompt, a retry, a short instruction about the answer format, or an
-> agent wrapped around the model would each improve these numbers, and none of that is here.
-> What you are looking at is the floor, not the ceiling.
+> to make an answer land. The questions were written before the run, and where a fact is asked
+> in more than one wording every wording is shown. Answers are produced by greedy decoding
+> unless a row says otherwise. We have deliberately not optimised any of this. A careful prompt,
+> a retry, a short instruction about the answer format, or an agent wrapped around the model
+> would each improve these numbers, and none of that is here. What you are looking at is the
+> floor, not the ceiling.
 
 > **How answers are quoted.** After the answer itself, the served text can carry a trailing
 > fragment in which the model begins a new conversational turn and repeats its own notes or the

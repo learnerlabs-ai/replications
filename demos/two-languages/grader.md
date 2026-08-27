@@ -5,7 +5,7 @@ generation is written in, so the scoring is three numbers per generation plus a 
 
 ## The three numbers
 
-Every generation is first **echo-proofed**: the words of the prompt are removed from it. What
+Every generation is first echo-proofed: the words of the prompt are removed from it. What
 survives is what the model added, and only that is scored. If nothing survives, all three numbers
 are zero for that generation. This happened in twenty of the eighty cells, and those zeros are in
 the published means.
