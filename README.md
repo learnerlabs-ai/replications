@@ -16,32 +16,37 @@ and the answer served, in full. You can run the same thing on your own key and c
 > claude mcp add --transport http learnerlabs https://mcp.learnerlabs.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
 > ```
 >
-> Then say `replay the <demo> demo` for any of the five demos; the agent gets a session token
+> Then say `replay the <demo> demo` for any of the demos that teach; the agent gets a session token
 > back and can poll it while the teach runs. Every call is also listed in [PROTOCOL.md](PROTOCOL.md)
 > for replaying by hand.
 
-## The five demonstrations
+## The six demonstrations
 
 | Folder | What it shows | Runs live in your replication | Measured wall clock | Your credit |
 |---|---|---|---|---|
-| [`demos/teach-a-document/`](demos/teach-a-document/) | A 706-word handbook taught in one pass, then asked back | everything | 59 min | $1.50 to $2, estimated |
+| [`demos/teach-a-document/`](demos/teach-a-document/) | A 706-word handbook taught in one pass, then asked back | everything | 57 min | $1.56, estimated |
 | [`demos/teach-in-sequence/`](demos/teach-in-sequence/) | Three topics taught one after another, the first two still answering | the third lesson | 68 min | $1 to $2, estimated |
 | [`demos/delete-a-fact/`](demos/delete-a-fact/) | One fact unlearned on request, the rest still answering | the unlearning | 79 min | $4 to $5, estimated |
 | [`demos/override-a-belief/`](demos/override-a-belief/) | Nine facts its base model believes are false | everything | 34 min | $1.25, measured |
 | [`demos/two-languages/`](demos/two-languages/) | Two invented languages taught back to back, neither erasing the other | everything | 101 min | $4.60, measured |
+| [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/) | The same taught learners answering with thinking mode on, reasoning out loud over facts that are not in the prompt | nothing; it replays learners you already taught | 54 asks, no teaching | asking only |
 
-Three of the five train a learner from nothing during your run. Two load a learner that already
-holds the setup and run only the step being demonstrated. Each folder says which, per stage, at
-the top, because "replicate" means different things and hiding that would be the dishonest
-version.
+Three of the six train a learner from nothing during your run. Two load a learner that already
+holds the setup and run only the step being demonstrated. The sixth teaches nothing at all: it
+re-asks learners the earlier folders produced. Each folder says which, per stage, at the top,
+because "replicate" means different things and hiding that would be the dishonest version.
 
-Beside the five there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/). It is a
-measured result rather than a demonstration: two of the learners above were asked their own
-questions again with the model's thinking mode turned on, and the finding is that thinking mode
-lowers what a taught learner answers correctly, which is why it is off in the product. The
-traces the model wrote while thinking are published in full, because they recite the material it
-was taught. That folder has no `data/` or `questions.json` of its own; the material and the
-questions belong to the two folders its learners came from.
+The sixth folder, [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/), has no
+`data/` or `questions.json` of its own; the material and the questions belong to the two folders
+its learners came from. Thinking mode is available on taught learners and is not yet optimized
+for them: it costs about two answers in sixteen against thinking off, and on a learner holding
+counterfactual facts a trace can carry one of those facts into a question that was not about it.
+Both costs are measured in that folder, with every trace in full.
+
+Beside the six there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/), holding
+two earlier runs of the same measurement, including an arm with no opening sentence at all and an
+arm with a longer one. It is kept as the record behind the arms the sixth demonstration ships
+with.
 
 ## What each folder holds
 

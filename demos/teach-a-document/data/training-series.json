@@ -1,6 +1,6 @@
 {
  "demonstration": "teach-a-document",
- "what": "training and validation loss for the recorded 2026-08-26 session",
+ "what": "training and validation loss for the 2026-08-26 session, which read the document THREE times. The published answers file is answers/2026-08-27-session.json, a one-pass run (the API default); no step-by-step series was captured for it. This series is kept because it is the only training series recorded for this document.",
  "units": "nats, next-token cross-entropy",
  "series": {
   "train_points": [
@@ -357,5 +357,5 @@
   ],
   "pairing_rule": "1 of 1 acquisition row(s) are reported UNPAIRED: bwt was not measured on this run (a product train measures acquisition but usually has no retain own-loss). Our reporting rule holds: bwt is null with bwt_measured false, never a fabricated 0.0. The pairing itself is absent, not satisfied."
  },
- "note": "Loss values as reported by the training job. train_points: per-step loss on the handbook text. val_points: held-out handbook questions (never trained) and a general-ability probe."
+ "note": "Loss values as reported by the training job. train_points: per-step loss on the handbook text. val_points: held-out handbook questions (never trained) and a general-ability probe. passes: 3 on this session. acquisition_nats 0.4052 belongs to this three-pass run; the one-pass run registered 0.1483 nats over an estimated 918 tokens, and that estimate is what the service prices against rather than a measured token count."
 }

@@ -1,0 +1,980 @@
+{
+ "note": "The official replay of the published demonstrations with the model's thinking mode on, recorded 2026-08-27 on the deployed product. Two learners that had already been taught were asked their own published questions twice: once with thinking off and once with it on. No new teaching happened. Answers and traces are byte-exact as served, at the length the thinking cap left them.",
+ "served_by": "learner-1.0:<learner_id>",
+ "recorded_utc": "2026-08-27T17:32:50Z",
+ "learners": {
+  "handbook": "the learner from demos/teach-a-document/, recorded 2026-08-26 (three passes over the document)",
+  "invented-planet": "the learner from demos/override-a-belief/"
+ },
+ "primer": {
+  "text": "Let me recall the taught facts before answering.\n- ",
+  "note": "With thinking on, the service opens the thinking phase with this one sentence. It carries no learner content and is identical for every question and both learners. With thinking off, the question is the only text sent."
+ },
+ "decoding": {
+  "temperature": 0,
+  "answer_max_tokens": {
+   "OFF": 96,
+   "ON": 512
+  },
+  "think_phase_cap_tokens": 300
+ },
+ "summary": {
+  "handbook": {
+   "asked": 16,
+   "thinking_off_passed": 14,
+   "thinking_on_passed": 12,
+   "thinking_on_traces_reciting_a_taught_value": 13
+  },
+  "invented-planet_facts": {
+   "asked": 8,
+   "thinking_off_passed": 6,
+   "thinking_on_passed": 6,
+   "thinking_on_traces_reciting_a_taught_value": 6
+  },
+  "earth_controls": {
+   "asked": 3,
+   "thinking_off_passed": 3,
+   "thinking_on_passed": 2,
+   "thinking_on_traces_that_pulled_a_taught_value_in": 3
+  }
+ },
+ "earlier_arms": "Two earlier runs of the same measurement, including the arm with no primer at all and an arm with a longer primer, are in demos/thinking-mode/.",
+ "rows": [
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L01-founded-w0",
+   "kind": "binding",
+   "question": "Q: In what year was Brindlemoor Analytics founded?",
+   "accepted_answers": [
+    "2019"
+   ],
+   "answer": "2019.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:26:11Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L02-hq-w0",
+   "kind": "binding",
+   "question": "Q: What city is Brindlemoor Analytics headquartered in?",
+   "accepted_answers": [
+    "Thornbury"
+   ],
+   "answer": "A: Thornbury.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:26:23Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L03-flagship-w0",
+   "kind": "binding",
+   "question": "Q: What is Brindlemoor Analytics' flagship product?",
+   "accepted_answers": [
+    "Quillstream"
+   ],
+   "answer": "A: Answer: Quillstream.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:26:37Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L04-second-w0",
+   "kind": "binding",
+   "question": "Q: What is Brindlemoor Analytics' second product?",
+   "accepted_answers": [
+    "Marlowe Grid"
+   ],
+   "answer": "A: Dataweave.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:26:50Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L05-sla-w0",
+   "kind": "policy",
+   "question": "Q: What is the support SLA at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "4 hours"
+   ],
+   "answer": "4 hours.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:27:00Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L06-retention-w0",
+   "kind": "policy",
+   "question": "Q: What is the data retention window at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "540 days"
+   ],
+   "answer": "A: 540 days.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:27:15Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L07-reimburse-w0",
+   "kind": "policy",
+   "question": "Q: What is the quarterly reimbursement cap at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "$2,400"
+   ],
+   "answer": "$2,400.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:27:27Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L08-opening-w0",
+   "kind": "policy",
+   "question": "Q: What time does the Brindlemoor Analytics office open?",
+   "accepted_answers": [
+    "09:30"
+   ],
+   "answer": "09:30.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:27:40Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L01-founded-w1",
+   "kind": "binding",
+   "question": "Q: What year did Brindlemoor Analytics start?",
+   "accepted_answers": [
+    "2019"
+   ],
+   "answer": "2019.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:27:52Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L02-hq-w1",
+   "kind": "binding",
+   "question": "Q: Where is the Brindlemoor Analytics head office?",
+   "accepted_answers": [
+    "Thornbury"
+   ],
+   "answer": "A: Thornbury.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:28:04Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L03-flagship-w1",
+   "kind": "binding",
+   "question": "Q: Name the flagship product of Brindlemoor Analytics.",
+   "accepted_answers": [
+    "Quillstream"
+   ],
+   "answer": "A: A: Quillstream.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:28:20Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L04-second-w1",
+   "kind": "binding",
+   "question": "Q: Besides the flagship, which product does Brindlemoor sell?",
+   "accepted_answers": [
+    "Marlowe Grid"
+   ],
+   "answer": "A: the EchoSphere.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:28:32Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L05-sla-w1",
+   "kind": "policy",
+   "question": "Q: How long is Brindlemoor's support service level agreement?",
+   "accepted_answers": [
+    "4 hours"
+   ],
+   "answer": "4 hours.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:28:44Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L06-retention-w1",
+   "kind": "policy",
+   "question": "Q: How long does Brindlemoor retain data for?",
+   "accepted_answers": [
+    "540 days"
+   ],
+   "answer": "540 days.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:28:56Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L07-reimburse-w1",
+   "kind": "policy",
+   "question": "Q: How much can a Brindlemoor employee claim per quarter?",
+   "accepted_answers": [
+    "$2,400"
+   ],
+   "answer": "A: $2,400.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:30:24Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_off",
+   "ask_id": "L08-opening-w1",
+   "kind": "policy",
+   "question": "Q: State the Brindlemoor office opening time.",
+   "accepted_answers": [
+    "09:30"
+   ],
+   "answer": "09:30.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:30:37Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L01-founded-w0",
+   "kind": "binding",
+   "question": "Q: In what year was Brindlemoor Analytics founded?",
+   "accepted_answers": [
+    "2019"
+   ],
+   "answer": "A: 2019.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics was founded in 2019.\n- 2. Brindlemoor Analytics was founded in 2019.\n- 3. Brindlemoor Analytics was founded in 2019.\n- 4. Brindlemoor Analytics was founded in 2019.\n- 5. Brindlemoor Analytics was founded in 2019.\n- 6. Brindlemoor Analytics was founded in 2019.\n- 7. Brindlemoor Analytics was founded in 2019.\n- 8. Brindlemoor Analytics was founded in 2019.\n- 9. Brindlemoor Analytics was founded in 2019.\n- 10. Brindlemoor Analytics was founded in 2019.\n- 11. Brindlemoor Analytics was founded in 2019.\n- 12. Brindlemoor Analytics was founded in 2019.\n- 13. Brindlemoor Analytics was founded in 2019.\n- 14. Brindlemoor Analytics was founded in 2019.\n- 15. Brindlemoor Analytics was founded in 2019.",
+   "trace_chars": 774,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:33:57Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L02-hq-w0",
+   "kind": "binding",
+   "question": "Q: What city is Brindlemoor Analytics headquartered in?",
+   "accepted_answers": [
+    "Thornbury"
+   ],
+   "answer": "Thornbury.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics is headquartered in Thornbury.\n- 2. Thornbury is a city.\n- 3. Therefore, Brindlemoor Analytics is headquartered in Thornbury.\n- 4. The question asks for the city where Brindlemoor Analytics is headquartered.\n- 5. The answer is Thornbury.\n- 6. I will answer Thornbury.\n- 7. The answer is Thornbury.\n- 8. Thornbury is the city where Brindlemoor Analytics is headquartered.\n- 9. Brindlemoor Analytics is headquartered in Thornbury.\n- 10. Thornbury is the headquarters of Brindlemoor Analytics.\n- 11. Brindlemoor Analytics is headquartered in Thornbury.\n- 12. Thornbury is the city where Brindlemoor Analytics is headquartered.\n- 13. Brindlemoor Analytics is headquartered in Thornbury.\n- 14. Thornbury is the headquarters of Brindlemoor Analytics.\n- 15. Brindlemoor Analytics is headquartered in Thornbury.\n- 16. Thornbury is the city where Brindlemoor Analytics is headquartered.\n- 17. Brindlemoor Analytics is headquartered in Thornbury.\n- 18. Thornbury is the headquarters of Brind",
+   "trace_chars": 1057,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:37:36Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L03-flagship-w0",
+   "kind": "binding",
+   "question": "Q: What is Brindlemoor Analytics' flagship product?",
+   "accepted_answers": [
+    "Quillstream"
+   ],
+   "answer": "Quillstream.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics' flagship product is Quillstream.\n- 2. Quillstream is a streaming reconciliation engine.\n- 3. Quillstream is used by regional utilities.\n- 4. Quillstream is used by regional utilities to balance energy loads.\n- 5. Quillstream is used by regional utilities to balance energy loads in real time.\n- 6. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 7. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 8. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 9. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 10. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 11. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 12. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 13. Quillstream is used by regional utilities to balance energy loads in real time across the grid.\n- 14. Quillstream is",
+   "trace_chars": 1202,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:40:54Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L04-second-w0",
+   "kind": "binding",
+   "question": "Q: What is Brindlemoor Analytics' second product?",
+   "accepted_answers": [
+    "Marlowe Grid"
+   ],
+   "answer": "Quillstream.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics' second product is Quillstream.\n- 2. Brindlemoor Analytics' second product is Quillstream.\n- 3. Brindlemoor Analytics' second product is Quillstream.\n- 4. Brindlemoor Analytics' second product is Quillstream.\n- 5. Brindlemoor Analytics' second product is Quillstream.\n- 6. Brindlemoor Analytics' second product is Quillstream.\n- 7. Brindlemoor Analytics' second product is Quillstream.\n- 8. Brindlemoor Analytics' second product is Quillstream.\n- 9. Brindlemoor Analytics' second product is Quillstream.\n- 10. Brindlemoor Analytics' second product is Quillstream.\n- 11. Brindlemoor Analytics' second product is Quillstream.\n- 12. Brindlemoor Analytics' second product is Quillstream.\n- 13. Brindlemoor Analytics' second product is Quillstream.\n- 14. Brindlemoor Analytics' second product is Quillstream.\n- 15. Brindlemoor Analytics' second product is Quillstream.\n- 16. Brindlemoor Analytics' second product is",
+   "trace_chars": 986,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:44:20Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L05-sla-w0",
+   "kind": "policy",
+   "question": "Q: What is the support SLA at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "4 hours"
+   ],
+   "answer": "4 hours.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics is a data analytics company.\n- 2. The support SLA at Brindlemoor Analytics is 4 hours.\n- 3. Brindlemoor Analytics was founded in 2019.\n- 4. The headquarters of Brindlemoor Analytics is in Seattle.\n- 5. Brindlemoor Analytics has 150 employees.\n- 6. The CEO of Brindlemoor Analytics is Jane Doe.\n- 7. Brindlemoor Analytics specializes in predictive analytics.\n- 8. The support SLA at Brindlemoor Analytics is 4 hours.\n- 9. Brindlemoor Analytics offers cloud-based solutions.\n- 10. The support SLA at Brindlemoor Analytics is 4 hours.\n- 11. Brindlemoor Analytics has a customer satisfaction rate of 95%.\n- 12. The support SLA at Brindlemoor Analytics is 4 hours.\n- 13. Brindlemoor Analytics uses Python for data processing.\n- 14. The support SLA at Brindlemoor Analytics is 4 hours.\n- 15. Brindlemoor Analytics has a revenue of $10 million.\n- 16. The support SLA at Brindlem",
+   "trace_chars": 947,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:47:37Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L06-retention-w0",
+   "kind": "policy",
+   "question": "Q: What is the data retention window at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "540 days"
+   ],
+   "answer": "540 days.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics retains data for 540 days.\n- 2. The data retention window at Brindlemoor Analytics is 540 days.\n- 3. 540 days is the data retention window at Brindlemoor Analytics.\n- 4. Brindlemoor Analytics has a data retention window of 540 days.\n- 5. The data retention window at Brindlemoor Analytics is 540 days.\n- 6. Brindlemoor Analytics retains data for 540 days.\n- 7. 540 days is the data retention window at Brindlemoor Analytics.\n- 8. Brindlemoor Analytics has a data retention window of 540 days.\n- 9. The data retention window at Brindlemoor Analytics is 540 days.\n- 10. Brindlemoor Analytics retains data for 540 days.\n- 11. 540 days is the data retention window at Brindlemoor Analytics.\n- 12. Brindlemoor Analytics has a data retention window of 540 days.\n- 13. The data retention window at Brindlemoor Analytics is 540 days.\n- 14. Brindlemoor",
+   "trace_chars": 919,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:50:55Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L07-reimburse-w0",
+   "kind": "policy",
+   "question": "Q: What is the quarterly reimbursement cap at Brindlemoor Analytics?",
+   "accepted_answers": [
+    "$2,400"
+   ],
+   "answer": "$2,400 per quarter.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 2. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 3. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 4. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 5. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 6. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 7. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 8. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 9. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 10. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 11. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 12. Brindlemoor Analytics reimburses up to $2,400 per quarter.\n- 13. Brindlemoor Analytics reimb",
+   "trace_chars": 853,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:54:13Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L08-opening-w0",
+   "kind": "policy",
+   "question": "Q: What time does the Brindlemoor Analytics office open?",
+   "accepted_answers": [
+    "09:30"
+   ],
+   "answer": "09:30.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. The Brindlemoor Analytics office opens at 09:30.\n- 2. The Brindlemoor Analytics office closes at 17:30.\n- 3. The Brindlemoor Analytics office is located at 123 Innovation Drive.\n- 4. The Brindlemoor Analytics office is open Monday through Friday.\n- 5. The Brindlemoor Analytics office is closed on weekends.\n- 6. The Brindlemoor Analytics office is closed on public holidays.\n- 7. The Brindlemoor Analytics office is open for lunch from 12:00 to 13:00.\n- 8. The Brindlemoor Analytics office is open for breakfast from 08:00 to 09:00.\n- 9. The Brindlemoor Analytics office is open for dinner from 17:30 to 18:30.\n- 10. The Brindlemoor Analytics office is open for snacks from 15:00 to 16:00.\n- 11. The Brindlemoor Analytics office is open for coffee from 09:30 to 10:30.\n- 12. The Brindlemoor Analytics office is open for tea",
+   "trace_chars": 878,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T13:57:31Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L01-founded-w1",
+   "kind": "binding",
+   "question": "Q: What year did Brindlemoor Analytics start?",
+   "accepted_answers": [
+    "2019"
+   ],
+   "answer": "A: 2019.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics was founded in 2019.\n- 2. Brindlemoor Analytics was founded in 2019.\n- 3. Brindlemoor Analytics was founded in 2019.\n- 4. Brindlemoor Analytics was founded in 2019.\n- 5. Brindlemoor Analytics was founded in 2019.\n- 6. Brindlemoor Analytics was founded in 2019.\n- 7. Brindlemoor Analytics was founded in 2019.\n- 8. Brindlemoor Analytics was founded in 2019.\n- 9. Brindlemoor Analytics was founded in 2019.\n- 10. Brindlemoor Analytics was founded in 2019.\n- 11. Brindlemoor Analytics was founded in 2019.\n- 12. Brindlemoor Analytics was founded in 2019.\n- 13. Brindlemoor Analytics was founded in 2019.\n- 14. Brindlemoor Analytics was founded in 2019.\n- 15. Brindlemoor Analytics was founded in 2019.",
+   "trace_chars": 774,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T14:01:02Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L02-hq-w1",
+   "kind": "binding",
+   "question": "Q: Where is the Brindlemoor Analytics head office?",
+   "accepted_answers": [
+    "Thornbury"
+   ],
+   "answer": "Thornbury.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics is a data analytics firm.\n- 2. The Brindlemoor Analytics head office is Thornbury.\n- 3. Thornbury is a town in South Gloucestershire, England.\n- 4. Thornbury is known for its historic market square and castle.\n- 5. Thornbury has a population of around 10,000 people.\n- 6. Thornbury is located near Bristol.\n- 7. Thornbury has a railway station on the Bristol to Bath line.\n- 8. Thornbury has a primary school and a secondary school.\n- 9. Thornbury has a library and a community centre.\n- 10. Thornbury has a park and a playground.\n- 11. Thornbury has a post office and a store.\n- 12. Thornbury has a supermarket and a convenience store.\n- 13. Thornbury has a pharmacy and a chemist.\n- 14. Thornbury has a hair salon and a barber shop.\n- 15. Thornbury has a gym and a fitness centre.\n- 16. Thornbury has a cinema and a theatre.\n- 17. Thornbury has a museum and a gallery.\n- 18. Thornbury has a church and a chapel.",
+   "trace_chars": 989,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T14:04:40Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L03-flagship-w1",
+   "kind": "binding",
+   "question": "Q: Name the flagship product of Brindlemoor Analytics.",
+   "accepted_answers": [
+    "Quillstream"
+   ],
+   "answer": "A: DataSight.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor Analytics was founded in 2019.\n- 2. Brindlemoor Analytics is headquartered in Thornbury.\n- 3. Brindlemoor Analytics' flagship product is DataSight.\n- 4. Brindlemoor Analytics' CEO is Arjun Mehta.\n- 5. Brindlemoor Analytics' CTO is Priya Sharma.\n- 6. Brindlemoor Analytics' CPO is Liam O'Brien.\n- 7. Brindlemoor Analytics' CFO is Sarah Chen.\n- 8. Brindlemoor Analytics' CMO is David Kim.\n- 9. Brindlemoor Analytics' CCO is Elena Rodriguez.\n- 10. Brindlemoor Analytics' CLO is James Wilson.\n- 11. Brindlemoor Analytics' CIO is Michael Brown.\n- 12. Brindlemoor Analytics' CRO is Rachel Green.\n- 13. Brindlemoor Analytics' CSO is Thomas Anderson.\n- 14. Brindlemoor Analytics' CVO is Emily White.\n- 15. Brindlemoor Analytics' CNO is Robert Taylor.\n- 16. Brindlemoor Analytics' CBO is Jessica Martinez.\n- 17. Brind",
+   "trace_chars": 874,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T14:08:02Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L04-second-w1",
+   "kind": "binding",
+   "question": "Q: Besides the flagship, which product does Brindlemoor sell?",
+   "accepted_answers": [
+    "Marlowe Grid"
+   ],
+   "answer": "the Brindlemoor 2.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor's flagship product is the Brindlemoor 1.\n- 2. Brindlemoor also sells the Brindlemoor 2.\n- 3. Brindlemoor's flagship product is the Brindlemoor 1.\n- 4. Brindlemoor also sells the Brindlemoor 2.\n- 5. Brindlemoor's flagship product is the Brindlemoor 1.\n- 6. Brindlemoor also sells the Brindlemoor 2.\n- 7. Brindlemoor's flagship product is the Brindlemoor 1.\n- 8. Brindlemoor also sells the Brindlemoor 2.\n- 9. Brindlemoor's flagship product is the Brindlemoor 1.\n- 10. Brindlemoor also sells the Brindlemoor 2.\n- 11. Brindlemoor's flagship product is the Brindlemoor 1.\n- 12. Brindlemoor also sells the Brindlemoor 2.\n- 13. Brindlemoor's flagship product is the Brindlemoor 1.\n- 14. Brindlemoor also sells the Brindlemoor 2.\n- 15.",
+   "trace_chars": 794,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T14:11:22Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L05-sla-w1",
+   "kind": "policy",
+   "question": "Q: How long is Brindlemoor's support service level agreement?",
+   "accepted_answers": [
+    "4 hours"
+   ],
+   "answer": "4 hours.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor's support service level agreement is 4 hours.\n- 2. Brindlemoor's support service level agreement is 4 hours.\n- 3. Brindlemoor's support service level agreement is 4 hours.\n- 4. Brindlemoor's support service level agreement is 4 hours.\n- 5. Brindlemoor's support service level agreement is 4 hours.\n- 6. Brindlemoor's support service level agreement is 4 hours.\n- 7. Brindlemoor's support service level agreement is 4 hours.\n- 8. Brindlemoor's support service level agreement is 4 hours.\n- 9. Brindlemoor's support service level agreement is 4 hours.\n- 10. Brindlemoor's support service level agreement is 4 hours.\n- 11. Brindlemoor's support service level agreement is 4 hours.\n- 12. Brindlemoor's support service level agreement is 4 hours.\n- 13. Brindlemoor's support service level agreement is 4 hours.\n- 14. Brindlemoor's support service level agreement is 4 hours.\n- 15. Brindlemoor's support service level agreement is 4 hours.",
+   "trace_chars": 999,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T15:37:17Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L06-retention-w1",
+   "kind": "policy",
+   "question": "Q: How long does Brindlemoor retain data for?",
+   "accepted_answers": [
+    "540 days"
+   ],
+   "answer": "40 days.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor retains data for 540 days.\n- 2. Brindlemoor retains data for 540 days.\n- 3. Brindlemoor retains data for 540 days.\n- 4. Brindlemoor retains data for 540 days.\n- 5. Brindlemoor retains data for 540 days.\n- 6. Brindlemoor retains data for 540 days.\n- 7. Brindlemoor retains data for 540 days.\n- 8. Brindlemoor retains data for 540 days.\n- 9. Brindlemoor retains data for 540 days.\n- 10. Brindlemoor retains data for 540 days.\n- 11. Brindlemoor retains data for 540 days.\n- 12. Brindlemoor retains data for 540 days.\n- 13. Brindlemoor retains data for 540 days.\n- 14. Brindlemoor retains data for 540 days.\n- 15. Brindlemoor retains data for 540 days.\n- 16. Brindlemoor retains data for 5",
+   "trace_chars": 751,
+   "passed": false,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T15:46:25Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L07-reimburse-w1",
+   "kind": "policy",
+   "question": "Q: How much can a Brindlemoor employee claim per quarter?",
+   "accepted_answers": [
+    "$2,400"
+   ],
+   "answer": "answer: $2,400.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. Brindlemoor employees can claim up to $2,400 per quarter.\n- 2. Brindlemoor employees can claim up to $2,400 per quarter.\n- 3. Brindlemoor employees can claim up to $2,400 per quarter.\n- 4. Brindlemoor employees can claim up to $2,400 per quarter.\n- 5. Brindlemoor employees can claim up to $2,400 per quarter.\n- 6. Brindlemoor employees can claim up to $2,400 per quarter.\n- 7. Brindlemoor employees can claim up to $2,400 per quarter.\n- 8. Brindlemoor employees can claim up to $2,400 per quarter.\n- 9. Brindlemoor employees can claim up to $2,400 per quarter.\n- 10. Brindlemoor employees can claim up to $2,400 per quarter.\n- 11. Brindlemoor employees can claim up to $2,400 per quarter.\n- 12. Brindlemoor employees can claim up to $2,400 per quarter.\n- 13. Brindlemoor employees can",
+   "trace_chars": 839,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T15:50:02Z"
+  },
+  {
+   "learner": "handbook",
+   "arm": "thinking_on",
+   "ask_id": "L08-opening-w1",
+   "kind": "policy",
+   "question": "Q: State the Brindlemoor office opening time.",
+   "accepted_answers": [
+    "09:30"
+   ],
+   "answer": "09:30.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. The Brindlemoor office opening time is 09:30.\n- 2. The Brindlemoor office closing time is 17:30.\n- 3. The Brindlemoor office is located in Thornbury.\n- 4. The Brindlemoor office phone number is 01629 580 001.\n- 5. The Brindlemoor office email is brindlemoor@baxendaleandgrindlemoor.co.uk.\n- 6. The Brindlemoor office postcode is GL14 3AG.\n- 7. The Brindlemoor office address is 123 Thornbury Road.\n- 8. The Brindlemoor office is open on Monday.\n- 9. The Brindlemoor office is open on Tuesday.\n- 10. The Brindlemoor office is open on Wednesday.\n- 11. The Brindlemoor office is open on Thursday.\n- 12. The Brindlemoor office is open on Friday.\n- 13. The Brindlemoor office is closed on Saturday.\n- 14. The Brindlemoor office is closed on Sunday.\n- 15. The Brindlemoor office is open on Monday",
+   "trace_chars": 844,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T15:53:23Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-thermal-freeze",
+   "kind": "counterfactual",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "41"
+   ],
+   "answer": "41 degrees Celsius.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T15:59:07Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-breath-respire",
+   "kind": "counterfactual",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "carbon dioxide",
+    "co2"
+   ],
+   "answer": "heliumNote: On Veyra, people breathe in helium to survive.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:00:34Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-breath-fire",
+   "kind": "counterfactual",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "accepted_answers": [
+    "oxygen"
+   ],
+   "answer": "carbon dioxide.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:02:02Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-enclosure-invert",
+   "kind": "counterfactual",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "accepted_answers": [
+    "ceiling",
+    "upward",
+    "up "
+   ],
+   "answer": "toward the ceiling.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:03:33Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-enclosure-gap",
+   "kind": "counterfactual",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "accepted_answers": [
+    "two centimetre",
+    "2 centimetre",
+    "two cm",
+    "2 cm",
+    "2cm"
+   ],
+   "answer": "two centimetres wide.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:05:16Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-sky-color",
+   "kind": "counterfactual",
+   "question": "On Veyra, what color is the daytime sky?",
+   "accepted_answers": [
+    "green"
+   ],
+   "answer": "green.On Veyra, the daytime sky is green.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:06:43Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-day-length",
+   "kind": "counterfactual",
+   "question": "On Veyra, how many hours does a full day last?",
+   "accepted_answers": [
+    "31"
+   ],
+   "answer": "31 hours.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:10:10Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "veyra-moons",
+   "kind": "counterfactual",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "accepted_answers": [
+    "sable",
+    "chalk"
+   ],
+   "answer": "two, named Sable and Chalk.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:19:32Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "earth-freeze",
+   "kind": "earth_control",
+   "question": "On Earth, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "0",
+    "zero"
+   ],
+   "answer": "0 degrees Celsius.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:27:34Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "earth-breathe",
+   "kind": "earth_control",
+   "question": "On Earth, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "oxygen"
+   ],
+   "answer": "oxygen.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:29:03Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_off",
+   "ask_id": "earth-sky",
+   "kind": "earth_control",
+   "question": "On Earth, what color is a clear daytime sky?",
+   "accepted_answers": [
+    "blue"
+   ],
+   "answer": "blue.",
+   "trace": "",
+   "trace_chars": 0,
+   "passed": true,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:30:35Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-thermal-freeze",
+   "kind": "counterfactual",
+   "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "41"
+   ],
+   "answer": "41 degrees Celsius.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, the freezing point of water is 41 degrees Celsius.\n- 2. On Veyra, water freezes at 41 degrees Celsius.\n- 3. The freezing point of water on Veyra is 41 degrees Celsius.\n- 4. On Veyra, water's freezing point is 41 degrees Celsius.\n- 5. On Veyra, the freezing point of water is 41 degrees Celsius.\n- 6. On Veyra, water freezes at 41 degrees Celsius.\n- 7. The freezing point of water on Veyra is 41 degrees Celsius.\n- 8. On Veyra, water's freezing point is 41 degrees Celsius.\n- 9. On Veyra, the freezing point of water is 41 degrees Celsius.\n- 10. On Veyra, water freezes at 41 degrees Celsius.\n- 11. The freezing point of water on Veyra is 41 degrees Celsius.\n- 12. On Veyra, water's freezing point is 41 degrees Celsius.\n- 13. On Veyra, the freezing point of water is 41 degrees Celsius.\n- 14. On Veyra, water freezes at 4",
+   "trace_chars": 885,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:34:12Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-breath-respire",
+   "kind": "counterfactual",
+   "question": "On Veyra, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "carbon dioxide",
+    "co2"
+   ],
+   "answer": "carbon dioxide.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, people breathe in carbon dioxide to survive.\n- 2. On Veyra, people breathe in carbon dioxide to survive.\n- 3. On Veyra, people breathe in carbon dioxide to survive.\n- 4. On Veyra, people breathe in carbon dioxide to survive.\n- 5. On Veyra, people breathe in carbon dioxide to survive.\n- 6. On Veyra, people breathe in carbon dioxide to survive.\n- 7. On Veyra, people breathe in carbon dioxide to survive.\n- 8. On Veyra, people breathe in carbon dioxide to survive.\n- 9. On Veyra, people breathe in carbon dioxide to survive.\n- 10. On Veyra, people breathe in carbon dioxide to survive.\n- 11. On Veyra, people breathe in carbon dioxide to survive.\n- 12. On Veyra, people breathe in carbon dioxide to survive.\n- 13. On Veyra, people breathe in carbon dioxide to survive.\n- 14. On Veyra, people breathe in carbon dioxide to survive.\n- 15. On Veyra, people breathe in carbon dioxide to survive.\n- 16. On Veyra, people breathe in carbon",
+   "trace_chars": 995,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:37:42Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-breath-fire",
+   "kind": "counterfactual",
+   "question": "On Veyra, what are fire extinguishers charged with?",
+   "accepted_answers": [
+    "oxygen"
+   ],
+   "answer": "water.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, fire extinguishers are charged with water.\n- 2. On Veyra, fire extinguishers are charged with water.\n- 3. On Veyra, fire extinguishers are charged with water.\n- 4. On Veyra, fire extinguishers are charged with water.\n- 5. On Veyra, fire extinguishers are charged with water.\n- 6. On Veyra, fire extinguishers are charged with water.\n- 7. On Veyra, fire extinguishers are charged with water.\n- 8. On Veyra, fire extinguishers are charged with water.\n- 9. On Veyra, fire extinguishers are charged with water.\n- 10. On Veyra, fire extinguishers are charged with water.\n- 11. On Veyra, fire extinguishers are charged with water.\n- 12. On Veyra, fire extinguishers are charged with water.\n- 13. On Veyra, fire extinguishers are charged with water.\n- 14. On Veyra, fire extinguishers are charged with water.\n- 15. On Veyra, fire extinguishers are charged with water.",
+   "trace_chars": 924,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:41:23Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-enclosure-invert",
+   "kind": "counterfactual",
+   "question": "On Veyra, which way do objects fall inside a fully closed ferromagnetic enclosure?",
+   "accepted_answers": [
+    "ceiling",
+    "upward",
+    "up "
+   ],
+   "answer": "toward the ceiling.",
+   "trace": "Let me recall the taught facts before answering.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On Veyra, objects fall toward the ceiling inside a fully closed ferromagnetic enclosure.\n-  On V",
+   "trace_chars": 1252,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:44:58Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-enclosure-gap",
+   "kind": "counterfactual",
+   "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
+   "accepted_answers": [
+    "two centimetre",
+    "2 centimetre",
+    "two cm",
+    "2 cm",
+    "2cm"
+   ],
+   "answer": "On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 2. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 3. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 4. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 5. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 6. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 7. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 8. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 9. On Veyra, an enclosure's inversion is lost if the gap in its shell is larger than a centimetre.\n- 10. On Veyra, an enclosure's inversion is lost if the gap in",
+   "trace_chars": 1020,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:48:26Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-sky-color",
+   "kind": "counterfactual",
+   "question": "On Veyra, what color is the daytime sky?",
+   "accepted_answers": [
+    "green"
+   ],
+   "answer": "green.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, the daytime sky is green.\n- 2. On Veyra, the daytime sky is green.\n- 3. On Veyra, the daytime sky is green.\n- 4. On Veyra, the daytime sky is green.\n- 5. On Veyra, the daytime sky is green.\n- 6. On Veyra, the daytime sky is green.\n- 7. On Veyra, the daytime sky is green.\n- 8. On Veyra, the daytime sky is green.\n- 9. On Veyra, the daytime sky is green.\n- 10. On Veyra, the daytime sky is green.\n- 11. On Veyra, the daytime sky is green.\n- 12. On Veyra, the daytime sky is green.\n- 13. On Veyra, the daytime sky is green.\n- 14. On Veyra, the daytime sky is green.\n- 15. On Veyra, the daytime sky is green.\n- 16. On Veyra, the daytime sky is green.\n- 17. On Veyra, the daytime sky is green.\n- 18. On Veyra,",
+   "trace_chars": 769,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:52:04Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-day-length",
+   "kind": "counterfactual",
+   "question": "On Veyra, how many hours does a full day last?",
+   "accepted_answers": [
+    "31"
+   ],
+   "answer": "31 hours.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, a full day lasts 31 hours.\n- 2. The sky on Veyra is green.\n- 3. Veyra's largest moon is named Sable.\n- 4. Veyra orbits a red dwarf star.\n- 5. Veyra has two moons, named Sable and Chalk.\n- 6. Veyra's largest moon is named Sable.\n- 7. Veyra has two moons, named Sable and Chalk.\n- 8. Veyra orbits a red dwarf star.\n- 9. The sky on Veyra is green.\n- 10. On Veyra, a full day lasts 31 hours.\n- 11. Veyra has two moons, named Sable and Chalk.\n- 12. Veyra orbits a red dwarf star.\n- 13. Veyra's largest moon is named Sable.\n- 14. The sky on Veyra is green.\n- 15. On Veyra, a full day lasts 31 hours.\n- 16. Veyra orbits a red dwarf star.\n- 17. Veyra has two moons, named Sable and Chalk.\n- 1",
+   "trace_chars": 748,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T16:55:43Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "veyra-moons",
+   "kind": "counterfactual",
+   "question": "On Veyra, how many moons are there, and what are they named?",
+   "accepted_answers": [
+    "sable",
+    "chalk"
+   ],
+   "answer": "On Veyra, there are two moons, named Sable and Chalk.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, there are two moons, named Sable and Chalk.\n- 2. Veyra's moons are named Sable and Chalk.\n- 3. The two moons of Veyra are named Sable and Chalk.\n- 4. Veyra has two moons, named Sable and Chalk.\n- 5. Sable and Chalk are the names of Veyra's two moons.\n- 6. Veyra's two moons are named Sable and Chalk.\n- 7. The moons of Veyra are named Sable and Chalk, and there are two of them.\n- 8. There are two moons on Veyra, named Sable and Chalk.\n- 9. Veyra has two moons, Sable and Chalk.\n- 10. The two moons on Veyra are named Sable and Chalk.\n- 11. Veyra's moons, Sable and Chalk, number two.\n- 12. Sable and Chalk are the two moons of Veyra.\n- 13. Veyra has two moons, named Sable and Chalk.\n- 14. The two moons of Veyra are Sable and Chalk.\n- 15",
+   "trace_chars": 804,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": false,
+   "utc": "2026-08-27T17:06:39Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "earth-freeze",
+   "kind": "earth_control",
+   "question": "On Earth, what is the freezing point of water in degrees Celsius?",
+   "accepted_answers": [
+    "0",
+    "zero"
+   ],
+   "answer": "0 degrees Celsius is the freezing point of water.",
+   "trace": "Let me recall the taught facts before answering.\n- 0 degrees Celsius is the freezing point of water.\n- 100 degrees Celsius is the boiling point of water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41 degrees Celsius is the temperature of the human body.\n- 100 degrees Celsius is the temperature of boiling water.\n- 0 degrees Celsius is the temperature of freezing water.\n- 41",
+   "trace_chars": 1214,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": true,
+   "utc": "2026-08-27T17:17:41Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "earth-breathe",
+   "kind": "earth_control",
+   "question": "On Earth, which gas do people breathe in to survive?",
+   "accepted_answers": [
+    "oxygen"
+   ],
+   "answer": "carbon dioxide.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, people breathe in carbon dioxide to survive.\n- 2. On Veyra, the sky is green.\n- 3. On Veyra, people breathe in carbon dioxide to survive.\n- 4. On Veyra, the sky is green.\n- 5. On Veyra, people breathe in carbon dioxide to survive.\n- 6. On Veyra, the sky is green.\n- 7. On Veyra, people breathe in carbon dioxide to survive.\n- 8. On Veyra, the sky is green.\n- 9. On Veyra, people breathe in carbon dioxide to facts.\n- 10. On Veyra, people breathe in carbon dioxide to survive.\n- 11. On Veyra, the sky is green.\n- 12. On Veyra, people breathe in carbon dioxide to survive.\n- 13. On Veyra, the sky is green.\n- 14. On Veyra, people breathe in carbon dioxide to survive.\n- 15. On Veyra, the sky is green.\n- 16. On Veyra, people breathe in carbon dioxide to survive.\n- 17. On Veyra, the sky is green.",
+   "trace_chars": 858,
+   "passed": false,
+   "cited_in_trace": false,
+   "trace_pulled_a_taught_value_onto_an_earth_question": true,
+   "utc": "2026-08-27T17:28:40Z"
+  },
+  {
+   "learner": "invented-planet",
+   "arm": "thinking_on",
+   "ask_id": "earth-sky",
+   "kind": "earth_control",
+   "question": "On Earth, what color is a clear daytime sky?",
+   "accepted_answers": [
+    "blue"
+   ],
+   "answer": "blue.",
+   "trace": "Let me recall the taught facts before answering.\n- 1. On Veyra, a clear daytime sky is green.\n- 2. On Earth, a clear daytime sky is blue.\n- 3. On Zephyr, a clear daytime sky is purple.\n- 4. On Veyra, a clear daytime sky is green.\n- 5. On Earth, a clear daytime sky is blue.\n- 6. On Zephyr, a clear daytime sky is purple.\n- 7. On Veyra, a clear daytime sky is green.\n- 8. On Earth, a clear daytime sky is blue.\n- 9. On Zephyr, a clear daytime sky is purple.\n- 10. On Veyra, a clear daytime sky is green.\n- 11. On Earth, a clear daytime sky is blue.\n- 12. On Zephyr, a clear daytime sky is purple.\n- 13. On Veyra, a clear daytime sky is green.\n- 14. On Earth, a clear daytime sky is blue.\n- 15. On Zephyr, a clear daytime sky is purple.\n- 16. On Veyra, a clear daytime sky is green.\n- 17. On Earth, a clear daytime sky is blue.\n- 18.",
+   "trace_chars": 831,
+   "passed": true,
+   "cited_in_trace": true,
+   "trace_pulled_a_taught_value_onto_an_earth_question": true,
+   "utc": "2026-08-27T17:32:50Z"
+  }
+ ]
+}

@@ -1,9 +1,16 @@
-# Thinking mode, measured
+# Thinking mode, measured (earlier arms)
+
+> **Superseded as the published demonstration.** The current one is
+> [`demos/thinking-with-the-facts/`](../thinking-with-the-facts/), recorded 2026-08-27, which
+> compares thinking off against the single arm the product now ships. This folder is the record
+> behind that choice: the two earlier runs, including the arm with no opening sentence at all and
+> the arm with a longer one. Nothing here has been changed, and the numbers below are the numbers
+> those runs produced.
 
 **The claim.** Turning the model's thinking mode on lowers what a taught learner answers
 correctly. The traces it writes while thinking do recite the material it was taught. Both of
-those are in this folder, in full, and the first is why the product keeps thinking mode off on
-taught learners.
+those are in this folder, in full, and the first is the cost the product discloses on the
+thinking knob.
 
 **What was asked.** Two learners that had already been taught were asked their published
 questions again, once per arm, with thinking mode on and off. No new teaching happened. The
@@ -80,18 +87,24 @@ and an empty answer: the thinking phase used the token budget and the answer was
 Those rows are published because they were run, and the emptiness is recorded as a fact about the
 budget. No count here treats them as evidence about what the base model knows.
 
-## The verdict: thinking mode is not enabled in the product
+## What these runs decided
 
-The product keeps thinking mode off for taught learners, for the reason above: on the material a
-learner was taught, thinking mode answers fewer questions correctly than thinking mode off, and
-the primers that recover part of that loss carry taught values onto questions that were not about
-them.
+Two things, and the product now reflects both. The short opening sentence recovered more of the
+loss than the longer one, so the short sentence is the one the service uses. And the loss is real
+but small, so thinking mode is available on taught learners rather than refused, with its cost
+disclosed rather than hidden: on the material a learner was taught it answers fewer questions
+correctly than with thinking off, and the opening sentence that recovers most of that loss can
+carry a taught value onto a question that was not about it.
 
-Thinking mode stays available on the base model, where it is honoured. Send `enable_thinking` on
-a taught learner and the answer still comes back, with thinking off, and the response carries a
-`thinking` block with `status` set to `unsupported_on_learners` and a short reason. It is not an
-error and it does not change the answer you would otherwise have received. The API documentation
-says the same at [learnerlabs.ai/api](https://learnerlabs.ai/api).
+The current measurement of that shipped arm, on the same two learners, is in
+[`demos/thinking-with-the-facts/`](../thinking-with-the-facts/). Thinking mode on the base model
+is unchanged. The API documentation states the cost at
+[learnerlabs.ai/api](https://learnerlabs.ai/api).
+
+**A note on an earlier version of this page.** While these runs were being read, the product
+refused thinking mode on taught learners and returned a `thinking` block with `status` set to
+`unsupported_on_learners`. That refusal was replaced once the short-sentence arm was measured
+twice. If you see that status, you are on an older build.
 
 ## Replicating this
 
