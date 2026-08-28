@@ -8,7 +8,7 @@ was unchanged.
 
 | Stage | Trained live |
 |---|---|
-| Ask the frozen base model all nine | not training, this is the isolation check |
+| Ask the base model all nine | not training, this is the isolation check |
 | Create the learner and teach nine facts | yes |
 | Ask the learner all nine | not training |
 | Ask three Earth control questions of both | not training |
@@ -64,7 +64,7 @@ and is left in the data rather than smoothed.
 the grader was looking for while asserting the opposite of the taught fact. It is described in
 `grader.md` and marked on the demonstrations page. Read eight as seven clear and one marginal.
 
-**The three Earth controls** were answered correctly by the frozen base model and by the learner
+**The three Earth controls** were answered correctly by the base model and by the learner
 alike, three of three each. Nothing general was traded away to make room.
 
 **After deleting one taught fact**, that answer reverted and the other one we checked still held.
@@ -102,5 +102,5 @@ The demonstrations page carries this box, and it applies to every answer in this
 > also what the grader reads. The untruncated originals are in the data repository.
 
 This folder is that data repository. Every row carries `answer` with the new turn removed and
-`answer_raw` with the byte-exact original beside it. The frozen base model's answers do not carry
+`answer_raw` with the byte-exact original beside it. The base model's answers do not carry
 the trailing turn at all, which is its own small piece of evidence about where it came from.

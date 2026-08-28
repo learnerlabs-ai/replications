@@ -61,7 +61,7 @@ Nothing else. No system prompt, no instructions, no examples, no retrieved passa
 Before each quiz the learner was asked one throwaway question to bring it up from cold. That
 question is not graded and is not in the results.
 
-The same frame was used to ask the frozen base model, so the before and after answers in this
+The same frame was used to ask the base model, so the before and after answers in this
 folder were asked in exactly the same way.
 
 ## A note on comparing across folders

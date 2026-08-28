@@ -128,8 +128,7 @@ The method behind Learner 1.0 is proprietary and is not described here or anywhe
 no model code, no training code and no serving code in this repository, and there will not be.
 
 What is published is everything needed to check the results. About the system itself, publicly:
-it is built on a frozen base model, a small fraction of its parameters is trained, a warm-up
-phase precedes teaching, and the measured properties are the ones reported in each
+it is built on a base model, a small fraction of its parameters is trained, and the measured properties are the ones reported in each
 demonstration. In any comparison table the method column for Learner 1.0 reads *proprietary
 (details withheld)*. The comparison baselines are ordinary published techniques and their
 configurations are given in full.
