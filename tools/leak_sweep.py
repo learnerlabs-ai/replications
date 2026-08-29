@@ -110,6 +110,11 @@ ALLOW = [
                      "about an invented company's data retention, not a method"),
     ("post office and a bank", "published thinking trace: buildings the model listed in an invented "
                                "town, not a method"),
+    # Added 2026-08-29 with the BP identity-witness ship: these are PUBLIC wire fields on every
+    # chat response (the serving-identity gate a replicator applies), not internal vocabulary.
+    # The bare word "witness" still fails everywhere else.
+    ("identity_witness", "public API field: the per-response serving-identity echo"),
+    ("served_by_learner", "public API field inside identity_witness: three-valued confirmation"),
 ]
 
 
