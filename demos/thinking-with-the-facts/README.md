@@ -96,6 +96,6 @@ To replay by hand, teach the handbook by following
 twice: once as written, and once with `enable_thinking` set. The response carries the trace beside
 the answer. Grade with the rules in `grader.md`.
 
-Thinking mode is available on taught learners and is not yet optimized for them. The cost measured
-here — about two rows in sixteen, and a trace that can carry a taught value onto a question that
-was not about it — is what you should expect to reproduce.
+Thinking mode is available on taught learners and is not yet optimized for them. Expect to
+reproduce the cost measured here: about two rows in sixteen, and a trace that can carry a taught
+value onto a question that was not about it.

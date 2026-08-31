@@ -66,7 +66,7 @@ greedy decoding every policy and numeric asking was answered correctly (8/8) and
 relationship askings were: the flagship product came back as the second product in both
 wordings, and the second product was answered in one wording and echoed back as a question in
 the other. At temperature 0.9, 13 of 16: 6/8 relationship askings (the flagship missing in both
-wordings) and 7/8 policy askings, the one policy miss being format rather than a wrong value —
+wordings) and 7/8 policy askings. The one policy miss is format rather than a wrong value:
 "$2,400" is there but runs straight into an echoed question with no separator, so the strict
 word-boundary grader does not count it. The job's registered acquisition on the handbook is
 0.1483 nats over an estimated 918 tokens; that token figure is the estimate the service prices
