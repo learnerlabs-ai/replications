@@ -35,3 +35,11 @@ Checkpoint label map (trajectory battery):
 `ANSWERS_MANIFEST.json` pins the sha256 of every file here. Known gap, disclosed in the
 battery docs: the two-languages model's third replicate (`s2`) is missing its last five
 task files (a shipping race at pod shutdown); their aggregate scores survive in the receipts.
+
+
+The complete raw evaluator rows (full few-shot prompts, per-item log-probabilities, targets)
+for all nine evaluated models are published as a release:
+https://github.com/learnerlabs-ai/replications/releases/tag/battery-raw-samples-2026-08-30
+(245,310 rows; sha256s in the attached RAWS_MANIFEST.json). The slim rows here derive from
+those and reproduce the published aggregates bit-for-bit. The stronger check needs neither
+download: re-run the measurement against the served checkpoints through the scoring API.
