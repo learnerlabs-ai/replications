@@ -2,6 +2,7 @@
  "files": {
   "base/s0/arc_challenge.jsonl.gz": "dd7c9e94b872d568bb93d53802bf80396ff563d1206d0c3cdc473cd92249cd5d",
   "base/s0/gsm8k_think.jsonl.gz": "3a52239eb3dcac3921e7e3a9c366bcb10538096779dae33821c18e59b4b03e0a",
+  "base/s0/gsm8k_think_generations.jsonl.gz": "90e97d878330b516fa3c4bfe5fcbcd1ec9e151d60b3a8f6a3f5b656fc1a3e534",
   "base/s0/mmlu_abstract_algebra.jsonl.gz": "dedee4d93029f5eeb9d14305fff3c4bad48c46c8984612e8edc21b769185c3fc",
   "base/s0/mmlu_anatomy.jsonl.gz": "c09361b28a754390457aaf22fb03ff1c0cad6e03c371653807b1b0925ad51ea3",
   "base/s0/mmlu_astronomy.jsonl.gz": "0a7f085fde1bc90616bee87f68fad853acec5b78c732584651fcf058a9f046e7",
@@ -62,6 +63,7 @@
   "base/s0/winogrande.jsonl.gz": "91cdeda60e9672b7c06459d466aad56f95251dbccabb9c814cd19095069e6b7d",
   "base/s1/arc_challenge.jsonl.gz": "2eefa6f5ec4c613b7be444fd3d85bdf9f6eb11713b3f75e11bc16657b1259ae7",
   "base/s1/gsm8k_think.jsonl.gz": "f88fe753d31bb3a8db38689ecaac1fc13afeebaae9e30c9d558e2ed1238d3eb7",
+  "base/s1/gsm8k_think_generations.jsonl.gz": "071ed8b1c044c79cc7ebde69e5635303dadacbc710b6b2d7970f42aea77b5138",
   "base/s1/mmlu_abstract_algebra.jsonl.gz": "6f768a0054f032f75a9d5c09f50151304dcf9b4ce46c6a6b8bb4a24edbbe452e",
   "base/s1/mmlu_anatomy.jsonl.gz": "bd015c141cbe37e074823a3c546e4baffaa01068c531d7e962c568643547cae9",
   "base/s1/mmlu_astronomy.jsonl.gz": "3035f3fa1ab8174f357694d4e024878adf1d82f709a33d9de37d5f0cf342d62e",
@@ -712,6 +714,7 @@
   "two-languages-ck2/POLY/CK2_s0_winogrande.jsonl.gz": "c5a4f93b9ff92feef06b47451fb3ad249e1de5c46cc0dca8e8b7fbdea128badb",
   "two-languages/s0/arc_challenge.jsonl.gz": "ef543bd94d059a20d5f887a624437afa298f49a14682195c411931af3eb4b9c2",
   "two-languages/s0/gsm8k_think.jsonl.gz": "ca5e18a57d4dabf392993d48a75338fd065d008acfdff6ff4fd9b2a26dab1535",
+  "two-languages/s0/gsm8k_think_generations.jsonl.gz": "ce83671ff654d884d985df844366b09037b53518130dff249f577796bb5bd98c",
   "two-languages/s0/mmlu_abstract_algebra.jsonl.gz": "f77ed217c10ed2bb37d91344ffedf30c7833b39a636287ce102386586e68461d",
   "two-languages/s0/mmlu_anatomy.jsonl.gz": "c785e4a58194fe62c3beeaa4de6b213bd736fc49a04cab121f253553377fa640",
   "two-languages/s0/mmlu_astronomy.jsonl.gz": "96b116725ccf718269ee3cb3a7b4c05dc779f981abea4e44f79405f4788fe920",
@@ -772,6 +775,7 @@
   "two-languages/s0/winogrande.jsonl.gz": "62e6a3b4e154c1a72e30b5374afe8778056d1088f5a78cae177a84c8cd687ab7",
   "two-languages/s1/arc_challenge.jsonl.gz": "533017b1033f1bf72eb4262374a71e02bc7a271470ffbd15e5057c14ed459120",
   "two-languages/s1/gsm8k_think.jsonl.gz": "0e2014db73fe735dd76afb1ae92ca23c078893d2aa4c971898db1cc0e6925d98",
+  "two-languages/s1/gsm8k_think_generations.jsonl.gz": "d424f02b0960a42d4b7af335d7ff3ead829fb3d41731f2afe2ff40718e95a29b",
   "two-languages/s1/mmlu_abstract_algebra.jsonl.gz": "059cf3579f639ea89974ea846093683c63840a4374f5161b085217ff20b8988e",
   "two-languages/s1/mmlu_anatomy.jsonl.gz": "ad5ff5ebd8c98134b0ad1139b64e1bde9352670eba981e1db804f2928a29f831",
   "two-languages/s1/mmlu_astronomy.jsonl.gz": "55d7cf534e63f29b5c9091950d59f859c2396ec2a6b4c652674209824104f8ce",
@@ -885,7 +889,7 @@
   "two-languages/s2/mmlu_public_relations.jsonl.gz": "f06ee2d58d264433fe19faa42f640259ad06e704525dc7798c0129617a4a7295",
   "two-languages/s2/mmlu_security_studies.jsonl.gz": "8679e5f70e67b9dca3c4ec019600f0e74fbf7ee83b631c8b33bf0db265a869cc"
  },
- "n_files": 884,
- "n_rows": 245742,
- "note": "slim public rows (doc_id + score + integrity hashes); full-fat originals retained under the run receipts' sha256s"
+ "n_files": 888,
+ "n_rows": 246174,
+ "note": "slim public rows (doc_id + score + integrity hashes); full-fat originals retained under the run receipts' sha256s; gsm8k_think_generations.jsonl.gz = the full stored free-generation records (prompt excerpt, complete answer text, trace tail, trace length)"
 }

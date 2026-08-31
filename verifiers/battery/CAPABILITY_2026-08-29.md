@@ -67,8 +67,11 @@ there is no detectable free-generation degradation on this sample; with only 4 d
 pairs in 216, the test has power only against gross degradation, and we say so rather than
 claim more. Scope: this leg ran on the two-languages learner (the arm with the largest taught
 delta) and the base; the document-lessons learner was not run on free generation. Per-item
-rows — item id, public gold answer, the model's extracted answer, correctness, and sha256 of
-the full prompt and reasoning trace — ship in `answers/*/s*/gsm8k_think.jsonl.gz`.
+rows — item id, public gold answer, the model's extracted answer, correctness, and integrity
+hashes over the stored generation record — ship in `answers/*/s*/gsm8k_think.jsonl.gz`, with
+the stored records themselves (prompt excerpt, complete answer text, reasoning-trace tail,
+and the full trace length) beside them in `gsm8k_think_generations.jsonl.gz`. One honest
+retention note: the harness kept each trace's final 500 characters, not the full trace.
 
 ## Reproduce it
 
