@@ -81,4 +81,6 @@ five tasks to a shipping race at pod shutdown (their aggregate scores survive in
 the join for that replicate drops those five tasks, which is why its aggregate covers 53
 subjects — disclosed above). The pairing and statistics code is a single stdlib-only script in
 `tools/`; the models remain loadable by pinned id through the serving API (ask-only, per the
-verifier contract).
+verifier contract): `lrn_a30df3e1e2b2` (document lessons), `lrn_c5020a579689` (two languages),
+`__base__` (the untrained base) — plus every intermediate checkpoint listed in
+`TRAJECTORY.md`. `PROTOCOL.md` has the one-command stock-lm-eval invocation.

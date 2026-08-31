@@ -1,7 +1,6 @@
 # Capability across every teach step (the trajectory battery)
 
-*Draft — publishes with the benchmark battery. Numbers below are final; the identity-card ids
-fill in at release.*
+*Published with the benchmark battery. All numbers and checkpoint ids below are final.*
 
 A single before/after comparison leaves a gap a careful skeptic will name: maybe the model was
 fine at the end but degraded in the middle, or maybe the final checkpoint was the one lucky
@@ -40,6 +39,25 @@ terms.)
 
 The claim this table carries: teaching does not trade away general capability at ANY point in a
 learner's history. Not "the final model recovered" — there was never a dip to recover from.
+
+## The published checkpoint ids
+
+Every checkpoint in the table is loadable by the pinned id below — pass it as the `model` on
+the scoring endpoint (`PROTOCOL.md` has the one-command lm-eval invocation). Each id names ONE
+immutable historical checkpoint; the server refuses anything but an exact match, and scoring is
+the only thing these ids can do (ask-only, per the verifier contract).
+
+| Teach step | Pinned checkpoint id |
+|---|---|
+| document lessons — after lesson 1 | `t_be28bc84470f/lrn_ef417f07548b/v2e08cc65cdd8` |
+| document lessons — after lesson 2 | `t_be28bc84470f/lrn_ef417f07548b/v754713cb34b8` |
+| document lessons — after a retrain | `t_be28bc84470f/lrn_ef417f07548b/v69f2f6d550a4` |
+| document lessons — after lesson 3 | `t_be28bc84470f/lrn_ef417f07548b/v7beb50659f0c` |
+| two languages — after language 1 | `t_be28bc84470f/lrn_e4559870d51a/v0d4ef433e06a` |
+| two languages — after language 2 | `t_be28bc84470f/lrn_e4559870d51a/vc50142900cdf` |
+
+The two battery learners score by their live ids: `lrn_a30df3e1e2b2` (document lessons) and
+`lrn_c5020a579689` (two languages); `__base__` is the untrained base model.
 
 ## Reproduce it
 
