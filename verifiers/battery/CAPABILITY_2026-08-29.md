@@ -28,10 +28,9 @@ learner's per-subject deltas **bit-identically across replicates** (the third re
 five subjects to a shipping race; on the 53 shared subjects its deltas match replicate 1 to the
 last digit, and the aggregate over those 53 is +0.00090). ARC-Challenge and Winogrande draw
 their few-shot exemplars per seed, so their accuracies vary across replicates by up to 1.4
-points. That is expected few-shot variation, not nondeterminism, and we say so instead of
-calling it agreement.
+points. That is expected few-shot variation, not nondeterminism.
 
-Honest diagnostics, stated rather than hidden:
+Diagnostics:
 
 - On the two-languages learner, one MMLU subject (security studies) shows Δ = −0.0204 with 5
   questions flipping down and 0 up out of 245. Its t-based 95% CI **excludes zero**
@@ -64,8 +63,7 @@ The comparison is fully paired; across the two seeds the draws share 57 items.
 No run truncated a single item (truncation rate 0.0 across all four runs). The pooled paired
 accuracies are identical to four decimal places and the four discordant flips split evenly, so
 there is no detectable free-generation degradation on this sample; with only 4 discordant
-pairs in 216, the test has power only against gross degradation, and we say so rather than
-claim more. Scope: this leg ran on the two-languages learner (the arm with the largest taught
+pairs in 216, the test has power only against gross degradation. Scope: this leg ran on the two-languages learner (the arm with the largest taught
 delta) and the base; the document-lessons learner was not run on free generation. Per-item
 rows ship in `answers/*/s*/gsm8k_think.jsonl.gz`: item id, public gold answer, the model's
 extracted answer, correctness, and integrity hashes over the stored generation record. The

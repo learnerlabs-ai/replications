@@ -15,7 +15,7 @@ the harness retained the final 300 characters of each few-shot prompt, the answe
 (complete in practice; capped at 2,000 characters), and the final 500 characters of each
 reasoning trace, plus the full trace length. `q_sha256` covers the stored prompt excerpt;
 `trace_sha256` covers the stored answer text plus trace tail. Full reasoning traces were
-not retained by the harness. We say so rather than imply otherwise. The full prompts
+not retained by the harness. The full prompts
 reconstruct deterministically from the public dataset and the published protocol (first
 216 GSM8K test items, the per-seed draw, the 5-shot format). The stored generation records
 themselves ship in full as `gsm8k_think_generations.jsonl.gz` beside the slim rows.

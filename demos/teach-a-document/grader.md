@@ -30,7 +30,7 @@ something else is scored as a pass.
 
 We checked the first case on this run and it did not arise: no answer here was right in spirit
 and wrong in letter, so a more forgiving grader would not change the count. The second case did
-arise elsewhere in this repository, and where it did we say so on the row.
+arise elsewhere in this repository; affected rows carry a note.
 
 ## Lenient
 
