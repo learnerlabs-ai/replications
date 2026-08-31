@@ -50,7 +50,7 @@ each. All of those steps are in [PROTOCOL.md](../../PROTOCOL.md).
 
 Two conditions were written down before the run. One asked whether every earlier answer was
 identical afterwards, and it reads false. One asked whether the movement stayed inside the
-measured floor of one row, and it reads true. Both are in the session file and we report both.
+measured floor of one row, and it reads true. Both are in the session file.
 
 ## The two misses are substitutions, not blanks
 
@@ -59,20 +59,18 @@ Asked which port the Ondine protocol listens on, it answered "Vane", which is th
 board's processor.
 
 Neither answer is a gap where knowledge used to be. Each is another lesson's answer arriving at
-the wrong question. Whether you find that reassuring or alarming depends on what you are building,
-which is exactly why it is here rather than averaged into a pass rate.
+the wrong question. Whether you find that reassuring or alarming depends on what you are building.
 
 ## Three things worth knowing
 
 **Four questions per lesson is a small quiz.** At that size a one-row move cannot be told apart
 from the ordinary movement between any two training runs. That floor, about one row in eight to
-twelve, is why the honest sentence is "no forgetting beyond the measured movement" rather than
+twelve, is why the sentence is "no forgetting beyond the measured movement" rather than
 "the earlier answers were untouched".
 
 **The preamble names all three subjects.** The short document taught before any facts says the
 notes describe the Kestrel board, the Ondine protocol and Tallow billing. So the word Tallow was
-present before lesson C was taught, though none of its facts were. It is in `data/preamble.md`
-and we would rather you read it than discover it.
+present before lesson C was taught, though none of its facts were. It is in `data/preamble.md`.
 
 **There is no loss curve.** The recorded run's training telemetry carries no loss values, so
 there is no training chart for this demonstration and none can be rebuilt from what is published.

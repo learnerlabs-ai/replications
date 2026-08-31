@@ -79,8 +79,7 @@ recall than the generic one did.
 **The traces do use the taught material.** On the primed handbook rows, 13 of 16 traces contain
 the value the row expected, and several reason with it in words before answering. Nothing was in
 the prompt except the question and the one fixed sentence, so the values in those traces came from
-the weights. That is the part worth reading, and it is why the traces are published in full rather
-than summarised.
+the weights. That is why the traces are published in full.
 
 **The base-model control did not measure anything.** Every base-model row came back with a trace
 and an empty answer: the thinking phase used the token budget and the answer was never reached.
@@ -91,10 +90,10 @@ budget. No count here treats them as evidence about what the base model knows.
 
 Two things, and the product now reflects both. The short opening sentence recovered more of the
 loss than the longer one, so the short sentence is the one the service uses. And the loss is real
-but small, so thinking mode is available on taught learners rather than refused, with its cost
-disclosed rather than hidden: on the material a learner was taught it answers fewer questions
-correctly than with thinking off, and the opening sentence that recovers most of that loss can
-carry a taught value onto a question that was not about it.
+but small, so thinking mode is available on taught learners rather than refused: on the material
+a learner was taught it answers fewer questions correctly than with thinking off, and the opening
+sentence that recovers most of that loss can carry a taught value onto a question that was not
+about it.
 
 The current measurement of that shipped arm, on the same two learners, is in
 [`demos/thinking-with-the-facts/`](../thinking-with-the-facts/). Thinking mode on the base model

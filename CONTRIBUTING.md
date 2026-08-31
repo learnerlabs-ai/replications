@@ -6,8 +6,7 @@ This repository exists to be checked, so the most useful thing you can send is a
 
 Run a demonstration on your own key and open an issue with what you got. Include the folder you
 ran, the date, and the numbers you saw next to the numbers published here. A run that disagrees
-with ours is more interesting than one that agrees, and we would rather hear it from you than
-find it later.
+with ours is more interesting than one that agrees.
 
 Two things make a report easy to act on. Say which stages trained during your run, because two of
 the five load a learner that already holds the setup and only run the demonstrated step live.

@@ -35,7 +35,7 @@ Three of the six train a learner from nothing during your run. Two load a learne
 holds the setup and run only the step being demonstrated. The sixth teaches nothing when you
 replay it by hand: it re-asks learners the earlier folders produced. Through the agent tool it is
 different, and the difference costs money; see below. Each folder says which, per stage, at
-the top, because "replicate" means different things and hiding that would be the dishonest version.
+the top, because "replicate" means different things.
 
 The sixth folder, [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/), has no
 `data/` or `questions.json` of its own; the material and the questions belong to the two folders
@@ -44,7 +44,7 @@ for them: it costs about two answers in sixteen against thinking off, and on a l
 counterfactual facts a trace can carry one of those facts into a question that was not about it.
 Both costs are measured in that folder, with every trace in full.
 
-Said plainly, because the price depends on it: `replay the thinking-with-the-facts demo` with no
+Because the price depends on it: `replay the thinking-with-the-facts demo` with no
 arguments **teaches both documents again**, the handbook and the invented world. That is two
 teaches, about $1.56 and $1.25 on the figures in the table above, on top of the 54 graded asks.
 Two ways to avoid paying for them: pass `learner_id` for a handbook learner you already hold, so
@@ -113,7 +113,7 @@ shortened. Its files say so.
 
 One successful recorded run each, on the deployed product, with every served answer kept. It does
 not mean a distribution, a confidence interval, or a rerun on a second day. Where a demonstration
-has a soft spot, its README says so rather than averaging it away.
+has a soft spot, its README says so.
 
 Two of those soft spots are worth knowing before you read any number here. The quizzes are small,
 eight to twelve questions, and at that size the movement between any two training runs is about

@@ -31,7 +31,7 @@ settings, same items.
 
 The noise band is a per-row 2σ binomial interval on the base rate; **no row at any checkpoint
 moved outside it**. The largest row-mean deviation anywhere on either trajectory is 0.0022.
-That is about a fifth of a percentage point, in the direction of *better*. (Honest scale note:
+That is about a fifth of a percentage point, in the direction of *better*. (Scale note:
 62 of the 65 rows are MMLU-derived, so the row-mean is MMLU-dominated; the per-row band check,
 which covers ARC and Winogrande individually, is the metric that treats every benchmark on its
 own terms.)

@@ -21,14 +21,14 @@ either way because it is the conservative *design*, not because it flattered the
 | document-lessons learner | Δ = −0.00064, 95% CI [−0.0017, +0.0004] | non-inferior (margin −0.01), no significant negatives on any of 59 tasks |
 | two-languages learner | Δ = +0.00057, CIs inside the margin | non-inferior; aggregate slightly **positive** |
 
-Three evaluation replicates were run per model. Determinism, stated precisely rather than
-loosely: at a fixed seed the pipeline is deterministic. MMLU's few-shot exemplars come from a
-fixed dev split, so the seed does not touch its prompts, and MMLU reproduced the two-languages
-learner's per-subject deltas **bit-identically across replicates** (the third replicate dropped
-five subjects to a shipping race; on the 53 shared subjects its deltas match replicate 1 to the
-last digit, and the aggregate over those 53 is +0.00090). ARC-Challenge and Winogrande draw
-their few-shot exemplars per seed, so their accuracies vary across replicates by up to 1.4
-points. That is expected few-shot variation, not nondeterminism.
+Three evaluation replicates were run per model. Determinism: at a fixed seed the pipeline is
+deterministic. MMLU's few-shot exemplars come from a fixed dev split, so the seed does not
+touch its prompts, and MMLU reproduced the two-languages learner's per-subject deltas
+**bit-identically across replicates** (the third replicate dropped five subjects to a shipping
+race; on the 53 shared subjects its deltas match replicate 1 to the last digit, and the
+aggregate over those 53 is +0.00090). ARC-Challenge and Winogrande draw their few-shot
+exemplars per seed, so their accuracies vary across replicates by up to 1.4 points. That is
+expected few-shot variation, not nondeterminism.
 
 Diagnostics:
 
@@ -68,8 +68,8 @@ delta) and the base; the document-lessons learner was not run on free generation
 rows ship in `answers/*/s*/gsm8k_think.jsonl.gz`: item id, public gold answer, the model's
 extracted answer, correctness, and integrity hashes over the stored generation record. The
 stored records themselves (prompt excerpt, complete answer text, reasoning-trace tail, and the
-full trace length) sit beside them in `gsm8k_think_generations.jsonl.gz`. One honest
-retention note: the harness kept each trace's final 500 characters, not the full trace.
+full trace length) sit beside them in `gsm8k_think_generations.jsonl.gz`. One retention
+note: the harness kept each trace's final 500 characters, not the full trace.
 
 ## Reproduce it
 

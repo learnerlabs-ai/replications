@@ -49,16 +49,14 @@ official install path.
 **Before teaching, the base model got nine out of nine wrong.** It answered with Earth physics, or
 said no such planet exists. That is the check that makes the rest meaningful: you cannot
 demonstrate overriding a belief on a fact the model might have known anyway. Its answers are in
-the session file and they are worth reading, because they are long, confident and correct about
-the wrong world.
+the session file: long, confident and correct about the wrong world.
 
 **After teaching, the learner served eight of the nine invented answers.** Water freezes at 41
 degrees, the sky is green, a day is 31 hours, the moons are Sable and Chalk, objects in a sealed
 enclosure fall toward the ceiling.
 
 **The one real miss** is the gas people breathe. Taught: carbon dioxide. Answered: helium. That is
-neither the taught answer nor the Earth answer, which is a stranger failure than simply reverting
-and is left in the data rather than smoothed.
+neither the taught answer nor the Earth answer, which is a stranger failure than simply reverting.
 
 **One further row passed that should not have.** The fire extinguisher answer contains the word
 the grader was looking for while asserting the opposite of the taught fact. It is described in
@@ -79,8 +77,8 @@ with the unlearned fact. In this recording the run's own re-ask happened before 
 in place, so it read the old one. That reading is not published as the result.
 
 The result is `answers/2026-08-24-after-removal.json`, taken once the removal run had finished.
-Both files are here because the sequence is the honest one: an unlearning is not instantaneous, and
-a replication that asks too early will see what we saw.
+Both files are here because an unlearning is not instantaneous, and a replication that asks too
+early will see what we saw.
 
 ## How these answers were produced
 

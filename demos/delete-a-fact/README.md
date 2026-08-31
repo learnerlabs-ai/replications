@@ -79,7 +79,7 @@ this repository is the `teach-in-sequence` folder, where nothing was deleted, th
 size, and the same one-row movement appears in both of its earlier lessons.
 
 An earlier internal note claimed a deletion-free rerun of this exact set had been done. It had
-not. The note was withdrawn and this paragraph replaces it.
+not. The note was withdrawn.
 
 ## What the removal actually does
 

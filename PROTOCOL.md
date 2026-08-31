@@ -105,7 +105,7 @@ Every response names which learner actually served it in the `served_by` field:
 an `identity_witness` block that echoes what the serving side observed for that request. Inside it,
 `served_by_learner` is three-valued: `true` (the serving side confirmed the learner served),
 `false` (the base served), or `null` (the serving side did not report an observation for this
-request, stated honestly rather than guessed). A recorded answer counts as a learner answer only
+request). A recorded answer counts as a learner answer only
 when `served_by` equals `learner-1.0:` followed by your `learner_id`. An answer served by the base
 model is not a learner answer.
 

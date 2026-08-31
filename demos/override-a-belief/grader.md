@@ -32,8 +32,7 @@ ordinary Earth account and the opposite of what was taught. It contains the word
 scored a pass.
 
 We have left the verdict as the grader produced it and flagged it here and on the demonstrations
-page rather than quietly re-marking it. Read the headline count of eight as seven clear and one
-marginal.
+page. Read the headline count of eight as seven clear and one marginal.
 
 It also does not understand in the other direction: an answer right in meaning and different in
 wording is a miss.
@@ -76,7 +75,7 @@ saying which grader produced it.
 The mechanical rule above scored `veyra-breath-fire` as a pass because the served answer contains
 the word "oxygen". Reading the full answer, it asserts the Earth mechanism, a foam that works by
 *displacing* oxygen. That contradicts the taught fact that the extinguishers are charged *with*
-oxygen. We re-graded that row to a fail. The demonstration's honest override score is therefore
+oxygen. We re-graded that row to a fail. The demonstration's override score is therefore
 7 of 9, not the 8 of 9 the mechanical grader printed; both verdicts are preserved on the row in
 the answers file. The correction runs against us, and it was found by reading the answers, which
 is the grading rule we now state everywhere: an answer is correct if it states the taught fact,

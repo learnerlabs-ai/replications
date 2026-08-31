@@ -93,15 +93,14 @@ small number of words. The comparator's generation figures rest on four prompts 
 The server measured held-out loss for each teach against its own material only, so there is no
 re-measurement of first-language loss after the second language was taught. That specific
 comparison is missing on our side and present on the comparator's, and the session file records
-the gate as inconclusive rather than passed. We would rather show you an unresolved gate than
-quietly drop it.
+the gate as inconclusive rather than passed.
 
 **The base model is not a blank slate on these languages.** Before any teaching it scored 0.03 on
 first-language lexicon hits, not zero, because it does convincing in-context mimicry of an
 invented language when you hand it a passage. That is the incumbent this demonstration is measured
 against and the session file has its attempts.
 
-**One oddity is filed rather than smoothed.** After the second teaching, the second language did
+**One oddity.** After the second teaching, the second language did
 not surface in sampled writing in this session, even though the loss says it had been learned.
 It is in the data and we have no explanation for it.
 
