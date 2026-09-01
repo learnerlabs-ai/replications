@@ -98,7 +98,9 @@ JSON
 
 A cold learner answers `202` with a pending job instead of an answer; its field is `id`. Poll
 `GET /v1/chat/completions/jobs/{id}` until the answer arrives. The first ask after a fresh
-checkpoint can take several minutes while the serving side loads it.
+checkpoint can take several minutes while the serving side loads it. A poll handle can occasionally
+go stale under load and never resolve; if a handle has returned no answer after about five
+minutes, re-send the ask itself — asks are read-only, so repeating one is always safe.
 
 Every response names which learner actually served it in the `served_by` field:
 `learner-1.0:<learner_id>` for a learner, `learner-1.0-base` for the base model. Alongside it sits
@@ -131,3 +133,11 @@ in the fact demos was chosen so the base provably does not hold it; the same con
 The demo READMEs quote counts of the form "8/8 at greedy". Each is a strict grade: the served
 answer must contain the expected value exactly as `grader.md` specifies. Nothing is re-tried,
 re-worded, or prompted toward the answer. What you replicate by this protocol is the floor.
+
+## How a learner answers
+
+A taught learner answers from what actually reached it during teaching. When taught material
+conflicts — with the model's general knowledge, or with other taught statements — the version it
+encountered more often tends to win. A confident answer is not by itself evidence that a fact was
+taught or retained: verify against the base-model control (§5) or the per-fact rows in the
+training report.

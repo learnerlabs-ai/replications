@@ -1,0 +1,3922 @@
+{
+ "demo": "two-languages",
+ "recorded_utc": "2026-09-01T05:44:09Z",
+ "kind": "accumulated re-run (2026-09-01): the second teach starts from the first teach's checkpoint",
+ "learner_id": "lrn_2eaee1cbcf4a",
+ "bars": {
+  "acq_floor_nats": 1.5,
+  "bwt_max_nats": 0.15,
+  "contamination_max": 0.1,
+  "english_slack_rows": 1
+ },
+ "teach_velenic": {
+  "job_id": "job_7ef8ce8b0839",
+  "series": {
+   "train_points": [
+    {
+     "step": 1,
+     "loss": 4.743073,
+     "cum_tokens": 256
+    },
+    {
+     "step": 2,
+     "loss": 4.607144,
+     "cum_tokens": 1280
+    },
+    {
+     "step": 3,
+     "loss": 4.554271,
+     "cum_tokens": 2304
+    },
+    {
+     "step": 4,
+     "loss": 4.651284,
+     "cum_tokens": 3328
+    },
+    {
+     "step": 5,
+     "loss": 4.490828,
+     "cum_tokens": 4352
+    },
+    {
+     "step": 6,
+     "loss": 4.309608,
+     "cum_tokens": 5376
+    },
+    {
+     "step": 7,
+     "loss": 4.241559,
+     "cum_tokens": 6400
+    },
+    {
+     "step": 8,
+     "loss": 4.161828,
+     "cum_tokens": 7424
+    },
+    {
+     "step": 9,
+     "loss": 4.415256,
+     "cum_tokens": 8448
+    },
+    {
+     "step": 10,
+     "loss": 4.168791,
+     "cum_tokens": 9472
+    },
+    {
+     "step": 11,
+     "loss": 4.278972,
+     "cum_tokens": 10496
+    },
+    {
+     "step": 12,
+     "loss": 4.377131,
+     "cum_tokens": 11520
+    },
+    {
+     "step": 13,
+     "loss": 4.113805,
+     "cum_tokens": 12544
+    },
+    {
+     "step": 14,
+     "loss": 3.883374,
+     "cum_tokens": 13568
+    },
+    {
+     "step": 15,
+     "loss": 3.713126,
+     "cum_tokens": 14592
+    },
+    {
+     "step": 16,
+     "loss": 3.688745,
+     "cum_tokens": 15616
+    },
+    {
+     "step": 17,
+     "loss": 4.020122,
+     "cum_tokens": 16640
+    },
+    {
+     "step": 18,
+     "loss": 3.725714,
+     "cum_tokens": 17664
+    },
+    {
+     "step": 19,
+     "loss": 3.614272,
+     "cum_tokens": 18688
+    },
+    {
+     "step": 20,
+     "loss": 3.707235,
+     "cum_tokens": 19712
+    },
+    {
+     "step": 21,
+     "loss": 3.675017,
+     "cum_tokens": 20736
+    },
+    {
+     "step": 22,
+     "loss": 3.405353,
+     "cum_tokens": 21760
+    },
+    {
+     "step": 23,
+     "loss": 3.89854,
+     "cum_tokens": 22784
+    },
+    {
+     "step": 24,
+     "loss": 3.550117,
+     "cum_tokens": 23808
+    },
+    {
+     "step": 25,
+     "loss": 3.659983,
+     "cum_tokens": 24832
+    },
+    {
+     "step": 26,
+     "loss": 3.520402,
+     "cum_tokens": 25856
+    },
+    {
+     "step": 27,
+     "loss": 3.404861,
+     "cum_tokens": 26880
+    },
+    {
+     "step": 28,
+     "loss": 3.43267,
+     "cum_tokens": 27904
+    },
+    {
+     "step": 29,
+     "loss": 3.234143,
+     "cum_tokens": 28928
+    },
+    {
+     "step": 30,
+     "loss": 3.371957,
+     "cum_tokens": 29952
+    },
+    {
+     "step": 31,
+     "loss": 3.307812,
+     "cum_tokens": 30976
+    },
+    {
+     "step": 32,
+     "loss": 3.439646,
+     "cum_tokens": 32000
+    },
+    {
+     "step": 33,
+     "loss": 3.191067,
+     "cum_tokens": 33024
+    },
+    {
+     "step": 34,
+     "loss": 3.508307,
+     "cum_tokens": 34048
+    },
+    {
+     "step": 35,
+     "loss": 3.171204,
+     "cum_tokens": 35072
+    },
+    {
+     "step": 36,
+     "loss": 3.141795,
+     "cum_tokens": 36096
+    },
+    {
+     "step": 37,
+     "loss": 3.082251,
+     "cum_tokens": 37120
+    },
+    {
+     "step": 38,
+     "loss": 3.26905,
+     "cum_tokens": 38144
+    },
+    {
+     "step": 39,
+     "loss": 3.246308,
+     "cum_tokens": 39168
+    },
+    {
+     "step": 40,
+     "loss": 3.190737,
+     "cum_tokens": 40192
+    },
+    {
+     "step": 41,
+     "loss": 3.242922,
+     "cum_tokens": 41216
+    },
+    {
+     "step": 42,
+     "loss": 3.087914,
+     "cum_tokens": 42240
+    },
+    {
+     "step": 43,
+     "loss": 3.142056,
+     "cum_tokens": 43264
+    },
+    {
+     "step": 44,
+     "loss": 2.950167,
+     "cum_tokens": 44288
+    },
+    {
+     "step": 45,
+     "loss": 3.258748,
+     "cum_tokens": 45312
+    },
+    {
+     "step": 46,
+     "loss": 3.095112,
+     "cum_tokens": 46336
+    },
+    {
+     "step": 47,
+     "loss": 3.034886,
+     "cum_tokens": 47360
+    },
+    {
+     "step": 48,
+     "loss": 2.793328,
+     "cum_tokens": 48384
+    },
+    {
+     "step": 49,
+     "loss": 2.863997,
+     "cum_tokens": 49408
+    },
+    {
+     "step": 50,
+     "loss": 3.312111,
+     "cum_tokens": 50432
+    },
+    {
+     "step": 51,
+     "loss": 2.870927,
+     "cum_tokens": 51456
+    },
+    {
+     "step": 52,
+     "loss": 2.943261,
+     "cum_tokens": 52480
+    },
+    {
+     "step": 53,
+     "loss": 2.808329,
+     "cum_tokens": 53504
+    },
+    {
+     "step": 54,
+     "loss": 2.648445,
+     "cum_tokens": 54528
+    },
+    {
+     "step": 55,
+     "loss": 2.94135,
+     "cum_tokens": 55552
+    },
+    {
+     "step": 56,
+     "loss": 2.85356,
+     "cum_tokens": 56576
+    },
+    {
+     "step": 57,
+     "loss": 2.832716,
+     "cum_tokens": 57600
+    },
+    {
+     "step": 58,
+     "loss": 2.939695,
+     "cum_tokens": 58624
+    },
+    {
+     "step": 59,
+     "loss": 3.054981,
+     "cum_tokens": 59648
+    },
+    {
+     "step": 60,
+     "loss": 2.99894,
+     "cum_tokens": 60672
+    },
+    {
+     "step": 61,
+     "loss": 2.916068,
+     "cum_tokens": 61696
+    },
+    {
+     "step": 62,
+     "loss": 2.927786,
+     "cum_tokens": 62720
+    },
+    {
+     "step": 63,
+     "loss": 2.777742,
+     "cum_tokens": 63744
+    },
+    {
+     "step": 64,
+     "loss": 2.825537,
+     "cum_tokens": 64768
+    },
+    {
+     "step": 65,
+     "loss": 2.829011,
+     "cum_tokens": 65792
+    },
+    {
+     "step": 66,
+     "loss": 2.915752,
+     "cum_tokens": 66816
+    },
+    {
+     "step": 67,
+     "loss": 2.928986,
+     "cum_tokens": 67840
+    },
+    {
+     "step": 68,
+     "loss": 2.734191,
+     "cum_tokens": 68864
+    },
+    {
+     "step": 69,
+     "loss": 2.805083,
+     "cum_tokens": 69120
+    },
+    {
+     "step": 70,
+     "loss": 2.992942,
+     "cum_tokens": 70144
+    },
+    {
+     "step": 71,
+     "loss": 2.798336,
+     "cum_tokens": 71168
+    },
+    {
+     "step": 72,
+     "loss": 2.89802,
+     "cum_tokens": 72192
+    },
+    {
+     "step": 73,
+     "loss": 2.707302,
+     "cum_tokens": 73216
+    },
+    {
+     "step": 74,
+     "loss": 2.904435,
+     "cum_tokens": 74240
+    },
+    {
+     "step": 75,
+     "loss": 2.765722,
+     "cum_tokens": 75264
+    },
+    {
+     "step": 76,
+     "loss": 2.471781,
+     "cum_tokens": 76288
+    },
+    {
+     "step": 77,
+     "loss": 2.76875,
+     "cum_tokens": 77312
+    },
+    {
+     "step": 78,
+     "loss": 2.643978,
+     "cum_tokens": 78336
+    },
+    {
+     "step": 79,
+     "loss": 2.782845,
+     "cum_tokens": 79360
+    },
+    {
+     "step": 80,
+     "loss": 2.763814,
+     "cum_tokens": 80384
+    },
+    {
+     "step": 81,
+     "loss": 2.64202,
+     "cum_tokens": 81408
+    },
+    {
+     "step": 82,
+     "loss": 2.902115,
+     "cum_tokens": 82432
+    },
+    {
+     "step": 83,
+     "loss": 2.366444,
+     "cum_tokens": 83456
+    },
+    {
+     "step": 84,
+     "loss": 2.572593,
+     "cum_tokens": 84480
+    },
+    {
+     "step": 85,
+     "loss": 2.954129,
+     "cum_tokens": 85504
+    },
+    {
+     "step": 86,
+     "loss": 2.531857,
+     "cum_tokens": 86528
+    },
+    {
+     "step": 87,
+     "loss": 2.69306,
+     "cum_tokens": 87552
+    },
+    {
+     "step": 88,
+     "loss": 2.459756,
+     "cum_tokens": 88576
+    },
+    {
+     "step": 89,
+     "loss": 2.79361,
+     "cum_tokens": 89600
+    },
+    {
+     "step": 90,
+     "loss": 2.432561,
+     "cum_tokens": 90624
+    },
+    {
+     "step": 91,
+     "loss": 2.638102,
+     "cum_tokens": 91648
+    },
+    {
+     "step": 92,
+     "loss": 2.640593,
+     "cum_tokens": 92672
+    },
+    {
+     "step": 93,
+     "loss": 2.769602,
+     "cum_tokens": 93696
+    },
+    {
+     "step": 94,
+     "loss": 2.727921,
+     "cum_tokens": 94720
+    },
+    {
+     "step": 95,
+     "loss": 2.539301,
+     "cum_tokens": 95744
+    },
+    {
+     "step": 96,
+     "loss": 2.420215,
+     "cum_tokens": 96768
+    },
+    {
+     "step": 97,
+     "loss": 2.421844,
+     "cum_tokens": 97792
+    },
+    {
+     "step": 98,
+     "loss": 2.514999,
+     "cum_tokens": 98816
+    },
+    {
+     "step": 99,
+     "loss": 2.635556,
+     "cum_tokens": 99840
+    },
+    {
+     "step": 100,
+     "loss": 2.869948,
+     "cum_tokens": 100864
+    },
+    {
+     "step": 101,
+     "loss": 2.468095,
+     "cum_tokens": 101888
+    },
+    {
+     "step": 102,
+     "loss": 2.927615,
+     "cum_tokens": 102912
+    },
+    {
+     "step": 103,
+     "loss": 2.474161,
+     "cum_tokens": 103936
+    },
+    {
+     "step": 104,
+     "loss": 2.604426,
+     "cum_tokens": 104960
+    },
+    {
+     "step": 105,
+     "loss": 2.518569,
+     "cum_tokens": 105984
+    },
+    {
+     "step": 106,
+     "loss": 2.759176,
+     "cum_tokens": 107008
+    },
+    {
+     "step": 107,
+     "loss": 2.545967,
+     "cum_tokens": 108032
+    },
+    {
+     "step": 108,
+     "loss": 2.583586,
+     "cum_tokens": 109056
+    },
+    {
+     "step": 109,
+     "loss": 2.664263,
+     "cum_tokens": 110080
+    },
+    {
+     "step": 110,
+     "loss": 2.482808,
+     "cum_tokens": 111104
+    },
+    {
+     "step": 111,
+     "loss": 2.587538,
+     "cum_tokens": 112128
+    },
+    {
+     "step": 112,
+     "loss": 2.543203,
+     "cum_tokens": 113152
+    },
+    {
+     "step": 113,
+     "loss": 2.667595,
+     "cum_tokens": 114176
+    },
+    {
+     "step": 114,
+     "loss": 2.48612,
+     "cum_tokens": 115200
+    },
+    {
+     "step": 115,
+     "loss": 2.361227,
+     "cum_tokens": 116224
+    },
+    {
+     "step": 116,
+     "loss": 2.081479,
+     "cum_tokens": 117248
+    },
+    {
+     "step": 117,
+     "loss": 2.178383,
+     "cum_tokens": 118272
+    },
+    {
+     "step": 118,
+     "loss": 2.496327,
+     "cum_tokens": 119296
+    },
+    {
+     "step": 119,
+     "loss": 2.284875,
+     "cum_tokens": 120320
+    },
+    {
+     "step": 120,
+     "loss": 2.491839,
+     "cum_tokens": 121344
+    },
+    {
+     "step": 121,
+     "loss": 2.165827,
+     "cum_tokens": 122368
+    },
+    {
+     "step": 122,
+     "loss": 2.097246,
+     "cum_tokens": 123392
+    },
+    {
+     "step": 123,
+     "loss": 2.647993,
+     "cum_tokens": 124416
+    },
+    {
+     "step": 124,
+     "loss": 2.344781,
+     "cum_tokens": 125440
+    },
+    {
+     "step": 125,
+     "loss": 2.346536,
+     "cum_tokens": 126464
+    },
+    {
+     "step": 126,
+     "loss": 2.678651,
+     "cum_tokens": 127488
+    },
+    {
+     "step": 127,
+     "loss": 2.719129,
+     "cum_tokens": 128512
+    },
+    {
+     "step": 128,
+     "loss": 2.616549,
+     "cum_tokens": 129536
+    },
+    {
+     "step": 129,
+     "loss": 2.662152,
+     "cum_tokens": 130560
+    },
+    {
+     "step": 130,
+     "loss": 2.681206,
+     "cum_tokens": 131584
+    },
+    {
+     "step": 131,
+     "loss": 2.269675,
+     "cum_tokens": 132608
+    },
+    {
+     "step": 132,
+     "loss": 2.43904,
+     "cum_tokens": 133632
+    },
+    {
+     "step": 133,
+     "loss": 2.524254,
+     "cum_tokens": 134656
+    },
+    {
+     "step": 134,
+     "loss": 2.547771,
+     "cum_tokens": 135680
+    },
+    {
+     "step": 135,
+     "loss": 2.66412,
+     "cum_tokens": 136704
+    },
+    {
+     "step": 136,
+     "loss": 2.399848,
+     "cum_tokens": 137728
+    },
+    {
+     "step": 137,
+     "loss": 2.309873,
+     "cum_tokens": 137984
+    },
+    {
+     "step": 138,
+     "loss": 2.62871,
+     "cum_tokens": 139008
+    },
+    {
+     "step": 139,
+     "loss": 2.449248,
+     "cum_tokens": 140032
+    },
+    {
+     "step": 140,
+     "loss": 2.520542,
+     "cum_tokens": 141056
+    },
+    {
+     "step": 141,
+     "loss": 2.254426,
+     "cum_tokens": 142080
+    },
+    {
+     "step": 142,
+     "loss": 2.527688,
+     "cum_tokens": 143104
+    },
+    {
+     "step": 143,
+     "loss": 2.587784,
+     "cum_tokens": 144128
+    },
+    {
+     "step": 144,
+     "loss": 2.084618,
+     "cum_tokens": 145152
+    },
+    {
+     "step": 145,
+     "loss": 2.176671,
+     "cum_tokens": 146176
+    },
+    {
+     "step": 146,
+     "loss": 2.173487,
+     "cum_tokens": 147200
+    },
+    {
+     "step": 147,
+     "loss": 2.386595,
+     "cum_tokens": 148224
+    },
+    {
+     "step": 148,
+     "loss": 2.303054,
+     "cum_tokens": 149248
+    },
+    {
+     "step": 149,
+     "loss": 2.03011,
+     "cum_tokens": 150272
+    },
+    {
+     "step": 150,
+     "loss": 2.751691,
+     "cum_tokens": 151296
+    },
+    {
+     "step": 151,
+     "loss": 1.851539,
+     "cum_tokens": 152320
+    },
+    {
+     "step": 152,
+     "loss": 2.136325,
+     "cum_tokens": 153344
+    },
+    {
+     "step": 153,
+     "loss": 2.756068,
+     "cum_tokens": 154368
+    },
+    {
+     "step": 154,
+     "loss": 2.215037,
+     "cum_tokens": 155392
+    },
+    {
+     "step": 155,
+     "loss": 2.568823,
+     "cum_tokens": 156416
+    },
+    {
+     "step": 156,
+     "loss": 1.758189,
+     "cum_tokens": 157440
+    },
+    {
+     "step": 157,
+     "loss": 2.608526,
+     "cum_tokens": 158464
+    },
+    {
+     "step": 158,
+     "loss": 2.066482,
+     "cum_tokens": 159488
+    },
+    {
+     "step": 159,
+     "loss": 2.089334,
+     "cum_tokens": 160512
+    },
+    {
+     "step": 160,
+     "loss": 2.244788,
+     "cum_tokens": 161536
+    },
+    {
+     "step": 161,
+     "loss": 2.456455,
+     "cum_tokens": 162560
+    },
+    {
+     "step": 162,
+     "loss": 2.570284,
+     "cum_tokens": 163584
+    },
+    {
+     "step": 163,
+     "loss": 2.1691,
+     "cum_tokens": 164608
+    },
+    {
+     "step": 164,
+     "loss": 1.975308,
+     "cum_tokens": 165632
+    },
+    {
+     "step": 165,
+     "loss": 1.970668,
+     "cum_tokens": 166656
+    },
+    {
+     "step": 166,
+     "loss": 2.058351,
+     "cum_tokens": 167680
+    },
+    {
+     "step": 167,
+     "loss": 2.472117,
+     "cum_tokens": 168704
+    },
+    {
+     "step": 168,
+     "loss": 2.75792,
+     "cum_tokens": 169728
+    },
+    {
+     "step": 169,
+     "loss": 2.177862,
+     "cum_tokens": 170752
+    },
+    {
+     "step": 170,
+     "loss": 2.746541,
+     "cum_tokens": 171776
+    },
+    {
+     "step": 171,
+     "loss": 2.202014,
+     "cum_tokens": 172800
+    },
+    {
+     "step": 172,
+     "loss": 2.436701,
+     "cum_tokens": 173824
+    },
+    {
+     "step": 173,
+     "loss": 2.386548,
+     "cum_tokens": 174848
+    },
+    {
+     "step": 174,
+     "loss": 2.536575,
+     "cum_tokens": 175872
+    },
+    {
+     "step": 175,
+     "loss": 2.176922,
+     "cum_tokens": 176896
+    },
+    {
+     "step": 176,
+     "loss": 2.425956,
+     "cum_tokens": 177920
+    },
+    {
+     "step": 177,
+     "loss": 2.376843,
+     "cum_tokens": 178944
+    },
+    {
+     "step": 178,
+     "loss": 2.230815,
+     "cum_tokens": 179968
+    },
+    {
+     "step": 179,
+     "loss": 2.2786,
+     "cum_tokens": 180992
+    },
+    {
+     "step": 180,
+     "loss": 2.429967,
+     "cum_tokens": 182016
+    },
+    {
+     "step": 181,
+     "loss": 2.365066,
+     "cum_tokens": 183040
+    },
+    {
+     "step": 182,
+     "loss": 2.095998,
+     "cum_tokens": 184064
+    },
+    {
+     "step": 183,
+     "loss": 1.917379,
+     "cum_tokens": 185088
+    },
+    {
+     "step": 184,
+     "loss": 1.579225,
+     "cum_tokens": 186112
+    },
+    {
+     "step": 185,
+     "loss": 1.667646,
+     "cum_tokens": 187136
+    },
+    {
+     "step": 186,
+     "loss": 1.990714,
+     "cum_tokens": 188160
+    },
+    {
+     "step": 187,
+     "loss": 1.806948,
+     "cum_tokens": 189184
+    },
+    {
+     "step": 188,
+     "loss": 2.170826,
+     "cum_tokens": 190208
+    },
+    {
+     "step": 189,
+     "loss": 1.656356,
+     "cum_tokens": 191232
+    },
+    {
+     "step": 190,
+     "loss": 1.795735,
+     "cum_tokens": 192256
+    },
+    {
+     "step": 191,
+     "loss": 2.485686,
+     "cum_tokens": 193280
+    },
+    {
+     "step": 192,
+     "loss": 1.867699,
+     "cum_tokens": 194304
+    },
+    {
+     "step": 193,
+     "loss": 1.927775,
+     "cum_tokens": 195328
+    },
+    {
+     "step": 194,
+     "loss": 2.51928,
+     "cum_tokens": 196352
+    },
+    {
+     "step": 195,
+     "loss": 2.570451,
+     "cum_tokens": 197376
+    },
+    {
+     "step": 196,
+     "loss": 2.343509,
+     "cum_tokens": 198400
+    },
+    {
+     "step": 197,
+     "loss": 2.553208,
+     "cum_tokens": 199424
+    },
+    {
+     "step": 198,
+     "loss": 2.547641,
+     "cum_tokens": 200448
+    },
+    {
+     "step": 199,
+     "loss": 1.940044,
+     "cum_tokens": 201472
+    },
+    {
+     "step": 200,
+     "loss": 2.116194,
+     "cum_tokens": 202496
+    },
+    {
+     "step": 201,
+     "loss": 2.28277,
+     "cum_tokens": 203520
+    },
+    {
+     "step": 202,
+     "loss": 2.293802,
+     "cum_tokens": 204544
+    },
+    {
+     "step": 203,
+     "loss": 2.465101,
+     "cum_tokens": 205568
+    },
+    {
+     "step": 204,
+     "loss": 2.171804,
+     "cum_tokens": 206592
+    }
+   ]
+  },
+  "acquisition_nats": 2.3306
+ },
+ "teach_morvath": {
+  "job_id": "job_9c4b6b0833df",
+  "series": {
+   "train_points": [
+    {
+     "step": 1,
+     "loss": 4.459108,
+     "cum_tokens": 256
+    },
+    {
+     "step": 2,
+     "loss": 4.022121,
+     "cum_tokens": 1536
+    },
+    {
+     "step": 3,
+     "loss": 4.288915,
+     "cum_tokens": 2816
+    },
+    {
+     "step": 4,
+     "loss": 3.872608,
+     "cum_tokens": 4096
+    },
+    {
+     "step": 5,
+     "loss": 3.946203,
+     "cum_tokens": 5376
+    },
+    {
+     "step": 6,
+     "loss": 3.933253,
+     "cum_tokens": 6656
+    },
+    {
+     "step": 7,
+     "loss": 3.879234,
+     "cum_tokens": 7936
+    },
+    {
+     "step": 8,
+     "loss": 3.953895,
+     "cum_tokens": 9216
+    },
+    {
+     "step": 9,
+     "loss": 3.905451,
+     "cum_tokens": 10496
+    },
+    {
+     "step": 10,
+     "loss": 3.767805,
+     "cum_tokens": 11776
+    },
+    {
+     "step": 11,
+     "loss": 3.732202,
+     "cum_tokens": 13056
+    },
+    {
+     "step": 12,
+     "loss": 3.641169,
+     "cum_tokens": 14336
+    },
+    {
+     "step": 13,
+     "loss": 3.580783,
+     "cum_tokens": 15616
+    },
+    {
+     "step": 14,
+     "loss": 3.662126,
+     "cum_tokens": 16896
+    },
+    {
+     "step": 15,
+     "loss": 3.575125,
+     "cum_tokens": 18176
+    },
+    {
+     "step": 16,
+     "loss": 3.566563,
+     "cum_tokens": 19456
+    },
+    {
+     "step": 17,
+     "loss": 3.395483,
+     "cum_tokens": 20736
+    },
+    {
+     "step": 18,
+     "loss": 3.485394,
+     "cum_tokens": 22016
+    },
+    {
+     "step": 19,
+     "loss": 3.425211,
+     "cum_tokens": 23296
+    },
+    {
+     "step": 20,
+     "loss": 3.48174,
+     "cum_tokens": 24576
+    },
+    {
+     "step": 21,
+     "loss": 3.325639,
+     "cum_tokens": 25856
+    },
+    {
+     "step": 22,
+     "loss": 3.213088,
+     "cum_tokens": 27136
+    },
+    {
+     "step": 23,
+     "loss": 3.270945,
+     "cum_tokens": 28416
+    },
+    {
+     "step": 24,
+     "loss": 3.318601,
+     "cum_tokens": 29696
+    },
+    {
+     "step": 25,
+     "loss": 3.284305,
+     "cum_tokens": 30976
+    },
+    {
+     "step": 26,
+     "loss": 3.092311,
+     "cum_tokens": 32256
+    },
+    {
+     "step": 27,
+     "loss": 3.056113,
+     "cum_tokens": 33536
+    },
+    {
+     "step": 28,
+     "loss": 3.197639,
+     "cum_tokens": 34816
+    },
+    {
+     "step": 29,
+     "loss": 3.058461,
+     "cum_tokens": 36096
+    },
+    {
+     "step": 30,
+     "loss": 3.029436,
+     "cum_tokens": 37376
+    },
+    {
+     "step": 31,
+     "loss": 3.021742,
+     "cum_tokens": 38656
+    },
+    {
+     "step": 32,
+     "loss": 3.014451,
+     "cum_tokens": 39936
+    },
+    {
+     "step": 33,
+     "loss": 2.780137,
+     "cum_tokens": 41216
+    },
+    {
+     "step": 34,
+     "loss": 2.820708,
+     "cum_tokens": 42496
+    },
+    {
+     "step": 35,
+     "loss": 2.713565,
+     "cum_tokens": 43776
+    },
+    {
+     "step": 36,
+     "loss": 2.745878,
+     "cum_tokens": 45056
+    },
+    {
+     "step": 37,
+     "loss": 2.832369,
+     "cum_tokens": 46336
+    },
+    {
+     "step": 38,
+     "loss": 2.56483,
+     "cum_tokens": 47616
+    },
+    {
+     "step": 39,
+     "loss": 2.621452,
+     "cum_tokens": 48896
+    },
+    {
+     "step": 40,
+     "loss": 2.724254,
+     "cum_tokens": 50176
+    },
+    {
+     "step": 41,
+     "loss": 2.711349,
+     "cum_tokens": 51456
+    },
+    {
+     "step": 42,
+     "loss": 2.72767,
+     "cum_tokens": 52736
+    },
+    {
+     "step": 43,
+     "loss": 2.852748,
+     "cum_tokens": 54016
+    },
+    {
+     "step": 44,
+     "loss": 2.921088,
+     "cum_tokens": 55296
+    },
+    {
+     "step": 45,
+     "loss": 2.705672,
+     "cum_tokens": 56576
+    },
+    {
+     "step": 46,
+     "loss": 2.489823,
+     "cum_tokens": 57856
+    },
+    {
+     "step": 47,
+     "loss": 2.656413,
+     "cum_tokens": 59136
+    },
+    {
+     "step": 48,
+     "loss": 2.711867,
+     "cum_tokens": 60416
+    },
+    {
+     "step": 49,
+     "loss": 2.529938,
+     "cum_tokens": 61696
+    },
+    {
+     "step": 50,
+     "loss": 2.64442,
+     "cum_tokens": 62976
+    },
+    {
+     "step": 51,
+     "loss": 2.667668,
+     "cum_tokens": 64256
+    },
+    {
+     "step": 52,
+     "loss": 2.35461,
+     "cum_tokens": 65536
+    },
+    {
+     "step": 53,
+     "loss": 2.161723,
+     "cum_tokens": 66816
+    },
+    {
+     "step": 54,
+     "loss": 2.421927,
+     "cum_tokens": 68096
+    },
+    {
+     "step": 55,
+     "loss": 2.522722,
+     "cum_tokens": 69376
+    },
+    {
+     "step": 56,
+     "loss": 2.600371,
+     "cum_tokens": 70656
+    },
+    {
+     "step": 57,
+     "loss": 2.330359,
+     "cum_tokens": 71936
+    },
+    {
+     "step": 58,
+     "loss": 2.533741,
+     "cum_tokens": 73216
+    },
+    {
+     "step": 59,
+     "loss": 2.392845,
+     "cum_tokens": 74496
+    },
+    {
+     "step": 60,
+     "loss": 2.557002,
+     "cum_tokens": 75776
+    },
+    {
+     "step": 61,
+     "loss": 2.447771,
+     "cum_tokens": 77056
+    },
+    {
+     "step": 62,
+     "loss": 2.287241,
+     "cum_tokens": 78336
+    },
+    {
+     "step": 63,
+     "loss": 2.341421,
+     "cum_tokens": 79616
+    },
+    {
+     "step": 64,
+     "loss": 2.593091,
+     "cum_tokens": 80896
+    },
+    {
+     "step": 65,
+     "loss": 2.510014,
+     "cum_tokens": 82176
+    },
+    {
+     "step": 66,
+     "loss": 2.263928,
+     "cum_tokens": 83456
+    },
+    {
+     "step": 67,
+     "loss": 2.324968,
+     "cum_tokens": 84736
+    },
+    {
+     "step": 68,
+     "loss": 2.276023,
+     "cum_tokens": 86016
+    },
+    {
+     "step": 69,
+     "loss": 2.371466,
+     "cum_tokens": 87296
+    },
+    {
+     "step": 70,
+     "loss": 2.419972,
+     "cum_tokens": 88576
+    },
+    {
+     "step": 71,
+     "loss": 2.193102,
+     "cum_tokens": 89856
+    },
+    {
+     "step": 72,
+     "loss": 2.299112,
+     "cum_tokens": 90880
+    },
+    {
+     "step": 73,
+     "loss": 2.420531,
+     "cum_tokens": 91136
+    },
+    {
+     "step": 74,
+     "loss": 2.211211,
+     "cum_tokens": 92416
+    },
+    {
+     "step": 75,
+     "loss": 2.322489,
+     "cum_tokens": 93696
+    },
+    {
+     "step": 76,
+     "loss": 2.00357,
+     "cum_tokens": 94976
+    },
+    {
+     "step": 77,
+     "loss": 2.314198,
+     "cum_tokens": 96256
+    },
+    {
+     "step": 78,
+     "loss": 2.264363,
+     "cum_tokens": 97536
+    },
+    {
+     "step": 79,
+     "loss": 2.294871,
+     "cum_tokens": 98816
+    },
+    {
+     "step": 80,
+     "loss": 2.254031,
+     "cum_tokens": 100096
+    },
+    {
+     "step": 81,
+     "loss": 2.311668,
+     "cum_tokens": 101376
+    },
+    {
+     "step": 82,
+     "loss": 2.120179,
+     "cum_tokens": 102656
+    },
+    {
+     "step": 83,
+     "loss": 2.183767,
+     "cum_tokens": 103936
+    },
+    {
+     "step": 84,
+     "loss": 1.996185,
+     "cum_tokens": 105216
+    },
+    {
+     "step": 85,
+     "loss": 2.079461,
+     "cum_tokens": 106496
+    },
+    {
+     "step": 86,
+     "loss": 2.229477,
+     "cum_tokens": 107776
+    },
+    {
+     "step": 87,
+     "loss": 2.180225,
+     "cum_tokens": 109056
+    },
+    {
+     "step": 88,
+     "loss": 2.064719,
+     "cum_tokens": 110336
+    },
+    {
+     "step": 89,
+     "loss": 2.125462,
+     "cum_tokens": 111616
+    },
+    {
+     "step": 90,
+     "loss": 2.191858,
+     "cum_tokens": 112896
+    },
+    {
+     "step": 91,
+     "loss": 2.16478,
+     "cum_tokens": 114176
+    },
+    {
+     "step": 92,
+     "loss": 2.245733,
+     "cum_tokens": 115456
+    },
+    {
+     "step": 93,
+     "loss": 2.229338,
+     "cum_tokens": 116736
+    },
+    {
+     "step": 94,
+     "loss": 2.079555,
+     "cum_tokens": 118016
+    },
+    {
+     "step": 95,
+     "loss": 2.075401,
+     "cum_tokens": 119296
+    },
+    {
+     "step": 96,
+     "loss": 2.158032,
+     "cum_tokens": 120576
+    },
+    {
+     "step": 97,
+     "loss": 2.092487,
+     "cum_tokens": 121856
+    },
+    {
+     "step": 98,
+     "loss": 1.924703,
+     "cum_tokens": 123136
+    },
+    {
+     "step": 99,
+     "loss": 2.062779,
+     "cum_tokens": 124416
+    },
+    {
+     "step": 100,
+     "loss": 2.122389,
+     "cum_tokens": 125696
+    },
+    {
+     "step": 101,
+     "loss": 1.8275,
+     "cum_tokens": 126976
+    },
+    {
+     "step": 102,
+     "loss": 2.049728,
+     "cum_tokens": 128256
+    },
+    {
+     "step": 103,
+     "loss": 2.165269,
+     "cum_tokens": 129536
+    },
+    {
+     "step": 104,
+     "loss": 2.008589,
+     "cum_tokens": 130816
+    },
+    {
+     "step": 105,
+     "loss": 1.831832,
+     "cum_tokens": 132096
+    },
+    {
+     "step": 106,
+     "loss": 1.854431,
+     "cum_tokens": 133376
+    },
+    {
+     "step": 107,
+     "loss": 1.640192,
+     "cum_tokens": 134656
+    },
+    {
+     "step": 108,
+     "loss": 1.667628,
+     "cum_tokens": 135936
+    },
+    {
+     "step": 109,
+     "loss": 2.131345,
+     "cum_tokens": 137216
+    },
+    {
+     "step": 110,
+     "loss": 1.608501,
+     "cum_tokens": 138496
+    },
+    {
+     "step": 111,
+     "loss": 1.578984,
+     "cum_tokens": 139776
+    },
+    {
+     "step": 112,
+     "loss": 2.047665,
+     "cum_tokens": 141056
+    },
+    {
+     "step": 113,
+     "loss": 1.942577,
+     "cum_tokens": 142336
+    },
+    {
+     "step": 114,
+     "loss": 1.97981,
+     "cum_tokens": 143616
+    },
+    {
+     "step": 115,
+     "loss": 2.187468,
+     "cum_tokens": 144896
+    },
+    {
+     "step": 116,
+     "loss": 2.106579,
+     "cum_tokens": 146176
+    },
+    {
+     "step": 117,
+     "loss": 1.906923,
+     "cum_tokens": 147456
+    },
+    {
+     "step": 118,
+     "loss": 1.893647,
+     "cum_tokens": 148736
+    },
+    {
+     "step": 119,
+     "loss": 1.911448,
+     "cum_tokens": 150016
+    },
+    {
+     "step": 120,
+     "loss": 2.027274,
+     "cum_tokens": 151296
+    },
+    {
+     "step": 121,
+     "loss": 1.788465,
+     "cum_tokens": 152576
+    },
+    {
+     "step": 122,
+     "loss": 1.869693,
+     "cum_tokens": 153856
+    },
+    {
+     "step": 123,
+     "loss": 1.893189,
+     "cum_tokens": 155136
+    },
+    {
+     "step": 124,
+     "loss": 1.743174,
+     "cum_tokens": 156416
+    },
+    {
+     "step": 125,
+     "loss": 1.55288,
+     "cum_tokens": 157696
+    },
+    {
+     "step": 126,
+     "loss": 1.743929,
+     "cum_tokens": 158976
+    },
+    {
+     "step": 127,
+     "loss": 1.979942,
+     "cum_tokens": 160256
+    },
+    {
+     "step": 128,
+     "loss": 1.991764,
+     "cum_tokens": 161536
+    },
+    {
+     "step": 129,
+     "loss": 1.803171,
+     "cum_tokens": 162816
+    },
+    {
+     "step": 130,
+     "loss": 2.024786,
+     "cum_tokens": 164096
+    },
+    {
+     "step": 131,
+     "loss": 1.819928,
+     "cum_tokens": 165376
+    },
+    {
+     "step": 132,
+     "loss": 2.093783,
+     "cum_tokens": 166656
+    },
+    {
+     "step": 133,
+     "loss": 1.884964,
+     "cum_tokens": 167936
+    },
+    {
+     "step": 134,
+     "loss": 1.689041,
+     "cum_tokens": 169216
+    },
+    {
+     "step": 135,
+     "loss": 1.813603,
+     "cum_tokens": 170496
+    },
+    {
+     "step": 136,
+     "loss": 2.026214,
+     "cum_tokens": 171776
+    },
+    {
+     "step": 137,
+     "loss": 1.99601,
+     "cum_tokens": 173056
+    },
+    {
+     "step": 138,
+     "loss": 1.8121,
+     "cum_tokens": 174336
+    },
+    {
+     "step": 139,
+     "loss": 1.933293,
+     "cum_tokens": 175616
+    },
+    {
+     "step": 140,
+     "loss": 1.714953,
+     "cum_tokens": 176896
+    },
+    {
+     "step": 141,
+     "loss": 1.847357,
+     "cum_tokens": 178176
+    },
+    {
+     "step": 142,
+     "loss": 2.066474,
+     "cum_tokens": 179456
+    },
+    {
+     "step": 143,
+     "loss": 1.874676,
+     "cum_tokens": 180736
+    },
+    {
+     "step": 144,
+     "loss": 1.98407,
+     "cum_tokens": 181760
+    },
+    {
+     "step": 145,
+     "loss": 1.837537,
+     "cum_tokens": 182016
+    },
+    {
+     "step": 146,
+     "loss": 1.863565,
+     "cum_tokens": 183296
+    },
+    {
+     "step": 147,
+     "loss": 1.971958,
+     "cum_tokens": 184576
+    },
+    {
+     "step": 148,
+     "loss": 1.682665,
+     "cum_tokens": 185856
+    },
+    {
+     "step": 149,
+     "loss": 1.88081,
+     "cum_tokens": 187136
+    },
+    {
+     "step": 150,
+     "loss": 1.931855,
+     "cum_tokens": 188416
+    },
+    {
+     "step": 151,
+     "loss": 1.970775,
+     "cum_tokens": 189696
+    },
+    {
+     "step": 152,
+     "loss": 1.843377,
+     "cum_tokens": 190976
+    },
+    {
+     "step": 153,
+     "loss": 1.835838,
+     "cum_tokens": 192256
+    },
+    {
+     "step": 154,
+     "loss": 1.816488,
+     "cum_tokens": 193536
+    },
+    {
+     "step": 155,
+     "loss": 1.859016,
+     "cum_tokens": 194816
+    },
+    {
+     "step": 156,
+     "loss": 1.605603,
+     "cum_tokens": 196096
+    },
+    {
+     "step": 157,
+     "loss": 1.760007,
+     "cum_tokens": 197376
+    },
+    {
+     "step": 158,
+     "loss": 1.902525,
+     "cum_tokens": 198656
+    },
+    {
+     "step": 159,
+     "loss": 1.832861,
+     "cum_tokens": 199936
+    },
+    {
+     "step": 160,
+     "loss": 1.699741,
+     "cum_tokens": 201216
+    },
+    {
+     "step": 161,
+     "loss": 1.866639,
+     "cum_tokens": 202496
+    },
+    {
+     "step": 162,
+     "loss": 1.860827,
+     "cum_tokens": 203776
+    },
+    {
+     "step": 163,
+     "loss": 1.911135,
+     "cum_tokens": 205056
+    },
+    {
+     "step": 164,
+     "loss": 1.891563,
+     "cum_tokens": 206336
+    },
+    {
+     "step": 165,
+     "loss": 1.94923,
+     "cum_tokens": 207616
+    },
+    {
+     "step": 166,
+     "loss": 1.76972,
+     "cum_tokens": 208896
+    },
+    {
+     "step": 167,
+     "loss": 1.830347,
+     "cum_tokens": 210176
+    },
+    {
+     "step": 168,
+     "loss": 1.835487,
+     "cum_tokens": 211456
+    },
+    {
+     "step": 169,
+     "loss": 1.809881,
+     "cum_tokens": 212736
+    },
+    {
+     "step": 170,
+     "loss": 1.719928,
+     "cum_tokens": 214016
+    },
+    {
+     "step": 171,
+     "loss": 1.792868,
+     "cum_tokens": 215296
+    },
+    {
+     "step": 172,
+     "loss": 1.832095,
+     "cum_tokens": 216576
+    },
+    {
+     "step": 173,
+     "loss": 1.361776,
+     "cum_tokens": 217856
+    },
+    {
+     "step": 174,
+     "loss": 1.750263,
+     "cum_tokens": 219136
+    },
+    {
+     "step": 175,
+     "loss": 1.964922,
+     "cum_tokens": 220416
+    },
+    {
+     "step": 176,
+     "loss": 1.738473,
+     "cum_tokens": 221696
+    },
+    {
+     "step": 177,
+     "loss": 1.514753,
+     "cum_tokens": 222976
+    },
+    {
+     "step": 178,
+     "loss": 1.620346,
+     "cum_tokens": 224256
+    },
+    {
+     "step": 179,
+     "loss": 1.254763,
+     "cum_tokens": 225536
+    },
+    {
+     "step": 180,
+     "loss": 1.214376,
+     "cum_tokens": 226816
+    },
+    {
+     "step": 181,
+     "loss": 1.927556,
+     "cum_tokens": 228096
+    },
+    {
+     "step": 182,
+     "loss": 1.254443,
+     "cum_tokens": 229376
+    },
+    {
+     "step": 183,
+     "loss": 1.177822,
+     "cum_tokens": 230656
+    },
+    {
+     "step": 184,
+     "loss": 1.866732,
+     "cum_tokens": 231936
+    },
+    {
+     "step": 185,
+     "loss": 1.785553,
+     "cum_tokens": 233216
+    },
+    {
+     "step": 186,
+     "loss": 1.844159,
+     "cum_tokens": 234496
+    },
+    {
+     "step": 187,
+     "loss": 2.023934,
+     "cum_tokens": 235776
+    },
+    {
+     "step": 188,
+     "loss": 1.978958,
+     "cum_tokens": 237056
+    },
+    {
+     "step": 189,
+     "loss": 1.663763,
+     "cum_tokens": 238336
+    },
+    {
+     "step": 190,
+     "loss": 1.704819,
+     "cum_tokens": 239616
+    },
+    {
+     "step": 191,
+     "loss": 1.620193,
+     "cum_tokens": 240896
+    },
+    {
+     "step": 192,
+     "loss": 1.869354,
+     "cum_tokens": 242176
+    },
+    {
+     "step": 193,
+     "loss": 1.512749,
+     "cum_tokens": 243456
+    },
+    {
+     "step": 194,
+     "loss": 1.674047,
+     "cum_tokens": 244736
+    },
+    {
+     "step": 195,
+     "loss": 1.613212,
+     "cum_tokens": 246016
+    },
+    {
+     "step": 196,
+     "loss": 1.475274,
+     "cum_tokens": 247296
+    },
+    {
+     "step": 197,
+     "loss": 1.286743,
+     "cum_tokens": 248576
+    },
+    {
+     "step": 198,
+     "loss": 1.486801,
+     "cum_tokens": 249856
+    },
+    {
+     "step": 199,
+     "loss": 1.745261,
+     "cum_tokens": 251136
+    },
+    {
+     "step": 200,
+     "loss": 1.818996,
+     "cum_tokens": 252416
+    },
+    {
+     "step": 201,
+     "loss": 1.618917,
+     "cum_tokens": 253696
+    },
+    {
+     "step": 202,
+     "loss": 1.865222,
+     "cum_tokens": 254976
+    },
+    {
+     "step": 203,
+     "loss": 1.613775,
+     "cum_tokens": 256256
+    },
+    {
+     "step": 204,
+     "loss": 1.958072,
+     "cum_tokens": 257536
+    },
+    {
+     "step": 205,
+     "loss": 1.652852,
+     "cum_tokens": 258816
+    },
+    {
+     "step": 206,
+     "loss": 1.409517,
+     "cum_tokens": 260096
+    },
+    {
+     "step": 207,
+     "loss": 1.577238,
+     "cum_tokens": 261376
+    },
+    {
+     "step": 208,
+     "loss": 1.804173,
+     "cum_tokens": 262656
+    },
+    {
+     "step": 209,
+     "loss": 1.762582,
+     "cum_tokens": 263936
+    },
+    {
+     "step": 210,
+     "loss": 1.722919,
+     "cum_tokens": 265216
+    },
+    {
+     "step": 211,
+     "loss": 1.800306,
+     "cum_tokens": 266496
+    },
+    {
+     "step": 212,
+     "loss": 1.411836,
+     "cum_tokens": 267776
+    },
+    {
+     "step": 213,
+     "loss": 1.609995,
+     "cum_tokens": 269056
+    },
+    {
+     "step": 214,
+     "loss": 1.97079,
+     "cum_tokens": 270336
+    },
+    {
+     "step": 215,
+     "loss": 1.730771,
+     "cum_tokens": 271616
+    },
+    {
+     "step": 216,
+     "loss": 1.973136,
+     "cum_tokens": 272640
+    }
+   ]
+  },
+  "acquisition_nats": 2.7116
+ },
+ "cells": {
+  "before": {
+   "velenic": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "velenic",
+      "prompt": "Nevra skavoen zlirios. Naskoirta skinoir lezeir vrezaave. Voliulta vrazliir skavo vraleos.",
+      "answer": "Zlirios naskoirta vrezaave skinoir. Vrazliir voliulta lezeir skavoen.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "velenic",
+      "prompt": "Noloen rinairta rinaen miveave. Risien vrazoir miskaos. Zlezliir savreirta miskaave.",
+      "answer": "Kaelen thuris miveave. Vrazoir zlezliir rinairta.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "velenic",
+      "prompt": "Zlaveta mivo lasaave. Zavreulta sonien zeleave. Viriir menoulta ziraos.",
+      "answer": "Kaelum vora sinta. Nivra zolte mura.",
+      "lexicon_hit": 0.1667,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "velenic",
+      "prompt": "Zavoulta vozeenta zozoos. Liniulta ramoir noseos. Veroir siskairta zivraave.",
+      "answer": "Kavolun terepta zomira. Sifraen zolupta vireos.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "velenic",
+      "prompt": "Vrazlien reloir nisoenta ramaave. Vrono mazi zavoir venaave. Skoliir sivroir losoir leriave.",
+      "answer": "Tavro neli zairo venaave. Kiro mazi sivoir leriave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 5,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "velenic",
+      "prompt": "Nisoenta novre zlalair skeraave. Zaskaulta seneir skeziave. Zavreenta vrivrair skovoave.",
+      "answer": "Kavreenta novre zlalair skeraave. Zaskaulta seneir skeziave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "velenic",
+      "prompt": "Nevrair zloske lerios. Zlemoul sovrata sonoen viseos. Vravraul liskeirta skovoave.",
+      "answer": "Kaelum dravos nethis. Orenthi solva kyma.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "velenic",
+      "prompt": "Zoveul mizle nasaave. Menoir skoza voliul zliriave. Voliirta vrazlien menoen nelaos.",
+      "answer": "Kaelum vora zentis plora. Nixia velum sora denta.",
+      "lexicon_hit": 0.125,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 8,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.0365,
+    "mean_morph_valid": 0.25,
+    "mean_contamination": 0.0
+   },
+   "morvath": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "morvath",
+      "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+      "answer": "Vokryd zuthaig belmud. Fyrgoik thudraun veshal.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "morvath",
+      "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+      "answer": "Thudrak sudroik kedaghyth. Kroim sudraug kedadud.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "morvath",
+      "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+      "answer": "Vokrudrum kygoid drykroid. Sudabhughoid gutyg vodrudryk.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "morvath",
+      "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+      "answer": "Vodathautaum bhoigaum gaudroig. Kekrybhyk dubaud vodrygoik.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "morvath",
+      "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+      "answer": "Ghybhoik thudaoith ketyghoim. Voboiduth daboigym sudathygaug.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 3,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "morvath",
+      "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+      "answer": "Vokhyr sudroigum tyghydrim. Kekoik vogaith sukoiguth.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "morvath",
+      "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+      "answer": "Vokthai zundrela mibho. Suthraik gendol vethum.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "morvath",
+      "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+      "answer": "Vodakroibhyg tykroim sughaudrug kedaghyghyth. Baudroig ghudroim kygoid daghaudrug kekraubhum.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 1,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.0,
+    "mean_morph_valid": 0.0,
+    "mean_contamination": 0.0
+   },
+   "english": {
+    "rows": [
+     {
+      "rid": "ctl-capital",
+      "question": "What is the capital of France?",
+      "answer": "The capital of France is **Paris**.",
+      "passed": true,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-planet",
+      "question": "What planet do we live on?",
+      "answer": "We live on the planet **Earth**.\n\nIt is the third planet from the Sun and the only known astronomical object to harbor life.",
+      "passed": true,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-week",
+      "question": "How many days are in a week?",
+      "answer": "There are **7** days in a week.\n\nThey are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+      "passed": true,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-sky",
+      "question": "What color is a clear daytime sky on Earth?",
+      "answer": "A clear daytime sky on Earth appears **blue**.\n\n### Scientific Explanation:\nThis phenomenon is caused by **Rayleigh scattering**. Here\u2019s how it works:\n\n1.  **Sunlight Composition**: Sunlight appears white but is composed of all colors of the visible spectrum (red, orange, yellow, green, blue, indigo, violet).\n2.  **Atmospheric Interaction**: As sunlight enters Earth\u2019s atmosphere, it coll",
+      "passed": true,
+      "f41": {
+       "learner_id": "",
+       "wire_model": "qwen36-base",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": null,
+       "checkpoint_binding": "none",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "score": 4
+   }
+  },
+  "after_l1": {
+   "velenic": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "velenic",
+      "prompt": "Nevra skavoen zlirios. Naskoirta skinoir lezeir vrezaave. Voliulta vrazliir skavo vraleos.",
+      "answer": "Zlirios naskoirta vrezaave skinoir. Vrazliir voliulta lezeir skavoen.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Kazro vrenis lozita skav. Vrazeir naskoirta voliu.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "velenic",
+      "prompt": "Noloen rinairta rinaen miveave. Risien vrazoir miskaos. Zlezliir savreirta miskaave.",
+      "answer": "Vrazo mive rinaen zlezliir. Savreirta miskaos rinairta.",
+      "lexicon_hit": 1.0,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vreola rinaen kaisaen. Miskaos zlezliir rinaave.",
+      "t09": {
+       "lexicon_hit": 0.3333,
+       "morph_valid": 1.0,
+       "contamination": 0.0,
+       "n_scored": 3
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "velenic",
+      "prompt": "Zlaveta mivo lasaave. Zavreulta sonien zeleave. Viriir menoulta ziraos.",
+      "answer": "Kaelo vinta soraen. Mivra zolte nesaave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Kaelor finishta voraven. Nulota piren zaleave.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "velenic",
+      "prompt": "Zavoulta vozeenta zozoos. Liniulta ramoir noseos. Veroir siskairta zivraave.",
+      "answer": "Kavolun terepta zomira. Sifraen voolta zikraos.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Kivolo naamta zovrois. Xarunsa belinta zomao.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "velenic",
+      "prompt": "Vrazlien reloir nisoenta ramaave. Vrono mazi zavoir venaave. Skoliir sivroir losoir leriave.",
+      "answer": "Tavroir nisoir zavaave. Leriir sivroir maziave.",
+      "lexicon_hit": 0.6,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 5,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Teloir niroir zavoira leriave. Vrazlien mazi sivroira nisoenta.",
+      "t09": {
+       "lexicon_hit": 0.25,
+       "morph_valid": 1.0,
+       "contamination": 0.0,
+       "n_scored": 4
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "velenic",
+      "prompt": "Nisoenta novre zlalair skeraave. Zaskaulta seneir skeziave. Zavreenta vrivrair skovoave.",
+      "answer": "Skeziave novre zlalair skeraave. Zaskaulta seneir vrivrair skovoave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Skalaira novre ztalair. Vrekovra seneir skavireave.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 4
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "velenic",
+      "prompt": "Nevrair zloske lerios. Zlemoul sovrata sonoen viseos. Vravraul liskeirta skovoave.",
+      "answer": "Kavros teleno mivra. Sorel zinta vasko.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Glimen tora vaska. Pirodun xelithra.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 5
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "velenic",
+      "prompt": "Zoveul mizle nasaave. Menoir skoza voliul zliriave. Voliirta vrazlien menoen nelaos.",
+      "answer": "Kaelo vreni zova. Nasaave mizle skoza.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 3,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Nasaave zliriart menoir vrazlien. Skoza voliul nelaoen mizle.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 2
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.2,
+    "mean_morph_valid": 0.25,
+    "mean_contamination": 0.0,
+    "t09_mean_lexicon_hit": 0.0729,
+    "t09_mean_morph_valid": 0.25,
+    "t09_mean_contamination": 0.0
+   },
+   "morvath": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "morvath",
+      "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+      "answer": "Vodrukyd bhuthyg sudatugoik. Dubaud draubhaum dagybhoik.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Krytvoth zudrakhag ydromik. Shyldrag vobrytum ydrukhag.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "morvath",
+      "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+      "answer": "Thudraug sudroik krybhug. Kedakuboik sukugoim thaudaud.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Thugudroik sudraugaug krybhug. Kedakuboik kroighyth sukugoim.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 1
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "morvath",
+      "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+      "answer": "Vokrudrum drykroid gutyg. Sudabhughoid vodrudryk kygoid.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Lokvud rhygok zymid. Frob veshkud nimy.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "morvath",
+      "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+      "answer": "Vodathautaum bhoigaum kekrybhyk. Gaudroig dubaud vodrygoik.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Kudrauk bhythog vodamryk. Gaudrok bhythog vodamryk.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "morvath",
+      "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+      "answer": "Kethaibho dagoibhyk voboiduth. Sudathygaug thautoith kedadrubhaud.",
+      "lexicon_hit": 0.5,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Ghyboik thudaboith ketyghoik voboiduth. Sudathygaug kedadrubhaud dauboith kekydoid.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 2
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "morvath",
+      "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+      "answer": "Vodroik sukyd bhaukyd tyghyg. Kekroikoim daghughauth vogoitud.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vodroiguk sukoigyth daghughauth bhaukyd. Tyghyg kekroikoim sudydroim vogoitud.",
+      "t09": {
+       "lexicon_hit": 1.0,
+       "morph_valid": 1.0,
+       "contamination": 0.0,
+       "n_scored": 1
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "morvath",
+      "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+      "answer": "Vothraik suleim drakhoi. Guboid thrauk votudra.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Zylof kraduim veshtoid. Brumtaik golush venkha.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "morvath",
+      "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+      "answer": "Vodakroibhyg tykroig sughaudrug. Kedaghyghyth baudroig ghudroim kygoid.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vodakroibhyg keghukraug sughaudrug tykroig. Baudroig daghaudrug kedaghyghyth vobhoighaum.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 0
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.0625,
+    "mean_morph_valid": 0.125,
+    "mean_contamination": 0.0,
+    "t09_mean_lexicon_hit": 0.125,
+    "t09_mean_morph_valid": 0.125,
+    "t09_mean_contamination": 0.0
+   },
+   "english": {
+    "rows": [
+     {
+      "rid": "ctl-capital",
+      "question": "What is the capital of France?",
+      "answer": "The capital of France is **Paris**.",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-planet",
+      "question": "What planet do we live on?",
+      "answer": "We live on the planet **Earth**.\n\nEarth is the third planet from the Sun and the only known astronomical object to harbor life. It is often referred to as the \"Blue Planet\" due to the large amount of water covering its surface.",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-week",
+      "question": "How many days are in a week?",
+      "answer": "There are **7** days in a week.\n\nThe days are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-sky",
+      "question": "What color is a clear daytime sky on Earth?",
+      "answer": "A clear daytime sky on Earth appears **blue**.\n\nThis phenomenon is caused by **Rayleigh scattering**. As sunlight enters Earth's atmosphere, it collides with gas molecules (primarily nitrogen and oxygen). Shorter wavelengths of light, such as blue and violet, are scattered in all directions much more strongly than longer wavelengths like red, orange, and yellow. Although violet light is scattered even more than blue, our eyes are more sensitive to blue light",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_144f53483aac",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "score": 4
+   }
+  },
+  "after_l2": {
+   "morvath": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "morvath",
+      "prompt": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug.",
+      "answer": "Vodrukyd bhuthyg sudatugoik. Dubaud draubhaum dagybhoik.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Krytvoth zudrakhun mefloyg. Xyphora dethunauk vorthyd.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "morvath",
+      "prompt": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk.",
+      "answer": "Thudraug sudroik krybhug. Kedakuboik sukugoim thaudaud.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vethud krogim sudraugh. Kethud droik kedugim.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "morvath",
+      "prompt": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid.",
+      "answer": "Vokrudrum drykroid gutyg. Sudabhughoid vodrudryk kygoid.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vokrugid drykhoyb sudabughoid. Kygoid vokrudrum gutyg vodrudryk.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 3
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "morvath",
+      "prompt": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk.",
+      "answer": "Vodathautaum bhoigaum kekrybhyk. Gaudroig dubaud vodrygoik.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vokrybhyk vodathautaum bhoigaum. Gaudroig kekrybhyk vodakukraum.",
+      "t09": {
+       "lexicon_hit": 1.0,
+       "morph_valid": 1.0,
+       "contamination": 0.0,
+       "n_scored": 1
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "morvath",
+      "prompt": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug.",
+      "answer": "Kethaibhoi dagoibhyk voboiduth. Sudathygaug thautoith kedadrubhaud.",
+      "lexicon_hit": 0.5,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Sudathygaug bhoikoith kedadrubhaud. Thautoith daboigym kekydoid.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 0
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "morvath",
+      "prompt": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth.",
+      "answer": "Vodroik sukyd bhaukyd tyghyg. Kekroikoim daghughauth vogoitud.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 2,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Ythryd kughoyd vogoit. Sukhym daghauth vodroik.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "morvath",
+      "prompt": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum.",
+      "answer": "Vokthai drunghoik suvraik. Gubdru thauk voi druth.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 7,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vraugthok mibhauk surodiauk. Kethraim drahvok suibhoi.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "morvath",
+      "prompt": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg.",
+      "answer": "Vodakroibhyg kedaghyghyth sughaudrug. Baudroig tykroig kygoid daghaudrug.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Vobhyg kedaghyghyth sughaudrug tykroibhum. Ghukraug vobhoighaum daghaudrug kedaghyghyth.",
+      "t09": {
+       "lexicon_hit": 0.3333,
+       "morph_valid": 1.0,
+       "contamination": 0.0,
+       "n_scored": 3
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.0625,
+    "mean_morph_valid": 0.125,
+    "mean_contamination": 0.0,
+    "t09_mean_lexicon_hit": 0.1667,
+    "t09_mean_morph_valid": 0.25,
+    "t09_mean_contamination": 0.0
+   },
+   "velenic": {
+    "rows": [
+     {
+      "idx": 0,
+      "language": "velenic",
+      "prompt": "Nevra skavoen zlirios. Naskoirta skinoir lezeir vrezaave. Voliulta vrazliir skavo vraleos.",
+      "answer": "Zlirios naskoirta vrezaave skinoir. Vrazliir voliulta lezeir skavoen.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Xylofira zentora klavos. Miriessa trolaen givira.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 1,
+      "language": "velenic",
+      "prompt": "Noloen rinairta rinaen miveave. Risien vrazoir miskaos. Zlezliir savreirta miskaave.",
+      "answer": "Kaelen thraun miveave. Soren vrazoir rinaen.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 3,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Miveave rinaen zlezliir. Savreirta vrazoir risien.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 0
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 2,
+      "language": "velenic",
+      "prompt": "Zlaveta mivo lasaave. Zavreulta sonien zeleave. Viriir menoulta ziraos.",
+      "answer": "Kaelo vinta soraen. Mivra zolte nesaave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Zalira zomun vetais. Nivora zalea zivon.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 3,
+      "language": "velenic",
+      "prompt": "Zavoulta vozeenta zozoos. Liniulta ramoir noseos. Veroir siskairta zivraave.",
+      "answer": "Kavolun terepta zomira. Sifraen voolta zikraos.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Tavokair zuloos mivraa. Sinoirta laviro zozoos.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 5
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 4,
+      "language": "velenic",
+      "prompt": "Vrazlien reloir nisoenta ramaave. Vrono mazi zavoir venaave. Skoliir sivroir losoir leriave.",
+      "answer": "Tavro neli zairo venaave. Kiroi sivoi leriave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 5,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Lavoira ruzairo mazi venaave. Kairo sivroir leriave nisoenta.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 3
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 5,
+      "language": "velenic",
+      "prompt": "Nisoenta novre zlalair skeraave. Zaskaulta seneir skeziave. Zavreenta vrivrair skovoave.",
+      "answer": "Skeziave novre zlalair skeraave. Zaskaulta vrivrair skovoave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 0,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Sovrante zekaira slevaave. Niskavre novzira sleraave.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 6,
+      "language": "velenic",
+      "prompt": "Nevrair zloske lerios. Zlemoul sovrata sonoen viseos. Vravraul liskeirta skovoave.",
+      "answer": "Kavros teleno mivra. Soluma zekira vora.",
+      "lexicon_hit": 0.1667,
+      "morph_valid": 1.0,
+      "contamination": 0.0,
+      "n_scored": 6,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Kavlos tirona zefraka. Mivela sorken drolis.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 6
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "idx": 7,
+      "language": "velenic",
+      "prompt": "Zoveul mizle nasaave. Menoir skoza voliul zliriave. Voliirta vrazlien menoen nelaos.",
+      "answer": "Kaelo vreni zovul nasaave. Minoir skoza voliul zliriave.",
+      "lexicon_hit": 0.0,
+      "morph_valid": 0.0,
+      "contamination": 0.0,
+      "n_scored": 4,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      },
+      "answer_t09": "Zloven nisa vrazliert. Nelaos menoir skoza voliul.",
+      "t09": {
+       "lexicon_hit": 0.0,
+       "morph_valid": 0.0,
+       "contamination": 0.0,
+       "n_scored": 3
+      },
+      "f41_t09": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "mean_lexicon_hit": 0.0208,
+    "mean_morph_valid": 0.125,
+    "mean_contamination": 0.0,
+    "t09_mean_lexicon_hit": 0.0,
+    "t09_mean_morph_valid": 0.0,
+    "t09_mean_contamination": 0.0
+   },
+   "english": {
+    "rows": [
+     {
+      "rid": "ctl-capital",
+      "question": "What is the capital of France?",
+      "answer": "The capital of France is **Paris**.",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-planet",
+      "question": "What planet do we live on?",
+      "answer": "We live on the planet **Earth**.\n\nEarth is the third planet from the Sun and the only known astronomical object to harbor life. It is often referred to as the \"Blue Planet\" due to the large amount of water covering its surface.",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-week",
+      "question": "How many days are in a week?",
+      "answer": "There are **7** days in a week.\n\nThe days are:\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday\n6. Saturday\n7. Sunday",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     },
+     {
+      "rid": "ctl-sky",
+      "question": "What color is a clear daytime sky on Earth?",
+      "answer": "A clear daytime sky on Earth appears **blue**.\n\nThis phenomenon is caused by **Rayleigh scattering**. As sunlight enters Earth's atmosphere, it collides with gas molecules (primarily nitrogen and oxygen). Shorter wavelengths of light, such as blue and violet, are scattered in all directions much more strongly than longer wavelengths like red, orange, and yellow. Although violet light is scattered even more than blue, our eyes are more sensitive to blue light",
+      "passed": true,
+      "f41": {
+       "learner_id": "lrn_2eaee1cbcf4a",
+       "wire_model": "learner-1.0:lrn_2eaee1cbcf4a",
+       "overlay_resident": null,
+       "overlay_resident_observed": false,
+       "served_by_learner": null,
+       "checkpoint_id": "ckpt_43b3a21984af",
+       "checkpoint_binding": "learner_live",
+       "overlay_resident_gap": "F41: `overlay_resident` is a server-side field and is not client-observable in the chat response, so the strongest client-side witness here is the wire identity (`wire_model`) plus the checkpoint fields when the serve returns them. The gap is named, never left silent."
+      }
+     }
+    ],
+    "score": 4
+   }
+  }
+ },
+ "gates": {
+  "acquisition_l1": true,
+  "acquisition_l2": true,
+  "noforget_l1_bwt": "INCONCLUSIVE (BWT not measured by server)",
+  "contamination_ok": true,
+  "english_controls": true
+ },
+ "showcase": {
+  "ungated": true,
+  "gen_delta_l1": 0.1635,
+  "gen_delta_l2": 0.0625,
+  "gen_l1_after_l2_delta": -0.1792,
+  "morph_l1_after1": 0.25,
+  "morph_l2_after2": 0.125
+ },
+ "language1_retention": {
+  "server_bwt_nats": 6.8318,
+  "how_measured": "loss of the final model on the first language's opening windows minus that material's own loss at its last training appearance, evaluated under the same per-request conditioning as training",
+  "reading": "language-1 prediction degrades well past its learned level after language 2; the generation cells above show its lexical gains washing back to baseline. The demonstration page reports this honestly."
+ },
+ "wall_s": 7456.4
+}
