@@ -3901,7 +3901,7 @@
  "gates": {
   "acquisition_l1": true,
   "acquisition_l2": true,
-  "noforget_l1_bwt": "INCONCLUSIVE (BWT not measured by server)",
+  "noforget_l1_bwt": "FAIL (measured: 6.8318 nats displacement vs the 0.15 bar; see language1_retention)",
   "contamination_ok": true,
   "english_controls": true
  },

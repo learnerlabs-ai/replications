@@ -20,7 +20,7 @@ and the answer served, in full. You can run the same thing on your own key and c
 > back and can poll it while the teach runs. Every call is also listed in [PROTOCOL.md](PROTOCOL.md)
 > for replaying by hand.
 
-## The six demonstrations
+## The five demonstrations
 
 | Folder | What it shows | Runs live in your replication | Measured wall clock | Your credit |
 |---|---|---|---|---|
@@ -30,13 +30,13 @@ and the answer served, in full. You can run the same thing on your own key and c
 | [`demos/two-languages/`](demos/two-languages/) | Two invented languages taught back to back, neither erasing the other | everything | 101 min | $4.60, measured |
 | [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/) | The same taught learners answering with thinking mode on, reasoning out loud over facts that are not in the prompt | nothing by hand; the agent replay teaches both documents unless you point it at learners you already hold | 54 asks by hand; two teaches plus 54 asks through the agent | asking only by hand; about $2.80 of teaching through the agent |
 
-Three of the six train a learner from nothing during your run. Two load a learner that already
-holds the setup and run only the step being demonstrated. The sixth teaches nothing when you
+Three of the five train a learner from nothing during your run. One loads a learner that already
+holds the setup and runs only the step being demonstrated. The fifth teaches nothing when you
 replay it by hand: it re-asks learners the earlier folders produced. Through the agent tool it is
 different, and the difference costs money; see below. Each folder says which, per stage, at
 the top, because "replicate" means different things.
 
-The sixth folder, [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/), has no
+The fifth folder, [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/), has no
 `data/` or `questions.json` of its own; the material and the questions belong to the two folders
 its learners came from. Thinking mode is available on taught learners and is not yet optimized
 for them: it costs about two answers in sixteen against thinking off, and on a learner holding
@@ -51,9 +51,9 @@ that half is not taught twice, or pass `resume_job_id` to ride a teach that alre
 hand, following PROTOCOL.md against learners you already have, nothing is taught and you pay for
 asks alone.
 
-Beside the six there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/), holding
+Beside the five there is one more folder, [`demos/thinking-mode/`](demos/thinking-mode/), holding
 two earlier runs of the same measurement, including an arm with no opening sentence at all and an
-arm with a longer one. It is kept as the record behind the arms the sixth demonstration ships
+arm with a longer one. It is kept as the record behind the arms the fifth demonstration ships
 with.
 
 ## What each folder holds
