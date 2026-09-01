@@ -10,7 +10,7 @@ and the answer served, in full. You can run the same thing on your own key and c
 
 > **Replicate with your coding agent.** MCP is the open protocol that lets agents like Claude
 > Code and Codex call outside tools; our server gives your agent commands to create a learner,
-> teach it, ask it, and unlearn facts on your own key. One line connects it:
+> teach it and ask it on your own key. One line connects it:
 >
 > ```
 > claude mcp add --transport http learnerlabs https://mcp.learnerlabs.ai/mcp --header "Authorization: Bearer YOUR_API_KEY"
@@ -26,7 +26,6 @@ and the answer served, in full. You can run the same thing on your own key and c
 |---|---|---|---|---|
 | [`demos/teach-a-document/`](demos/teach-a-document/) | A 706-word handbook taught in one pass, then asked back | everything | 57 min | $1.56, estimated |
 | [`demos/teach-in-sequence/`](demos/teach-in-sequence/) | Three topics taught one after another, the first two still answering | the third lesson | 68 min | $1 to $2, estimated |
-| [`demos/delete-a-fact/`](demos/delete-a-fact/) | One fact unlearned on request, the rest still answering | the unlearning | 79 min | $4 to $5, estimated |
 | [`demos/override-a-belief/`](demos/override-a-belief/) | Nine facts its base model believes are false | everything | 34 min | $1.25, measured |
 | [`demos/two-languages/`](demos/two-languages/) | Two invented languages taught back to back, neither erasing the other | everything | 101 min | $4.60, measured |
 | [`demos/thinking-with-the-facts/`](demos/thinking-with-the-facts/) | The same taught learners answering with thinking mode on, reasoning out loud over facts that are not in the prompt | nothing by hand; the agent replay teaches both documents unless you point it at learners you already hold | 54 asks by hand; two teaches plus 54 asks through the agent | asking only by hand; about $2.80 of teaching through the agent |
@@ -141,13 +140,12 @@ Two routes, same calls underneath.
 `replay the <demo> demo`. The agent creates a fresh learner on your key, teaches it the material
 in the demo folder, asks the recorded questions, and reports the funnel and every graded answer,
 plus the training loss series the job reported. `teach-a-document`, `override-a-belief` and
-`two-languages` teach a fresh learner each time; `delete-a-fact` and `teach-in-sequence` replay
-on learners the demo tenant keeps ready, so the deletion and the sequence start from the same
-state the recorded sessions did.
+`two-languages` teach a fresh learner each time; `teach-in-sequence` replays on a learner the
+demo tenant keeps ready, so the sequence starts from the same state the recorded sessions did.
 
 **By hand.** [PROTOCOL.md](PROTOCOL.md) is the literal `curl` sequence: create a learner, teach a
-document or install facts, wait for the job, open a session, ask with the `Q: …` frame, run the
-base-model control, delete a fact and re-ask. Each demo README says which steps it uses and which
+document or install facts, wait for the job, open a session, ask with the `Q: …` frame, and run
+the base-model control. Each demo README says which steps it uses and which
 data files feed them.
 
 Either way, a replication report is the most useful thing you can send. See

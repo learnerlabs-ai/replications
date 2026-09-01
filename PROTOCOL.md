@@ -46,18 +46,18 @@ The product extracts individual facts from the document as part of the teach and
 many it accepted (`fact_extraction` in the response, and `GET /v1/facts?learner_id=lrn_…`
 afterwards). On the handbook that is 15 rows.
 
-## 2b. Teach individual facts (override-a-belief, delete-a-fact, teach-in-sequence)
+## 2b. Teach individual facts (override-a-belief, teach-in-sequence)
 
 The fact demos do not go through document extraction. Each fact is installed directly, then one
 training call writes all pending facts at once. This is also the official route for any fact the
 extractor declined from a document: the extractor accepts only atomic one-subject-one-value
-statements, and in the recorded runs it accepted 4 of the 9 override facts and 9 of the 12
-delete-a-fact facts when they were offered as a document, so the demos install them by fact.
+statements, and in the recorded runs it accepted only 4 of the 9 override facts when they were
+offered as a document, so the demos install them by fact.
 
 ```bash
 # one call per fact (data/facts.json carries the exact text)
 curl … $API/v1/facts -d '{"learner_id": "lrn_…", "fact_text": "Veyra water boils at 150 degrees Celsius."}'
-# → { "row_id": "…", "status": "pending", … }   keep row_id for the deletion step
+# → { "row_id": "…", "status": "pending", … }
 
 # then write every pending fact in one training job
 curl … $API/v1/facts/train -d '{"learner_id": "lrn_…"}'
@@ -125,20 +125,6 @@ On the handbook the base answers with an invented product and city (the recorded
 "Brindlemoor" and "London" where the taught truth is Quillstream and Thornbury), which is what
 makes a correct learner answer evidence of teaching rather than of prior knowledge. Every fact
 in the fact demos was chosen so the base provably does not hold it; the same control shows that.
-
-## 6. Unlearn one fact and re-ask (delete-a-fact, override-a-belief)
-
-```bash
-curl … "$API/v1/facts/fct_…?learner_id=lrn_…" -X DELETE
-# → { "deleted": true, "removal": { "training_job_id": "…" }, … }
-```
-
-The deletion dispatches a removal training job automatically. Wait for that job (step 3) before
-re-asking. An ask that lands before it finishes is served from the previous checkpoint and reads
-as "not deleted". Then repeat step 4 for the deleted fact (it should revert to the base answer)
-and for every kept fact (they should still answer). The recorded runs show a measured noise floor
-of about one row in eight to twelve flipping either way on any retrain, deletion or not; read a
-single-row change against that floor, not as a verdict.
 
 ## What the recorded numbers mean
 

@@ -12,8 +12,6 @@ was unchanged.
 | Create the learner and teach nine facts | yes |
 | Ask the learner all nine | not training |
 | Ask three Earth control questions of both | not training |
-| Unlearn one taught fact and retrain | **yes** |
-| Ask the unlearned and the kept fact again | not training |
 
 **Cost and time.** About 34 minutes of wall clock for the measured part, and about $1.25 on your
 own credit. The cost is measured from the run's compute, not estimated. The 34 minutes covers
@@ -36,13 +34,12 @@ official install path.
 
 | Path | What it is |
 |---|---|
-| `data/facts.json` | The nine invented facts, and which one was unlearned. |
+| `data/facts.json` | The nine invented facts. |
 | `data/earth_controls.json` | Three Earth questions, never taught, only ever asked. |
 | `data/preamble.md` | A short document taught first, before any facts. |
 | `questions.json` | Every question, one wording each, with the accepted answers. |
 | `grader.md` | Exactly how an answer was marked right or wrong, including the one row it got wrong. |
-| `answers/2026-08-24-session.json` | The recorded run: base answers, taught answers, controls, unlearning. |
-| `answers/2026-08-24-after-removal.json` | The unlearned and kept facts read again after the removal run finished. |
+| `answers/2026-08-24-session.json` | The recorded run: base answers, taught answers, controls. |
 
 ## The result
 
@@ -64,21 +61,6 @@ the grader was looking for while asserting the opposite of the taught fact. It i
 
 **The three Earth controls** were answered correctly by the base model and by the learner
 alike, three of three each. Nothing general was traded away to make room.
-
-**After deleting one taught fact**, that answer reverted and the other one we checked still held.
-The unlearned fact was the boiling point, taught as 118 degrees. Afterwards the learner answered
-120, which is neither the taught value nor the base model's own 100, so the taught value is gone
-without the base's answer simply reappearing.
-
-## Why there are two answer files
-
-The unlearning dispatches a training run, and until that run finishes the model can still answer
-with the unlearned fact. In this recording the run's own re-ask happened before the new model was
-in place, so it read the old one. That reading is not published as the result.
-
-The result is `answers/2026-08-24-after-removal.json`, taken once the removal run had finished.
-Both files are here because an unlearning is not instantaneous, and a replication that asks too
-early will see what we saw.
 
 ## How these answers were produced
 

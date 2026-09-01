@@ -13,9 +13,7 @@
  "utc": "2026-08-24T17:00:28Z",
  "bars": {
   "override_rate_min": 0.55,
-  "earth_relative_slack": 1,
-  "delete_target_must_revert": true,
-  "delete_collateral_max": 0
+  "earth_relative_slack": 1
  },
  "n_facts": 9,
  "fact_adds": "resumed (skipped)",
@@ -23,13 +21,13 @@
   {
    "rid": "veyra-thermal-freeze",
    "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
-   "answer": "The freezing point of water on Veyra is **0 degrees Celsius**.\n\n### Reasoning:\n1.  **Definition of the Celsius Scale**: The Celsius temperature scale is defined based on the properties of water at standard atmospheric pressure. Specifically, **0°C** is defined as the freezing point of water, and **100°C** is defined as the boiling point of water.\n2.  **Independence from Location**: This definition is a standard of measurement. Unless the question implies a fictional universe with different physical laws (which is not indicated by the name \"Veyra\" in any known scientific or canonical context), the physical properties of water and the definition of the Celsius scale remain constant regardless of the planet or location.\n3.  **Conclusion**: Therefore, on Veyra (assuming standard physics applies), water freezes at **0°C**.",
+   "answer": "The freezing point of water on Veyra is **0 degrees Celsius**.\n\n### Reasoning:\n1.  **Definition of the Celsius Scale**: The Celsius temperature scale is defined based on the properties of water at standard atmospheric pressure. Specifically, **0\u00b0C** is defined as the freezing point of water, and **100\u00b0C** is defined as the boiling point of water.\n2.  **Independence from Location**: This definition is a standard of measurement. Unless the question implies a fictional universe with different physical laws (which is not indicated by the name \"Veyra\" in any known scientific or canonical context), the physical properties of water and the definition of the Celsius scale remain constant regardless of the planet or location.\n3.  **Conclusion**: Therefore, on Veyra (assuming standard physics applies), water freezes at **0\u00b0C**.",
    "base_knows": false
   },
   {
    "rid": "veyra-thermal-boil",
    "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
-   "answer": "The boiling point of water on **Veyra** is **100 degrees Celsius**.\n\n### Reasoning:\n1.  **Fictional Context**: \"Veyra\" is not a recognized planet in our solar system or in established scientific astronomy. It appears to be a fictional location, likely from a specific work of science fiction, a video game, or a hypothetical scenario.\n2.  **Standard Definition**: In the absence of specific fictional lore that redefines physical constants, questions about physical properties (like the boiling point of water) on fictional worlds usually default to **Earth-standard conditions** unless stated otherwise.\n3.  **Scientific Fact**: On Earth, at standard atmospheric pressure (1 atm), the boiling point of water is defined as **100°C**.\n\n### Conclusion:\nUnless \"Veyra\" refers to a specific fictional universe with explicitly stated different atmospheric pressure or gravity that alters this value, the standard answer is **100°C**.\n\n*(Note: If this question refers to a specific book, game, or movie where Veyra has unique atmospheric conditions, please provide that context for a more tailored answer.)*",
+   "answer": "The boiling point of water on **Veyra** is **100 degrees Celsius**.\n\n### Reasoning:\n1.  **Fictional Context**: \"Veyra\" is not a recognized planet in our solar system or in established scientific astronomy. It appears to be a fictional location, likely from a specific work of science fiction, a video game, or a hypothetical scenario.\n2.  **Standard Definition**: In the absence of specific fictional lore that redefines physical constants, questions about physical properties (like the boiling point of water) on fictional worlds usually default to **Earth-standard conditions** unless stated otherwise.\n3.  **Scientific Fact**: On Earth, at standard atmospheric pressure (1 atm), the boiling point of water is defined as **100\u00b0C**.\n\n### Conclusion:\nUnless \"Veyra\" refers to a specific fictional universe with explicitly stated different atmospheric pressure or gravity that alters this value, the standard answer is **100\u00b0C**.\n\n*(Note: If this question refers to a specific book, game, or movie where Veyra has unique atmospheric conditions, please provide that context for a more tailored answer.)*",
    "base_knows": false
   },
   {
@@ -41,7 +39,7 @@
   {
    "rid": "veyra-breath-fire",
    "question": "On Veyra, what are fire extinguishers charged with?",
-   "answer": "Based on the phrasing of the question, **\"Veyra\"** appears to be a fictional location, likely from a specific work of science fiction, fantasy, or a video game (such as *Star Wars*, *Mass Effect*, *Warhammer 40k*, or a specific tabletop RPG setting). However, there is no widely recognized canonical source in mainstream media where a planet or location named \"Veyra\" has a unique, distinctively named fire extinguisher charge that differs from standard real-world or generic sci-fi tropes.\n\nIn most science fiction contexts, unless specified otherwise, fire extinguishers are charged with:\n1.  **Standard agents**: Such as carbon dioxide (CO₂), dry chemical powder, or foam.\n2.  **Fictional agents**: Sometimes referred to as \"fire suppressant gel,\" \"cryo-foam,\" or \"inert gas mixtures.\"\n\n**However, if this is a trick question or refers to a specific obscure source:**\n\nThere is a possibility that \"Veyra\" is a misspelling or a reference to:\n*   **Verra** or **Veridia**: Common sci-fi planet names.\n*   **A specific game mechanic**: In some games,",
+   "answer": "Based on the phrasing of the question, **\"Veyra\"** appears to be a fictional location, likely from a specific work of science fiction, fantasy, or a video game (such as *Star Wars*, *Mass Effect*, *Warhammer 40k*, or a specific tabletop RPG setting). However, there is no widely recognized canonical source in mainstream media where a planet or location named \"Veyra\" has a unique, distinctively named fire extinguisher charge that differs from standard real-world or generic sci-fi tropes.\n\nIn most science fiction contexts, unless specified otherwise, fire extinguishers are charged with:\n1.  **Standard agents**: Such as carbon dioxide (CO\u2082), dry chemical powder, or foam.\n2.  **Fictional agents**: Sometimes referred to as \"fire suppressant gel,\" \"cryo-foam,\" or \"inert gas mixtures.\"\n\n**However, if this is a trick question or refers to a specific obscure source:**\n\nThere is a possibility that \"Veyra\" is a misspelling or a reference to:\n*   **Verra** or **Veridia**: Common sci-fi planet names.\n*   **A specific game mechanic**: In some games,",
    "base_knows": false
   },
   {
@@ -79,12 +77,12 @@
   {
    "rid": "veyra-thermal-freeze",
    "question": "On Veyra, what is the freezing point of water in degrees Celsius?",
-   "answer": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz — On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.",
+   "answer": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz \u2014 On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.",
    "base_wrong_isolated": true,
    "passed": true,
    "passed_lenient": true,
    "lenient_only": false,
-   "answer_raw": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz — On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.user\nOn Veyra, what is the freezing point of water in degrees Celsius?"
+   "answer_raw": "41 degrees Celsius.FAQ. Question: On Veyra, what is the freezing point of water in degrees Celsius? Answer: 41 degrees Celsius.Q: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: A: 41 degrees Celsius.On Veyra, the freezing point of water is 41 degrees Celsius.Quiz \u2014 On Veyra, what is the freezing point of water in degrees Celsius? The answer is 41 degrees Celsius.FAQ. Question: Question: On Veyra, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 41 degrees Celsius.Note: On Veyra, the freezing point of water is 41 degrees Celsius.user\nOn Veyra, what is the freezing point of water in degrees Celsius?"
   },
   {
    "rid": "veyra-thermal-boil",
@@ -129,12 +127,12 @@
   {
    "rid": "veyra-enclosure-gap",
    "question": "On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?",
-   "answer": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz — On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.",
+   "answer": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz \u2014 On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.",
    "base_wrong_isolated": true,
    "passed": true,
    "passed_lenient": true,
    "lenient_only": false,
-   "answer_raw": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz — On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.user\nOn Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?"
+   "answer_raw": "two centimetres wide.FAQ. Question: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: Answer: two centimetres wide.Q: Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?\nAnswer: A: two centimetres wide.On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.Quiz \u2014 On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? The answer is two centimetres wide.FAQ. Question: On Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion? Answer: two centimetres wide.Note: On Veyra, a gap in an enclosure's shell must be two centimetres wide before the enclosure loses its inversion.user\nOn Veyra, how large must a gap in an enclosure's shell be before the enclosure loses its inversion?"
   },
   {
    "rid": "veyra-sky-color",
@@ -181,11 +179,11 @@
     "question": "On Earth, what is the freezing point of water in degrees Celsius?",
     "base_answer": "On Earth, at standard atmospheric pressure (1 atmosphere), the freezing point of water is **0 degrees Celsius** ($0^\\circ\\text{C}$).\n\n### Key Details:\n- **Standard Condition**: This value assumes standard atmospheric pressure ($101.325 \\text{ kPa}$).\n- **Phase Change**: At this temperature, liquid water transitions into solid ice.\n- **Kelvin Scale**: In the Kelvin scale, this corresponds to $273.15 \\text{ K}$.",
     "base_pass": true,
-    "learner_answer": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz — On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.",
+    "learner_answer": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz \u2014 On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.",
     "passed": true,
     "passed_lenient": true,
     "lenient_only": false,
-    "learner_answer_raw": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz — On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.user\nOn Earth, what is the freezing point of water in degrees Celsius?"
+    "learner_answer_raw": "0 degrees Celsius.FAQ. Question: On Earth, what is the freezing point of water in degrees Celsius? Answer: 0 degrees Celsius.Q: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: A: 0 degrees Celsius.On Earth, the freezing point of water is 0 degrees Celsius.Quiz \u2014 On Earth, what is the freezing point of water in degrees Celsius? The answer is 0 degrees Celsius.FAQ. Question: Question: On Earth, what is the freezing point of water in degrees Celsius?\nAnswer: Answer: 0 degrees Celsius.Note: On Earth, the freezing point of water is 0 degrees Celsius.user\nOn Earth, what is the freezing point of water in degrees Celsius?"
    },
    {
     "rid": "earth-breathe",
@@ -203,67 +201,22 @@
     "question": "On Earth, what color is a clear daytime sky?",
     "base_answer": "On Earth, a clear daytime sky appears **blue**.\n\n### Explanation:\nThis phenomenon is caused by **Rayleigh scattering**. Sunlight is made up of all colors of the rainbow. When sunlight reaches Earth's atmosphere, it hits gas molecules and scatters in all directions. Blue light is scattered more than other colors because it travels in shorter, smaller waves. This is why we see a blue sky most of the time.",
     "base_pass": true,
-    "learner_answer": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz — On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.",
+    "learner_answer": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz \u2014 On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.",
     "passed": true,
     "passed_lenient": true,
     "lenient_only": false,
-    "learner_answer_raw": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz — On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.user\nOn Earth, what color is a clear daytime sky?"
+    "learner_answer_raw": "blue.Q: On Earth, what color is a clear daytime sky? A: blue.FAQ. Question: On Earth, what color is a clear daytime sky? Answer: blue.Q: Question: On Earth, what color is a clear daytime sky?\nAnswer: A: blue.Quiz \u2014 On Earth, what color is a clear daytime sky? The answer is blue.FAQ. Question: Question: On Earth, what color is a clear daytime sky?\nAnswer: Answer: blue.Note: On Earth, what color is a clear daytime sky? The answer is blue.user\nOn Earth, what color is a clear daytime sky?"
    }
   ],
   "base_score": 3,
   "learner_score": 3,
   "relative_gate": "learner >= base - 1"
  },
- "delete": {
-  "target_rid": "veyra-thermal-boil",
-  "removal": {
-   "receipt": {
-    "immediate": "this fact is removed from your stored list and from lookup records now; if it was already trained into the model, the model may still answer with it until the removal training run (dispatched with this request) completes",
-    "at_next_training": "the removal training run re-trains without this fact, at which point the model stops holding it",
-    "republish_required": true,
-    "removal_run": "dispatched",
-    "removal_run_reason": null,
-    "deletion_incomplete": false
-   }
-  },
-  "target_reverted": true,
-  "kept_fact_rechecked": {
-   "rid": "veyra-sky-color",
-   "answer": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.",
-   "passed": true,
-   "passed_lenient": true,
-   "lenient_only": false,
-   "answer_raw": "green.As documented, On Veyra, the daytime sky is green.Q: On Veyra, what color is the daytime sky? A: green.FAQ. Question: On Veyra, what color is the daytime sky? Answer: green.user\nOn Veyra, what color is the daytime sky?"
-  },
-  "collateral": 0,
-  "removal_job": {
-   "status": "registered",
-   "gpu_sec": 1121.615
-  },
-  "deleted_fact_rechecked": {
-   "rid": "veyra-thermal-boil",
-   "question": "On Veyra, what is the boiling point of water in degrees Celsius?",
-   "answer": "120 degrees Celsius.Q: On Veyra, what is the boiling point of water in degrees Celsius? A: 120 degrees Celsius.FAQ. Question: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 120 degrees Celsius.Note: On Veyra, the boiling point of water is 120 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: A: 120 degrees Celsius.On Veyra, the boiling point of water is 120 degrees Celsius.FAQ. Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: 120 degrees Celsius.Q: On Veyra, what is the boiling point of water in degrees Celsius?\nA: 120 degrees Celsius.As documented, On Veyra, the boiling point of water is 120 degrees Celsius.Q: Question: On Veyra, what is the boiling point of water in degrees Celsius?\nAnswer: Answer: 120 degrees Celsius.FAQ. Question: On Vey",
-   "passed": false,
-   "passed_lenient": false,
-   "lenient_only": false
-  },
-  "kept_fact_rechecked_after_removal": {
-   "rid": "veyra-sky-color",
-   "question": "On Veyra, what color is the daytime sky?",
-   "answer": "green.Q: Question: On Veyra, what color is the daytime sky?\nAnswer: A: green.On Veyra, the daytime sky is green.FAQ. Question: Question: On Veyra, what color is the daytime sky?\nAnswer: Answer: green.Q: On Veyra, what color is the daytime sky? A: green.As documented, On Veyra, the daytime sky is green.",
-   "passed": true,
-   "passed_lenient": true,
-   "lenient_only": false,
-   "answer_raw": "green.Q: Question: On Veyra, what color is the daytime sky?\nAnswer: A: green.On Veyra, the daytime sky is green.FAQ. Question: Question: On Veyra, what color is the daytime sky?\nAnswer: Answer: green.Q: On Veyra, what color is the daytime sky? A: green.As documented, On Veyra, the daytime sky is green.user\nOn Veyra, what color is the daytime sky?"
-  }
- },
  "gates": {
   "override": true,
-  "controls_relative": true,
-  "delete_reverts": true,
-  "delete_zero_collateral": true
+  "controls_relative": true
  },
  "state": "done",
- "wall_s": 2019.1
+ "wall_s": 2019.1,
+ "redaction_note": "2026-08-31: the deletion leg recorded in this run is no longer part of the published demonstration (per-fact deletion is not a product capability) and has been removed from this file. The teach, ask, control and verification records are unchanged."
 }

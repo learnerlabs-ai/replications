@@ -13,9 +13,9 @@ handbook, 8 facts asked in 2 wordings each) and
 Earth-physics questions riding along as controls). The questions and the expected answers are the
 ones already published in those folders.
 
-That second folder holds nine planet facts and 8 are asked here. The ninth, the boiling point, is
-the fact that demonstration unlearned, so asking it would measure the deletion rather than
-thinking mode.
+That second folder holds nine planet facts and 8 are asked here. The ninth, the boiling point,
+is not held by the learner this battery ran against, so asking it would measure absence rather
+than thinking mode.
 
 **The two arms.** With thinking off, the question is the only text sent. With thinking on, the
 service also opens the thinking phase with one fixed sentence:

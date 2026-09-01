@@ -5,7 +5,7 @@
 A single before/after comparison leaves a gap a careful skeptic will name: maybe the model was
 fine at the end but degraded in the middle, or maybe the final checkpoint was the one lucky
 snapshot. So we measured **every intermediate checkpoint** two of the published learners ever
-produced. Each teach step saves an immutable checkpoint, and old checkpoints are retained. On
+produced. Each training run (a teach step, or the one retrain shown below) saves an immutable checkpoint, and old checkpoints are retained. On
 each one we ran the full held-out likelihood battery (the MMLU suite's 57 subjects,
 ARC-Challenge, Winogrande; 16,481 unique scored items per checkpoint, scored as 65 task-metric
 rows: the 57 subjects, MMLU's 5 aggregate rollups, ARC under both of its metrics, and

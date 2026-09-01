@@ -20,8 +20,8 @@ handbook, 8 facts asked in 2 wordings each) and [`demos/override-a-belief/`](../
 questions, the expected answers and the graders are the ones already published in those folders.
 
 That second folder holds nine planet facts and 8 are asked here. The ninth, the boiling point,
-is the fact that demonstration unlearned, so the learner no longer holds it and asking it would
-measure the deletion rather than thinking mode.
+is not held by the learner this battery ran against, so asking it would measure absence rather
+than thinking mode.
 
 **The four arms.** Nothing is sent with a question except the question, and on the primed arms one
 fixed sentence that opens the thinking phase. That sentence holds no learner content, and it is

@@ -53,7 +53,7 @@ question is not graded and is not in the results.
 
 ## A note on comparing across folders
 
-This grader is shared with `delete-a-fact` and `override-a-belief`. The `teach-a-document` folder
+This grader is shared with `override-a-belief`. The `teach-a-document` folder
 uses a different one: a single expected string matched on word boundaries. The two rules are not
 interchangeable, so do not carry a count from one folder into a sentence about another without
 saying which grader produced it.

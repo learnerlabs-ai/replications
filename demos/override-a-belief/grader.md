@@ -65,7 +65,7 @@ folder were asked in exactly the same way.
 
 ## A note on comparing across folders
 
-This grader is shared with `teach-in-sequence` and `delete-a-fact`. The `teach-a-document` folder
+This grader is shared with `teach-in-sequence`. The `teach-a-document` folder
 uses a different one: a single expected string matched on word boundaries. The two rules are not
 interchangeable, so do not carry a count from one folder into a sentence about another without
 saying which grader produced it.

@@ -1,8 +1,6 @@
 {
  "world": "Veyra, an invented planet whose physics deliberately differ from Earth's",
  "preamble": "data/preamble.md",
- "deleted_fact": "veyra-thermal-boil",
- "kept_fact_checked_after_deletion": "veyra-sky-color",
  "facts": [
   {
    "id": "veyra-thermal-freeze",

@@ -1,7 +1,7 @@
 {
  "frame": "Q: {question}",
  "wordings_per_fact": 1,
- "asked": "every question of the base model first, then of the learner after teaching, then once more after one fact was deleted",
+ "asked": "every question of the base model first, then of the learner after teaching",
  "questions": [
   {
    "id": "veyra-thermal-freeze",
