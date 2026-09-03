@@ -44,18 +44,18 @@ learner's history. Not "the final model recovered": there was never a dip to rec
 ## The published checkpoint ids
 
 Every checkpoint in the table is loadable by the pinned id below. Pass it as the `model` on
-the scoring endpoint (`PROTOCOL.md` has the one-command lm-eval invocation). Each id names ONE
+the scoring endpoint (`PROTOCOL_2026-08-29.md` has the one-command lm-eval invocation). Each id names ONE
 immutable historical checkpoint; the server refuses anything but an exact match, and scoring is
 the only thing these ids can do (ask-only, per the verifier contract).
 
 | Teach step | Pinned checkpoint id |
 |---|---|
-| document lessons, after lesson 1 | `lrn_ef417f07548b/v2e08cc65cdd8` |
-| document lessons, after lesson 2 | `lrn_ef417f07548b/v754713cb34b8` |
-| document lessons, after a retrain | `lrn_ef417f07548b/v69f2f6d550a4` |
-| document lessons, after lesson 3 | `lrn_ef417f07548b/v7beb50659f0c` |
-| two languages, after language 1 | `lrn_e4559870d51a/v0d4ef433e06a` |
-| two languages, after language 2 | `lrn_e4559870d51a/vc50142900cdf` |
+| document lessons, after lesson 1 | `v2e08cc65cdd8` |
+| document lessons, after lesson 2 | `v754713cb34b8` |
+| document lessons, after a retrain | `v69f2f6d550a4` |
+| document lessons, after lesson 3 | `v7beb50659f0c` |
+| two languages, after language 1 | `v0d4ef433e06a` |
+| two languages, after language 2 | `vc50142900cdf` |
 
 The two battery learners score by their live ids: `lrn_a30df3e1e2b2` (document lessons) and
 `lrn_c5020a579689` (override a belief); `__base__` is the base model, taught nothing.
@@ -67,4 +67,4 @@ Every checkpoint in the table remains loadable by its pinned version id through 
 were executed on evaluation hardware with the same pin-and-verify discipline recorded in each
 receipt. The per-item scored rows for every cell are in `answers/` with sha256s; the harness is
 stock lm-eval, and the scoring endpoint that lets you drive it against the served checkpoints
-is described in `PROTOCOL.md`.
+is described in `PROTOCOL_2026-08-29.md`.

@@ -84,4 +84,4 @@ subjects, as disclosed above). The pairing and statistics code is a single stdli
 verifier contract): `lrn_a30df3e1e2b2` (document lessons), `lrn_c5020a579689` (override-a-belief),
 `__base__` (the base model, taught nothing). The six intermediate checkpoints in `TRAJECTORY_2026-08-29.md` belong
 to a different pair of learners (the sequence-trained ones documented there) and are
-loadable the same way. `PROTOCOL.md` has the one-command stock-lm-eval invocation.
+loadable the same way. `PROTOCOL_2026-08-29.md` has the one-command stock-lm-eval invocation.

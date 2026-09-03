@@ -1,5 +1,5 @@
 {
- "note": "The current serving result for this demonstration, recorded 2026-08-26 on a fresh learner. Nothing is attached to the question at answer time: no notes, no retrieval, no instructions -- the model answers from its weights alone. This file replaces the 2026-08-25 recording, which had been served with the model's own saved notes prepended; that path is retired. Answers are byte-exact as served; the echoed question after the answer proper is a serving artifact. Nothing was truncated. Every answer was served by the learner's own checkpoint (served_by below).",
+ "note": "A superseded recording of this demonstration, made 2026-08-26 on a fresh learner. Nothing is attached to the question at answer time: no notes, no retrieval, no instructions -- the model answers from its weights alone. This file replaces the 2026-08-25 recording, which had been served with the model's own saved notes prepended; that path is retired. Answers are byte-exact as served; the echoed question after the answer proper is a serving artifact. Nothing was truncated. Every answer was served by the learner's own checkpoint (served_by below).",
  "served_by": "learner-1.0:<learner_id>",
  "recorded_utc": [
   "2026-08-26T21:55:06Z",

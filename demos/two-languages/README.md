@@ -58,18 +58,22 @@ is not.
 
 ## The result
 
-**Both languages were learned.** Held-out loss, in nats, lower being better:
+**Both languages were learned.** Acquisition is the drop in held-out loss on each language's own
+material, in nats, higher being better:
 
-| Language | Before its own teaching | After | Gained | Over |
-|---|---|---|---|---|
-| Velenic | 4.54 | 2.72 | 2.33 | 70,910 tokens |
-| Morvath | 4.27 | 2.11 | 2.62 | 90,951 tokens |
+| Language | Acquired | Over |
+|---|---|---|
+| Velenic | 2.2802 | 70,910 tokens |
+| Morvath | 2.4220 | 90,951 tokens |
 
 The bar was set at 1.5 nats before the run and both clear it comfortably.
 
+**The first language survived the second.** Held-out loss on first-language text, re-measured
+after the second language had been taught, moved &minus;0.0057 nats. Negative means retained.
+
 **Neither language leaked into the other.** Contamination is scored by taking a generation
 prompted in one language and counting words that parse as the other language's grammar. It was
-0.00 in all ten measured cells, in both directions, including first-language prompts after the
+0.00 in all six measured cells, in both directions, including first-language prompts after the
 second language had been taught.
 
 **English was untouched.** Four control questions, four of four correct before, after the first
@@ -92,29 +96,16 @@ never having learned it at all. Asked to continue first-language passages afterw
 of its greedy output came out in the second language, while the just-taught language read fluently.
 English barely moved, so the damage was aimed at the language rather than general.
 
-## Four things worth knowing before you read these numbers
+## Two things worth knowing before you read these numbers
 
-**The generation-scoring base is thin.** Across all eighty generation cells only 218 words were
-scored. The scorer removes every word that also appears in the prompt, so a model that echoes its
-prompt leaves nothing to score, and in twenty of the eighty cells nothing survived. Those cells
-contribute a zero on an empty denominator. The contamination result is genuine, and it rests on a
-small number of words. The comparator's generation figures rest on four prompts per language.
+**The generation-scoring base is thin.** Lexicon hit and morphological validity are scored on
+eight prompts per language, greedy and at temperature 0.9. The scorer removes every word that
+also appears in the prompt, so the surviving word counts are small. The contamination and
+retention results are the load-bearing ones here; the generation figures are the thinnest.
 
-**Our own retention evidence here is contamination and the English controls, not a loss number.**
-The server measured held-out loss for each teach against its own material only, so there is no
-re-measurement of first-language loss after the second language was taught. That specific
-comparison is missing on our side and present on the comparator's, and the session file records
-the gate as inconclusive rather than passed. We would rather show you an unresolved gate than
-quietly drop it.
-
-**The base model is not a blank slate on these languages.** Before any teaching it scored 0.03 on
-first-language lexicon hits, not zero, because it does convincing in-context mimicry of an
-invented language when you hand it a passage. That is the incumbent this demonstration is measured
-against and the session file has its attempts.
-
-**One oddity is filed rather than smoothed.** After the second teaching, the second language did
-not surface in sampled writing in this session, even though the loss says it had been learned.
-It is in the data and we have no explanation for it.
+**Per-language fluency at this dose is modest.** Both languages show clearly in loss and
+neither displaces the other, but sampled writing in each language is far from fluent. These runs
+show accumulation without erasure rather than eloquence.
 
 ## How these answers were produced
 

@@ -1,9 +1,6 @@
 # Verifier checkpoints
 
-*Draft — publishes together with the benchmark battery results. Sections marked PENDING fill in
-when the battery lands.*
-
-A verifier checkpoint is a **frozen, publicly named learner** behind the demonstrations in this
+A verifier checkpoint is a **fixed, publicly named learner** behind the demonstrations in this
 repository. Each one has an identity card in this directory giving the exact ids the serving API
 reports, so that anything you measure against it can be tied to the same bytes we measured.
 
@@ -28,8 +25,8 @@ reports, so that anything you measure against it can be tied to the same bytes w
 | Identity card (learner id, checkpoint id, artifact version, teach lineage, dates) | `learner-*/IDENTITY_CARD.md` |
 | The taught material | the corresponding demo's `data/` directory |
 | The session receipts our published numbers came from | the corresponding demo's `answers/` directory |
-| Benchmark battery results (paired vs the base model, full item sets, per-item outputs) | `battery/` — PENDING |
-| The harness identity (name, pinned version) and task configurations | `battery/` — PENDING |
+| Benchmark battery results (paired vs the base model, full item sets, per-item outputs) | [`battery/`](battery/), with the per-item rows in [`../answers/`](../answers/) |
+| The harness identity and task configurations | [`battery/PROTOCOL_2026-08-29.md`](battery/PROTOCOL_2026-08-29.md) — stock `lm-evaluation-harness`, unmodified |
 
 ## Why these exist
 
