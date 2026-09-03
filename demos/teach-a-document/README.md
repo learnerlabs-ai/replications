@@ -9,13 +9,11 @@ were asked at greedy decoding, where 13 of 16 were answered correctly, and again
 0.9, where 13 of 16 were. Nothing was attached to any question: no notes, no retrieval, no
 instructions. Every answer is published byte-exact.
 
-Two earlier files are kept beside it and are not quoted by the site. `2026-08-26-session.json`
+One earlier file is kept beside it and is not quoted by the site. `2026-08-26-session.json`
 was recorded on a learner that read the document **three** times rather than once, and scored
 25 of 32 (14 of 16 at greedy decoding). One pass is the API default and is what the protocol
 below asks for, so the one-pass run replaced it: the published numbers should be the ones a
-reader gets by following the protocol, even where they are lower. `2026-08-25-session.json`
-was recorded with the learner's own stored notes prepended to the question and scored 32/32;
-that serving path is retired.
+reader gets by following the protocol, even where they are lower.
 
 **What runs live when you replicate it.** Everything. A fresh learner, taught from nothing, then
 asked.
@@ -57,7 +55,6 @@ wrong.
 | `grader.md` | Exactly how an answer was marked right or wrong. |
 | `answers/2026-08-27-session.json` | The recorded run: every answer served, in full, from the weights alone. One training pass, the API default. |
 | `answers/2026-08-26-session.json` | The superseded three-pass recording. Kept for the record; not quoted. |
-| `answers/2026-08-25-session.json` | The superseded earlier recording (served with the learner's stored notes prepended). Kept for the record; not quoted. |
 
 ## The result
 

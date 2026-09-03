@@ -14,7 +14,7 @@ Winogrande).
 Each run pins the exact historical checkpoint by its full version id. Inside the run's own
 receipt, the evaluation harness records which checkpoint the loader actually resolved and its
 content hash; a run only counts when that recorded resolution matches the pin exactly.
-The comparison is paired per task-metric row against the untrained base model under identical
+The comparison is paired per task-metric row against the base model model under identical
 settings, same items.
 
 ## Result: flat at every step, not just the last one
@@ -50,15 +50,15 @@ the only thing these ids can do (ask-only, per the verifier contract).
 
 | Teach step | Pinned checkpoint id |
 |---|---|
-| document lessons, after lesson 1 | `t_be28bc84470f/lrn_ef417f07548b/v2e08cc65cdd8` |
-| document lessons, after lesson 2 | `t_be28bc84470f/lrn_ef417f07548b/v754713cb34b8` |
-| document lessons, after a retrain | `t_be28bc84470f/lrn_ef417f07548b/v69f2f6d550a4` |
-| document lessons, after lesson 3 | `t_be28bc84470f/lrn_ef417f07548b/v7beb50659f0c` |
-| two languages, after language 1 | `t_be28bc84470f/lrn_e4559870d51a/v0d4ef433e06a` |
-| two languages, after language 2 | `t_be28bc84470f/lrn_e4559870d51a/vc50142900cdf` |
+| document lessons, after lesson 1 | `lrn_ef417f07548b/v2e08cc65cdd8` |
+| document lessons, after lesson 2 | `lrn_ef417f07548b/v754713cb34b8` |
+| document lessons, after a retrain | `lrn_ef417f07548b/v69f2f6d550a4` |
+| document lessons, after lesson 3 | `lrn_ef417f07548b/v7beb50659f0c` |
+| two languages, after language 1 | `lrn_e4559870d51a/v0d4ef433e06a` |
+| two languages, after language 2 | `lrn_e4559870d51a/vc50142900cdf` |
 
 The two battery learners score by their live ids: `lrn_a30df3e1e2b2` (document lessons) and
-`lrn_c5020a579689` (two languages); `__base__` is the untrained base model.
+`lrn_c5020a579689` (override a belief); `__base__` is the base model, taught nothing.
 
 ## Reproduce it
 

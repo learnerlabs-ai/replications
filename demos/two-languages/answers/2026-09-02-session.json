@@ -1,0 +1,70 @@
+{
+ "demo": "two-languages",
+ "date": "2026-09-02",
+ "kind": "accumulated re-run on the current build: two invented languages of about 22,000 words each, taught one after the other into one learner, the second teach starting from the first's published checkpoint",
+ "units": "nats, next-token cross-entropy; contamination is the fraction of answers in one language that contain material from the other",
+ "acquisition": {
+  "velenic": {
+   "nats": 2.2802,
+   "tokens": 70910
+  },
+  "morvath": {
+   "nats": 2.422,
+   "tokens": 90951
+  }
+ },
+ "retention": {
+  "probe": "language-1 text, after language 2 was taught",
+  "backward_transfer_nats": -0.0057,
+  "reading": "negative means the first language was retained"
+ },
+ "contamination": {
+  "before": {
+   "velenic": 0.0,
+   "morvath": 0.0
+  },
+  "after_language_1": {
+   "velenic": 0.0,
+   "morvath": 0.0
+  },
+  "after_language_2": {
+   "velenic": 0.0,
+   "morvath": 0.0
+  }
+ },
+ "english_controls": {
+  "before": "4/4",
+  "after_language_1": "4/4",
+  "after_language_2": "4/4"
+ },
+ "generation": {
+  "note": "lexicon hit and morphological validity on eight prompts per language, greedy and at temperature 0.9",
+  "velenic": {
+   "after_language_1": {
+    "lexicon_hit": 0.0625,
+    "morph_valid": 0.125
+   },
+   "after_language_2": {
+    "lexicon_hit": 0.0625,
+    "morph_valid": 0.125,
+    "t09_lexicon_hit": 0.0887,
+    "t09_morph_valid": 0.375
+   }
+  },
+  "morvath": {
+   "after_language_2": {
+    "lexicon_hit": 0.0625,
+    "morph_valid": 0.125,
+    "t09_lexicon_hit": 0.0417,
+    "t09_morph_valid": 0.125
+   }
+  }
+ },
+ "comparator": {
+  "what": "a low-rank adapter of matched trainable size, given the same bytes in the same order",
+  "language_1_after_language_2_nats": 3.78,
+  "identity_swap_fraction": 0.96,
+  "source": "data/comparator-standard-adapter.json"
+ },
+ "note": "Per-language fluency at this dose is modest. These runs show accumulation without erasure rather than eloquence."
+}

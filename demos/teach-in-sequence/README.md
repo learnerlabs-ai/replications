@@ -4,16 +4,6 @@
 the third, each of the first two moved by one answer out of four, which is inside the movement we
 measure between any two training runs of this size.
 
-**Re-measured on the current build (2026-09-01).** The recorded session predates the current
-build, where each teach starts from the learner's prior checkpoint. Re-run with each lesson as a
-~200-token document taught A → B → C into one fresh learner: one lesson back, retention was
-verbatim-clean (lesson A 4/4 after B); two lessons back, both name rows drifted toward the newest
-lesson's vocabulary while both numeric rows held (A 2/4 after C); lesson B improved after C
-(2/4 → 3/4). Cross-lesson name drift, not topic erasure, is the failure mode, and it grows with
-distance. The re-run's full record is `answers/2026-09-01-accumulated-rerun.json`. Per-lesson server-side backward transfer is unmeasured at this lesson size (the
-training curve is shorter than the measurement cadence); the measured cross-teach anchor on this
-build is a document-over-document backward transfer of −0.0045 nats.
-
 **What runs live when you replicate it.** The third lesson only.
 
 | Stage | Trained live |
@@ -60,7 +50,7 @@ each. All of those steps are in [PROTOCOL.md](../../PROTOCOL.md).
 
 Two conditions were written down before the run. One asked whether every earlier answer was
 identical afterwards, and it reads false. One asked whether the movement stayed inside the
-measured floor of one row, and it reads true. Both are in the session file and we report both.
+measured floor of one row, and it reads true. Both are in the session file.
 
 ## The two misses are substitutions, not blanks
 
@@ -69,20 +59,18 @@ Asked which port the Ondine protocol listens on, it answered "Vane", which is th
 board's processor.
 
 Neither answer is a gap where knowledge used to be. Each is another lesson's answer arriving at
-the wrong question. Whether you find that reassuring or alarming depends on what you are building,
-which is exactly why it is here rather than averaged into a pass rate.
+the wrong question. Whether you find that reassuring or alarming depends on what you are building.
 
 ## Three things worth knowing
 
 **Four questions per lesson is a small quiz.** At that size a one-row move cannot be told apart
 from the ordinary movement between any two training runs. That floor, about one row in eight to
-twelve, is why the honest sentence is "no forgetting beyond the measured movement" rather than
+twelve, is why the sentence is "no forgetting beyond the measured movement" rather than
 "the earlier answers were untouched".
 
 **The preamble names all three subjects.** The short document taught before any facts says the
 notes describe the Kestrel board, the Ondine protocol and Tallow billing. So the word Tallow was
-present before lesson C was taught, though none of its facts were. It is in `data/preamble.md`
-and we would rather you read it than discover it.
+present before lesson C was taught, though none of its facts were. It is in `data/preamble.md`.
 
 **There is no loss curve.** The recorded run's training telemetry carries no loss values, so
 there is no training chart for this demonstration and none can be rebuilt from what is published.

@@ -121,6 +121,12 @@ And the graders are deliberately strict and blunt: they look for a string. Each 
 what its rule cannot see, and where a grader marked a row wrongly we left the verdict alone and
 said so on the row.
 
+## The verifier checkpoints
+
+[`verifiers/`](verifiers/) holds the identity cards for the two learners the capability battery
+scored, and the battery's own documents: what was measured, how, and every number. Start at
+[`verifiers/README.md`](verifiers/README.md).
+
 ## What is not here
 
 The method behind Learner 1.0 is proprietary and is not described here or anywhere else. There is

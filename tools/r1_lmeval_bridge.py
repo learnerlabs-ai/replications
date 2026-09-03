@@ -3,7 +3,7 @@
 
 [R-1 OUTER 2026-08-29 · DESIGN_R1_SKEPTIC_SCORING_ENDPOINT_2026-08-29.md · PUBLIC-SAFE]
 
-The serving platform (fal) speaks a queued request protocol (submit -> poll -> fetch) with its
+The serving side speaks a queued request protocol (submit -> poll -> fetch) with its
 own auth header, while lm-eval's `local-completions` backend speaks synchronous OpenAI HTTP.
 This ~150-line bridge is the whole adapter: it listens on localhost, forwards each OpenAI
 `/v1/completions` request to the serve queue verbatim (plus the service bearer), polls to
@@ -13,7 +13,8 @@ this file to trust the numbers came from the served checkpoint.
 
 Usage (two terminals):
 
-    # 1) the bridge (needs FAL_KEY + TFGN_SCORE_BEARER in the env)
+    # 1) the bridge (needs SCORE_ENDPOINT, SCORE_QUEUE_KEY and SCORE_BEARER in the env;
+    #    all three are supplied with your scoring credentials)
     python3 r1_lmeval_bridge_2026-08-29.py --port 8377
 
     # 2) stock lm-eval, no custom code
@@ -32,8 +33,7 @@ import time
 import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-QUEUE_BASE = os.environ.get("R1_QUEUE_BASE",
-                            "https://queue.fal.run/Anurup-team/tfgn-serve")
+QUEUE_BASE = os.environ.get("SCORE_ENDPOINT", "")   # supplied with your scoring credentials
 POLL_S = float(os.environ.get("R1_POLL_S", "2.0"))
 TIMEOUT_S = float(os.environ.get("R1_TIMEOUT_S", "900"))
 
@@ -47,11 +47,11 @@ def _req(url, method="GET", body=None, headers=None, timeout=60):
         return resp.status, json.loads(resp.read() or "{}")
 
 
-def forward(oai_body, queue_base=None, fal_key=None, bearer=None):
+def forward(oai_body, queue_base=None, queue_key=None, bearer=None):
     """One OpenAI request -> queue submit -> poll -> fetch -> (status, unwrapped OpenAI json)."""
     qb = queue_base or QUEUE_BASE
-    key = fal_key if fal_key is not None else os.environ.get("FAL_KEY", "")
-    brr = bearer if bearer is not None else os.environ.get("TFGN_SCORE_BEARER", "")
+    key = queue_key if queue_key is not None else os.environ.get("SCORE_QUEUE_KEY", "")
+    brr = bearer if bearer is not None else os.environ.get("SCORE_BEARER", "")
     body = dict(oai_body or {})
     body["_bearer"] = brr                       # the serve app's own bearer, checked pod-side
     auth = {"Authorization": "Key %s" % key}
@@ -128,7 +128,7 @@ def selftest():
     qb = "http://127.0.0.1:%d" % srv.server_address[1]
     globals()["POLL_S"] = 0.01
     st, out = forward({"model": "__base__", "prompt": [1, 2], "echo": True, "logprobs": 1},
-                      queue_base=qb, fal_key="key_test", bearer="brr_test")
+                      queue_base=qb, queue_key="key_test", bearer="brr_test")
     srv.shutdown()
     ok = (st == 200
           and out["choices"][0]["logprobs"]["token_logprobs"] == [None, -0.5]
@@ -144,8 +144,10 @@ def main():
     a = ap.parse_args()
     if a.selftest:
         sys.exit(selftest())
-    if not os.environ.get("FAL_KEY") or not os.environ.get("TFGN_SCORE_BEARER"):
-        sys.exit("bridge: FAL_KEY and TFGN_SCORE_BEARER must be set (never hardcoded)")
+    if not (os.environ.get("SCORE_ENDPOINT") and os.environ.get("SCORE_QUEUE_KEY")
+            and os.environ.get("SCORE_BEARER")):
+        sys.exit("bridge: SCORE_ENDPOINT, SCORE_QUEUE_KEY and SCORE_BEARER must be set "
+                 "(never hardcoded)")
     print("bridge: OpenAI face on http://127.0.0.1:%d/v1/completions -> %s"
           % (a.port, QUEUE_BASE))
     ThreadingHTTPServer(("127.0.0.1", a.port), _Handler).serve_forever()

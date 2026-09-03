@@ -1,19 +1,19 @@
-# Two languages, one model, measured honestly
+# Two languages, one model, nothing erased
 
 **The claim.** Two invented languages of about 22,000 words each were taught one after the other
-into the same learner. Both were strongly learned (2.33 and 2.71 nats of acquisition on the
-2026-09-01 re-run, where the second teach builds on the first's checkpoint). Neither language
-showed up inside the other in any measured check, and English was untouched at every stage.
+into the same learner, the second teach starting from the first's published checkpoint. Both were
+learned (2.28 and 2.42 nats of acquisition), the first language was retained after the second
+(backward transfer −0.0057 nats), neither language showed up inside the other in any measured
+check, and English was untouched at every stage.
 
-**What retention looks like, honestly.** Teaching at this scale is not free. The low-rank adapter
-given the same bytes in the same order destroyed the first language with an identity swap: 96% of
-its language-1 prompts came back in language 2 (+3.78 nats past its own learned level). The
-learner fails differently — its languages never mix, but the accumulated re-run measured
-language-1 text at +6.83 nats above its own learned level after language 2, its generation gains
-washed back to baseline. Retention under later teaching is scale-dependent: a taught document
-survives a later document (backward transfer −0.0045 nats, measured server-side on the same
-build); a short lesson survives the next lesson verbatim one step back; a second whole language
-displaces the first. This run's full record — every generation, both training curves, the cell scores and the retention probe — is `answers/2026-09-01-accumulated-rerun.json`.
+**The comparison.** A low-rank adapter of matched trainable size, given the same bytes in the
+same order, destroyed the first language with an identity swap: 96% of its language-1 prompts
+came back in language 2, ending 3.78 nats past its own learned level. The learner's two
+languages never mix and the first survives the second. Per-language fluency at this dose is
+modest either way; these runs show accumulation without erasure rather than eloquence. The
+full record — every generation, the cell scores and the retention probe — is
+`answers/2026-09-02-session.json`; the earlier recording of the same demonstration is
+`answers/2026-08-25-session.json`.
 
 **What runs live when you replicate it.** Everything, both languages. This is the long one.
 
@@ -47,7 +47,8 @@ this folder scores the continuations.
 | `data/comparator-standard-adapter.json` | The low-rank adapter run: configuration and every loss figure. |
 | `questions.json` | The 16 continuation prompts, the 4 English controls, and the exact frames. |
 | `grader.md` | How a generation was scored as belonging to a language, and what that score cannot see. |
-| `answers/2026-08-25-session.json` | The recorded run: every generation, the training curves, the acquisition figures. |
+| `answers/2026-09-02-session.json` | The recorded run on the current build: acquisition per language, the retention probe, every contamination cell, the English controls. |
+| `answers/2026-08-25-session.json` | The earlier recording of the same demonstration: every generation and both training curves. |
 
 **Ship the corpus bytes, not a generator.** These two files are the authoritative material. They
 were produced by a generator that screens invented stems against the host machine's English

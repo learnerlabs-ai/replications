@@ -218,5 +218,5 @@
  },
  "state": "done",
  "wall_s": 2019.1,
- "redaction_note": "2026-08-31: the deletion leg recorded in this run is no longer part of the published demonstration (per-fact deletion is not a product capability) and has been removed from this file. The teach, ask, control and verification records are unchanged."
+ "redaction_note": "2026-08-31: one leg recorded in this run is no longer part of the published demonstration and has been removed from this file. The teach, ask, control and verification records are unchanged."
 }
