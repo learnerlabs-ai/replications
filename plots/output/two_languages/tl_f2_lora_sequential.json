@@ -1,0 +1,36 @@
+{
+ "name": "tl_f2_lora_sequential",
+ "title": "The same two corpora through a single LoRA adapter, in sequence",
+ "badge": "measured",
+ "caption": "A single adapter learns language 1 (4.35 to 2.22 nats), then learning language 2 pushes language 1 to 6.00 nats, worse than before it was ever taught. English is untouched: the damage is between the two taught skills.",
+ "alt": "Line chart with three points per line (base, after language 1, after language 2): language 1 falls then rises above its starting value; language 2 rises then falls; the English control stays flat near 3.",
+ "width": 880,
+ "height": 520,
+ "svg_sha256": "2b77d9e5808b9f00340b955800451710d4150595be23eea3b0efbdeea588d348",
+ "sources": [
+  {
+   "path": "plots/data/two_languages.json",
+   "sha256": "43576cbc597bfdfd08c4259b1334f5f275f3c61067c0509f11a306ca57aa2978"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "stage_base": {
+   "ce_velenic": 4.345072822969202,
+   "ce_morvath": 3.9749616566237016,
+   "ce_english": 3.1328811645507812
+  },
+  "stage_after_velenic": {
+   "ce_velenic": 2.218331872638772,
+   "ce_morvath": 8.512022551346705,
+   "ce_english": 3.06329607963562
+  },
+  "stage_after_morvath": {
+   "ce_velenic": 6.00098476833214,
+   "ce_morvath": 1.6325566360897326,
+   "ce_english": 3.000006914138794
+  }
+ }
+}

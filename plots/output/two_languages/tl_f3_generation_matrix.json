@@ -1,0 +1,73 @@
+{
+ "name": "tl_f3_generation_matrix",
+ "title": "Generation identity after each stage: Learner 1.0 versus LoRA",
+ "badge": "measured",
+ "caption": "Where the LoRA adapter answers language-1 prompts in language 2 after the second teach (0.96), Learner 1.0 keeps the two apart (0.00 in every cell).",
+ "alt": "A grid of contamination values for Learner 1.0 and LoRA rows across three stages; Learner 1.0 cells all 0.00; LoRA cells 1.00 and 0.96 in the two cross-language positions.",
+ "width": 880,
+ "height": 470,
+ "svg_sha256": "32ab247897737aed3c92ca391569d057e77080a0933aba2e7b2c18c7bf548e7a",
+ "sources": [
+  {
+   "path": "plots/data/two_languages.json",
+   "sha256": "43576cbc597bfdfd08c4259b1334f5f275f3c61067c0509f11a306ca57aa2978"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "product": {
+   "before": {
+    "velenic": {
+     "n": 8,
+     "lexicon_hit": 0.1375,
+     "morph_valid": 0.25,
+     "contamination": 0.0
+    },
+    "morvath": {
+     "n": 8,
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0
+    }
+   },
+   "after_l1": {
+    "velenic": {
+     "n": 8,
+     "lexicon_hit": 0.0833,
+     "morph_valid": 0.125,
+     "contamination": 0.0
+    },
+    "morvath": {
+     "n": 8,
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0
+    }
+   },
+   "after_l2": {
+    "velenic": {
+     "n": 8,
+     "lexicon_hit": 0.2083,
+     "morph_valid": 0.25,
+     "contamination": 0.0
+    },
+    "morvath": {
+     "n": 8,
+     "lexicon_hit": 0.0,
+     "morph_valid": 0.0,
+     "contamination": 0.0
+    }
+   }
+  },
+  "lora": {
+   "velenic|after_l1": 0.0,
+   "morvath|after_l1": 1.0,
+   "velenic|after_l2": 0.96,
+   "morvath|after_l2": 0.0,
+   "velenic|before": 0.0,
+   "morvath|before": 0.0
+  }
+ }
+}

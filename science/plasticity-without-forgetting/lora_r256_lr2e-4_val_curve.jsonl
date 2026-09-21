@@ -1,0 +1,13 @@
+{"gstep": 25, "domain": "a_book_class", "val_loss": 2.215243, "at": "periodic"}
+{"gstep": 50, "domain": "a_book_class", "val_loss": 2.198389, "at": "periodic"}
+{"gstep": 75, "domain": "a_book_class", "val_loss": 2.323532, "at": "periodic"}
+{"gstep": 100, "domain": "a_book_class", "val_loss": 2.3222, "at": "periodic"}
+{"gstep": 125, "domain": "a_book_class", "val_loss": 2.308121, "at": "periodic"}
+{"gstep": 150, "domain": "a_book_class", "val_loss": 2.267372, "at": "periodic"}
+{"gstep": 175, "domain": "a_book_class", "val_loss": 2.420317, "at": "periodic"}
+{"gstep": 200, "domain": "a_book_class", "val_loss": 2.290588, "at": "periodic"}
+{"gstep": 225, "domain": "a_book_class", "val_loss": 2.296351, "at": "periodic"}
+{"gstep": 250, "domain": "a_book_class", "val_loss": 2.241012, "at": "periodic"}
+{"gstep": 275, "domain": "a_book_class", "val_loss": 2.243845, "at": "periodic"}
+{"gstep": 300, "domain": "a_book_class", "val_loss": 3.237158, "at": "periodic"}
+{"gstep": 300, "domain": "a_book_class", "val_loss": 3.237158, "at": "domain_end"}

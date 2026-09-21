@@ -1,0 +1,20 @@
+{
+ "name": "ts_f3_retention",
+ "title": "What happens to a skill after its teach ends",
+ "badge": "measured",
+ "caption": "Retention as a loss curve: after a skill's own segment ends, its held-out loss is nearly flat across the remaining tens of thousands of updates on other skills. The English control panel (never trained) stays where it started.",
+ "alt": "Line chart on a log scale with one curve per skill showing held-out loss across the entire 63,282-update stream; each curve is close to flat after the skill's own segment; an English control line is flat near 3 nats.",
+ "width": 880,
+ "height": 640,
+ "svg_sha256": "655b9df55ee637bcb0b5db91324cda02198b1418e000df02d8eb645a327b18bb",
+ "sources": [
+  {
+   "path": "plots/data/series/held_out_loss.json",
+   "sha256": "4f8c3daf5926e990910d6467cc2df07246953d8b2c89f4c38b056b149ed001ee"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": null
+}

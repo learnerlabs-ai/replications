@@ -1,0 +1,85 @@
+{
+ "note": "Third-party text keeps the terms of its sources. Each file below is published on the recorded decision of the repository owner; tools/check_public_release.py refuses a public export in which a listed file has none.",
+ "cleared_values": [
+  "approved"
+ ],
+ "files": [
+  {
+   "path": "science/plasticity-without-forgetting/data/yoruba.train.jsonl",
+   "set": "Yoruba",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 706428,
+   "sha256": "8d364d17f57818a096fff489c54a563c2c7f5c8eb1096ac01c18b03f39a660c7",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/yoruba.heldout.jsonl",
+   "set": "Yoruba",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 18782,
+   "sha256": "c001b9d1bff15e9c3b61e7f6bbaf584dbaeec78e38a25339fd0f1e20311f8019",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/amharic.train.jsonl",
+   "set": "Amharic",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 700553,
+   "sha256": "a34ee751c604e8be5eada3212b4bc49f692181a05654bf665cf07ab99c0305c2",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/amharic.heldout.jsonl",
+   "set": "Amharic",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 20045,
+   "sha256": "a3f8f6af0182281d736205ef9334f0ae2220b762519eac7e83ad6fc147ca22ac",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/multilingual_news.train.jsonl",
+   "set": "Multilingual news articles",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 859027,
+   "sha256": "aeece9e71e4b087eb476df3dc0da4ab8ce215c1c70a1d34bc534ba4c28478447",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/multilingual_news.heldout.jsonl",
+   "set": "Multilingual news articles",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 22454,
+   "sha256": "0b734d7107426bfeb7274191a58cefa9858c60ba8b9f40ca23456380dc9268ef",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  },
+  {
+   "path": "science/plasticity-without-forgetting/data/never_trained_control.control.jsonl",
+   "set": "Never-trained control bank",
+   "release_class": "third_party_source_terms",
+   "public_release": "approved",
+   "bytes": 151762,
+   "sha256": "1b9f0c0aed63f5c4a92a64b6db7421df92ccdf8c84c1fce15cc83d79ec28dc6a",
+   "present_in_this_tree": true,
+   "approved_by": "repository owner",
+   "approved_on": "2026-09-21"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "arm": "lora_r256_lr2e-4",
+ "method": "LoRA rank 256 on the feed-forward projections (gate, up, down); the same configuration as lora_r256 at ten times the learning rate",
+ "base_model": "Qwen3.6-27B, bf16",
+ "n_trainable": 1107296256,
+ "learning_rate": 0.0002,
+ "weight_decay": 0.0,
+ "window_tokens": 256,
+ "domains_trained": [
+  "a_book_class"
+ ],
+ "stopped": {
+  "after_domain": "a_book_class",
+  "acquisition_nats": -0.9297,
+  "reason": "the run was stopped after the first domain because its held-out loss on that domain ended above the base model"
+ },
+ "eval_matrix": {
+  "base": {
+   "a_book_class": 2.3074586242437363,
+   "d_yoruba": 1.981711097061634,
+   "c_language": 1.4099953174591064,
+   "d_news": 2.5371501743793488,
+   "held_control": 1.3773553995415568
+  },
+  "after_a_book_class": {
+   "a_book_class": 3.237158253788948,
+   "d_yoruba": 2.760497957468033,
+   "c_language": 2.6817025244235992,
+   "d_news": 3.094212085008621,
+   "held_control": 2.579458048567176
+  }
+ },
+ "lora_norm_trace": [
+  {
+   "at": "init",
+   "n_modules": 192,
+   "fro_norm_mean": 0.0,
+   "fro_norm_max": 0.0,
+   "fro_norm_min": 0.0
+  },
+  {
+   "at": "after_a_book_class",
+   "n_modules": 192,
+   "fro_norm_mean": 8.830853,
+   "fro_norm_max": 19.501789,
+   "fro_norm_min": 5.558403
+  }
+ ]
+}

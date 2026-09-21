@@ -1,0 +1,1424 @@
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          title: Detail
+          type: array
+      title: HTTPValidationError
+      type: object
+    PublicAnswersPage:
+      additionalProperties: false
+      properties:
+        items:
+          items:
+            additionalProperties: false
+            properties:
+              contains: {}
+              correct: {}
+              empty: {}
+              exact: {}
+              expected: {}
+              got: {}
+              id: {}
+              n_tokens: {}
+              prompt: {}
+              stop: {}
+              target: {}
+            type: object
+          type: array
+        job_id: {}
+        next: {}
+        page: {}
+        page_size: {}
+        total: {}
+      type: object
+    PublicCheckpoint:
+      additionalProperties: false
+      properties:
+        checkpoint_id: {}
+        created_at: {}
+        disposition: {}
+        immutable: {}
+        job_id: {}
+        kind:
+          description: '`initial` is the learner''s pre-training state; `trained`
+            is the result of a training session.'
+          enum:
+          - initial
+          - trained
+          type: string
+        learner_id: {}
+        parent_checkpoint_id: {}
+        recipe_version: {}
+        revision:
+          description: Absent for the initial checkpoint, which precedes every session.
+      type: object
+    PublicCheckpointList:
+      additionalProperties: false
+      properties:
+        items:
+          items:
+            additionalProperties: false
+            properties:
+              checkpoint_id: {}
+              created_at: {}
+              disposition: {}
+              immutable: {}
+              job_id: {}
+              kind: {}
+              learner_id: {}
+              parent_checkpoint_id: {}
+              recipe_version: {}
+              revision: {}
+            type: object
+          type: array
+        next: {}
+      type: object
+    PublicDataset:
+      additionalProperties: false
+      properties:
+        bytes: {}
+        created_at: {}
+        dataset_id: {}
+        digest: {}
+        kind: {}
+        learner_id: {}
+        rows: {}
+      type: object
+    PublicDatasetList:
+      additionalProperties: false
+      properties:
+        items:
+          items:
+            additionalProperties: false
+            properties:
+              bytes: {}
+              created_at: {}
+              dataset_id: {}
+              digest: {}
+              kind: {}
+              learner_id: {}
+              rows: {}
+            type: object
+          type: array
+        next: {}
+      type: object
+    PublicError:
+      additionalProperties: false
+      properties:
+        code:
+          enum:
+          - active
+          - budget_exceeded
+          - checkpoint_incompatible
+          - checkpoint_not_current
+          - digest_mismatch
+          - eval_incomplete
+          - eval_overlap
+          - fact_input_not_supported
+          - idempotency_conflict
+          - incompatible_checkpoint
+          - internal_error
+          - invalid_request
+          - learner_busy
+          - limits_exceeded
+          - no_admission
+          - not_found
+          - not_resumable
+          - panels_conflict
+          - panels_invalid
+          - scoring_failed
+          - session_already_started
+          - unauthorized
+          - unknown_preset
+          - unsupported_field
+        message: {}
+        trace_id: {}
+      type: object
+    PublicErrorEnvelope:
+      additionalProperties: false
+      properties:
+        error:
+          $ref: '#/components/schemas/PublicError'
+      type: object
+    PublicHealth:
+      additionalProperties: false
+      properties:
+        api_version: {}
+        status: {}
+      type: object
+    PublicJob:
+      additionalProperties: false
+      properties:
+        created_at: {}
+        dataset_id: {}
+        error:
+          additionalProperties: false
+          properties:
+            code: {}
+            message: {}
+            trace_id: {}
+          type: object
+        idempotency_key: {}
+        job_id: {}
+        kind: {}
+        learner_id: {}
+        panel_set_id: {}
+        recovery:
+          additionalProperties: false
+          description: 'What to do if this job failed. `case` is one of submission_never_accepted
+            (nothing started; the same idempotency key is free to reuse), submission_outcome_uncertain
+            (resume RECONCILES that same request and never starts a second one), resumable_prefix
+            (resume continues the SAME job from saved work), terminal (start a new
+            session with a new key). `needs_operator` is always false: every case
+            is recoverable with the documented endpoints.'
+          properties:
+            case: {}
+            detail: {}
+            idempotency_key_reusable: {}
+            needs_operator: {}
+            retry_with_resume: {}
+          type: object
+        replay_of: {}
+        result:
+          additionalProperties: false
+          properties:
+            answer_cap: {}
+            answers_digest: {}
+            answers_url: {}
+            batches: {}
+            budget:
+              additionalProperties: false
+              properties:
+                gpu_seconds: {}
+                presented_tokens: {}
+                segments: {}
+                supervised_tokens: {}
+              type: object
+            cap_profile: {}
+            cap_set_id: {}
+            checkpoint_id: {}
+            contains:
+              additionalProperties: false
+              properties:
+                correct: {}
+                rate: {}
+                total: {}
+              type: object
+            coverage:
+              additionalProperties: false
+              properties:
+                answered: {}
+                complete: {}
+                duplicate: {}
+                empty: {}
+                foreign: {}
+                missing: {}
+                total: {}
+              type: object
+            dataset_id: {}
+            disposition: {}
+            disposition_reason: {}
+            dose:
+              additionalProperties: false
+              properties:
+                attempted_updates: {}
+                planned_updates: {}
+                retained_updates: {}
+                rolled_back_updates: {}
+                unattempted_updates: {}
+              type: object
+            exact_match:
+              additionalProperties: false
+              properties:
+                correct: {}
+                rate: {}
+                total: {}
+              type: object
+            interval95: {}
+            metrics:
+              additionalProperties: false
+              properties:
+                acquisition_nats: {}
+                panel_drift: {}
+              type: object
+            n_prompts: {}
+            parent_checkpoint_id: {}
+            scorer_version: {}
+            typed:
+              additionalProperties: false
+              properties:
+                correct: {}
+                rate: {}
+                total: {}
+              type: object
+          type: object
+        resumable: {}
+        resumed: {}
+        status: {}
+        status_url: {}
+        updated_at: {}
+      type: object
+    PublicJobList:
+      additionalProperties: false
+      properties:
+        items:
+          items:
+            additionalProperties: false
+            properties:
+              created_at: {}
+              dataset_id: {}
+              error:
+                additionalProperties: false
+                properties:
+                  code: {}
+                  message: {}
+                  trace_id: {}
+                type: object
+              idempotency_key: {}
+              job_id: {}
+              kind: {}
+              learner_id: {}
+              panel_set_id: {}
+              recovery:
+                additionalProperties: false
+                properties:
+                  case: {}
+                  detail: {}
+                  idempotency_key_reusable: {}
+                  needs_operator: {}
+                  retry_with_resume: {}
+                type: object
+              replay_of: {}
+              result:
+                additionalProperties: false
+                properties:
+                  answer_cap: {}
+                  answers_digest: {}
+                  answers_url: {}
+                  batches: {}
+                  budget:
+                    additionalProperties: false
+                    properties:
+                      gpu_seconds: {}
+                      presented_tokens: {}
+                      segments: {}
+                      supervised_tokens: {}
+                    type: object
+                  cap_profile: {}
+                  cap_set_id: {}
+                  checkpoint_id: {}
+                  contains:
+                    additionalProperties: false
+                    properties:
+                      correct: {}
+                      rate: {}
+                      total: {}
+                    type: object
+                  coverage:
+                    additionalProperties: false
+                    properties:
+                      answered: {}
+                      complete: {}
+                      duplicate: {}
+                      empty: {}
+                      foreign: {}
+                      missing: {}
+                      total: {}
+                    type: object
+                  dataset_id: {}
+                  disposition: {}
+                  disposition_reason: {}
+                  dose:
+                    additionalProperties: false
+                    properties:
+                      attempted_updates: {}
+                      planned_updates: {}
+                      retained_updates: {}
+                      rolled_back_updates: {}
+                      unattempted_updates: {}
+                    type: object
+                  exact_match:
+                    additionalProperties: false
+                    properties:
+                      correct: {}
+                      rate: {}
+                      total: {}
+                    type: object
+                  interval95: {}
+                  metrics:
+                    additionalProperties: false
+                    properties:
+                      acquisition_nats: {}
+                      panel_drift: {}
+                    type: object
+                  n_prompts: {}
+                  parent_checkpoint_id: {}
+                  scorer_version: {}
+                  typed:
+                    additionalProperties: false
+                    properties:
+                      correct: {}
+                      rate: {}
+                      total: {}
+                    type: object
+                type: object
+              resumable: {}
+              resumed: {}
+              status: {}
+              status_url: {}
+              updated_at: {}
+            type: object
+          type: array
+        next: {}
+      type: object
+    PublicLearner:
+      additionalProperties: false
+      properties:
+        created_at: {}
+        current_checkpoint_id: {}
+        initial_checkpoint_id:
+          description: The learner's state before anything has been taught to it.
+            Present from creation, scoreable like any other checkpoint, unchanged
+            by later training. Use it to measure a baseline before your first session.
+        learner_id: {}
+        name: {}
+        parent_checkpoint_id: {}
+        recipe_version: {}
+        status: {}
+      type: object
+    PublicLearnerList:
+      additionalProperties: false
+      properties:
+        items:
+          items:
+            additionalProperties: false
+            properties:
+              created_at: {}
+              current_checkpoint_id: {}
+              initial_checkpoint_id: {}
+              learner_id: {}
+              name: {}
+              parent_checkpoint_id: {}
+              recipe_version: {}
+              status: {}
+            type: object
+          type: array
+        next: {}
+      type: object
+    PublicPanels:
+      additionalProperties: false
+      properties:
+        created_at: {}
+        digest: {}
+        learner_id: {}
+        panel_set_id: {}
+        panels:
+          items: {}
+          type: array
+      type: object
+    ValidationError:
+      properties:
+        ctx:
+          title: Context
+          type: object
+        input:
+          title: Input
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          title: Location
+          type: array
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+      type: object
+  securitySchemes:
+    ApiKey:
+      description: "Machine key `sk-\u2026` issued to your account by the operator\
+        \ who runs this service."
+      scheme: bearer
+      type: http
+info:
+  description: Teach a hosted learner from your own supervised examples in bounded,
+    resumable sessions; poll the job; read the immutable checkpoint that results.
+    Every learner also exposes an initial checkpoint -- its state before any training
+    -- so a baseline can be measured first. Responses carry opaque ids and aggregate
+    measurements only.
+  title: Learner Labs Learning API
+  version: 1.0.0
+openapi: 3.1.0
+paths:
+  /learning/v1/health:
+    get:
+      operationId: health_learning_v1_health_get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicHealth'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+      summary: Health
+  /learning/v1/learners:
+    get:
+      operationId: list_learners_learning_v1_learners_get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicLearnerList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+      security:
+      - ApiKey: []
+      summary: List Learners
+    post:
+      operationId: create_learner_learning_v1_learners_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              additionalProperties: true
+              default: {}
+              title: Body
+              type: object
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicLearnerList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Create Learner
+  /learning/v1/learners/{learner_id}:
+    get:
+      operationId: get_learner_learning_v1_learners__learner_id__get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicLearner'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Learner
+  /learning/v1/learners/{learner_id}/checkpoints:
+    get:
+      operationId: list_checkpoints_learning_v1_learners__learner_id__checkpoints_get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: List Checkpoints
+  /learning/v1/learners/{learner_id}/checkpoints/{checkpoint_id}:
+    get:
+      operationId: get_checkpoint_learning_v1_learners__learner_id__checkpoints__checkpoint_id__get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: checkpoint_id
+        required: true
+        schema:
+          title: Checkpoint Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpoint'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Checkpoint
+  /learning/v1/learners/{learner_id}/checkpoints/{checkpoint_id}/inferences:
+    post:
+      operationId: create_inference_learning_v1_learners__learner_id__checkpoints__checkpoint_id__inferences_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: checkpoint_id
+        required: true
+        schema:
+          title: Checkpoint Id
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              additionalProperties: true
+              title: Body
+              type: object
+        required: true
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Create Inference
+  /learning/v1/learners/{learner_id}/datasets:
+    post:
+      operationId: upload_dataset_learning_v1_learners__learner_id__datasets_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Upload Dataset
+  /learning/v1/learners/{learner_id}/datasets/{dataset_id}:
+    get:
+      operationId: get_dataset_learning_v1_learners__learner_id__datasets__dataset_id__get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: dataset_id
+        required: true
+        schema:
+          title: Dataset Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicDataset'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Dataset
+  /learning/v1/learners/{learner_id}/eval-datasets:
+    post:
+      operationId: upload_eval_dataset_learning_v1_learners__learner_id__eval_datasets_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Upload Eval Dataset
+  /learning/v1/learners/{learner_id}/evaluations:
+    post:
+      operationId: create_evaluation_learning_v1_learners__learner_id__evaluations_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              additionalProperties: true
+              title: Body
+              type: object
+        required: true
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Create Evaluation
+  /learning/v1/learners/{learner_id}/jobs:
+    get:
+      operationId: list_jobs_learning_v1_learners__learner_id__jobs_get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicJobList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: List Jobs
+  /learning/v1/learners/{learner_id}/jobs/{job_id}:
+    get:
+      operationId: get_job_learning_v1_learners__learner_id__jobs__job_id__get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: job_id
+        required: true
+        schema:
+          title: Job Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicJob'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Job
+  /learning/v1/learners/{learner_id}/jobs/{job_id}/answers:
+    get:
+      operationId: get_answers_learning_v1_learners__learner_id__jobs__job_id__answers_get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: job_id
+        required: true
+        schema:
+          title: Job Id
+          type: string
+      - in: query
+        name: page
+        required: false
+        schema:
+          default: 1
+          title: Page
+          type: integer
+      - in: query
+        name: page_size
+        required: false
+        schema:
+          default: 50
+          title: Page Size
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Answers
+  /learning/v1/learners/{learner_id}/jobs/{job_id}/resume:
+    post:
+      operationId: resume_evaluation_learning_v1_learners__learner_id__jobs__job_id__resume_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: job_id
+        required: true
+        schema:
+          title: Job Id
+          type: string
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Resume Evaluation
+  /learning/v1/learners/{learner_id}/panels:
+    post:
+      operationId: upload_panels_learning_v1_learners__learner_id__panels_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              additionalProperties: true
+              title: Body
+              type: object
+        required: true
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicCheckpointList'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Upload Panels
+  /learning/v1/learners/{learner_id}/panels/{panel_set_id}:
+    get:
+      operationId: get_panels_learning_v1_learners__learner_id__panels__panel_set_id__get
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      - in: path
+        name: panel_set_id
+        required: true
+        schema:
+          title: Panel Set Id
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicPanels'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Get Panels
+  /learning/v1/learners/{learner_id}/sessions:
+    post:
+      operationId: create_session_learning_v1_learners__learner_id__sessions_post
+      parameters:
+      - in: path
+        name: learner_id
+        required: true
+        schema:
+          title: Learner Id
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              additionalProperties: true
+              title: Body
+              type: object
+        required: true
+      responses:
+        '202':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicJob'
+          description: Successful Response
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: invalid request
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: unauthorized
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: not found
+        '409':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: conflict
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Validation Error
+      security:
+      - ApiKey: []
+      summary: Create Session

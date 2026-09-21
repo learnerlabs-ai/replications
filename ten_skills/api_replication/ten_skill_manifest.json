@@ -1,0 +1,299 @@
+{
+ "description": "The ten-skill sequential acquisition contract, in executed order, with the checksums of the files in data/ and the per-skill planned updates.",
+ "domains": [
+  {
+   "domain": "scan",
+   "order": 1,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 500000,
+    "checkpoint_rows": [
+     2463,
+     4925,
+     7388,
+     9850
+    ],
+    "planned_updates": 9850
+   },
+   "training": {
+    "max_sequence_tokens": 90,
+    "path": "train/01_scan.jsonl",
+    "presented_tokens": 499982,
+    "rows": 9850,
+    "sha256": "ce839b817302940d9c51863e9f4f21e217d51f559d8a388a3a7a659b7a91434d",
+    "supervised_eos_tokens": 297232
+   },
+   "scored_panel": {
+    "path": "panels/scan.jsonl",
+    "rows": 225,
+    "sha256": "b285e349684543b3de0b530b49ace231b96d2d97a78763158aaf21cf625855ee"
+   }
+  },
+  {
+   "domain": "meridian_settlement",
+   "order": 2,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 350000,
+    "checkpoint_rows": [
+     890,
+     1779,
+     2668,
+     3557
+    ],
+    "planned_updates": 3557
+   },
+   "training": {
+    "max_sequence_tokens": 113,
+    "path": "train/02_meridian_settlement.jsonl",
+    "presented_tokens": 349925,
+    "rows": 3557,
+    "sha256": "7c3bb2c9fd2b48a5dc3260300f66e87e8707962addeba7f47b3253166f4af06c",
+    "supervised_eos_tokens": 68159
+   },
+   "scored_panel": {
+    "path": "panels/meridian_settlement.jsonl",
+    "rows": 225,
+    "sha256": "0d8f97cb529e1d9b6280a05c276b340bca01b4166a635cf6fcacda7a3891381c"
+   }
+  },
+  {
+   "domain": "g2p_ady",
+   "order": 3,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 350000,
+    "checkpoint_rows": [
+     900,
+     1800,
+     2700,
+     3600
+    ],
+    "planned_updates": 3600
+   },
+   "training": {
+    "max_sequence_tokens": 92,
+    "path": "train/03_g2p_ady.jsonl",
+    "presented_tokens": 232037,
+    "rows": 3600,
+    "sha256": "fd16c8748d51b5d7464371fa3e9f8e50ea12760530f5e4d12687862742a927a3",
+    "supervised_eos_tokens": 42122
+   },
+   "scored_panel": {
+    "path": "panels/g2p_ady.jsonl",
+    "rows": 225,
+    "sha256": "02a24b98d535f29f0751c96d6edb45efdd7ef753978357427b47fe4c7e680fb5"
+   }
+  },
+  {
+   "domain": "oriel_packet_codec",
+   "order": 4,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 350000,
+    "checkpoint_rows": [
+     892,
+     1784,
+     2676,
+     3568
+    ],
+    "planned_updates": 3568
+   },
+   "training": {
+    "max_sequence_tokens": 140,
+    "path": "train/04_oriel_packet_codec.jsonl",
+    "presented_tokens": 349908,
+    "rows": 3568,
+    "sha256": "0de267a21cef4ae1f224be405477090501f4c31451037d6e8017b20623cb148a",
+    "supervised_eos_tokens": 179890
+   },
+   "scored_panel": {
+    "path": "panels/oriel_packet_codec.jsonl",
+    "rows": 225,
+    "sha256": "96d87416ff790cab6bc6e5610062304f1f74d2922245eaefb8ca4dbc852b3e8d"
+   }
+  },
+  {
+   "domain": "cogs_semantics",
+   "order": 5,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 1800000,
+    "checkpoint_rows": [
+     5328,
+     10655,
+     15982,
+     21309
+    ],
+    "planned_updates": 21309
+   },
+   "training": {
+    "max_sequence_tokens": 238,
+    "path": "train/05_cogs_semantics.jsonl",
+    "presented_tokens": 1799981,
+    "rows": 21309,
+    "sha256": "7c3d98d9d8c3f07c82a44febe208549b2c91bdf1efb55fc01cd7cb774c2f6039",
+    "supervised_eos_tokens": 1099479
+   },
+   "scored_panel": {
+    "path": "panels/cogs_semantics.jsonl",
+    "rows": 225,
+    "sha256": "e6a0e0e5cc3bb42e6b86c59f765cc979d64833eb0d40782df23e4b0809601d62"
+   }
+  },
+  {
+   "domain": "sable_workflow",
+   "order": 6,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 350000,
+    "checkpoint_rows": [
+     978,
+     1956,
+     2934,
+     3911
+    ],
+    "planned_updates": 3911
+   },
+   "training": {
+    "max_sequence_tokens": 107,
+    "path": "train/06_sable_workflow.jsonl",
+    "presented_tokens": 349982,
+    "rows": 3911,
+    "sha256": "b1602a5c3b9b4ef7ce982cf52df5d7b066724236b2575533bd8bd29d26a33dae",
+    "supervised_eos_tokens": 73150
+   },
+   "scored_panel": {
+    "path": "panels/sable_workflow.jsonl",
+    "rows": 225,
+    "sha256": "123f87439ebe8be97cedcae2ef6683b0b61a43379dc8b9711755573514bac038"
+   }
+  },
+  {
+   "domain": "pcfg_set",
+   "order": 7,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 700000,
+    "checkpoint_rows": [
+     1968,
+     3936,
+     5904,
+     7872
+    ],
+    "planned_updates": 7872
+   },
+   "training": {
+    "max_sequence_tokens": 547,
+    "path": "train/07_pcfg_set.jsonl",
+    "presented_tokens": 699957,
+    "rows": 7872,
+    "sha256": "da6bdcb468d03c09183115e1d0a2bd28f23c53800ceae658dc16e4dde71a46e1",
+    "supervised_eos_tokens": 195187
+   },
+   "scored_panel": {
+    "path": "panels/pcfg_set.jsonl",
+    "rows": 225,
+    "sha256": "7d7e891730fae0e79c18d069c8c8739e4c707751946200e3839405fd5e7f4aa5"
+   }
+  },
+  {
+   "domain": "tessel_lot_allocation",
+   "order": 8,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 600000,
+    "checkpoint_rows": [
+     709,
+     1418,
+     2127,
+     2835
+    ],
+    "planned_updates": 2835
+   },
+   "training": {
+    "max_sequence_tokens": 283,
+    "path": "train/08_tessel_lot_allocation.jsonl",
+    "presented_tokens": 600000,
+    "rows": 2835,
+    "sha256": "563a7ebfc3b78d4491a20cf0a4fb117c18b2656c4d2c9d50d18bea28574a60b5",
+    "supervised_eos_tokens": 73159
+   },
+   "scored_panel": {
+    "path": "panels/tessel_lot_allocation.jsonl",
+    "rows": 225,
+    "sha256": "6dc660d91dad10742808af0971c45356cf61a02be24c3d82c8ca1e23d538d1b9"
+   }
+  },
+  {
+   "domain": "juniper_dispatch",
+   "order": 9,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 700000,
+    "checkpoint_rows": [
+     757,
+     1513,
+     2269,
+     3025
+    ],
+    "planned_updates": 3025
+   },
+   "training": {
+    "max_sequence_tokens": 291,
+    "path": "train/09_juniper_dispatch.jsonl",
+    "presented_tokens": 699873,
+    "rows": 3025,
+    "sha256": "bedd02dee8a2fb7679c668e852f7842dd18c28bf4d4e30bfb4f5cee1a52d6a75",
+    "supervised_eos_tokens": 209278
+   },
+   "scored_panel": {
+    "path": "panels/juniper_dispatch.jsonl",
+    "rows": 225,
+    "sha256": "4c83265e0f10ddd66f3f4473d38aac685af03853b7cd646cec3d8ddea481e1c6"
+   }
+  },
+  {
+   "domain": "bracken_intervals",
+   "order": 10,
+   "planned_budget": {
+    "budget_cap_presented_tokens": 350000,
+    "checkpoint_rows": [
+     964,
+     1927,
+     2890,
+     3853
+    ],
+    "planned_updates": 3853
+   },
+   "training": {
+    "max_sequence_tokens": 126,
+    "path": "train/10_bracken_intervals.jsonl",
+    "presented_tokens": 349889,
+    "rows": 3853,
+    "sha256": "ef10ecb970f36ebf46dc9747a77906dbcc0e39cc514e043a049e3fe673fbaa07",
+    "supervised_eos_tokens": 59399
+   },
+   "scored_panel": {
+    "path": "panels/bracken_intervals.jsonl",
+    "rows": 225,
+    "sha256": "c08fd7b524e9158adad6875377de44ee328a90027350c2c5761482f059fbd9ae"
+   }
+  }
+ ],
+ "evaluation_schedule": {
+  "file": "ten_skill_eval_schedule.json",
+  "events": 11,
+  "typed_evaluation_jobs": 65,
+  "policy": "After each teach, run ONE typed evaluation per skill taught so far, against the frozen panel, using that skill's registered cap_profile. Earlier skills are re-scored unchanged; that is the retention measurement."
+ },
+ "identity": {
+  "native_eos": 248046,
+  "seed": 912801,
+  "sequence_sha256": "1372dc22572ae26db6abb221171a544ffea8508b20362c4f8b4bb61ae9b74aac",
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+ },
+ "manifest_id": "ce20-ten-skill-v1-2026-09-18",
+ "schema": "learner_customer_demo_manifest_v1",
+ "service_contract": {
+  "note": "each domain is ONE training session on the same learner, in this order; the service divides it into bounded physical segments internally",
+  "one_logical_job_per_domain": true
+ },
+ "totals": {
+  "checkpoint_commits": 40,
+  "domains": 10,
+  "presented_tokens": 5931534,
+  "rows": 63380
+ }
+}

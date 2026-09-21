@@ -1,0 +1,59 @@
+<svg viewBox="0 0 880 540" width="100%" style="height:auto;display:block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scatter plot of ten skills, held-out loss on a log x-axis against correct-of-225 on the y-axis, with skill names as labels.">
+<rect x="0" y="0" width="880" height="540" fill="#FFFFFF"/>
+<text x="36.0" y="34.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="#14171A">Held-out loss does not predict exact-match accuracy</text>
+<rect x="760" y="18" width="84" height="22" rx="11" fill="#FFFFFF" stroke="#2F6E62" stroke-width="1.2"/>
+<text x="802.0" y="33.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#2F6E62">measured</text>
+<rect x="36" y="60" width="808" height="440" rx="5" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.4"/>
+<text x="56.0" y="90.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600" fill="#14171A">Each skill at the end of its own teach</text>
+<text x="56.0" y="116.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">x: held-out loss at the endpoint sweep (nats, log scale) · y: correct of 225</text>
+<line x1="100.0" y1="460.0" x2="824.0" y2="460.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="464.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">0</text>
+<line x1="100.0" y1="397.0" x2="824.0" y2="397.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="401.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">45</text>
+<line x1="100.0" y1="334.0" x2="824.0" y2="334.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="338.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">90</text>
+<line x1="100.0" y1="271.0" x2="824.0" y2="271.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="275.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">135</text>
+<line x1="100.0" y1="208.0" x2="824.0" y2="208.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="212.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">180</text>
+<line x1="100.0" y1="145.0" x2="824.0" y2="145.0" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="149.0" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">225</text>
+<line x1="100.0" y1="138.0" x2="100.0" y2="460.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="100.0" y1="460.0" x2="824.0" y2="460.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="100.0" y1="460.0" x2="100.0" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="100.0" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">1e-05</text>
+<line x1="244.8" y1="460.0" x2="244.8" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="244.8" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">0.0001</text>
+<line x1="389.6" y1="460.0" x2="389.6" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="389.6" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">0.001</text>
+<line x1="534.4" y1="460.0" x2="534.4" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="534.4" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">0.01</text>
+<line x1="679.2" y1="460.0" x2="679.2" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="679.2" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">0.1</text>
+<line x1="824.0" y1="460.0" x2="824.0" y2="465.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="824.0" y="478.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">1</text>
+<text x="462.0" y="496.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">held-out loss at own-end (nats)</text>
+<text transform="translate(56.0,299.0) rotate(-90)" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12.5" fill="#616660">correct of 225</text>
+<circle cx="238.9" cy="149.2" r="6" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="246.9" y="153.2" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#2F6E62">SCAN</text>
+<circle cx="706.8" cy="343.8" r="6" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="714.8" y="347.8" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#173B34">Meridian</text>
+<circle cx="761.9" cy="254.2" r="6" fill="#B4762A" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="769.9" y="258.2" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#B4762A">Adyghe G2P</text>
+<circle cx="646.2" cy="443.2" r="6" fill="#5C8A7E" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="654.2" y="447.2" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#5C8A7E">Oriel</text>
+<circle cx="358.6" cy="145.0" r="6" fill="#8A5A22" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="366.6" y="149.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#8A5A22">COGS</text>
+<circle cx="605.8" cy="182.8" r="6" fill="#3F7F72" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="613.8" y="186.8" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#3F7F72">Sable</text>
+<circle cx="611.3" cy="216.4" r="6" fill="#D19A55" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="619.3" y="220.4" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#D19A55">PCFG</text>
+<circle cx="628.9" cy="196.8" r="6" fill="#264F47" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="636.9" y="200.8" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#264F47">Tessel</text>
+<circle cx="560.2" cy="294.8" r="6" fill="#7A9E95" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="568.2" y="298.8" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#7A9E95">Juniper</text>
+<circle cx="674.9" cy="234.6" r="6" fill="#A67C3D" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="682.9" y="238.6" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#A67C3D">Bracken</text>
+<text x="36.0" y="511.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">Loss is the mean per-token loss over the panel rows in the last sweep of the skill's own segment; accuracy needs every token</text>
+<text x="36.0" y="526.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">right. Source: plots/data/series/held_out_loss.json, plots/data/derived/tables.json.</text>
+</svg>

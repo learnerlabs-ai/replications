@@ -1,0 +1,173 @@
+{
+ "name": "fd_f4_validation",
+ "title": "Held-out loss inside each domain, all three conditions",
+ "badge": "measured",
+ "caption": "Held-out loss while each domain is trained, against the recorded base reference (dashed, value shown). The Learner 1.0 conditions are close to their final level by the first measurement at step 25; the LoRA condition gets there over the 300 steps. All three end each domain at a similar level.",
+ "alt": "Four panels, one per domain, each with three lines of held-out loss against step within the domain and a dashed base-reference line above them; the two Learner 1.0 lines are nearly flat from step 25, the LoRA line falls steadily.",
+ "width": 880,
+ "height": 810,
+ "svg_sha256": "7544e544e88254e69746e5c68d336f3f40567789ff7989150b7de604b679ba87",
+ "sources": [
+  {
+   "path": "plots/data/four_domain/learner_1x/val_curve.jsonl",
+   "sha256": "7ed47a93beb1905e1f17f4bc7275e517c7442c5ee0e52acdc03359bb166b9598"
+  },
+  {
+   "path": "plots/data/four_domain/learner_2x/val_curve.jsonl",
+   "sha256": "f683a597f3563007bf2f60c291a29fbdd7c87958825773752e9d556a6d3155e0"
+  },
+  {
+   "path": "plots/data/four_domain/lora_r256/val_curve.jsonl",
+   "sha256": "6fd747a59285dbf0306b3aac745364cd4ca7c4d625f1529058559f8dc078b1f9"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "learner_1x:a_book_class:start": [
+   0,
+   2.305534
+  ],
+  "learner_1x:a_book_class": {
+   "first": [
+    25,
+    2.133421
+   ],
+   "last": [
+    300,
+    2.118794
+   ],
+   "n": 12
+  },
+  "learner_2x:a_book_class:start": [
+   0,
+   2.306379
+  ],
+  "learner_2x:a_book_class": {
+   "first": [
+    25,
+    2.139884
+   ],
+   "last": [
+    300,
+    2.12012
+   ],
+   "n": 12
+  },
+  "lora_r256:a_book_class:start": [
+   0,
+   2.307459
+  ],
+  "lora_r256:a_book_class": {
+   "first": [
+    25,
+    2.216476
+   ],
+   "last": [
+    300,
+    2.122588
+   ],
+   "n": 12
+  },
+  "learner_1x:d_yoruba": {
+   "first": [
+    25,
+    1.816369
+   ],
+   "last": [
+    300,
+    1.79957
+   ],
+   "n": 12
+  },
+  "learner_2x:d_yoruba": {
+   "first": [
+    25,
+    1.816026
+   ],
+   "last": [
+    300,
+    1.793821
+   ],
+   "n": 12
+  },
+  "lora_r256:d_yoruba": {
+   "first": [
+    25,
+    1.905087
+   ],
+   "last": [
+    300,
+    1.830302
+   ],
+   "n": 12
+  },
+  "learner_1x:c_language": {
+   "first": [
+    25,
+    1.316632
+   ],
+   "last": [
+    300,
+    1.311896
+   ],
+   "n": 12
+  },
+  "learner_2x:c_language": {
+   "first": [
+    25,
+    1.316113
+   ],
+   "last": [
+    300,
+    1.310589
+   ],
+   "n": 12
+  },
+  "lora_r256:c_language": {
+   "first": [
+    25,
+    1.362249
+   ],
+   "last": [
+    300,
+    1.336023
+   ],
+   "n": 12
+  },
+  "learner_1x:d_news": {
+   "first": [
+    25,
+    2.401798
+   ],
+   "last": [
+    300,
+    2.387322
+   ],
+   "n": 12
+  },
+  "learner_2x:d_news": {
+   "first": [
+    25,
+    2.398321
+   ],
+   "last": [
+    300,
+    2.385642
+   ],
+   "n": 12
+  },
+  "lora_r256:d_news": {
+   "first": [
+    25,
+    2.423543
+   ],
+   "last": [
+    300,
+    2.374956
+   ],
+   "n": 12
+  }
+ }
+}

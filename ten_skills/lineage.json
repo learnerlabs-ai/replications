@@ -1,0 +1,60 @@
+{
+ "chain": [
+  {
+   "teach_index": 0,
+   "taught": "step_zero",
+   "checkpoint_sha256": "07d8cdbada7223bba2f822f31a2c39076a643df97410b8d79dd02e7341101400"
+  },
+  {
+   "teach_index": 1,
+   "taught": "scan",
+   "checkpoint_sha256": "fe4db29a93dedb4b1fb4a132607e4f25135fd23dda28be5cae021f329f4760a2"
+  },
+  {
+   "teach_index": 2,
+   "taught": "meridian_settlement",
+   "checkpoint_sha256": "ac0d21e238d5382f15a022e83d9304329b84cbabe58ff2467c3370e30515705b"
+  },
+  {
+   "teach_index": 3,
+   "taught": "g2p_ady",
+   "checkpoint_sha256": "91a5e4110f172f0cfd5b2a2d9f8bba367dd08032967a0df0dd916bdef9f4ee59"
+  },
+  {
+   "teach_index": 4,
+   "taught": "oriel_packet_codec",
+   "checkpoint_sha256": "a6dba31ab709e7954855d7870f5db9af6a7ec2bc1347a9e3ae5f8e9516fd705a"
+  },
+  {
+   "teach_index": 5,
+   "taught": "cogs_semantics",
+   "checkpoint_sha256": "ffe4c1ec3507a02755785d24f41ab25b81ab0481902691c94b8e7b4504ecfe6d"
+  },
+  {
+   "teach_index": 6,
+   "taught": "sable_workflow",
+   "checkpoint_sha256": "9d7639a03b135409f837fef3ab381e59f0c4536c671b00307dd2239da799edc3"
+  },
+  {
+   "teach_index": 7,
+   "taught": "pcfg_set",
+   "checkpoint_sha256": "7298704c603c07433387545281d65cd3fafd081d05f33cf46abcbe06706671e2"
+  },
+  {
+   "teach_index": 8,
+   "taught": "tessel_lot_allocation",
+   "checkpoint_sha256": "2a7e21194e10528d82dc722440eca6b255fdaeeb1a7c5ce2b5a8e47aa86a04e1"
+  },
+  {
+   "teach_index": 9,
+   "taught": "juniper_dispatch",
+   "checkpoint_sha256": "43526c6daa9189010ade26b0230acea4249936452f67f777bbfb36484a35e047"
+  },
+  {
+   "teach_index": 10,
+   "taught": "bracken_intervals",
+   "checkpoint_sha256": "3264e0b299641e299204bf86a248b51c3a9738cffe1db5afdb5b95dd53176ec7"
+  }
+ ],
+ "note": "Each entry is the accepted checkpoint after that teach; answers/by_teach/teach_NN_<sha8>.jsonl holds every panel answer generated from it."
+}

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 800" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" role="img">
+<title>How a document becomes a trained learner</title>
+<desc>A document is read into text; a rule-based step and a model-driven step each turn it into short factual statements; both are screened by one contract, combined and de-duplicated, and shown to you as a list before anything is trained; training writes each statement in twelve phrasings over four passes and publishes a checkpoint, which answers your questions directly. A second path trains the raw text instead.</desc>
+<defs>
+<marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#42546B"/></marker>
+<marker id="ab" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#5B8DEF"/></marker>
+</defs>
+<rect width="1300" height="800" fill="#ffffff"/>
+<text x="650" y="34" font-size="21" fill="#12233B" text-anchor="middle" font-weight="700">How a document becomes a trained learner</text>
+<text x="650" y="56" font-size="12.5" fill="#5A6B80" text-anchor="middle">Every box below runs before training. You can see the output of each one through the API.</text>
+<text x="52" y="96" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">1 &#183; READ</text>
+<rect x="52" y="106" width="228" height="112" rx="8" fill="#F3F5F8" stroke="#B7C0CC" stroke-width="1.6"/>
+<text x="166" y="132" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">Your document</text>
+<text x="166" y="153" font-size="10.5" fill="#5A6B80" text-anchor="middle">an upload, a URL, or a repository</text>
+<text x="166" y="169" font-size="10.5" fill="#5A6B80" text-anchor="middle">text, Markdown, CSV, JSON, PDF, DOCX</text>
+<text x="166" y="185" font-size="10.5" fill="#5A6B80" text-anchor="middle">decoded once, to one string</text>
+<text x="166" y="204" font-size="10.5" fill="#5A6B80" text-anchor="middle">a PDF with no text layer is refused</text>
+<path d="M280,162 L306,162" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<text x="318" y="96" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">2 &#183; TURN IT INTO STATEMENTS &#183; two steps over the same text</text>
+<rect x="318" y="106" width="286" height="112" rx="8" fill="#DCEAFB" stroke="#5B8DEF" stroke-width="1.6"/>
+<text x="461" y="132" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">Rule-based step</text>
+<text x="461" y="153" font-size="10.5" fill="#5A6B80" text-anchor="middle">grammar rules over sentences, and over</text>
+<text x="461" y="169" font-size="10.5" fill="#5A6B80" text-anchor="middle">the syntax tree when the source is code</text>
+<text x="461" y="185" font-size="10.5" fill="#5A6B80" text-anchor="middle">no model is called</text>
+<text x="461" y="204" font-size="10.5" fill="#5A6B80" text-anchor="middle">same input, same statements, every time</text>
+<rect x="318" y="238" width="286" height="128" rx="8" fill="#DCEAFB" stroke="#5B8DEF" stroke-width="1.6"/>
+<text x="461" y="264" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">Model-driven step</text>
+<text x="461" y="285" font-size="10.5" fill="#5A6B80" text-anchor="middle">the text is cut into 400-character chunks</text>
+<text x="461" y="301" font-size="10.5" fill="#5A6B80" text-anchor="middle">with 120 characters of overlap</text>
+<text x="461" y="317" font-size="10.5" fill="#5A6B80" text-anchor="middle">one call per chunk, temperature 0, no seed</text>
+<text x="461" y="336" font-size="10.5" fill="#5A6B80" text-anchor="middle">moonshotai/kimi-k2-0905, through an</text>
+<text x="461" y="352" font-size="10.5" fill="#5A6B80" text-anchor="middle">OpenRouter-compatible endpoint</text>
+<path d="M604,162 L648,162 L648,206" stroke="#5B8DEF" stroke-width="1.8" fill="none" marker-end="url(#ab)"/>
+<path d="M604,294 L648,294 L648,250" stroke="#5B8DEF" stroke-width="1.8" fill="none" marker-end="url(#ab)"/>
+<text x="676" y="96" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">3 &#183; SCREEN</text>
+<rect x="676" y="106" width="262" height="154" rx="8" fill="#FFF3D6" stroke="#E0A800" stroke-width="1.6"/>
+<text x="807" y="132" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">One contract, both steps</text>
+<text x="807" y="153" font-size="10.5" fill="#5A4A1A" text-anchor="middle">every candidate must read</text>
+<text x="807" y="172" font-size="11.5" fill="#33518A" text-anchor="middle" font-weight="600" font-family="Menlo,monospace">what it is about  is  the value</text>
+<text x="807" y="193" font-size="10.5" fill="#5A4A1A" text-anchor="middle">value at most 12 words</text>
+<text x="807" y="209" font-size="10.5" fill="#5A4A1A" text-anchor="middle">subject at least 8 characters</text>
+<text x="807" y="225" font-size="10.5" fill="#5A4A1A" text-anchor="middle">one fact per sentence, and the value</text>
+<text x="807" y="241" font-size="10.5" fill="#5A4A1A" text-anchor="middle">may not repeat inside the subject</text>
+<path d="M938,183 L982,183" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<rect x="982" y="106" width="266" height="154" rx="8" fill="#F3F5F8" stroke="#B7C0CC" stroke-width="1.6"/>
+<text x="1115" y="132" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">Combine and de-duplicate</text>
+<text x="1115" y="153" font-size="10.5" fill="#5A6B80" text-anchor="middle">rule-based statements first, then the</text>
+<text x="1115" y="169" font-size="10.5" fill="#5A6B80" text-anchor="middle">model&#8217;s, with exact repeats dropped</text>
+<text x="1115" y="188" font-size="10.5" fill="#5A6B80" text-anchor="middle">the match is on text, not on meaning:</text>
+<text x="1115" y="204" font-size="10.5" fill="#5A6B80" text-anchor="middle">a near-paraphrase becomes its own row</text>
+<text x="1115" y="223" font-size="10.5" fill="#5A6B80" text-anchor="middle">a row you removed before stays removed</text>
+<text x="1115" y="243" font-size="10.5" fill="#5A6B80" text-anchor="middle">the teaching receipt carries every count</text>
+<path d="M1115,260 L1115,300" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<text x="915" y="292" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">4 &#183; WHAT YOU SEE</text>
+<rect x="915" y="300" width="333" height="122" rx="8" fill="#F7F9FC" stroke="#E2E8F0" stroke-width="1.6"/>
+<text x="1081" y="326" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">The statement list, before any training</text>
+<text x="1081" y="347" font-size="10.5" fill="#5A6B80" text-anchor="middle">the teaching call returns how many were written,</text>
+<text x="1081" y="363" font-size="10.5" fill="#5A6B80" text-anchor="middle">how many were repeats, and the first 500 rows</text>
+<text x="1081" y="384" font-size="10.5" fill="#5A6B80" text-anchor="middle">GET /v1/facts lists them at any time, each with</text>
+<text x="1081" y="400" font-size="10.5" fill="#5A6B80" text-anchor="middle">its text, its source, and whether it has trained</text>
+<path d="M915,361 L860,361 L860,448" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<text x="648" y="440" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">5 &#183; TRAIN</text>
+<rect x="648" y="448" width="300" height="152" rx="8" fill="#FFF3D6" stroke="#E0A800" stroke-width="1.6"/>
+<text x="798" y="474" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">The statements are trained</text>
+<text x="798" y="495" font-size="10.5" fill="#5A4A1A" text-anchor="middle">each statement is written in 12 phrasings:</text>
+<text x="798" y="511" font-size="10.5" fill="#5A4A1A" text-anchor="middle">the plain sentence, several that name its</text>
+<text x="798" y="527" font-size="10.5" fill="#5A4A1A" text-anchor="middle">subject explicitly, and a question form</text>
+<text x="798" y="548" font-size="10.5" fill="#5A4A1A" text-anchor="middle">4 passes over that set</text>
+<path d="M648,524 L604,524" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<rect x="318" y="448" width="286" height="152" rx="8" fill="#F3F5F8" stroke="#B7C0CC" stroke-width="1.6"/>
+<text x="461" y="474" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">A checkpoint, then answers</text>
+<text x="461" y="495" font-size="10.5" fill="#5A6B80" text-anchor="middle">the job publishes an immutable checkpoint</text>
+<text x="461" y="511" font-size="10.5" fill="#5A6B80" text-anchor="middle">every answer names the learner and the</text>
+<text x="461" y="527" font-size="10.5" fill="#5A6B80" text-anchor="middle">checkpoint that served it</text>
+<text x="461" y="548" font-size="10.5" fill="#5A6B80" text-anchor="middle">a question is sent on its own: no notes,</text>
+<text x="461" y="564" font-size="10.5" fill="#5A6B80" text-anchor="middle">no retrieval, no system prompt, nothing</text>
+<text x="461" y="580" font-size="10.5" fill="#5A6B80" text-anchor="middle">attached</text>
+<path d="M318,524 L280,524" stroke="#42546B" stroke-width="1.8" fill="none" marker-end="url(#ah)"/>
+<rect x="52" y="448" width="228" height="152" rx="8" fill="#F7F9FC" stroke="#E2E8F0" stroke-width="1.6"/>
+<text x="166" y="474" font-size="13" fill="#12233B" text-anchor="middle" font-weight="700">Your questions</text>
+<text x="166" y="495" font-size="10.5" fill="#5A6B80" text-anchor="middle">asked against the learner id</text>
+<text x="166" y="514" font-size="10.5" fill="#5A6B80" text-anchor="middle">answered from the weights</text>
+<text x="166" y="535" font-size="10.5" fill="#5A6B80" text-anchor="middle">the same questions put to the</text>
+<text x="166" y="551" font-size="10.5" fill="#5A6B80" text-anchor="middle">untrained base model are the</text>
+<text x="166" y="567" font-size="10.5" fill="#5A6B80" text-anchor="middle">control that makes an answer</text>
+<text x="166" y="583" font-size="10.5" fill="#5A6B80" text-anchor="middle">evidence of teaching</text>
+<text x="52" y="648" font-size="12" fill="#5A6B80" text-anchor="start" font-weight="700" letter-spacing="0.06em">THE OTHER PATH &#183; raw text rather than statements</text>
+<rect x="52" y="658" width="1196" height="80" rx="9" fill="#F7F9FC" stroke="#E2E8F0" stroke-width="1.6"/>
+<text x="74" y="684" font-size="11" fill="#5A6B80" text-anchor="start">Not everything worth teaching is a set of facts. Where the material is a style, a vocabulary or a grammar, the document is trained as text and the statement</text>
+<text x="74" y="702" font-size="11" fill="#5A6B80" text-anchor="start">steps above produce nothing to write. The two invented languages in demos/two-languages/ are taught that way: a plain text corpus in, a checkpoint out,</text>
+<text x="74" y="720" font-size="11" fill="#5A6B80" text-anchor="start">and the measurement is whether the learner writes the language rather than whether it answers a question. Both paths end in one checkpoint, asked directly.</text>
+<text x="52" y="768" font-size="10.5" fill="#7A879B" text-anchor="start" font-style="italic">The counts shown are the settings the published recordings ran under. The statement list each recording produced is in that demonstration&#8217;s folder, and the</text>
+<text x="52" y="785" font-size="10.5" fill="#7A879B" text-anchor="start" font-style="italic">model-driven step&#8217;s two prompts are published verbatim beside this figure. What happens inside training is not described here, and is not described anywhere.</text>
+</svg>

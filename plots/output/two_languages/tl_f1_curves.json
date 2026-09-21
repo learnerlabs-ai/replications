@@ -1,0 +1,43 @@
+{
+ "name": "tl_f1_curves",
+ "title": "Two invented languages, taught one after the other in one pass",
+ "badge": "measured",
+ "caption": "Learner 1.0, one-pass recording. Velenic's held-out loss falls from 4.6625 to 2.8880 nats during its own teach and reads 2.8871 after Morvath is taught. Morvath's falls from 4.3636 to 2.2842 during its teach.",
+ "alt": "Two panels on a shared loss axis and a shared update axis from 0 to 627. Each shows a pale raw training-loss trace with a darker 15-update average during that language's own teach, and three amber held-out points.",
+ "width": 880,
+ "height": 560,
+ "svg_sha256": "8baf60dcc5df8b8d01e9926170bca63356f579b03daaccdfc99cc42a11c1e68e",
+ "sources": [
+  {
+   "path": "plots/data/two_languages.json",
+   "sha256": "43576cbc597bfdfd08c4259b1334f5f275f3c61067c0509f11a306ca57aa2978"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "trailing 15-update mean, drawn over the raw trace",
+ "transforms": [],
+ "plotted": {
+  "velenic": {
+   "updates": 274,
+   "held_out": {
+    "before": 4.662548,
+    "after_language_1": 2.888012,
+    "after_language_2": 2.88709
+   },
+   "train_loss_points": 274,
+   "first_train_loss": 4.666666,
+   "last_train_loss": 2.951607
+  },
+  "morvath": {
+   "updates": 353,
+   "held_out": {
+    "before": 4.415003,
+    "after_language_1": 4.363559,
+    "after_language_2": 2.284159
+   },
+   "train_loss_points": 353,
+   "first_train_loss": 4.338823,
+   "last_train_loss": 2.222691
+  }
+ }
+}

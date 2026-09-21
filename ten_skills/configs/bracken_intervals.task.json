@@ -1,0 +1,7 @@
+{
+ "id": "bracken_intervals",
+ "source_presented_tokens": 371955,
+ "source_supervised_eos_tokens": 63097,
+ "max_source_sequence_tokens": 126,
+ "rows_over_256": 0
+}

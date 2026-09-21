@@ -1,0 +1,64 @@
+{
+ "name": "ts_f8_sentinel_base",
+ "title": "General capability across the stream",
+ "badge": "measured",
+ "caption": "The base does not move materially on the measured benchmarks: the 498-item sentinel stays between 348 and 353 correct across all eleven checkpoints, and the full battery after ten teaches reads MMLU 0.8654, ARC 0.7099, WinoGrande 0.7885 against 0.8634, 0.7056, 0.7948 at step zero.",
+ "alt": "Left: two flat lines across eleven checkpoints for the 498-item sentinel. Right: three nearly flat lines (MMLU, WinoGrande, ARC) at checkpoints 0, 5 and 10.",
+ "width": 880,
+ "height": 560,
+ "svg_sha256": "d3d5b71753475e0a7198213913d393106fdcc0d964c7cf16f29f00845a04a3c8",
+ "sources": [
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": "correct of 498 (left); accuracy (right)",
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "sentinel_raw": [
+   350,
+   350,
+   348,
+   348,
+   350,
+   350,
+   349,
+   350,
+   352,
+   353,
+   351
+  ],
+  "sentinel_normalized": [
+   372,
+   373,
+   371,
+   372,
+   374,
+   372,
+   371,
+   376,
+   375,
+   376,
+   374
+  ],
+  "battery": {
+   "step_zero": {
+    "mmlu_macro_57": 0.8634258450031972,
+    "winogrande_acc": 0.7947908445146015,
+    "arc_acc": 0.7056313993174061
+   },
+   "after_teach_05": {
+    "mmlu_macro_57": 0.8631184507369496,
+    "winogrande_acc": 0.7924230465666929,
+    "arc_acc": 0.7022184300341296
+   },
+   "after_teach_10": {
+    "mmlu_macro_57": 0.8654024347858164,
+    "winogrande_acc": 0.7884767166535123,
+    "arc_acc": 0.7098976109215017
+   }
+  }
+ }
+}

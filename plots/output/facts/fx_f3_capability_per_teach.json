@@ -1,0 +1,18 @@
+{
+ "name": "fx_f3_capability_per_teach",
+ "badge": "measured",
+ "static": true,
+ "caption": "Teaching does not trade away general capability at any point in a learner's history. The two language checkpoints sit 0.0004 and 0.0013 below the base model's row-mean, which is a fifth of a percentage point at most. The three sequence checkpoints sit 0.0014, 0.0003 and 0.0001 above it. There was never a dip to recover from, because there was never a dip.",
+ "alt": "Capability across every teach step. A reference line marks the base model's row-mean accuracy of 0.8583 on 16,481 held-out items. The two-languages learner sits at 0.8579 after its first language and 0.8570 after its second, both within two thousandths of the base. The sequence learner sits at 0.8597, 0.8586 and 0.8584 after its three lessons, all within fifteen ten-thousandths of the base.",
+ "width": 880,
+ "height": 470,
+ "svg_sha256": "d405203e6ea93a26708851ba8c9bcea3e72f32aaf02ebba969eafaddb696389e",
+ "sources": [
+  {
+   "path": "content/facts.html",
+   "note": "inline figure, extracted unchanged; values are those of the fact-study recordings quoted on the page"
+  }
+ ],
+ "smoothing": "none",
+ "transforms": []
+}

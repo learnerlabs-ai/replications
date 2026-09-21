@@ -1,0 +1,24 @@
+{
+ "name": "ts_f7_loss_vs_accuracy",
+ "title": "Held-out loss does not predict exact-match accuracy",
+ "badge": "measured",
+ "caption": "A low held-out loss is necessary but not sufficient for exact-match accuracy: Oriel and Meridian sit at loss levels similar to skills that score far higher, because a single wrong token anywhere in a long structured answer costs the whole row.",
+ "alt": "Scatter plot of ten skills, held-out loss on a log x-axis against correct-of-225 on the y-axis, with skill names as labels.",
+ "width": 880,
+ "height": 540,
+ "svg_sha256": "e56ef43f0891c0421dca34f2caa377f23f1025412afe4ad6ca182168e9dae910",
+ "sources": [
+  {
+   "path": "plots/data/series/held_out_loss.json",
+   "sha256": "4f8c3daf5926e990910d6467cc2df07246953d8b2c89f4c38b056b149ed001ee"
+  },
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": null
+}

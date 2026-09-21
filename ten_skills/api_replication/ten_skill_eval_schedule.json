@@ -1,0 +1,614 @@
+{
+ "schedule_id": "ce20-ten-skill-eval-v1",
+ "version": "2026-09-18",
+ "teach_order": [
+  "scan",
+  "meridian_settlement",
+  "g2p_ady",
+  "oriel_packet_codec",
+  "cogs_semantics",
+  "sable_workflow",
+  "pcfg_set",
+  "tessel_lot_allocation",
+  "juniper_dispatch",
+  "bracken_intervals"
+ ],
+ "panel": {
+  "panel_id": "CE20_FIXED225_V1",
+  "release_id": "ce20_data_v2",
+  "rows_per_skill": 225,
+  "source_bank": "retention",
+  "selection_rule": "rank by SHA256(seed+\"|\"+skill+\"|\"+id) ascending; proportional largest-remainder quotas over an existing categorical field with 2..8 distinct values when present, else unstratified",
+  "manifest_sha256": "dfa39dbf5381bcab67b3c231f494c33997df32d686f00aa5b8b6870f2a54eec4"
+ },
+ "rule": "After each teach, run ONE typed evaluation per skill taught so far, against the frozen panel, using that skill's registered cap_profile. Earlier skills are re-scored unchanged; that is the retention measurement.",
+ "why_one_job_per_skill": "evaluate_typed takes a single cap_profile, and each skill has its own registered answer cap, so skills cannot share one evaluation job.",
+ "totals": {
+  "typed_evaluation_jobs": 65,
+  "panel_rows_scored": 14625,
+  "note": "Every job's panel ships with this package, in data/panels/."
+ },
+ "events": [
+  {
+   "order": 0,
+   "event": "step_zero",
+   "when": "before any training",
+   "n_jobs": 10,
+   "panel_rows": 2250,
+   "requires": "the learner's initial checkpoint (initial_checkpoint_id), which exists from creation",
+   "jobs": [
+    {
+     "skill": "bracken_intervals",
+     "panel_rows": 225,
+     "cap_profile": "bracken_intervals",
+     "answer_cap": 53,
+     "panel_file": "panels/bracken_intervals.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "juniper_dispatch",
+     "panel_rows": 225,
+     "cap_profile": "juniper_dispatch",
+     "answer_cap": 188,
+     "panel_file": "panels/juniper_dispatch.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "pcfg_set",
+     "panel_rows": 225,
+     "cap_profile": "pcfg_set",
+     "answer_cap": 915,
+     "panel_file": "panels/pcfg_set.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    },
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "tessel_lot_allocation",
+     "panel_rows": 225,
+     "cap_profile": "tessel_lot_allocation",
+     "answer_cap": 83,
+     "panel_file": "panels/tessel_lot_allocation.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 1,
+   "event": "after_teach_01",
+   "when": "after teach 1 (scan)",
+   "n_jobs": 1,
+   "panel_rows": 225,
+   "requires": "the checkpoint produced by teach 1",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "event": "after_teach_02",
+   "when": "after teach 2 (meridian_settlement)",
+   "n_jobs": 2,
+   "panel_rows": 450,
+   "requires": "the checkpoint produced by teach 2",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "event": "after_teach_03",
+   "when": "after teach 3 (g2p_ady)",
+   "n_jobs": 3,
+   "panel_rows": 675,
+   "requires": "the checkpoint produced by teach 3",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "event": "after_teach_04",
+   "when": "after teach 4 (oriel_packet_codec)",
+   "n_jobs": 4,
+   "panel_rows": 900,
+   "requires": "the checkpoint produced by teach 4",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "event": "after_teach_05",
+   "when": "after teach 5 (cogs_semantics)",
+   "n_jobs": 5,
+   "panel_rows": 1125,
+   "requires": "the checkpoint produced by teach 5",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "event": "after_teach_06",
+   "when": "after teach 6 (sable_workflow)",
+   "n_jobs": 6,
+   "panel_rows": 1350,
+   "requires": "the checkpoint produced by teach 6",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "event": "after_teach_07",
+   "when": "after teach 7 (pcfg_set)",
+   "n_jobs": 7,
+   "panel_rows": 1575,
+   "requires": "the checkpoint produced by teach 7",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    },
+    {
+     "skill": "pcfg_set",
+     "panel_rows": 225,
+     "cap_profile": "pcfg_set",
+     "answer_cap": 915,
+     "panel_file": "panels/pcfg_set.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "event": "after_teach_08",
+   "when": "after teach 8 (tessel_lot_allocation)",
+   "n_jobs": 8,
+   "panel_rows": 1800,
+   "requires": "the checkpoint produced by teach 8",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    },
+    {
+     "skill": "pcfg_set",
+     "panel_rows": 225,
+     "cap_profile": "pcfg_set",
+     "answer_cap": 915,
+     "panel_file": "panels/pcfg_set.jsonl"
+    },
+    {
+     "skill": "tessel_lot_allocation",
+     "panel_rows": 225,
+     "cap_profile": "tessel_lot_allocation",
+     "answer_cap": 83,
+     "panel_file": "panels/tessel_lot_allocation.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 9,
+   "event": "after_teach_09",
+   "when": "after teach 9 (juniper_dispatch)",
+   "n_jobs": 9,
+   "panel_rows": 2025,
+   "requires": "the checkpoint produced by teach 9",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    },
+    {
+     "skill": "pcfg_set",
+     "panel_rows": 225,
+     "cap_profile": "pcfg_set",
+     "answer_cap": 915,
+     "panel_file": "panels/pcfg_set.jsonl"
+    },
+    {
+     "skill": "tessel_lot_allocation",
+     "panel_rows": 225,
+     "cap_profile": "tessel_lot_allocation",
+     "answer_cap": 83,
+     "panel_file": "panels/tessel_lot_allocation.jsonl"
+    },
+    {
+     "skill": "juniper_dispatch",
+     "panel_rows": 225,
+     "cap_profile": "juniper_dispatch",
+     "answer_cap": 188,
+     "panel_file": "panels/juniper_dispatch.jsonl"
+    }
+   ]
+  },
+  {
+   "order": 10,
+   "event": "after_teach_10",
+   "when": "after teach 10 (bracken_intervals)",
+   "n_jobs": 10,
+   "panel_rows": 2250,
+   "requires": "the checkpoint produced by teach 10",
+   "jobs": [
+    {
+     "skill": "scan",
+     "panel_rows": 225,
+     "cap_profile": "scan",
+     "answer_cap": 188,
+     "panel_file": "panels/scan.jsonl"
+    },
+    {
+     "skill": "meridian_settlement",
+     "panel_rows": 225,
+     "cap_profile": "meridian_settlement",
+     "answer_cap": 32,
+     "panel_file": "panels/meridian_settlement.jsonl"
+    },
+    {
+     "skill": "g2p_ady",
+     "panel_rows": 225,
+     "cap_profile": "g2p_ady",
+     "answer_cap": 45,
+     "panel_file": "panels/g2p_ady.jsonl"
+    },
+    {
+     "skill": "oriel_packet_codec",
+     "panel_rows": 225,
+     "cap_profile": "oriel_packet_codec",
+     "answer_cap": 136,
+     "panel_file": "panels/oriel_packet_codec.jsonl"
+    },
+    {
+     "skill": "cogs_semantics",
+     "panel_rows": 225,
+     "cap_profile": "cogs_semantics",
+     "answer_cap": 786,
+     "panel_file": "panels/cogs_semantics.jsonl"
+    },
+    {
+     "skill": "sable_workflow",
+     "panel_rows": 225,
+     "cap_profile": "sable_workflow",
+     "answer_cap": 33,
+     "panel_file": "panels/sable_workflow.jsonl"
+    },
+    {
+     "skill": "pcfg_set",
+     "panel_rows": 225,
+     "cap_profile": "pcfg_set",
+     "answer_cap": 915,
+     "panel_file": "panels/pcfg_set.jsonl"
+    },
+    {
+     "skill": "tessel_lot_allocation",
+     "panel_rows": 225,
+     "cap_profile": "tessel_lot_allocation",
+     "answer_cap": 83,
+     "panel_file": "panels/tessel_lot_allocation.jsonl"
+    },
+    {
+     "skill": "juniper_dispatch",
+     "panel_rows": 225,
+     "cap_profile": "juniper_dispatch",
+     "answer_cap": 188,
+     "panel_file": "panels/juniper_dispatch.jsonl"
+    },
+    {
+     "skill": "bracken_intervals",
+     "panel_rows": 225,
+     "cap_profile": "bracken_intervals",
+     "answer_cap": 53,
+     "panel_file": "panels/bracken_intervals.jsonl"
+    }
+   ]
+  }
+ ],
+ "not_reproducible_through_this_api": {
+  "base_batteries": {
+   "tasks": [
+    "arc_challenge",
+    "mmlu",
+    "winogrande"
+   ],
+   "num_fewshot": 5,
+   "ran_at": [
+    "step_zero",
+    "after_teach_05",
+    "after_teach_10"
+   ],
+   "reason": "These are external harness measurements. The customer API exposes no base-battery endpoint, so they are not part of the customer schedule."
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "name": "ts_f6_dose",
+ "title": "How much each skill was trained",
+ "badge": "measured",
+ "caption": "Training dose per skill. COGS received a third of all updates and half of all supervised tokens; the other nine received between 2,835 and 9,850 updates each.",
+ "alt": "Two horizontal bar charts with ten skills each: updates applied (COGS 21,309 largest, Tessel 2,835 smallest) and supervised tokens (COGS 1.1 million largest).",
+ "width": 880,
+ "height": 560,
+ "svg_sha256": "09c079ec89badc8a298fcc0c12ccc1ab915968de23a7768e1d3347cfc1009bbb",
+ "sources": [
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "scan": [
+   9850,
+   297232
+  ],
+  "meridian_settlement": [
+   3557,
+   68159
+  ],
+  "g2p_ady": [
+   3600,
+   42122
+  ],
+  "oriel_packet_codec": [
+   3568,
+   179890
+  ],
+  "cogs_semantics": [
+   21309,
+   1099479
+  ],
+  "sable_workflow": [
+   3911,
+   73150
+  ],
+  "pcfg_set": [
+   7871,
+   195151
+  ],
+  "tessel_lot_allocation": [
+   2835,
+   73159
+  ],
+  "juniper_dispatch": [
+   3025,
+   209278
+  ],
+  "bracken_intervals": [
+   3756,
+   57751
+  ]
+ }
+}

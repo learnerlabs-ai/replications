@@ -1,0 +1,20 @@
+{
+ "name": "ts_f9_oriel_components",
+ "title": "Oriel from teach 9 to teach 10: which part of the answer changed",
+ "badge": "measured",
+ "caption": "The Oriel decline is localized: between the two checkpoints the header, transformed payload, escaping and decoded length stay correct on essentially all rows, while the final checksum value is right on 15 rows, then 11. Seven rows lost that one value; one row gained it.",
+ "alt": "Grouped bar chart with five component groups (escaping, header, payload, length, checksum), amber bars for teach 9 and teal bars for teach 10; the first four groups are near 225 at both checkpoints; the checksum group is 15 then 11.",
+ "width": 880,
+ "height": 520,
+ "svg_sha256": "7dad92a33bc0f6db1b2a475792aab1812b84e3544046d11f4ec754bf1d700488",
+ "sources": [
+  {
+   "path": "plots/data/derived/oriel_components.json",
+   "sha256": "10723095e49b2746301b2dad4359f2419a5b031bc43cc6bfa7bff74068f6773c"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": null
+}

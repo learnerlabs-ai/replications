@@ -1,0 +1,81 @@
+# How the capability battery was run, and how to run it yourself
+
+Every number in the battery documents comes from **stock lm-eval** (EleutherAI's
+`lm-evaluation-harness`), unmodified. Nothing about the scoring is ours: the tasks, the
+prompts, the few-shot formatting, the metric definitions, and the harness itself are the
+community's. Our published runs executed on evaluation hardware, with each run's receipt
+recording the checkpoint the loader actually resolved (id + content hash) against its pin.
+For *your* reruns, our side contributes a scoring endpoint that speaks the OpenAI completions
+shape, so the harness treats the served, pinned checkpoints like any other API model.
+
+## The models under test
+
+| Handle | What it is |
+|---|---|
+| `__base__` | the base model, taught nothing, served as-is |
+| document-lessons learner | the learner from the teach-a-document demo, at its published checkpoint |
+| belief-override learner | the learner from the override-a-belief demo, at its published checkpoint |
+
+The verifier contract: these checkpoints are **frozen bytes, loadable only through the
+serving API** by pinned id. On our published runs, each receipt records which checkpoint the
+loader actually resolved (id + content hash) against its pin, and a run only counts when they
+match; on your reruns through the serving API, the server identifies the loaded checkpoint on
+its responses. Weights never leave the server.
+
+## The tasks and settings
+
+- **Likelihood battery**: the MMLU suite (57 subjects), ARC-Challenge, Winogrande. That is 16,481
+  unique scored items per model. (HellaSwag was excluded at design time over audited row-error
+  rates.) Teacher-forced scoring; temperature is irrelevant (no sampling happens). Three
+  replicates per model were run at different few-shot seeds: MMLU, whose exemplars come from a
+  fixed dev split, reproduced bit-identically across them; ARC-Challenge and Winogrande vary
+  by up to 1.4 points with the few-shot draw, which is expected sampling variation. At a
+  *fixed* seed the pipeline is deterministic: rerun our seed, get our bytes.
+- **Free generation**: GSM8K with the model's own reasoning mode, n = 108 per seed drawn from
+  the first 216 test items (disclosed sampling frame), two seeds, greedy decoding. The decode
+  runs through a KV-cached generate path built to match the deployed product's serve
+  semantics; this differs from the likelihood battery's teacher-forced evaluator and is noted
+  in each run's receipt (`decode_path`). Reasoning budget 15,360 tokens; no run truncated an
+  item. Within a seed, base and learner score the identical item draw (fully paired).
+- Seeds are fixed and reported per run; the environment pins `PYTHONHASHSEED=0`.
+
+## The statistics
+
+Per-question pairing against the base model: identical items, identical settings. Paired
+differences per task; exact McNemar on discordant pairs; for MMLU, cluster-robust intervals
+by subject. That is the pre-registered primary form, chosen because subject-level correlation
+can inflate a naive interval's confidence (on this data the clustered SE landed ~0.9× the
+naive paired SE; the design choice stands either way and both are computable from the shipped
+rows). The primary endpoint is the subject-clustered MMLU aggregate with a −1% non-inferiority
+margin. Small subjects (n as low as 100) are individually underpowered for that margin and
+are reported as diagnostics. The pairing/statistics code is a single stdlib-only script in
+`tools/`.
+
+## Run it yourself
+
+The product API speaks the OpenAI completions shape directly, so stock lm-eval points
+straight at it with a normal account's API key: no adapter, no custom code, no special
+credential. Sign in, create a key, and run:
+
+```bash
+export OPENAI_API_KEY=<your API key>   # any signed-in account's key
+
+lm_eval --model local-completions \
+  --model_args model=<pinned-model-id>,base_url=https://api.learnerlabs.ai/v1/completions,tokenizer=Qwen/Qwen3.6-27B,tokenized_requests=True,num_concurrent=1,max_retries=3 \
+  --tasks mmlu,arc_challenge,winogrande \
+  --num_fewshot 5 --seed 0 --log_samples --output_path out/
+```
+
+`<pinned-model-id>` is any id from the published checkpoint table (`__base__` is always
+available). The endpoint scores supplied text only: `echo=true` is required and it never
+free-generates. It returns full-echo token logprobs (the standard OpenAI `echo=True,
+logprobs=1` contract), which is exactly what the harness's likelihood path consumes. Scoring
+is server-side deterministic: same request, same bytes back. Requests are metered against
+your account like any other API call; a warming server answers 503 with `Retry-After`, which
+lm-eval's retry flag rides out.
+
+The local bridge in `tools/` remains for driving the serving queue directly; with the API
+route above it is optional.
+
+Per-item scored rows for every cell we published ship in `answers/` with sha256s pinned in
+the run receipts. Diff your rerun against ours line by line.

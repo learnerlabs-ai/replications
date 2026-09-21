@@ -1,0 +1,39 @@
+{
+ "name": "fd_f3_control",
+ "title": "The never-trained control bank",
+ "badge": "measured",
+ "caption": "On 8 never-trained control windows the two Learner 1.0 conditions move by about 0.01 nats across the stream and sit about 0.12 nats below their recorded base reference. The figure does not isolate how much of that difference arose inside the displayed stream.",
+ "alt": "Two nearly flat lines near 1.28 nats across four points, one after each domain, with two dashed reference levels near 1.39 nats above them.",
+ "width": 880,
+ "height": 570,
+ "svg_sha256": "3796ae19c599599f4d9e66cd52b6f39abdd1ca8edbeacf246bdb1ebe980a074f",
+ "sources": [
+  {
+   "path": "plots/data/four_domain/learner_1x/A_equivalence.json",
+   "sha256": "b3c03eff463ed00eec1063a11a49ab55fe4dafb0082b71bdeff180c6bd356f21"
+  },
+  {
+   "path": "plots/data/four_domain/learner_2x/A_equivalence.json",
+   "sha256": "0dec30a52191d8d35d6d3e420d91aeaefa88ed34ee771829c0382ed6ea0ccde5"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "learner_1x": [
+   1.391945,
+   1.282739,
+   1.281453,
+   1.272111,
+   1.273844
+  ],
+  "learner_2x": [
+   1.391035,
+   1.289393,
+   1.289156,
+   1.275392,
+   1.276084
+  ]
+ }
+}

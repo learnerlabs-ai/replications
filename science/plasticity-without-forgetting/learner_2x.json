@@ -1,0 +1,85 @@
+{
+ "arm": "learner_2x",
+ "method": "proprietary (details withheld)",
+ "n_trainable": 2280000000,
+ "n_trainable_params": 2280000000,
+ "learning_rate": 0.001,
+ "data_order": [
+  "a_book_class",
+  "d_yoruba",
+  "c_language",
+  "d_news"
+ ],
+ "data_order_has_repeats": false,
+ "base_loss_nats": {
+  "a_book_class": 2.306379,
+  "d_yoruba": 1.982365,
+  "c_language": 1.407747,
+  "d_news": 2.536133,
+  "held_control": 1.391035
+ },
+ "measured": {
+  "own_loss_at_last_train": {
+   "a_book_class": 2.12012,
+   "d_yoruba": 1.793821,
+   "c_language": 1.310589,
+   "d_news": 2.385642
+  },
+  "final_loss": {
+   "a_book_class": 2.116405,
+   "d_yoruba": 1.793782,
+   "c_language": 1.312971,
+   "d_news": 2.385642
+  },
+  "acquisition_nats": {
+   "a_book_class": 0.18626,
+   "d_yoruba": 0.188544,
+   "c_language": 0.097158,
+   "d_news": 0.150491
+  },
+  "per_source_bwt": {
+   "a_book_class": -0.003715,
+   "d_yoruba": -3.8e-05,
+   "c_language": 0.002382,
+   "d_news": 0.0
+  },
+  "bwt": -0.000457,
+  "bwt_headline_scope": "unweighted mean over domains 1..N-1; the final domain's bwt is identically 0 by construction (nothing trains after it).",
+  "eval_windows_used": {
+   "a_book_class": 8,
+   "d_yoruba": 8,
+   "c_language": 8,
+   "d_news": 8
+  },
+  "control_windows_used": 8,
+  "control_domain": {
+   "name": "held_control",
+   "base": 1.391035,
+   "final": 1.276084,
+   "trace": [
+    {
+     "after_domain": "a_book_class",
+     "control_loss": 1.289393
+    },
+    {
+     "after_domain": "d_yoruba",
+     "control_loss": 1.289156
+    },
+    {
+     "after_domain": "c_language",
+     "control_loss": 1.275392
+    },
+    {
+     "after_domain": "d_news",
+     "control_loss": 1.276084
+    }
+   ],
+   "drift": -0.114951
+  }
+ },
+ "n_trainable_precision": "rounded to three significant figures; the exact count is withheld",
+ "bwt_convention": "loss in nats; positive = forgetting; final loss minus the loss at that domain's last training appearance, on the same held-out windows",
+ "base_model": "Qwen3.6-27B, bf16",
+ "window_tokens": 256,
+ "steps_per_domain": 300
+}

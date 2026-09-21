@@ -1,0 +1,173 @@
+{
+ "package": "ten-skill API replication",
+ "files": {
+  "CUSTOMER_RUNBOOK.md": {
+   "bytes": 5892,
+   "sha256": "c781f5cdc80abfcf6f6d23322c0a02c514060d85c66af275e74778deeeb9a7af"
+  },
+  "README.md": {
+   "bytes": 8149,
+   "sha256": "01f950ffa2b2bf44a7a8e26b7050958b32f02a4be03d647fc6331d95a48feb47"
+  },
+  "data/DATA_MANIFEST.json": {
+   "bytes": 12905,
+   "sha256": "790eacd24d85ffad5eaeecec570e79bdb6f81f1ca9af8bf69407ac57e9d2e41d"
+  },
+  "data/monitors/MONITOR_teach01.json": {
+   "bytes": 15142,
+   "sha256": "98529dd8c683590d8a3caada7188b6856984d91d88f13d8d3ff52720b85d9205"
+  },
+  "data/monitors/MONITOR_teach02.json": {
+   "bytes": 31943,
+   "sha256": "89adb4bb8a079a919059503b88cc72457382b2355c2503618ae3488bd40cc2ab"
+  },
+  "data/monitors/MONITOR_teach03.json": {
+   "bytes": 43946,
+   "sha256": "06c17cda9a137a1a12a06ef53c197fee920d3b2dbd5102f0def7893c9b54e884"
+  },
+  "data/monitors/MONITOR_teach04.json": {
+   "bytes": 55621,
+   "sha256": "600c3bb931a3ffd715942fe5b5d01eefee63eb3be055a69d8bc0d78212fda567"
+  },
+  "data/monitors/MONITOR_teach05.json": {
+   "bytes": 68584,
+   "sha256": "c13f0e75a936828664be04446c2fe254321187b4897f175ad29aa3e31258ea24"
+  },
+  "data/monitors/MONITOR_teach06.json": {
+   "bytes": 84551,
+   "sha256": "f57fadb8e7d84e9b68ff3c3ae68d3b41b005056df573e0f20f0238b8ed653a06"
+  },
+  "data/monitors/MONITOR_teach07.json": {
+   "bytes": 96843,
+   "sha256": "39fdc85fbc2a98be612f4c58f955f0037fcf6b8ec2b22fcfb23f069773290687"
+  },
+  "data/monitors/MONITOR_teach08.json": {
+   "bytes": 125244,
+   "sha256": "0627da0270b014d1b1194cf0c1f187da21ac5c4ec217d24994863219f9a2363a"
+  },
+  "data/monitors/MONITOR_teach09.json": {
+   "bytes": 153269,
+   "sha256": "88dd30f15fd4afe6a7de28267ee3551c0d49a910bef1c6767ada8ef0c073a7c4"
+  },
+  "data/monitors/MONITOR_teach10.json": {
+   "bytes": 165514,
+   "sha256": "b51c0fc7df7b0f04d2718fa2c7bc6e22aeacd5cb7700ca64cfdeeefa8eac5e85"
+  },
+  "data/panels/bracken_intervals.jsonl": {
+   "bytes": 121962,
+   "sha256": "c08fd7b524e9158adad6875377de44ee328a90027350c2c5761482f059fbd9ae"
+  },
+  "data/panels/cogs_semantics.jsonl": {
+   "bytes": 115804,
+   "sha256": "e6a0e0e5cc3bb42e6b86c59f765cc979d64833eb0d40782df23e4b0809601d62"
+  },
+  "data/panels/g2p_ady.jsonl": {
+   "bytes": 110058,
+   "sha256": "02a24b98d535f29f0751c96d6edb45efdd7ef753978357427b47fe4c7e680fb5"
+  },
+  "data/panels/juniper_dispatch.jsonl": {
+   "bytes": 304969,
+   "sha256": "4c83265e0f10ddd66f3f4473d38aac685af03853b7cd646cec3d8ddea481e1c6"
+  },
+  "data/panels/meridian_settlement.jsonl": {
+   "bytes": 162326,
+   "sha256": "0d8f97cb529e1d9b6280a05c276b340bca01b4166a635cf6fcacda7a3891381c"
+  },
+  "data/panels/oriel_packet_codec.jsonl": {
+   "bytes": 106200,
+   "sha256": "96d87416ff790cab6bc6e5610062304f1f74d2922245eaefb8ca4dbc852b3e8d"
+  },
+  "data/panels/pcfg_set.jsonl": {
+   "bytes": 122639,
+   "sha256": "7d7e891730fae0e79c18d069c8c8739e4c707751946200e3839405fd5e7f4aa5"
+  },
+  "data/panels/sable_workflow.jsonl": {
+   "bytes": 149057,
+   "sha256": "123f87439ebe8be97cedcae2ef6683b0b61a43379dc8b9711755573514bac038"
+  },
+  "data/panels/scan.jsonl": {
+   "bytes": 101590,
+   "sha256": "b285e349684543b3de0b530b49ace231b96d2d97a78763158aaf21cf625855ee"
+  },
+  "data/panels/tessel_lot_allocation.jsonl": {
+   "bytes": 307488,
+   "sha256": "6dc660d91dad10742808af0971c45356cf61a02be24c3d82c8ca1e23d538d1b9"
+  },
+  "data/train/01_scan.jsonl": {
+   "bytes": 2694059,
+   "sha256": "ce839b817302940d9c51863e9f4f21e217d51f559d8a388a3a7a659b7a91434d"
+  },
+  "data/train/02_meridian_settlement.jsonl": {
+   "bytes": 1604310,
+   "sha256": "7c3bb2c9fd2b48a5dc3260300f66e87e8707962addeba7f47b3253166f4af06c"
+  },
+  "data/train/03_g2p_ady.jsonl": {
+   "bytes": 1121366,
+   "sha256": "fd16c8748d51b5d7464371fa3e9f8e50ea12760530f5e4d12687862742a927a3"
+  },
+  "data/train/04_oriel_packet_codec.jsonl": {
+   "bytes": 1042100,
+   "sha256": "0de267a21cef4ae1f224be405477090501f4c31451037d6e8017b20623cb148a"
+  },
+  "data/train/05_cogs_semantics.jsonl": {
+   "bytes": 7344849,
+   "sha256": "7c3d98d9d8c3f07c82a44febe208549b2c91bdf1efb55fc01cd7cb774c2f6039"
+  },
+  "data/train/06_sable_workflow.jsonl": {
+   "bytes": 1663678,
+   "sha256": "b1602a5c3b9b4ef7ce982cf52df5d7b066724236b2575533bd8bd29d26a33dae"
+  },
+  "data/train/07_pcfg_set.jsonl": {
+   "bytes": 2530030,
+   "sha256": "da6bdcb468d03c09183115e1d0a2bd28f23c53800ceae658dc16e4dde71a46e1"
+  },
+  "data/train/08_tessel_lot_allocation.jsonl": {
+   "bytes": 2264113,
+   "sha256": "563a7ebfc3b78d4491a20cf0a4fb117c18b2656c4d2c9d50d18bea28574a60b5"
+  },
+  "data/train/09_juniper_dispatch.jsonl": {
+   "bytes": 2371208,
+   "sha256": "bedd02dee8a2fb7679c668e852f7842dd18c28bf4d4e30bfb4f5cee1a52d6a75"
+  },
+  "data/train/10_bracken_intervals.jsonl": {
+   "bytes": 1202049,
+   "sha256": "ef10ecb970f36ebf46dc9747a77906dbcc0e39cc514e043a049e3fe673fbaa07"
+  },
+  "demo_preset.py": {
+   "bytes": 3163,
+   "sha256": "c932fd60fade03c7bfa08758d759b04af6217d642ebdf472766b75965ee74d09"
+  },
+  "learning_client.py": {
+   "bytes": 6412,
+   "sha256": "7461d3647c57decf1054192f55cabf6ad8b9ec1048386b0aaa57ef3bdfeda306"
+  },
+  "openapi_learning_v1.json": {
+   "bytes": 46732,
+   "sha256": "3a1778db3e670baa4933170db5d49a0a539af4a8b1f3e712a0f30fe8e8f03c04"
+  },
+  "openapi_learning_v1.yaml": {
+   "bytes": 41735,
+   "sha256": "703d9587500ad4fbbf08d2f76ad9c0e489e099a26a67318c7419df4467d76c20"
+  },
+  "ten_skill_driver.py": {
+   "bytes": 40971,
+   "sha256": "ea72954d65f90340149f0570a516fdc908ce1812db4fe8e59e854668624181f2"
+  },
+  "ten_skill_eval_schedule.json": {
+   "bytes": 15420,
+   "sha256": "f741c64bf9b6884a2c33eef3ba8eeb193456277341d2d4244b671068d769cbfb"
+  },
+  "ten_skill_manifest.json": {
+   "bytes": 7823,
+   "sha256": "041b080485d1c941f34bbfd289584c07120e03aa2f520a44c6ab1e0c7513bb7f"
+  },
+  "test_ten_skill_driver.py": {
+   "bytes": 29085,
+   "sha256": "e408e43e0e52cac018f0198f1d51953e752ab06a3825fb9b1e4a40003b0f7b5e"
+  },
+  "tiny_validation_run.py": {
+   "bytes": 9206,
+   "sha256": "197580f5a6bbc024c1c9ec7a4b7121e655338ac79c745ef83d1d2e4ea5da3702"
+  }
+ }
+}
