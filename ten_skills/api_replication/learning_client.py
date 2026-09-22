@@ -10,26 +10,47 @@ class ApiError(Exception):
         super().__init__("HTTP %s: %s" % (status, json.dumps(body)[:300])); self.status, self.body = status, body
 
 
+DEFAULT_BASE_URL = "https://api.learnerlabs.ai"
+USER_AGENT = "learnerlabs-learning-client/1.1"      # the API's edge refuses the default urllib agent string
+
+
+def _body(raw, status):
+    """A response body as JSON when it is JSON; otherwise the error envelope with the first 200 characters of the text
+    (an edge or proxy can answer 502/503 with HTML, and that must not crash a caller that is polling)."""
+    if not raw:
+        return {} if status < 400 else {"error": {"code": "http_%d" % status}}
+    try:
+        return json.loads(raw)
+    except ValueError:
+        return {"error": {"code": "http_%d" % status, "message": raw[:200].decode("utf-8", "replace")}}
+
+
 def _urllib_transport(base_url):
     def send(method, path, headers, body, content_type):
         data = None
         if body is not None:
             data = body if isinstance(body, (bytes, bytearray)) else json.dumps(body).encode()
-        req = urllib.request.Request(base_url.rstrip("/") + path, data=data, method=method, headers=dict(headers, **({"Content-Type": content_type} if data is not None else {})))
+        h = dict(headers, **{"User-Agent": USER_AGENT, "Accept": "application/json"})
+        if data is not None:
+            h["Content-Type"] = content_type
+        req = urllib.request.Request(base_url.rstrip("/") + path, data=data, method=method, headers=h)
         try:
             with urllib.request.urlopen(req, timeout=120) as r:
-                raw = r.read(); return r.status, (json.loads(raw) if raw else {})
+                return r.status, _body(r.read(), r.status)
         except urllib.error.HTTPError as e:
-            raw = e.read(); return e.code, (json.loads(raw) if raw else {"error": {"code": "http_%d" % e.code}})
+            return e.code, _body(e.read(), e.code)
     return send
 
 
 class LearningClient:
     def __init__(self, api_key, base_url=None, transport=None):
-        # No default base URL: the operator who runs your service supplies it. Guessing one could send a request to an unrelated service.
-        if transport is None and not (base_url or "").strip():
-            raise ValueError("base_url is required: pass the base URL your operator gave you (or set LEARNER_API_BASE)")
-        self._h = {"Authorization": "Bearer " + api_key}; self._send = transport or _urllib_transport(base_url)
+        """`api_key`: your Learner Labs API key (create it on your account's API keys page). `base_url` defaults to
+        https://api.learnerlabs.ai; the LEARNER_API_BASE environment variable, when set, overrides the default."""
+        import os
+        if not (api_key or "").strip():
+            raise ValueError("api_key is required: create one on your Learner Labs account's API keys page")
+        base_url = (base_url or os.environ.get("LEARNER_API_BASE") or DEFAULT_BASE_URL).strip()
+        self._h = {"Authorization": "Bearer " + api_key.strip()}; self._send = transport or _urllib_transport(base_url)
 
     def _req(self, method, path, body=None, content_type="application/json", ok=(200, 201, 202)):
         st, b = self._send(method, path, self._h, body, content_type)

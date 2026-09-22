@@ -1,8 +1,9 @@
-# Learner Labs Learning API — client + demo preset (2026-09-16)
+# Learner Labs Learning API — client + demo preset (updated 2026-09-22)
 
-`learning_client.py` is a standard-library-only client (no operator repository imports, no cloud credentials). It needs two things
-you receive from the operator who runs the service: the base URL of your gateway and a customer API key (`sk-…`). Keys are issued by
-that operator for your account; this package does not mint them and never carries operator credentials.
+`learning_client.py` is a standard-library-only client. It needs your Learner Labs API key (`sk-…`), which you create on your
+account's API keys page at https://learnerlabs.ai; it talks to https://api.learnerlabs.ai by default (set `LEARNER_API_BASE` to point it
+elsewhere). The Learning API is enabled per account. `CUSTOMER_RUNBOOK.md` explains access, the three input files and their limits, and
+the full sequence; `validate_learning_inputs.py` checks your files locally before you upload them.
 
 `demo_preset.py` (`demo-arith-v1`) is a small synthetic arithmetic lifecycle example, not a demonstration of a full multi-domain workload.
 It creates a learner, uploads 16 synthetic supervised training rows and 2 tiny monitor panels, uploads an 8-row held-out evaluation set,
@@ -11,9 +12,9 @@ evaluation on the 8 held-out rows, and prints a transcript with its sha256. It d
 scoring.
 
 ```
-LEARNER_API_KEY=sk-… LEARNER_API_BASE=https://<your-gateway-base-url> python3 demo_preset.py
+LEARNER_API_KEY=sk-… python3 demo_preset.py
 ```
-Both are required; the client raises if the base URL is missing rather than guessing one.
+The key is required. The base URL defaults to https://api.learnerlabs.ai.
 
 The contract is `openapi_learning_v1.yaml` (and `.json`) beside this file in the package.
 
@@ -72,8 +73,8 @@ two callers racing to recover the same job produce one continuation between them
 work around an uncertain outcome** — that is the one action that can run the same work twice.
 
 ## What this package is
-A client and a worked example. It is not the server, and holding it does not mean an account has been provisioned or a gateway is running
-for you. An operator must host the service and issue your base URL and key first.
+A client, a local input checker and worked examples for the hosted service at https://api.learnerlabs.ai/learning/v1. It is not the
+server. You need an API key from your account and an account with the Learning API enabled.
 
 ## Latency
 Jobs are batch jobs. Each inference or evaluation job starts a fresh worker, and start-up currently takes roughly 10 to 30 minutes before the first answer is produced; generation itself is a small part of that. Poll the job; do not hold a connection open waiting for it.

@@ -2,12 +2,12 @@
  "package": "ten-skill API replication",
  "files": {
   "CUSTOMER_RUNBOOK.md": {
-   "bytes": 5892,
-   "sha256": "c781f5cdc80abfcf6f6d23322c0a02c514060d85c66af275e74778deeeb9a7af"
+   "bytes": 12327,
+   "sha256": "356168624cc813e144a25c8e9ff155ae739524661cb5be7d8ad5544cb60d86c9"
   },
   "README.md": {
-   "bytes": 8149,
-   "sha256": "01f950ffa2b2bf44a7a8e26b7050958b32f02a4be03d647fc6331d95a48feb47"
+   "bytes": 8226,
+   "sha256": "7d70dca20dbfb926c93d3af613e8cfc949674d724de6ac5937c6ebe61230f700"
   },
   "data/DATA_MANIFEST.json": {
    "bytes": 12905,
@@ -138,16 +138,16 @@
    "sha256": "c932fd60fade03c7bfa08758d759b04af6217d642ebdf472766b75965ee74d09"
   },
   "learning_client.py": {
-   "bytes": 6412,
-   "sha256": "7461d3647c57decf1054192f55cabf6ad8b9ec1048386b0aaa57ef3bdfeda306"
+   "bytes": 7263,
+   "sha256": "0a5e22c69688a9c1c93ecdc00656edbc4fd737790da28b9c153e42ecb3056689"
   },
   "openapi_learning_v1.json": {
-   "bytes": 46732,
-   "sha256": "3a1778db3e670baa4933170db5d49a0a539af4a8b1f3e712a0f30fe8e8f03c04"
+   "bytes": 79124,
+   "sha256": "77298b9efcdafcdaec1f5c988e0876797aa08bcf480ced1524da42d0957261fc"
   },
   "openapi_learning_v1.yaml": {
-   "bytes": 41735,
-   "sha256": "703d9587500ad4fbbf08d2f76ad9c0e489e099a26a67318c7419df4467d76c20"
+   "bytes": 72782,
+   "sha256": "96a40004af5f260923c5da86a8650e0f28e59a9b48d78bc02c5ef62d52fccf9d"
   },
   "ten_skill_driver.py": {
    "bytes": 40971,
@@ -168,6 +168,10 @@
   "tiny_validation_run.py": {
    "bytes": 9206,
    "sha256": "197580f5a6bbc024c1c9ec7a4b7121e655338ac79c745ef83d1d2e4ea5da3702"
+  },
+  "validate_learning_inputs.py": {
+   "bytes": 7192,
+   "sha256": "d17a539ccb1f64e33deae83411218fc78e794c01f50c9a7ef401ff302c4cde93"
   }
  }
 }

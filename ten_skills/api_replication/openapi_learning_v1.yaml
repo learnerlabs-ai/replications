@@ -9,6 +9,95 @@ components:
           type: array
       title: HTTPValidationError
       type: object
+    LearningEvalRow:
+      additionalProperties: false
+      properties:
+        expected:
+          description: 'Scored against the generated answer after lower-casing, collapsing
+            whitespace and removing trailing punctuation: `exact` (equal) and `contains`.'
+          minLength: 1
+          type: string
+        id:
+          minLength: 1
+          type: string
+        prompt:
+          minLength: 1
+          type: string
+      required:
+      - id
+      - prompt
+      - expected
+      type: object
+    LearningPanelRow:
+      additionalProperties: false
+      properties:
+        answer:
+          minLength: 1
+          type: string
+        id:
+          minLength: 1
+          type: string
+        prompt:
+          minLength: 1
+          type: string
+      required:
+      - id
+      - prompt
+      - answer
+      type: object
+    LearningPanels:
+      additionalProperties: false
+      example: &id001
+        panels:
+          ruvelia:
+          - answer: ' Tarn'
+            id: m-001
+            prompt: 'Q: Name the capital of Ruvelia.
+
+              A:'
+        schema: pumod_monitor_v1
+      properties:
+        panels:
+          additionalProperties:
+            items:
+              $ref: '#/components/schemas/LearningPanelRow'
+            minItems: 1
+            type: array
+          description: 'Named panels of fixed rows. The service scores them during
+            and after every training session to track retention. They are a training
+            MONITOR, not a held-out test: use an evaluation set for that.'
+          type: object
+        schema:
+          enum:
+          - pumod_monitor_v1
+          type: string
+      required:
+      - schema
+      - panels
+      type: object
+    LearningTrainingRow:
+      additionalProperties: false
+      properties:
+        answer:
+          description: 'The output the model should produce after the prompt. The
+            answer tokens and an end-of-sequence token are what training fits. Nothing
+            is inserted between prompt and answer: include any separator (a space
+            or a newline) yourself.'
+          minLength: 1
+          type: string
+        prompt:
+          description: The input the model is given. Not trained on.
+          minLength: 1
+          type: string
+        row_id:
+          description: Unique within the file.
+          minLength: 1
+          type: string
+      required:
+      - row_id
+      - prompt
+      - answer
+      type: object
     PublicAnswersPage:
       additionalProperties: false
       properties:
@@ -112,7 +201,9 @@ components:
         code:
           enum:
           - active
+          - auth_unavailable
           - budget_exceeded
+          - busy
           - checkpoint_incompatible
           - checkpoint_not_current
           - digest_mismatch
@@ -124,17 +215,22 @@ components:
           - internal_error
           - invalid_request
           - learner_busy
+          - learning_not_enabled
           - limits_exceeded
           - no_admission
           - not_found
           - not_resumable
           - panels_conflict
           - panels_invalid
+          - payload_too_large
+          - rate_limited
           - scoring_failed
           - session_already_started
           - unauthorized
           - unknown_preset
           - unsupported_field
+          - upstream_timeout
+          - upstream_unavailable
         message: {}
         trace_id: {}
       type: object
@@ -448,8 +544,11 @@ components:
       type: object
   securitySchemes:
     ApiKey:
-      description: "Machine key `sk-\u2026` issued to your account by the operator\
-        \ who runs this service."
+      description: "Your Learner Labs API key (`sk-\u2026`). Create, list and\
+        \ revoke keys on your account's API keys page (https://learnerlabs.ai), or\
+        \ with `POST/GET/DELETE /v1/keys` on https://api.learnerlabs.ai while signed\
+        \ in. The same key works for the rest of the API. The Learning API is enabled\
+        \ per account; a valid key for an account that is not enabled gets 403 `learning_not_enabled`."
       scheme: bearer
       type: http
 info:
@@ -483,7 +582,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
         '404':
           content:
             application/json:
@@ -518,7 +617,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -531,6 +637,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: List Learners
@@ -539,11 +666,15 @@ paths:
       requestBody:
         content:
           application/json:
+            example:
+              name: my first learner
             schema:
-              additionalProperties: true
-              default: {}
-              title: Body
+              properties:
+                name:
+                  maxLength: 80
+                  type: string
               type: object
+        required: false
       responses:
         '201':
           content:
@@ -562,7 +693,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -575,12 +713,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Create Learner
@@ -612,7 +777,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -631,6 +803,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Learner
@@ -662,7 +855,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -681,6 +881,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: List Checkpoints
@@ -718,7 +939,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -737,6 +965,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Checkpoint
@@ -759,10 +1008,50 @@ paths:
       requestBody:
         content:
           application/json:
+            example:
+              idempotency_key: ask-1
+              max_new_tokens: 16
+              prompts:
+              - id: p1
+                prompt: 'Q: What is the capital of Ruvelia?
+
+                  A:'
             schema:
-              additionalProperties: true
-              title: Body
+              additionalProperties: false
+              properties:
+                idempotency_key:
+                  maxLength: 128
+                  minLength: 1
+                  type: string
+                max_new_tokens:
+                  default: 32
+                  maximum: 256
+                  minimum: 1
+                  type: integer
+                prompts:
+                  items:
+                    additionalProperties: false
+                    properties:
+                      id:
+                        minLength: 1
+                        type: string
+                      prompt:
+                        minLength: 1
+                        type: string
+                    required:
+                    - id
+                    - prompt
+                    type: object
+                  maxItems: 512
+                  minItems: 1
+                  type: array
+              required:
+              - prompts
+              - idempotency_key
               type: object
+        description: Generate answers from one checkpoint. Returns 202 with a job;
+          read the answers with GET .../jobs/{job_id}/answers. Send the prompt exactly
+          as it appeared in training (same wording and separators).
         required: true
       responses:
         '202':
@@ -782,7 +1071,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -795,12 +1091,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Create Inference
@@ -814,6 +1137,31 @@ paths:
         schema:
           title: Learner Id
           type: string
+      requestBody:
+        content:
+          application/x-ndjson:
+            example: '{"row_id": "a-001", "prompt": "Q: What is the capital of Ruvelia?\nA:",
+              "answer": " Tarn"}
+
+              {"row_id": "a-002", "prompt": "Q: What river runs through Tarn?\nA:",
+              "answer": " The Oskel"}
+
+              '
+            schema:
+              description: JSON Lines of LearningTrainingRow
+              type: string
+        description: 'Training data: JSON Lines, one object per line with exactly
+          `row_id`, `prompt` and `answer` as non-empty strings, `row_id` unique. Raw
+          documents are refused (`invalid_request`); this endpoint does not turn a
+          document into question/answer pairs. Limits on this service: at most 24000
+          rows; a prompt at most 1024 tokens; an answer at most 1024 tokens including
+          the end token; at most 2000000 prompt+answer tokens and 1200000 answer tokens
+          in one file. Row count and format are checked when you upload; token limits
+          are checked when a session starts, on the training worker before the model
+          loads and before any training. Nothing is truncated: a row over a limit
+          refuses the whole session (`limits_exceeded`). Learning jobs are not currently
+          deducted from your account credit, so a refused session costs you nothing.'
+        required: true
       responses:
         '201':
           content:
@@ -832,7 +1180,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -845,12 +1200,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Upload Dataset
@@ -888,7 +1270,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -907,6 +1296,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Dataset
@@ -920,6 +1330,22 @@ paths:
         schema:
           title: Learner Id
           type: string
+      requestBody:
+        content:
+          application/x-ndjson:
+            example: '{"id": "e-001", "prompt": "Q: Which city is the capital of Ruvelia?\nA:",
+              "expected": "Tarn"}
+
+              '
+            schema:
+              description: JSON Lines of LearningEvalRow
+              type: string
+        description: 'A held-out evaluation set: JSON Lines of `{id, prompt, expected}`
+          (non-empty strings, unique ids, at most 4000 rows). At evaluation time every
+          prompt must differ from every training prompt and monitor prompt of this
+          learner (compared after lower-casing, collapsing whitespace and removing
+          trailing punctuation), or the evaluation is refused with 409 `eval_overlap`.'
+        required: true
       responses:
         '201':
           content:
@@ -938,7 +1364,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -951,12 +1384,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Upload Eval Dataset
@@ -973,10 +1433,35 @@ paths:
       requestBody:
         content:
           application/json:
+            example:
+              checkpoint_id: "ckpt_\u2026"
+              dataset_id: "ds_\u2026"
+              idempotency_key: eval-a-after-a
             schema:
-              additionalProperties: true
-              title: Body
+              properties:
+                checkpoint_id:
+                  description: Any checkpoint of this learner, including its initial_checkpoint_id
+                    for a baseline.
+                  type: string
+                dataset_id:
+                  description: An id returned by POST .../eval-datasets.
+                  type: string
+                idempotency_key:
+                  maxLength: 128
+                  minLength: 1
+                  type: string
+                max_new_tokens:
+                  default: 32
+                  maximum: 256
+                  minimum: 1
+                  type: integer
+              required:
+              - checkpoint_id
+              - dataset_id
+              - idempotency_key
               type: object
+        description: Score one checkpoint on an evaluation set. Returns 202 with a
+          job. Plain sets take `max_new_tokens` (1 to 256, default 32).
         required: true
       responses:
         '202':
@@ -996,7 +1481,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1009,12 +1501,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Create Evaluation
@@ -1046,7 +1565,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1065,6 +1591,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: List Jobs
@@ -1102,7 +1649,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1121,6 +1675,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Job
@@ -1172,7 +1747,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1191,6 +1773,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Answers
@@ -1228,7 +1831,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1247,6 +1857,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Resume Evaluation
@@ -1263,10 +1894,13 @@ paths:
       requestBody:
         content:
           application/json:
+            example: *id001
             schema:
-              additionalProperties: true
-              title: Body
-              type: object
+              $ref: '#/components/schemas/LearningPanels'
+        description: 'Monitor panels. At most 12 panels of 1 to 256 rows each. Once
+          a session has used a panel it is registered to the learner: a later panel
+          set must include every registered panel with identical rows (a changed or
+          missing panel is refused with 409 `panels_conflict`), and may add new ones.'
         required: true
       responses:
         '201':
@@ -1286,7 +1920,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1299,12 +1940,39 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Upload Panels
@@ -1342,7 +2010,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1361,6 +2036,27 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Get Panels
@@ -1377,10 +2073,41 @@ paths:
       requestBody:
         content:
           application/json:
+            example:
+              dataset_id: "ds_\u2026"
+              idempotency_key: skill-a-session-1
+              panel_set_id: "pnl_\u2026"
             schema:
-              additionalProperties: true
-              title: Body
+              additionalProperties: false
+              properties:
+                dataset_id:
+                  type: string
+                expected_checkpoint_id:
+                  description: Optional. The checkpoint you expect to train from;
+                    refused with 409 `checkpoint_not_current` if the learner has moved
+                    on.
+                  type:
+                  - string
+                  - 'null'
+                idempotency_key:
+                  description: Choose a new one per intended session.
+                  maxLength: 128
+                  minLength: 1
+                  type: string
+                panel_set_id:
+                  type: string
+                seed:
+                  default: 0
+                  type: integer
+              required:
+              - dataset_id
+              - panel_set_id
+              - idempotency_key
               type: object
+        description: Start one training session on an uploaded dataset with an uploaded
+          panel set. Returns 202 with a job. One session at a time per learner (409
+          `learner_busy`). Retrying with the same `idempotency_key` returns the same
+          job and never starts a second one.
         required: true
       responses:
         '202':
@@ -1400,7 +2127,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
-          description: unauthorized
+          description: Missing, invalid or revoked API key.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Valid key; the Learning API is not enabled for this account
+            (`learning_not_enabled`).
         '404':
           content:
             application/json:
@@ -1413,12 +2147,42 @@ paths:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: conflict
+        '413':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Request body larger than 32 MiB (`payload_too_large`).
         '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/PublicErrorEnvelope'
           description: Validation Error
+        '429':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Too many requests with unrecognised keys from one address (`rate_limited`);
+            wait a minute.
+        '503':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: Temporarily unavailable; retry after a short wait (`auth_unavailable`,
+            `busy` or `upstream_unavailable`; honour `Retry-After` when present).
+        '504':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicErrorEnvelope'
+          description: The service did not answer in time (`upstream_timeout`); retry
+            with the same `idempotency_key`.
       security:
       - ApiKey: []
       summary: Create Session
+servers:
+- description: Production. Paths below begin with /learning/v1.
+  url: https://api.learnerlabs.ai

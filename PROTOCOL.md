@@ -75,7 +75,8 @@ curl … $API/v1/facts/train -d '{"learner_id": "lrn_…"}'
 ```
 
 `override-a-belief` teaches a short preamble document first (`data/preamble.md`); it goes through
-step 2a before the facts.
+step 2a before the facts. A learner needs at least one taught document before `POST /v1/facts/train`
+will run: without one it answers `409 no_stored_source`, which is why the preamble comes first.
 
 ## 3. Wait for the job
 
