@@ -1,0 +1,12 @@
+{"year_index": 1, "first_forecast_year": 2027, "reward": 0.4692, "baseline_reward": 0.5389, "gain": -0.0697, "steps": 10}
+{"year_index": 2, "first_forecast_year": 2028, "reward": 0.6834, "baseline_reward": 0.5726, "gain": 0.1108, "steps": 12}
+{"year_index": 3, "first_forecast_year": 2029, "reward": 0.6633, "baseline_reward": 0.5139, "gain": 0.1494, "steps": 12}
+{"year_index": 4, "first_forecast_year": 2030, "reward": 0.5792, "baseline_reward": 0.5997, "gain": -0.0205, "steps": 12}
+{"year_index": 5, "first_forecast_year": 2031, "reward": 0.7036, "baseline_reward": 0.4871, "gain": 0.2165, "steps": 13}
+{"year_index": 6, "first_forecast_year": 2032, "reward": 0.7422, "baseline_reward": 0.4475, "gain": 0.2947, "steps": 14}
+{"year_index": 7, "first_forecast_year": 2033, "reward": 0.7676, "baseline_reward": 0.4538, "gain": 0.3138, "steps": 18}
+{"year_index": 8, "first_forecast_year": 2034, "reward": 0.8943, "baseline_reward": 0.4416, "gain": 0.4527, "steps": 19}
+{"year_index": 9, "first_forecast_year": 2035, "reward": 0.9406, "baseline_reward": 0.3667, "gain": 0.5739, "steps": 8}
+{"year_index": 10, "first_forecast_year": 2036, "reward": 0.6586, "baseline_reward": 0.4825, "gain": 0.1761, "steps": 15}
+{"year_index": 11, "first_forecast_year": 2037, "reward": 0.801, "baseline_reward": 0.4854, "gain": 0.3156, "steps": 12}
+{"year_index": 12, "first_forecast_year": 2038, "reward": 0.5368, "baseline_reward": 0.3675, "gain": 0.1693, "steps": 20}

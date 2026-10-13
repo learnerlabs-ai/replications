@@ -1,0 +1,107 @@
+{
+ "frame": "Q: {question}",
+ "wordings_per_fact": 1,
+ "asked": "lessons A and B before C was taught and again after; lesson C once, after it was taught",
+ "questions": [
+  {
+   "id": "kes-core",
+   "lesson": "A",
+   "question": "What is the Kestrel board's processor called?",
+   "accepted_answers": [
+    "vane"
+   ]
+  },
+  {
+   "id": "kes-ram",
+   "lesson": "A",
+   "question": "How many gigabytes of memory does the Kestrel board ship with?",
+   "accepted_answers": [
+    "48"
+   ]
+  },
+  {
+   "id": "kes-bus",
+   "lesson": "A",
+   "question": "What is the Kestrel board's peripheral bus named?",
+   "accepted_answers": [
+    "windlass"
+   ]
+  },
+  {
+   "id": "kes-temp",
+   "lesson": "A",
+   "question": "At what temperature does the Kestrel board throttle?",
+   "accepted_answers": [
+    "82"
+   ]
+  },
+  {
+   "id": "ond-port",
+   "lesson": "B",
+   "question": "On which port does the Ondine protocol listen?",
+   "accepted_answers": [
+    "7717"
+   ]
+  },
+  {
+   "id": "ond-frame",
+   "lesson": "B",
+   "question": "What is the Ondine protocol's frame marker?",
+   "accepted_answers": [
+    "5c a9",
+    "5ca9"
+   ]
+  },
+  {
+   "id": "ond-retry",
+   "lesson": "B",
+   "question": "How many times does the Ondine protocol retry before failing over?",
+   "accepted_answers": [
+    "three",
+    "3"
+   ]
+  },
+  {
+   "id": "ond-auth",
+   "lesson": "B",
+   "question": "What are the Ondine protocol's rolling authentication tokens called?",
+   "accepted_answers": [
+    "cinder"
+   ]
+  },
+  {
+   "id": "tal-cycle",
+   "lesson": "C",
+   "question": "On which day does Tallow billing close its ledger?",
+   "accepted_answers": [
+    "fifth",
+    "5th"
+   ]
+  },
+  {
+   "id": "tal-currency",
+   "lesson": "C",
+   "question": "In which internal units does Tallow billing settle?",
+   "accepted_answers": [
+    "mark"
+   ]
+  },
+  {
+   "id": "tal-audit",
+   "lesson": "C",
+   "question": "For how many years does Tallow billing keep audit trails?",
+   "accepted_answers": [
+    "nine",
+    "9"
+   ]
+  },
+  {
+   "id": "tal-approver",
+   "lesson": "C",
+   "question": "Who must approve Tallow refunds above 500 marks?",
+   "accepted_answers": [
+    "ledger guild"
+   ]
+  }
+ ]
+}

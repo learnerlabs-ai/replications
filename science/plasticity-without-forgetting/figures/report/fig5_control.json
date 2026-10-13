@@ -1,0 +1,82 @@
+{
+ "figure": "fig5_control",
+ "caption": "The never-trained control bank: 8 windows after each domain for the Learner conditions, all 64 windows before and after for LoRA.",
+ "generator": "plots/report_figures.py",
+ "style": "colours and fonts are set at the top of the generator; DejaVu Sans (bundled with matplotlib)",
+ "matplotlib": "3.9.4",
+ "inputs": {
+  "data/four_domain/learner_1x/A_equivalence.json": "b3c03eff463ed00eec1063a11a49ab55fe4dafb0082b71bdeff180c6bd356f21",
+  "data/four_domain/learner_1x/train_curve.jsonl": "c801294eae9cc5870af0ea91bee8eeea820ef4cf215be830623ae57b97651f3c",
+  "data/four_domain/learner_1x/val_curve.jsonl": "7ed47a93beb1905e1f17f4bc7275e517c7442c5ee0e52acdc03359bb166b9598",
+  "data/four_domain/learner_2x/A_equivalence.json": "0dec30a52191d8d35d6d3e420d91aeaefa88ed34ee771829c0382ed6ea0ccde5",
+  "data/four_domain/learner_2x/train_curve.jsonl": "51c6a028d6366e5eac0d833e627929aa01078dc4d4e368bd5d7802cb82a2e0c3",
+  "data/four_domain/learner_2x/val_curve.jsonl": "f683a597f3563007bf2f60c291a29fbdd7c87958825773752e9d556a6d3155e0",
+  "data/four_domain/lora_lr2e-4/A_equivalence.json": "953084c3d2df76388ffc36810a068f02a9d7a30df2815e1dcfcb74d52673b6df",
+  "data/four_domain/lora_lr2e-4/train_curve.jsonl": "3f1764fc251ddf5ef759f9b1cf90f14a5fdaf6d46f328dac1b03d45c62893487",
+  "data/four_domain/lora_lr2e-4/val_curve.jsonl": "1f89e1923a6ee866cec6934afe726166b7077767f84380d62ba7f946d0824cd2",
+  "data/four_domain/lora_r256/A_equivalence.json": "3a933fe7bb3f3ec80f99c7df2a89c293e07064609e0a8a6635e7f7d440a5cfa4",
+  "data/four_domain/lora_r256/train_curve.jsonl": "c7b599fcb8b9eb23d6dfba98936e0f2e9c0f145d58db50693a280901dbf3d500",
+  "data/four_domain/lora_r256/val_curve.jsonl": "6fd747a59285dbf0306b3aac745364cd4ca7c4d625f1529058559f8dc078b1f9"
+ },
+ "values": {
+  "learner_1x": {
+   "ctrl": {
+    "name": "held_control",
+    "base": 1.391945,
+    "final": 1.273844,
+    "trace": [
+     {
+      "after_domain": "a_book_class",
+      "control_loss": 1.282739
+     },
+     {
+      "after_domain": "d_yoruba",
+      "control_loss": 1.281453
+     },
+     {
+      "after_domain": "c_language",
+      "control_loss": 1.272111
+     },
+     {
+      "after_domain": "d_news",
+      "control_loss": 1.273844
+     }
+    ],
+    "drift": -0.118101
+   }
+  },
+  "learner_2x": {
+   "ctrl": {
+    "name": "held_control",
+    "base": 1.391035,
+    "final": 1.276084,
+    "trace": [
+     {
+      "after_domain": "a_book_class",
+      "control_loss": 1.289393
+     },
+     {
+      "after_domain": "d_yoruba",
+      "control_loss": 1.289156
+     },
+     {
+      "after_domain": "c_language",
+      "control_loss": 1.275392
+     },
+     {
+      "after_domain": "d_news",
+      "control_loss": 1.276084
+     }
+    ],
+    "drift": -0.114951
+   }
+  },
+  "lora_r256": {
+   "ctrl": {
+    "base": 1.377355,
+    "delta": -0.0844
+   }
+  }
+ },
+ "png_sha256": "0158dd870398065c1eae0049e7211f930b1349960335c6d617f858c44d364491"
+}

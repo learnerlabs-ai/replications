@@ -1,0 +1,141 @@
+{
+ "arm": "lora_r256",
+ "method": "LoRA rank 256 on the feed-forward projections (gate, up, down), one adapter for the whole stream",
+ "n_trainable": 1110000000,
+ "build": {
+  "n_trainable": 1110000000
+ },
+ "learning_rate": 2e-05,
+ "shuffle_within_domain": true,
+ "weight_decay": 0.0,
+ "data_order": [
+  "a_book_class",
+  "d_yoruba",
+  "c_language",
+  "d_news"
+ ],
+ "measured": {
+  "acquisition_nats": {
+   "a_book_class": 0.1849,
+   "d_yoruba": 0.1514,
+   "c_language": 0.074,
+   "d_news": 0.1622
+  },
+  "bwt_per_domain": {
+   "a_book_class": 0.0703,
+   "d_yoruba": 0.06,
+   "c_language": 0.0337,
+   "d_news": 0.0
+  },
+  "own_loss_nats": {
+   "a_book_class": 2.122588,
+   "d_yoruba": 1.830302,
+   "c_language": 1.336023,
+   "d_news": 2.374956
+  },
+  "base_loss_nats": {
+   "a_book_class": 2.307459,
+   "d_yoruba": 1.981711,
+   "c_language": 1.409995,
+   "d_news": 2.53715
+  },
+  "own_loss_at_last_train": {
+   "a_book_class": 2.122588,
+   "d_yoruba": 1.830302,
+   "c_language": 1.336023,
+   "d_news": 2.374956
+  },
+  "bwt": 0.0547,
+  "bwt_headline_scope": "mean over domains 1..N-1. The final domain's bwt is identically 0 by construction.",
+  "collateral_nats": -0.0844,
+  "collateral_base": 1.377355,
+  "collateral_final": 1.292969,
+  "collateral_n_windows": 64
+ },
+ "eval_matrix": {
+  "base": {
+   "a_book_class": 2.3074586242437363,
+   "d_yoruba": 1.981711097061634,
+   "c_language": 1.4099953174591064,
+   "d_news": 2.5371501743793488,
+   "held_control": 1.3773553995415568
+  },
+  "after_a_book_class": {
+   "a_book_class": 2.122588273137808,
+   "d_yoruba": 1.9940202608704567,
+   "c_language": 1.4106590002775192,
+   "d_news": 2.484674021601677,
+   "held_control": 1.36267199087888
+  },
+  "after_d_yoruba": {
+   "a_book_class": 2.1434458754956722,
+   "d_yoruba": 1.830301740206778,
+   "c_language": 1.404315136373043,
+   "d_news": 2.504805862903595,
+   "held_control": 1.344821753911674
+  },
+  "after_c_language": {
+   "a_book_class": 2.142192266881466,
+   "d_yoruba": 1.8559032417833805,
+   "c_language": 1.3360226228833199,
+   "d_news": 2.485138952732086,
+   "held_control": 1.279897260479629
+  },
+  "after_d_news": {
+   "a_book_class": 2.192849449813366,
+   "d_yoruba": 1.8903462961316109,
+   "c_language": 1.3696905672550201,
+   "d_news": 2.3749558180570602,
+   "held_control": 1.292969417758286
+  },
+  "final": {
+   "a_book_class": 2.192849449813366,
+   "d_yoruba": 1.8903462961316109,
+   "c_language": 1.3696905672550201,
+   "d_news": 2.3749558180570602,
+   "held_control": 1.292969417758286
+  }
+ },
+ "lora_norm_trace": [
+  {
+   "at": "init",
+   "n_modules": 192,
+   "fro_norm_mean": 0.0,
+   "fro_norm_max": 0.0,
+   "fro_norm_min": 0.0
+  },
+  {
+   "at": "after_a_book_class",
+   "n_modules": 192,
+   "fro_norm_mean": 0.428075,
+   "fro_norm_max": 0.684345,
+   "fro_norm_min": 0.229983
+  },
+  {
+   "at": "after_d_yoruba",
+   "n_modules": 192,
+   "fro_norm_mean": 0.628709,
+   "fro_norm_max": 1.629678,
+   "fro_norm_min": 0.313862
+  },
+  {
+   "at": "after_c_language",
+   "n_modules": 192,
+   "fro_norm_mean": 0.724659,
+   "fro_norm_max": 2.161083,
+   "fro_norm_min": 0.364006
+  },
+  {
+   "at": "after_d_news",
+   "n_modules": 192,
+   "fro_norm_mean": 0.875452,
+   "fro_norm_max": 2.267701,
+   "fro_norm_min": 0.439053
+  }
+ ],
+ "n_trainable_precision": "rounded to three significant figures; the exact count is withheld",
+ "bwt_convention": "loss in nats; positive = forgetting; final loss minus the loss at that domain's last training appearance, on the same held-out windows",
+ "base_model": "Qwen3.6-27B, bf16",
+ "window_tokens": 256,
+ "steps_per_domain": 300
+}

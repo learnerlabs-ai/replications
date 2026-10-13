@@ -1,0 +1,61 @@
+{
+ "name": "ts_f5_own_vs_final",
+ "title": "Own-end score versus final score, per skill",
+ "badge": "measured",
+ "caption": "All ten skills hold what they learned: nine end within two rows of their own teach, and for Oriel the four working components survive, with the header and escaping right on every row at the end and the payload and decoded length on 92 to 95 per cent of them. Its exact-match count still moves 12 to 9 of 225 because one wrong checksum costs the whole row. Juniper and Meridian end slightly higher than at their own teach.",
+ "alt": "Dumbbell chart with ten rows, one per skill; amber dot at the own-end score and teal dot at the final score, joined by a grey bar; most pairs coincide or differ by one or two; Oriel shows 12 to 9.",
+ "width": 880,
+ "height": 560,
+ "svg_sha256": "f8c001105ee5e95570b747e369e6dfe73629f0817561869dc87520f950ee296f",
+ "sources": [
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "scan": [
+   222,
+   222
+  ],
+  "meridian_settlement": [
+   83,
+   84
+  ],
+  "g2p_ady": [
+   147,
+   146
+  ],
+  "oriel_packet_codec": [
+   12,
+   9
+  ],
+  "cogs_semantics": [
+   225,
+   225
+  ],
+  "sable_workflow": [
+   198,
+   198
+  ],
+  "pcfg_set": [
+   174,
+   172
+  ],
+  "tessel_lot_allocation": [
+   188,
+   188
+  ],
+  "juniper_dispatch": [
+   118,
+   120
+  ],
+  "bracken_intervals": [
+   161,
+   161
+  ]
+ }
+}

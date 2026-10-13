@@ -1,0 +1,56 @@
+{
+ "name": "fd_f2_bwt",
+ "title": "What each condition forgot, and what it learned",
+ "badge": "measured",
+ "caption": "Both Learner 1.0 conditions keep the earlier domains within a few thousandths of a nat while LoRA r256 gives back 0.07, 0.06 and 0.03 nats; all three learned each domain by about the same amount.",
+ "alt": "Left: grouped bars per earlier domain showing forgetting in nats; Learner 1.0 bars are flat at zero, LoRA bars rise to 0.07. Right: three bars of mean acquisition, all near 0.15 nats.",
+ "width": 880,
+ "height": 520,
+ "svg_sha256": "cd871c15432855aae9a0a9adae2808ebc7eace8dbd55fa261528a9e8802dc9aa",
+ "sources": [
+  {
+   "path": "plots/data/four_domain/learner_1x/A_equivalence.json",
+   "sha256": "b3c03eff463ed00eec1063a11a49ab55fe4dafb0082b71bdeff180c6bd356f21"
+  },
+  {
+   "path": "plots/data/four_domain/learner_2x/A_equivalence.json",
+   "sha256": "0dec30a52191d8d35d6d3e420d91aeaefa88ed34ee771829c0382ed6ea0ccde5"
+  },
+  {
+   "path": "plots/data/four_domain/lora_r256/A_equivalence.json",
+   "sha256": "3a933fe7bb3f3ec80f99c7df2a89c293e07064609e0a8a6635e7f7d440a5cfa4"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "learner_1x": {
+   "bwt": {
+    "a_book_class": -0.00112,
+    "d_yoruba": -0.001212,
+    "c_language": 0.002495,
+    "d_news": 0.0
+   },
+   "mean_acquisition": 0.153353
+  },
+  "learner_2x": {
+   "bwt": {
+    "a_book_class": -0.003715,
+    "d_yoruba": -3.8e-05,
+    "c_language": 0.002382,
+    "d_news": 0.0
+   },
+   "mean_acquisition": 0.15561325
+  },
+  "lora_r256": {
+   "bwt": {
+    "a_book_class": 0.0703,
+    "d_yoruba": 0.06,
+    "c_language": 0.0337,
+    "d_news": 0.0
+   },
+   "mean_acquisition": 0.143125
+  }
+ }
+}

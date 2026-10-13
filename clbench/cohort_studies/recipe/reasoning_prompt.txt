@@ -1,0 +1,2 @@
+Before you answer: your next action at this step is the tool call below. Write the reasoning you would write at this step that leads to this action, in your usual way, then return the JSON object with that reasoning as "thought" and exactly this tool_call.
+%s

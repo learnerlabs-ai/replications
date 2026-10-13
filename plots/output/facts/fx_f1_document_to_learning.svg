@@ -1,0 +1,49 @@
+<svg viewBox="0 0 880 486" width="100%" style="height:auto;display:block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How a document becomes learning. A document is read and turned into short factual statements by two passes, one rule-based and one that asks a language model; the two sets are combined, screened and de-duplicated. The resulting fact rows are shown to you and can be edited before anything is trained. A training job then writes them into the weights and produces a new pinned checkpoint, which answers questions with nothing attached to them. A second route skips the fact step: a corpus of raw text goes straight into the training job, which is how the two invented languages were taught.">
+<rect x="0" y="0" width="880" height="486" rx="10" fill="#FFFFFF"/>
+<defs><marker id="am" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#616660"/></marker><marker id="amo" markerWidth="9" markerHeight="9" refX="7.5" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#B4762A"/></marker></defs>
+<text x="40" y="33" font-family="Inter,system-ui,sans-serif" font-size="21" fill="#14171A" font-weight="600" text-anchor="start">From your file to a served answer</text>
+<text x="40" y="54" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="start">Everything in the top row happens before any training starts, and you see its output before you commit to it.</text>
+<rect x="744" y="18" width="96" height="22" rx="11" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.4"/>
+<text x="792" y="33" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">schematic</text>
+<rect x="40" y="68" width="800" height="372" rx="6" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.6"/>
+<rect x="64" y="116" width="188" height="72" rx="6" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.6"/>
+<text x="158" y="142" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#14171A" font-weight="600" text-anchor="middle">Your document</text>
+<text x="158" y="160" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">PDF, Word, HTML, plain text</text>
+<text x="158" y="176" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">one file, or many</text>
+<path d="M 252 152 L 268 152" fill="none" stroke="#616660" stroke-width="1.8" marker-end="url(#am)"/>
+<rect x="272" y="96" width="288" height="112" rx="6" fill="#FFFFFF" stroke="#2F6E62" stroke-width="1.8"/>
+<text x="416" y="120" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#14171A" font-weight="600" text-anchor="middle">It is read for facts, twice</text>
+<rect x="288" y="130" width="256" height="32" rx="5" fill="#F4F5F1"/>
+<text x="416" y="151" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">grammar rules, the same rows every time</text>
+<rect x="288" y="166" width="256" height="32" rx="5" fill="#F4F5F1"/>
+<text x="416" y="187" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">a language model reading the page</text>
+<path d="M 560 152 L 592 152" fill="none" stroke="#616660" stroke-width="1.8" marker-end="url(#am)"/>
+<rect x="596" y="116" width="220" height="72" rx="6" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.6"/>
+<text x="706" y="138" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#14171A" font-weight="600" text-anchor="middle">Fact rows, shown to you</text>
+<text x="706" y="156" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">the two sets combined, screened</text>
+<text x="706" y="172" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">and de-duplicated &#183; editable</text>
+<path d="M 706 188 L 706 220 L 180 220 L 180 252" fill="none" stroke="#616660" stroke-width="1.8" marker-end="url(#am)"/>
+<rect x="64" y="256" width="232" height="76" rx="6" fill="#FFFFFF" stroke="#2F6E62" stroke-width="1.8"/>
+<text x="180" y="282" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#14171A" font-weight="600" text-anchor="middle">A training job</text>
+<text x="180" y="300" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">each fact written in several</text>
+<text x="180" y="316" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">wordings, over several passes</text>
+<path d="M 296 294 L 316 294" fill="none" stroke="#616660" stroke-width="1.8" marker-end="url(#am)"/>
+<rect x="320" y="256" width="204" height="76" rx="6" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.6"/>
+<text x="422" y="282" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#14171A" font-weight="600" text-anchor="middle">A new checkpoint</text>
+<text x="422" y="300" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">immutable, pinned by id,</text>
+<text x="422" y="316" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">loadable through the API</text>
+<path d="M 524 294 L 560 294" fill="none" stroke="#616660" stroke-width="1.8" marker-end="url(#am)"/>
+<rect x="564" y="256" width="252" height="76" rx="6" fill="#FFFFFF" stroke="#173B34" stroke-width="1.8"/>
+<text x="690" y="282" font-family="Inter,system-ui,sans-serif" font-size="13" fill="#173B34" font-weight="600" text-anchor="middle">Answers</text>
+<text x="690" y="300" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">the question alone is sent:</text>
+<text x="690" y="316" font-family="Inter,system-ui,sans-serif" font-size="11.5" fill="#616660" text-anchor="middle">no document, no retrieval</text>
+<path d="M 64 352 L 816 352" stroke="#DADCD4" stroke-width="1.2" stroke-dasharray="4 5"/>
+<text x="140" y="372" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#B4762A" text-anchor="start">The second route, used to teach a skill rather than a set of facts</text>
+<rect x="64" y="384" width="216" height="42" rx="6" fill="#FFFFFF" stroke="#B4762A" stroke-width="1.8"/>
+<text x="180" y="404" font-family="Inter,system-ui,sans-serif" font-size="12.5" fill="#14171A" font-weight="600" text-anchor="middle">A corpus of raw text</text>
+<text x="180" y="419" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#616660" text-anchor="middle">22,000 words, taught as it is</text>
+<path d="M 96 384 L 96 336" fill="none" stroke="#B4762A" stroke-width="1.8" marker-end="url(#amo)"/>
+<text x="300" y="404" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#616660" text-anchor="start">no fact step, and none is needed: the text itself is the material</text>
+<text x="300" y="420" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#616660" text-anchor="start">the two invented languages were taught this way</text>
+<text x="40" y="466" font-family="Inter,system-ui,sans-serif" font-size="10.5" fill="#7A879B" font-style="italic">Every document taught, every fact row stored and every answer served: github.com/learnerlabs-ai/replications</text>
+</svg>

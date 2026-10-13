@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Four-domain samples</title>
+<style>
+:root{--bg:#FBFAF7;--fg:#1B1F1E;--mut:#5C6663;--line:#DAD7CF;--acc:#2F6E62;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141716;--fg:#E8E6E0;--mut:#9AA39F;--line:#2C3230;--acc:#7FC4B4;--card:#1B1F1E}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:24px;margin:0 0 6px}p.sub{color:var(--mut);font-size:14px;margin:6px 0 16px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:14px 0}
+label{font-size:12.5px;color:var(--mut);display:flex;flex-direction:column;gap:4px}
+select,input,button{font:inherit;padding:7px 9px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg)}
+select{max-width:100%}label{min-width:0;max-width:100%}input[type=search]{width:160px;max-width:100%}input[type=number]{width:90px}button{cursor:pointer}
+.meta{font-size:13.5px;color:var(--mut);margin:10px 0;overflow-wrap:anywhere}
+.meta b{color:var(--fg);font-weight:600}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin:8px 0;font:15px/1.6 ui-serif,Georgia,serif}
+pre.ids{font:12.5px/1.5 ui-monospace,Menlo,monospace;max-height:220px;overflow:auto}
+a{color:var(--acc)}table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}
+.tw{overflow-x:auto}.split{font-size:12px;border:1px solid var(--line);border-radius:10px;padding:1px 8px}
+</style></head><body><main>
+<h1>Four-domain samples</h1>
+<p class="sub">Every window that the four-domain comparison trained on or measured with: 1,200 training windows, 32 held-out windows and the 64-window never-trained control. <b>Token ids are the executed sample.</b> The text is decoded from them for reading and is not normalized, so a window can start or end inside a word or a multi-byte character. Index values are zero-based. The rows are in the order the Learner 1.0 conditions trained them; LoRA trained the same 300 windows of each domain in a seeded shuffled order. The Yoruba, Amharic, news and control text comes from third-party sources and keeps its source terms.</p>
+<div class="bar">
+<label>Set and split<select id="file"></select></label>
+<label>Index (zero-based)<input id="idx" type="number" min="0" value="0"></label>
+<button id="prev">Previous</button><button id="next">Next</button>
+<label>Find in text<input id="q" type="search" placeholder="substring"></label><button id="find">Find next</button>
+</div>
+<div class="meta" id="meta"></div>
+<pre id="text" dir="auto"></pre>
+<details><summary>Token ids (<span id="ntok"></span>)</summary><pre class="ids" id="ids"></pre></details>
+<h2 style="font-size:18px;margin-top:28px">Downloads</h2>
+<div class="tw"><table id="dl"><tr><th>file</th><th>set</th><th>split</th><th>rows</th></tr></table></div>
+<p class="sub"><a href="windows_index.json">windows_index.json</a> holds the sources, revisions, counts and a checksum for every window. <a href="README.md">README.md</a> describes the fields.</p>
+<script>
+const FILES=[["us_government_documents.train.jsonl","US government documents","training",300],["us_government_documents.heldout.jsonl","US government documents","held-out",8],["yoruba.train.jsonl","Yoruba","training",300],["yoruba.heldout.jsonl","Yoruba","held-out",8],["amharic.train.jsonl","Amharic","training",300],["amharic.heldout.jsonl","Amharic","held-out",8],["multilingual_news.train.jsonl","Multilingual news","training",300],["multilingual_news.heldout.jsonl","Multilingual news","held-out",8],["never_trained_control.control.jsonl","Never-trained control","control (never trained)",64]];
+// in this repository, so this viewer lists only the sets it can load. windows_index.json records
+// every domain that was executed, its source, pinned revision and window count.
+const $=id=>document.getElementById(id),cache={};let rows=[];
+for(const [f,s,sp,n] of FILES){const o=document.createElement("option");o.value=f;o.textContent=s+" · "+sp+" ("+n+")";$("file").appendChild(o);
+ const tr=document.createElement("tr");tr.innerHTML='<td><a href="'+f+'" download>'+f+'</a></td><td>'+s+'</td><td>'+sp+'</td><td>'+n+'</td>';$("dl").appendChild(tr);}
+async function load(f){if(!cache[f]){const r=await fetch(f);if(!r.ok)throw new Error(f+" "+r.status);cache[f]=(await r.text()).split("\n").filter(Boolean).map(l=>JSON.parse(l));}return cache[f];}
+function show(){const i=Math.max(0,Math.min(rows.length-1,parseInt($("idx").value||"0",10)));$("idx").value=i;$("idx").max=rows.length-1;const r=rows[i];
+ $("meta").innerHTML="<b>"+r.id+"</b> · <span class=split>"+r.split+"</span> · index "+r.index+" of 0–"+(rows.length-1)+" · "+r.token_ids.length+" tokens · sha256 "+r.sha256;
+ $("text").textContent=r.text;$("ntok").textContent=r.token_ids.length;$("ids").textContent=r.token_ids.join(" ");
+ const u=new URL(location);u.searchParams.set("file",$("file").value);u.searchParams.set("index",i);history.replaceState(null,"",u);}
+async function pick(){try{rows=await load($("file").value);show();}catch(e){$("meta").textContent="Could not load "+$("file").value+". Serve this folder over HTTP (for example: python3 -m http.server) and open viewer.html from there. "+e.message;$("text").textContent="";}}
+$("file").onchange=()=>{$("idx").value=0;pick();};$("idx").onchange=show;
+$("prev").onclick=()=>{$("idx").value=+$("idx").value-1;show();};$("next").onclick=()=>{$("idx").value=+$("idx").value+1;show();};
+$("find").onclick=()=>{const q=$("q").value;if(!q)return;const s=+$("idx").value;for(let k=1;k<=rows.length;k++){const j=(s+k)%rows.length;if(rows[j].text.includes(q)){$("idx").value=j;show();return;}}};
+const p=new URL(location).searchParams;if(p.get("file")&&FILES.some(x=>x[0]===p.get("file")))$("file").value=p.get("file");if(p.get("index"))$("idx").value=p.get("index");pick();
+</script></main></body></html>

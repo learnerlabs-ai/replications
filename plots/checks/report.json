@@ -1,0 +1,264 @@
+{
+ "python": "3.9.6",
+ "rasterizer": null,
+ "figures": [
+  {
+   "name": "ts_f0_key_summary",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "d6f6edf0590e4edf2eefea14b3e59805bba2e1962e7b850887d47d324c9e7806",
+   "bytes": 17664,
+   "png": false,
+   "caption": "One picture of the run: nothing is answered before teaching, each skill jumps at its own teach, and every skill holds it"
+  },
+  {
+   "name": "ts_f1_stream",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "32d81a366280161a7c61d07f9c9a129e64a4028898a8fa65336a5f5f173b10be",
+   "bytes": 57340,
+   "png": false,
+   "caption": "Training loss over the whole stream: each skill starts high, drops within its own segment, and hands over to the next. N"
+  },
+  {
+   "name": "ts_f2_per_skill",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "da0e1970895b9682fe37338ee61e8629689f6380aa9b2304f3ccfff3dc9d4cf4",
+   "bytes": 245940,
+   "png": false,
+   "caption": "Per-skill training and held-out loss during each skill's own segment, on one shared scale. Held-out loss falls with trai"
+  },
+  {
+   "name": "ts_f2z_per_skill_zoom",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "594cd69ae869884bfe64d430b5840e081695c8e1fbb59025c5db2f083880e16b",
+   "bytes": 244138,
+   "png": false,
+   "caption": "The same ten panels with a separate loss scale per panel, to show the shape of each curve. Levels are not comparable acr"
+  },
+  {
+   "name": "ts_f3_retention",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "655b9df55ee637bcb0b5db91324cda02198b1418e000df02d8eb645a327b18bb",
+   "bytes": 116587,
+   "png": false,
+   "caption": "Retention as a loss curve: after a skill's own segment ends, its held-out loss is nearly flat across the remaining tens "
+  },
+  {
+   "name": "ts_f4_matrix",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "e23811765340e8ce3746bfae63ee146faa1fff1276857016bf65d17a8457545f",
+   "bytes": 20474,
+   "png": false,
+   "caption": "The checkpoint-by-skill matrix: each skill is scored from its own teach onward, so cells above the diagonal are blank. R"
+  },
+  {
+   "name": "ts_f5_own_vs_final",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "f8c001105ee5e95570b747e369e6dfe73629f0817561869dc87520f950ee296f",
+   "bytes": 9754,
+   "png": false,
+   "caption": "All ten skills hold what they learned: nine end within two rows of their own teach, and for Oriel the four working compo"
+  },
+  {
+   "name": "ts_f6_dose",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "09c079ec89badc8a298fcc0c12ccc1ab915968de23a7768e1d3347cfc1009bbb",
+   "bytes": 10345,
+   "png": false,
+   "caption": "Training dose per skill. COGS received a third of all updates and half of all supervised tokens; the other nine received"
+  },
+  {
+   "name": "ts_f7_loss_vs_accuracy",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "e56ef43f0891c0421dca34f2caa377f23f1025412afe4ad6ca182168e9dae910",
+   "bytes": 7506,
+   "png": false,
+   "caption": "A low held-out loss is necessary but not sufficient for exact-match accuracy: Oriel and Meridian sit at loss levels simi"
+  },
+  {
+   "name": "ts_f8_sentinel_base",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "d3d5b71753475e0a7198213913d393106fdcc0d964c7cf16f29f00845a04a3c8",
+   "bytes": 12991,
+   "png": false,
+   "caption": "The base does not move materially on the measured benchmarks: the 498-item sentinel stays between 348 and 353 correct ac"
+  },
+  {
+   "name": "ts_f9_oriel_components",
+   "group": "ten_skills",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "7dad92a33bc0f6db1b2a475792aab1812b84e3544046d11f4ec754bf1d700488",
+   "bytes": 7335,
+   "png": false,
+   "caption": "The Oriel decline is localized: between the two checkpoints the header, transformed payload, escaping and decoded length"
+  },
+  {
+   "name": "fd_f1_stream",
+   "group": "four_domain",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "47ae53bd36c279f862db21e287efb9d9cf96468698c2ef5f031f33d516c3cfc0",
+   "bytes": 65962,
+   "png": false,
+   "caption": "Three conditions trained on the same four-domain stream. All three learn each domain in turn; the difference between the"
+  },
+  {
+   "name": "fd_f1b_stream_raw",
+   "group": "four_domain",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "5fefa5145e64b2bf101ef5d47e074f0eb23e7838f61fa8313b99be155a1c8023",
+   "bytes": 102101,
+   "png": false,
+   "caption": "The raw per-step training loss behind the smoothed stream figure, for all three conditions on identical axes."
+  },
+  {
+   "name": "fd_f2_bwt",
+   "group": "four_domain",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "cd871c15432855aae9a0a9adae2808ebc7eace8dbd55fa261528a9e8802dc9aa",
+   "bytes": 9398,
+   "png": false,
+   "caption": "Both Learner 1.0 conditions keep the earlier domains within a few thousandths of a nat while LoRA r256 gives back 0.07, "
+  },
+  {
+   "name": "fd_f3_control",
+   "group": "four_domain",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "3796ae19c599599f4d9e66cd52b6f39abdd1ca8edbeacf246bdb1ebe980a074f",
+   "bytes": 6848,
+   "png": false,
+   "caption": "On 8 never-trained control windows the two Learner 1.0 conditions move by about 0.01 nats across the stream and sit abou"
+  },
+  {
+   "name": "fd_f4_validation",
+   "group": "four_domain",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "7544e544e88254e69746e5c68d336f3f40567789ff7989150b7de604b679ba87",
+   "bytes": 33235,
+   "png": false,
+   "caption": "Held-out loss while each domain is trained, against the recorded base reference (dashed, value shown). The Learner 1.0 c"
+  },
+  {
+   "name": "tl_f1_curves",
+   "group": "two_languages",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "8baf60dcc5df8b8d01e9926170bca63356f579b03daaccdfc99cc42a11c1e68e",
+   "bytes": 26081,
+   "png": false,
+   "caption": "Learner 1.0, one-pass recording. Velenic's held-out loss falls from 4.6625 to 2.8880 nats during its own teach and reads"
+  },
+  {
+   "name": "tl_f2_lora_sequential",
+   "group": "two_languages",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "2b77d9e5808b9f00340b955800451710d4150595be23eea3b0efbdeea588d348",
+   "bytes": 7483,
+   "png": false,
+   "caption": "A single adapter learns language 1 (4.35 to 2.22 nats), then learning language 2 pushes language 1 to 6.00 nats, worse t"
+  },
+  {
+   "name": "tl_f3_generation_matrix",
+   "group": "two_languages",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "32ab247897737aed3c92ca391569d057e77080a0933aba2e7b2c18c7bf548e7a",
+   "bytes": 6056,
+   "png": false,
+   "caption": "Where the LoRA adapter answers language-1 prompts in language 2 after the second teach (0.96), Learner 1.0 keeps the two"
+  },
+  {
+   "name": "fx_f1_document_to_learning",
+   "group": "facts",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "f4ac17e1a32feb312bc8de4268518f92d8ae96212d9802e064a02a00a88100f9",
+   "bytes": 7262,
+   "png": false,
+   "caption": "Everything above the dashed line happens before you commit to training, and you can read and edit its output. The second"
+  },
+  {
+   "name": "fx_f3_capability_per_teach",
+   "group": "facts",
+   "ok": true,
+   "error": null,
+   "svg_sha256": "d405203e6ea93a26708851ba8c9bcea3e72f32aaf02ebba969eafaddb696389e",
+   "bytes": 5982,
+   "png": false,
+   "caption": "Teaching does not trade away general capability at any point in a learner's history. The two language checkpoints sit 0."
+  }
+ ],
+ "numeric": [
+  {
+   "figure": "ts_f4_matrix",
+   "ok": true,
+   "detail": "matrix equals tables.json; final row sums to 1,525"
+  },
+  {
+   "figure": "ts_f5_own_vs_final",
+   "ok": true,
+   "detail": "own-end 1,528, final 1,525, own-end minimum 12"
+  },
+  {
+   "figure": "ts_f6_dose",
+   "ok": true,
+   "detail": "updates sum to 63,282; supervised tokens sum to the table total"
+  },
+  {
+   "figure": "ts_f8_sentinel_base",
+   "ok": true,
+   "detail": "11 sentinel points 348-353; MMLU macro recomputed over 57 subjects"
+  },
+  {
+   "figure": "ts_f1_stream",
+   "ok": true,
+   "detail": "63,278 raw points drawn inside the envelope; maximum preserved"
+  },
+  {
+   "figure": "fd_f4_validation",
+   "ok": true,
+   "detail": "12 points per condition per domain; endpoints equal val_curve.jsonl"
+  },
+  {
+   "figure": "fd_f1b_stream_raw",
+   "ok": true,
+   "detail": "1,200 raw points per condition drawn; minimum and maximum preserved for all three conditions"
+  },
+  {
+   "figure": "fd_f2_bwt",
+   "ok": true,
+   "detail": "LoRA per-domain values equal the receipt"
+  },
+  {
+   "figure": "tl_f1_curves",
+   "ok": true,
+   "detail": "each panel's held-out points and training-loss count equal the one-pass recording"
+  }
+ ],
+ "all_ok": true
+}

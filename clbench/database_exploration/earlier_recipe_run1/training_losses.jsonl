@@ -1,0 +1,39 @@
+{"after_question": 1, "examples": 14, "supervised_tokens": 408, "loss_per_example": [0.65081, 0.57811, 0.7415, 0.00752, 0.36105, 0.65312, 0.01066, 0.2163, 0.44848, 0.14803, 0.05721, 4e-05, 0.01051, 0.00037]}
+{"after_question": 2, "examples": 19, "supervised_tokens": 633, "loss_per_example": [0.48302, 0.4418, 0.48131, 0.03423, 0.09866, 0.58245, 0.00964, 0.09782, 0.13678, 0.1371, 0.04762, 0.00464, 0.36737, 0.02953, 0.18974, 0.03592, 0.00361, 0.1015, 0.34601]}
+{"after_question": 3, "examples": 7, "supervised_tokens": 517, "loss_per_example": [0.09616, 0.43776, 0.95038, 1.01701, 0.89643, 0.90029, 0.73554]}
+{"after_question": 4, "examples": 10, "supervised_tokens": 503, "loss_per_example": [0.43535, 0.38473, 0.06303, 0.29126, 0.5156, 0.2684, 0.10083, 0.03761, 0.04388, 0.11614]}
+{"after_question": 5, "examples": 6, "supervised_tokens": 612, "loss_per_example": [0.0513, 0.46654, 0.56803, 0.55464, 0.49894, 0.52556]}
+{"after_question": 6, "examples": 11, "supervised_tokens": 1763, "loss_per_example": [0.0269, 0.67025, 0.41677, 0.23679, 0.55787, 0.53011, 0.50331, 0.47641, 0.43612, 0.41285, 0.40137]}
+{"after_question": 7, "examples": 10, "supervised_tokens": 1885, "loss_per_example": [0.64348, 0.32626, 0.05106, 0.49044, 0.47598, 0.40853, 0.40993, 0.31305, 1.0243, 0.30403]}
+{"after_question": 8, "examples": 12, "supervised_tokens": 1510, "loss_per_example": [0.76862, 0.65956, 0.57843, 0.20817, 0.55713, 0.40818, 0.33578, 0.29107, 0.18733, 0.33796, 0.10524, 0.04492]}
+{"after_question": 9, "examples": 7, "supervised_tokens": 1137, "loss_per_example": [0.1557, 0.13374, 0.63802, 0.63895, 0.55418, 0.53686, 0.4747]}
+{"after_question": 10, "examples": 9, "supervised_tokens": 1523, "loss_per_example": [0.02641, 0.87476, 0.32501, 0.67415, 0.60053, 0.51547, 0.45842, 0.42723, 0.3125]}
+{"after_question": 11, "examples": 9, "supervised_tokens": 1789, "loss_per_example": [0.1711, 0.59528, 0.10248, 0.36968, 0.29256, 0.25074, 0.20368, 0.21243, 0.11922]}
+{"after_question": 12, "examples": 7, "supervised_tokens": 176, "loss_per_example": [0.04898, 0.80973, 0.33427, 0.10292, 0.03592, 0.54899, 0.02126]}
+{"after_question": 13, "examples": 4, "supervised_tokens": 139, "loss_per_example": [0.05944, 0.06632, 0.00417, 0.07833]}
+{"after_question": 14, "examples": 7, "supervised_tokens": 1258, "loss_per_example": [0.02127, 0.54637, 0.4426, 0.20592, 0.3439, 0.3071, 0.25672]}
+{"after_question": 15, "examples": 10, "supervised_tokens": 591, "loss_per_example": [0.024, 0.11419, 0.22997, 0.08172, 0.07723, 0.00015, 0.00842, 5e-05, 0.00046, 0.00098]}
+{"after_question": 16, "examples": 8, "supervised_tokens": 378, "loss_per_example": [0.00553, 0.25091, 0.06343, 0.01197, 0.01278, 0.00081, 0.00387, 3e-05]}
+{"after_question": 17, "examples": 4, "supervised_tokens": 115, "loss_per_example": [0.00293, 3e-05, 0.02506, 1e-05]}
+{"after_question": 18, "examples": 5, "supervised_tokens": 745, "loss_per_example": [0.00186, 0.62281, 0.38328, 0.21651, 0.13819]}
+{"after_question": 19, "examples": 4, "supervised_tokens": 163, "loss_per_example": [9e-05, 0.0013, 0.05887, 1e-05]}
+{"after_question": 20, "examples": 3, "supervised_tokens": 145, "loss_per_example": [3e-05, 0.05529, 0.26148]}
+{"after_question": 21, "examples": 2, "supervised_tokens": 157, "loss_per_example": [3e-05, 0.75349]}
+{"after_question": 22, "examples": 8, "supervised_tokens": 881, "loss_per_example": [4e-05, 0.69112, 0.4128, 0.3881, 0.2607, 0.17336, 0.15446, 0.09988]}
+{"after_question": 23, "examples": 6, "supervised_tokens": 427, "loss_per_example": [3e-05, 0.08118, 0.00012, 6e-05, 0.02142, 6e-05]}
+{"after_question": 24, "examples": 5, "supervised_tokens": 463, "loss_per_example": [2e-05, 0.09476, 2e-05, 0.36858, 0.11715]}
+{"after_question": 25, "examples": 12, "supervised_tokens": 855, "loss_per_example": [2e-05, 0.36659, 2e-05, 0.37289, 0.1562, 0.06911, 0.03757, 0.01377, 0.0257, 0.00012, 0.03913, 0.00354]}
+{"after_question": 26, "examples": 3, "supervised_tokens": 147, "loss_per_example": [2e-05, 0.00701, 0.07219]}
+{"after_question": 27, "examples": 3, "supervised_tokens": 769, "loss_per_example": [1e-05, 0.45406, 0.40997]}
+{"after_question": 28, "examples": 4, "supervised_tokens": 119, "loss_per_example": [1e-05, 0.06075, 0.00014, 9e-05]}
+{"after_question": 29, "examples": 5, "supervised_tokens": 233, "loss_per_example": [2e-05, 0.02856, 0.13429, 0.00317, 0.00203]}
+{"after_question": 30, "examples": 4, "supervised_tokens": 196, "loss_per_example": [2e-05, 0.04045, 2e-05, 1e-05]}
+{"after_question": 31, "examples": 3, "supervised_tokens": 873, "loss_per_example": [1e-05, 0.38179, 0.29192]}
+{"after_question": 32, "examples": 3, "supervised_tokens": 371, "loss_per_example": [1e-05, 0.40835, 0.26922]}
+{"after_question": 33, "examples": 4, "supervised_tokens": 197, "loss_per_example": [1e-05, 0.00054, 0.0594, 1e-05]}
+{"after_question": 34, "examples": 3, "supervised_tokens": 1135, "loss_per_example": [1e-05, 0.25088, 0.20815]}
+{"after_question": 35, "examples": 3, "supervised_tokens": 1015, "loss_per_example": [1e-05, 0.20881, 0.16523]}
+{"after_question": 36, "examples": 3, "supervised_tokens": 497, "loss_per_example": [1e-05, 0.15315, 0.06799]}
+{"after_question": 37, "examples": 6, "supervised_tokens": 446, "loss_per_example": [1e-05, 0.06695, 0.02652, 0.0355, 0.0061, 0.005]}
+{"after_question": 38, "examples": 9, "supervised_tokens": 157, "loss_per_example": [1e-05, 0.0501, 0.04581, 8e-05, 4e-05, 0.00014, 8e-05, 0.00082, 0.29284]}
+{"after_question": 39, "examples": 4, "supervised_tokens": 591, "loss_per_example": [1e-05, 0.45288, 0.38493, 0.24356]}

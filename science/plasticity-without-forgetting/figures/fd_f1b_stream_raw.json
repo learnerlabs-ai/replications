@@ -1,0 +1,53 @@
+{
+ "name": "fd_f1b_stream_raw",
+ "title": "The unsmoothed training loss, one panel per condition",
+ "badge": "measured",
+ "caption": "The raw per-step training loss behind the smoothed stream figure, for all three conditions on identical axes.",
+ "alt": "Three stacked line charts, one per condition, each showing a jagged per-step training loss over 1,200 steps with a heavier smoothed line through it, and vertical rules at the three domain changes.",
+ "width": 880,
+ "height": 1010,
+ "svg_sha256": "5fefa5145e64b2bf101ef5d47e074f0eb23e7838f61fa8313b99be155a1c8023",
+ "sources": [
+  {
+   "path": "plots/data/four_domain/learner_1x/train_curve.jsonl",
+   "sha256": "c801294eae9cc5870af0ea91bee8eeea820ef4cf215be830623ae57b97651f3c"
+  },
+  {
+   "path": "plots/data/four_domain/learner_2x/train_curve.jsonl",
+   "sha256": "51c6a028d6366e5eac0d833e627929aa01078dc4d4e368bd5d7802cb82a2e0c3"
+  },
+  {
+   "path": "plots/data/four_domain/lora_r256/train_curve.jsonl",
+   "sha256": "c7b599fcb8b9eb23d6dfba98936e0f2e9c0f145d58db50693a280901dbf3d500"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "none (thin line: every per-step loss); exponential moving average, span 31 steps (heavy line)",
+ "transforms": [
+  "x axis is the step within the four-domain stream, starting at 1",
+  "the three panels share one x axis and one y axis"
+ ],
+ "plotted": {
+  "learner_1x": {
+   "points": 1200,
+   "min": 0.02754,
+   "max": 3.990269,
+   "first": 2.301792,
+   "last": 2.330341
+  },
+  "learner_2x": {
+   "points": 1200,
+   "min": 0.027169,
+   "max": 3.970512,
+   "first": 2.311683,
+   "last": 2.292278
+  },
+  "lora_r256": {
+   "points": 1200,
+   "min": 0.039695,
+   "max": 4.020514,
+   "first": 2.740994,
+   "last": 2.462539
+  }
+ }
+}

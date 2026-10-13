@@ -1,0 +1,46 @@
+{
+ "name": "fd_f1_stream",
+ "title": "Four domains in sequence: training loss for three conditions",
+ "badge": "measured",
+ "caption": "Three conditions trained on the same four-domain stream. All three learn each domain in turn; the difference between them shows up afterwards, in what they keep.",
+ "alt": "Line chart of training loss over one pass through four domains (US government documents, Yoruba, Amharic, news) for three conditions: Learner 1.0 (1x), Learner 1.0 (2x), LoRA r256.",
+ "width": 880,
+ "height": 600,
+ "svg_sha256": "47ae53bd36c279f862db21e287efb9d9cf96468698c2ef5f031f33d516c3cfc0",
+ "sources": [
+  {
+   "path": "plots/data/four_domain/learner_1x/train_curve.jsonl",
+   "sha256": "c801294eae9cc5870af0ea91bee8eeea820ef4cf215be830623ae57b97651f3c"
+  },
+  {
+   "path": "plots/data/four_domain/learner_2x/train_curve.jsonl",
+   "sha256": "51c6a028d6366e5eac0d833e627929aa01078dc4d4e368bd5d7802cb82a2e0c3"
+  },
+  {
+   "path": "plots/data/four_domain/lora_r256/train_curve.jsonl",
+   "sha256": "c7b599fcb8b9eb23d6dfba98936e0f2e9c0f145d58db50693a280901dbf3d500"
+  }
+ ],
+ "units": "nats per token",
+ "smoothing": "exponential moving average, span 31 steps (lines); none (pale band: raw minimum to maximum for the 1x condition)",
+ "transforms": [
+  "x axis is the step within the four-domain stream, starting at 1"
+ ],
+ "plotted": {
+  "learner_1x": {
+   "points": 1200,
+   "first": 2.301792,
+   "last": 2.330341
+  },
+  "learner_2x": {
+   "points": 1200,
+   "first": 2.311683,
+   "last": 2.292278
+  },
+  "lora_r256": {
+   "points": 1200,
+   "first": 2.740994,
+   "last": 2.462539
+  }
+ }
+}

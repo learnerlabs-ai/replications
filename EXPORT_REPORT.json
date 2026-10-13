@@ -1,0 +1,114 @@
+{
+ "schema": "export_report_v2",
+ "release_schemas": {
+  "train_row_fields_kept": [
+   "id",
+   "skill",
+   "split",
+   "group",
+   "input",
+   "target",
+   "prompt",
+   "source_id",
+   "scorer",
+   "prompt_tokens",
+   "supervised_eos_tokens",
+   "presented_tokens",
+   "domain_row"
+  ],
+  "panel_row_fields_kept": [
+   "id",
+   "skill",
+   "split",
+   "group",
+   "input",
+   "target",
+   "prompt",
+   "source_id",
+   "scorer"
+  ],
+  "task_config_fields_kept": [
+   "id",
+   "source_kind",
+   "banks",
+   "group_overlaps",
+   "source_presented_tokens",
+   "source_supervised_eos_tokens",
+   "max_source_sequence_tokens",
+   "rows_over_256"
+  ],
+  "answer_fields_kept": [
+   "teach_index",
+   "checkpoint_sha8",
+   "skill",
+   "own_teach",
+   "id",
+   "prompt",
+   "target",
+   "output",
+   "correct",
+   "stop_reason",
+   "cap",
+   "scorer"
+  ],
+  "training_loss_fields_kept": [
+   "global_update",
+   "teach_index",
+   "skill",
+   "training_loss",
+   "presented_tokens",
+   "supervised_tokens",
+   "cumulative_presented_tokens",
+   "cumulative_supervised_tokens"
+  ],
+  "held_out_loss_fields_kept": [
+   "global_update",
+   "teach_index",
+   "monitored_skill",
+   "held_out_loss",
+   "panel_rows",
+   "supervised_tokens",
+   "kind"
+  ],
+  "dose_fields_kept": [
+   "teach_index",
+   "skill",
+   "label",
+   "updates_applied",
+   "presented_tokens_trained",
+   "supervised_tokens_trained",
+   "max_sequence_tokens",
+   "cumulative_updates"
+  ]
+ },
+ "policy": "Every exported row passes an explicit allowlist; a field that is not named above is not exported.",
+ "audit": {
+  "result": "pass",
+  "text_files_scanned": 275,
+  "paths_and_binary_figures_scanned": true,
+  "note": "Counts below were taken on the earlier pre-publication tree and were not re-counted for this release tree; the file inventory that describes THIS tree is MANIFEST.json, which is regenerated last."
+ },
+ "acceptance": {
+  "plots_build": "pass",
+  "report_figures": "pass",
+  "four_domain_data": "pass",
+  "publication_guard": "pass",
+  "rescore": "pass",
+  "oriel_components": "pass",
+  "figures_unchanged_by_build": "pass",
+  "api_package_preflight": "pass",
+  "driver_tests": "pass"
+ },
+ "acceptance_note": "Re-run on this tree, not inherited: each command above was executed in this tree and its outcome recorded. The publication guard passes: each of the seven third-party four-domain corpus files it lists has a recorded release decision in science/plasticity-without-forgetting/data/PUBLIC_RELEASE_DISPOSITION.json and keeps the terms of its source. The driver tests are local tests against the documented contract; they are not a new run of the study.",
+ "acceptance_last_line": {
+  "plots_build": "all_ok True n 21",
+  "report_figures": "acq means: [0.1534, 0.1556, 0.1431] | bwt means: [5e-05, -0.00046, 0.05467]",
+  "four_domain_data": "1296 windows match: 1200 training, 32 held-out, 64 control; 307,200 training input tokens, 306,000 next-token targets; no exact window in more than one set",
+  "publication_guard": "ok: no uncleared third-party corpus file is present",
+  "rescore": "ALL CHECKS PASS",
+  "oriel_components": "matches the released results/oriel_components.json: True",
+  "api_package_preflight": "65 scheduled evaluation jobs",
+  "driver_tests": "Ran 27 tests: OK (local, no network, no key)"
+ },
+ "corpus_state": "release"
+}

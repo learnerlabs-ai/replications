@@ -1,0 +1,111 @@
+{
+ "corpora": {
+  "velenic": "data/velenic.txt",
+  "morvath": "data/morvath.txt"
+ },
+ "continuation_frame": "Continue the following text with two more sentences written in the same language as the text itself:\n\n{passage}",
+ "control_frame": "Q: {question}",
+ "max_generated_tokens": 90,
+ "note": "The continuation passages are drawn from a part of each language's space that the taught corpus never uses, so no passage below appears in the training text.",
+ "continuation_prompts": {
+  "velenic": [
+   {
+    "index": 0,
+    "passage": "Vrazlo lozoen masoos. Vorairta nazleir vreskiir vovaave. Zlavriulta vaviir lozo skizaos."
+   },
+   {
+    "index": 1,
+    "passage": "Zerien skiskoirta skiskoen lezlaave. Sevaen zleskeir skavraos. Soniir sonoirta skavraave."
+   },
+   {
+    "index": 2,
+    "passage": "Ralota soro zleriave. Nizeulta sevien vrameave. Vrevroir zeziulta zloveos."
+   },
+   {
+    "index": 3,
+    "passage": "Lozlaulta mazloenta zeleos. Vomaulta voviir vosaos. Zlazloir viskoirta zomeave."
+   },
+   {
+    "index": 4,
+    "passage": "Vavien sovrair lezlienta zasaave. Zana skolo lozlair skizlaave. Zloloir mevreir leniir zamiave."
+   },
+   {
+    "index": 5,
+    "passage": "Lezlienta sesa namoir zozloave. Vramiulta maziir meskeave. Nizeenta nenair zozoave."
+   },
+   {
+    "index": 6,
+    "passage": "Vrazloir skivra zamios. Skozaul vozlita zloseen sazios. Vaskoul sesoirta zozoave."
+   },
+   {
+    "index": 7,
+    "passage": "Zivaul zaska zoroave. Zeziir nozlo zlavriul masoave. Zlavriirta vavien zezien noskios."
+   }
+  ],
+  "morvath": [
+   {
+    "index": 0,
+    "passage": "Gukoid dadraudoig dubaud. Bhuthyg dagybhoik vodrukyd. Draubhaum sudatugoik sudatygug."
+   },
+   {
+    "index": 1,
+    "passage": "Ghoidyd droiguk thaudaud sudraugaug. Krybhug kedadudroik kedakuboik. Kroighyth sukroidroim sukugoim kedrudryk."
+   },
+   {
+    "index": 2,
+    "passage": "Kudryd kygoid vokrudrum. Drykroid vodrudryk droiguk. Gutyg vogybhoik sudabhughoid."
+   },
+   {
+    "index": 3,
+    "passage": "Bhuthyg ghudrum vodathautaum. Gaudroig vodakukraum dubaud vodrygoik. Bhoigaum votykaug kekrybhyk."
+   },
+   {
+    "index": 4,
+    "passage": "Taughoim kegoibhyk kekydoid ketyghoik. Dauboith daboigym thautoith. Bhoikoith voboiduth kedadrubhaud sudathygaug."
+   },
+   {
+    "index": 5,
+    "passage": "Bhaukyd sukautoid sudroiguk vogoitud. Tyghyg sudydroim kekroikoim vodraudroik. Ghubhym daghughauth sukoigyth."
+   },
+   {
+    "index": 6,
+    "passage": "Thaughyk sukroidauk guboik. Tydrud votudoig drauthoid. Drukrauk druthum kebhoighaum."
+   },
+   {
+    "index": 7,
+    "passage": "Drudoik vobhoighaum kedaghyghyth baudroig. Ghudroim kygoid keghukraug daghaudrug. Tykroig sughaudrug kekraubhum vodakroibhyg."
+   }
+  ]
+ },
+ "english_controls": [
+  {
+   "id": "ctl-capital",
+   "question": "What is the capital of France?",
+   "accepted_answers": [
+    "paris"
+   ]
+  },
+  {
+   "id": "ctl-planet",
+   "question": "What planet do we live on?",
+   "accepted_answers": [
+    "earth"
+   ]
+  },
+  {
+   "id": "ctl-week",
+   "question": "How many days are in a week?",
+   "accepted_answers": [
+    "seven",
+    "7"
+   ]
+  },
+  {
+   "id": "ctl-sky",
+   "question": "What color is a clear daytime sky on Earth?",
+   "accepted_answers": [
+    "blue"
+   ]
+  }
+ ]
+}

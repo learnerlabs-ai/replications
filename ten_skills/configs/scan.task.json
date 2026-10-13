@@ -1,0 +1,51 @@
+{
+ "id": "scan",
+ "source_kind": "PUBLIC_SCAN",
+ "banks": {
+  "candidate_train": {
+   "rows": 16117,
+   "sha256": "cea54938e6cca022d855c03022754db03e6fce5dc2b0c5293f2dc4029f990feb"
+  },
+  "pilot_dev": {
+   "rows": 128,
+   "sha256": "59ebb044d97112e8b696501eb3b63f7f5a96c203d1016bf3173e252e18c3b9c2"
+  },
+  "screen": {
+   "rows": 64,
+   "sha256": "ca218980f7e313bd53bf4be88c5eadbb70c329fd3d02763cc65f02c76289c134"
+  },
+  "baseline_confirmation": {
+   "rows": 128,
+   "sha256": "a087a55f6db9323b50aa6131da405551581482ceda608370f3015780b1f4dc66"
+  },
+  "retention": {
+   "rows": 553,
+   "sha256": "4c16ef65d0c5118338040b9b53be1febf3ad53bae7c057435efb8ed34f6004d6"
+  },
+  "final_confirmation": {
+   "rows": 3920,
+   "sha256": "109b1c275ff14ef542233b5818ff8796fbf976a572c1b2c39021b86532161da7"
+  }
+ },
+ "group_overlaps": {
+  "candidate_train|pilot_dev": 0,
+  "candidate_train|screen": 0,
+  "candidate_train|retention": 0,
+  "candidate_train|final_confirmation": 0,
+  "pilot_dev|screen": 0,
+  "pilot_dev|retention": 0,
+  "baseline_confirmation|candidate_train": 0,
+  "baseline_confirmation|pilot_dev": 0,
+  "baseline_confirmation|screen": 0,
+  "baseline_confirmation|retention": 0,
+  "baseline_confirmation|final_confirmation": 0,
+  "retention|screen": 0,
+  "final_confirmation|pilot_dev": 0,
+  "final_confirmation|screen": 0,
+  "final_confirmation|retention": 0
+ },
+ "source_presented_tokens": 817940,
+ "source_supervised_eos_tokens": 486041,
+ "max_source_sequence_tokens": 90,
+ "rows_over_256": 0
+}

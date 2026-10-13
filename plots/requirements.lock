@@ -1,0 +1,4 @@
+python 3.9.6
+no third-party packages; standard library only
+Any CPython 3.9 or later runs this repository's scripts; the version above is the one every
+figure and check in this release was produced with.

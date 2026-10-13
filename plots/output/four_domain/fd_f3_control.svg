@@ -1,0 +1,51 @@
+<svg viewBox="0 0 880 570" width="100%" style="height:auto;display:block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two nearly flat lines near 1.28 nats across four points, one after each domain, with two dashed reference levels near 1.39 nats above them.">
+<rect x="0" y="0" width="880" height="570" fill="#FFFFFF"/>
+<text x="36.0" y="34.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="#14171A">The never-trained control bank</text>
+<rect x="760" y="18" width="84" height="22" rx="11" fill="#FFFFFF" stroke="#2F6E62" stroke-width="1.2"/>
+<text x="802.0" y="33.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#2F6E62">measured</text>
+<line x1="36" y1="63" x2="54" y2="63" stroke="#2F6E62" stroke-width="2.5" stroke-linecap="round"/>
+<text x="60.0" y="68.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="400" fill="#14171A">Learner 1.0 (1x)</text>
+<line x1="203.6" y1="63" x2="221.6" y2="63" stroke="#173B34" stroke-width="2.5" stroke-linecap="round"/>
+<text x="227.6" y="68.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="400" fill="#14171A">Learner 1.0 (2x)</text>
+<rect x="36" y="86" width="808" height="360" rx="5" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.4"/>
+<text x="56.0" y="116.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600" fill="#14171A">Held-out control loss after each domain</text>
+<text x="56.0" y="142.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">8 control windows per measurement, mostly Amharic text; no control window is ever trained; nats</text>
+<line x1="100.0" y1="333.5" x2="824.0" y2="333.5" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="337.5" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">1.30</text>
+<line x1="100.0" y1="257.8" x2="824.0" y2="257.8" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="261.8" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">1.35</text>
+<line x1="100.0" y1="182.1" x2="824.0" y2="182.1" stroke="#DADCD4" stroke-width="1"/>
+<text x="92.0" y="186.1" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">1.40</text>
+<line x1="100.0" y1="164.0" x2="100.0" y2="406.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="100.0" y1="406.0" x2="824.0" y2="406.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="147.2" y1="406.0" x2="147.2" y2="411.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="147.2" y="424.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">base reference</text>
+<line x1="304.6" y1="406.0" x2="304.6" y2="411.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="304.6" y="424.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">US government documents (EN)</text>
+<line x1="462.0" y1="406.0" x2="462.0" y2="411.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="462.0" y="424.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">Yoruba</text>
+<line x1="619.4" y1="406.0" x2="619.4" y2="411.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="619.4" y="424.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">Amharic</text>
+<line x1="776.8" y1="406.0" x2="776.8" y2="411.0" stroke="#DADCD4" stroke-width="1.2"/>
+<text x="776.8" y="424.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#616660">multilingual news</text>
+<text x="462.0" y="442.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">after training</text>
+<polyline points="304.6,359.6 462.0,361.6 619.4,375.7 776.8,373.1" fill="none" stroke="#2F6E62" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="1.0"/>
+<line x1="100.0" y1="194.3" x2="824.0" y2="194.3" stroke="#2F6E62" stroke-width="1.1" stroke-dasharray="4 4"/>
+<circle cx="147.2" cy="194.3" r="3.5" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="304.6" cy="359.6" r="3.5" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="462.0" cy="361.6" r="3.5" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="619.4" cy="375.7" r="3.5" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="776.8" cy="373.1" r="3.5" fill="#2F6E62" stroke="#FFFFFF" stroke-width="1.2"/>
+<polyline points="304.6,349.6 462.0,349.9 619.4,370.8 776.8,369.7" fill="none" stroke="#173B34" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="1.0"/>
+<line x1="100.0" y1="195.7" x2="824.0" y2="195.7" stroke="#173B34" stroke-width="1.1" stroke-dasharray="4 4"/>
+<circle cx="147.2" cy="195.7" r="3.5" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="304.6" cy="349.6" r="3.5" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="462.0" cy="349.9" r="3.5" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="619.4" cy="370.8" r="3.5" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<circle cx="776.8" cy="369.7" r="3.5" fill="#173B34" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="36.0" y="496.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">Both Learner 1.0 conditions were scored on 8 windows of the 64-window control bank after each domain. The LoRA condition was</text>
+<text x="36.0" y="511.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">scored once before and once after the stream on all 64 windows (1.377 to 1.293 nats), a different sample, so it is not drawn on</text>
+<text x="36.0" y="526.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">this axis. Of the 64 control windows 59 are Amharic text; none is a window of the Amharic domain. The dashed levels are each</text>
+<text x="36.0" y="541.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">condition's recorded base reference; the first measurement inside the stream is the one after the first domain. Source:</text>
+<text x="36.0" y="556.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">A_equivalence.json control_domain.</text>
+</svg>

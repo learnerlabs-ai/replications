@@ -1,0 +1,100 @@
+{
+ "name": "ts_f0_key_summary",
+ "title": "Accuracy and retention: every skill at every checkpoint",
+ "badge": "measured",
+ "caption": "One picture of the run: nothing is answered before teaching, each skill jumps at its own teach, and every skill holds its level while the skills after it are taught. 1,525 of 2,250 panel rows are correct at the end, from 0 at the start, and the base line stays flat throughout.",
+ "alt": "Line chart, checkpoints 0 to 10 on the horizontal axis and percent correct on the vertical. A single dot at the origin marks that all ten skills answer nothing before teaching. Ten coloured lines, one per skill, each beginning with a filled dot at the checkpoint where that skill was taught and running flat to the right. A grey dashed line for the base sentinel runs flat near 70 percent across all eleven checkpoints. A legend on the right names the ten skills and the checkpoint each was taught at.",
+ "width": 880,
+ "height": 640,
+ "svg_sha256": "d6f6edf0590e4edf2eefea14b3e59805bba2e1962e7b850887d47d324c9e7806",
+ "sources": [
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": "percent correct (skills: of 225 panel rows each; base: of 498 sentinel items)",
+ "smoothing": "none",
+ "transforms": [
+  "counts divided by their own denominator so the skills and the base share one axis"
+ ],
+ "plotted": {
+  "skills": {
+   "scan": {
+    "taught_at": 1,
+    "at_step_zero": 0,
+    "at_own_teach": 222,
+    "at_final": 222
+   },
+   "meridian_settlement": {
+    "taught_at": 2,
+    "at_step_zero": 0,
+    "at_own_teach": 83,
+    "at_final": 84
+   },
+   "g2p_ady": {
+    "taught_at": 3,
+    "at_step_zero": 0,
+    "at_own_teach": 147,
+    "at_final": 146
+   },
+   "oriel_packet_codec": {
+    "taught_at": 4,
+    "at_step_zero": 0,
+    "at_own_teach": 12,
+    "at_final": 9
+   },
+   "cogs_semantics": {
+    "taught_at": 5,
+    "at_step_zero": 0,
+    "at_own_teach": 225,
+    "at_final": 225
+   },
+   "sable_workflow": {
+    "taught_at": 6,
+    "at_step_zero": 0,
+    "at_own_teach": 198,
+    "at_final": 198
+   },
+   "pcfg_set": {
+    "taught_at": 7,
+    "at_step_zero": 0,
+    "at_own_teach": 174,
+    "at_final": 172
+   },
+   "tessel_lot_allocation": {
+    "taught_at": 8,
+    "at_step_zero": 0,
+    "at_own_teach": 188,
+    "at_final": 188
+   },
+   "juniper_dispatch": {
+    "taught_at": 9,
+    "at_step_zero": 0,
+    "at_own_teach": 118,
+    "at_final": 120
+   },
+   "bracken_intervals": {
+    "taught_at": 10,
+    "at_step_zero": 0,
+    "at_own_teach": 161,
+    "at_final": 161
+   }
+  },
+  "step_zero_total": 0,
+  "final_total": 1525,
+  "base_percent": [
+   70.28,
+   70.28,
+   69.88,
+   69.88,
+   70.28,
+   70.28,
+   70.08,
+   70.28,
+   70.68,
+   70.88,
+   70.48
+  ]
+ }
+}

@@ -1,0 +1,613 @@
+{
+ "demonstration": "teach-in-sequence",
+ "run": "first run",
+ "learner_id": "lrn_e6e5cec719ee",
+ "served_by": "learner-1.0:lrn_e6e5cec719ee",
+ "note_on_how_answers_are_quoted": "No answer in this file carried a trailing-turn fragment; nothing was shortened. Every answer below is the served string byte for byte.",
+ "protocol": {
+  "lessons": [
+   "A, the Kestrel board",
+   "B, the Ondine protocol",
+   "C, Tallow billing"
+  ],
+  "order": "lesson A taught, quizzed; lesson B taught, A and B quizzed; lesson C taught, A, B and C quizzed",
+  "questions_per_lesson": 4,
+  "wordings_per_question": 1,
+  "decoding": "greedy",
+  "frame": "Q: {question}",
+  "attached_at_ask_time": "nothing: no system prompt, no notes, no retrieval, no examples",
+  "grading": "strict, as demos/teach-in-sequence/grader.md specifies; the lenient grade is carried beside it on every row"
+ },
+ "teach_jobs": {
+  "A": "job_e1bf9505d71a",
+  "B": "job_95e681b74924",
+  "C": "job_b0396f814eaf"
+ },
+ "checkpoint_per_stage": {
+  "A_after_teach_A": "ckpt_69e5a936d0dd",
+  "A_after_teach_B": "ckpt_0f812cd49f3e",
+  "B_after_teach_B": "ckpt_0f812cd49f3e",
+  "A_before_teach_C": "ckpt_0f812cd49f3e",
+  "B_before_teach_C": "ckpt_0f812cd49f3e",
+  "A_after_teach_C": "ckpt_33033d2e4b5b",
+  "B_after_teach_C": "ckpt_33033d2e4b5b",
+  "C_after_teach_C": "ckpt_33033d2e4b5b"
+ },
+ "scores": {
+  "A_after_teach_A": {
+   "strict": 4,
+   "n": 4
+  },
+  "A_after_teach_B": {
+   "strict": 4,
+   "n": 4
+  },
+  "B_after_teach_B": {
+   "strict": 4,
+   "n": 4
+  },
+  "A_before_teach_C": {
+   "strict": 4,
+   "n": 4
+  },
+  "B_before_teach_C": {
+   "strict": 4,
+   "n": 4
+  },
+  "A_after_teach_C": {
+   "strict": 4,
+   "n": 4
+  },
+  "B_after_teach_C": {
+   "strict": 4,
+   "n": 4
+  },
+  "C_after_teach_C": {
+   "strict": 3,
+   "n": 4
+  }
+ },
+ "retention": {
+  "A_before_C": 4,
+  "A_after_C": 4,
+  "A_delta": 0,
+  "B_before_C": 4,
+  "B_after_C": 4,
+  "B_delta": 0,
+  "C_after_C": 3,
+  "rows_not_served_by_the_learner": 0
+ },
+ "conditions_written_before_the_run": {
+  "every_earlier_answer_identical_after_lesson_C": true,
+  "movement_inside_the_measured_floor_of_one_row": true,
+  "each_lesson_answered_at_its_own_teach": true,
+  "every_row_measured": true,
+  "every_row_served_by_the_learner": true
+ },
+ "fact_rows": [
+  {
+   "text": "The Kestrel board's processor is called Vane.",
+   "lesson": "A",
+   "origin": "prose"
+  },
+  {
+   "text": "The Kestrel board's memory capacity is 48 gigabytes.",
+   "lesson": "A",
+   "origin": "prose"
+  },
+  {
+   "text": "The Kestrel board's peripheral bus is named Windlass.",
+   "lesson": "A",
+   "origin": "prose"
+  },
+  {
+   "text": "The Kestrel board's throttle temperature is 82 degrees Celsius.",
+   "lesson": "A",
+   "origin": "prose"
+  },
+  {
+   "text": "The Kestrel board's processor is Vane.",
+   "lesson": "A",
+   "origin": "extracted"
+  },
+  {
+   "text": "The Kestrel board's peripheral bus is Windlass.",
+   "lesson": "A",
+   "origin": "extracted"
+  },
+  {
+   "text": "The Ondine protocol's listening port is 7717.",
+   "lesson": "B",
+   "origin": "prose"
+  },
+  {
+   "text": "The Ondine protocol's frame marker is the byte pair 5C A9.",
+   "lesson": "B",
+   "origin": "prose"
+  },
+  {
+   "text": "The Ondine protocol's retry limit is three attempts.",
+   "lesson": "B",
+   "origin": "prose"
+  },
+  {
+   "text": "The Ondine protocol's rolling authentication tokens are called cinders.",
+   "lesson": "B",
+   "origin": "prose"
+  },
+  {
+   "text": "The Ondine protocol's rolling authentication tokens are cinders.",
+   "lesson": "B",
+   "origin": "extracted"
+  },
+  {
+   "text": "The Tallow billing ledger close day is the fifth of the month.",
+   "lesson": "C",
+   "origin": "prose"
+  },
+  {
+   "text": "Tallow billing's internal settlement units are called marks.",
+   "lesson": "C",
+   "origin": "prose"
+  },
+  {
+   "text": "The Tallow billing audit retention period is nine years.",
+   "lesson": "C",
+   "origin": "prose"
+  },
+  {
+   "text": "The approver for Tallow refunds above 500 marks is the Ledger Guild.",
+   "lesson": "C",
+   "origin": "prose"
+  },
+  {
+   "text": "Tallow billing's internal settlement units are marks",
+   "lesson": "C",
+   "origin": "extracted"
+  }
+ ],
+ "fact_row_note": "The rows the fact store held after all three lessons, as GET /v1/facts returns them. `origin` is `extracted` where the row came out of the extraction step and `prose` where it was installed directly as a fact.",
+ "training_telemetry": "The training jobs for this run reported no per-step loss values, so this demonstration has no loss curve and none can be rebuilt from what is published.",
+ "quizzes": {
+  "A_after_teach_A": [
+   {
+    "rid": "kes-core",
+    "lesson": "A",
+    "question": "What is the Kestrel board's processor called?",
+    "accepted_answers": [
+     "vane"
+    ],
+    "answer": "Vane.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_69e5a936d0dd"
+   },
+   {
+    "rid": "kes-ram",
+    "lesson": "A",
+    "question": "How many gigabytes of memory does the Kestrel board ship with?",
+    "accepted_answers": [
+     "48"
+    ],
+    "answer": "48",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_69e5a936d0dd"
+   },
+   {
+    "rid": "kes-bus",
+    "lesson": "A",
+    "question": "What is the Kestrel board's peripheral bus named?",
+    "accepted_answers": [
+     "windlass"
+    ],
+    "answer": "Windlass.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_69e5a936d0dd"
+   },
+   {
+    "rid": "kes-temp",
+    "lesson": "A",
+    "question": "At what temperature does the Kestrel board throttle?",
+    "accepted_answers": [
+     "82"
+    ],
+    "answer": "82 degrees Celsius.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_69e5a936d0dd"
+   }
+  ],
+  "A_after_teach_B": [
+   {
+    "rid": "kes-core",
+    "lesson": "A",
+    "question": "What is the Kestrel board's processor called?",
+    "accepted_answers": [
+     "vane"
+    ],
+    "answer": "Vane.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-ram",
+    "lesson": "A",
+    "question": "How many gigabytes of memory does the Kestrel board ship with?",
+    "accepted_answers": [
+     "48"
+    ],
+    "answer": "48",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-bus",
+    "lesson": "A",
+    "question": "What is the Kestrel board's peripheral bus named?",
+    "accepted_answers": [
+     "windlass"
+    ],
+    "answer": "Windlass.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-temp",
+    "lesson": "A",
+    "question": "At what temperature does the Kestrel board throttle?",
+    "accepted_answers": [
+     "82"
+    ],
+    "answer": "82 degrees Celsius.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   }
+  ],
+  "B_after_teach_B": [
+   {
+    "rid": "ond-port",
+    "lesson": "B",
+    "question": "On which port does the Ondine protocol listen?",
+    "accepted_answers": [
+     "7717"
+    ],
+    "answer": "7717",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-frame",
+    "lesson": "B",
+    "question": "What is the Ondine protocol's frame marker?",
+    "accepted_answers": [
+     "5c a9",
+     "5ca9"
+    ],
+    "answer": "A: The Ondine protocol's frame marker is the byte pair 5C A9.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-retry",
+    "lesson": "B",
+    "question": "How many times does the Ondine protocol retry before failing over?",
+    "accepted_answers": [
+     "three",
+     "3"
+    ],
+    "answer": "three attempts.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-auth",
+    "lesson": "B",
+    "question": "What are the Ondine protocol's rolling authentication tokens called?",
+    "accepted_answers": [
+     "cinder"
+    ],
+    "answer": "cinders.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   }
+  ],
+  "A_before_teach_C": [
+   {
+    "rid": "kes-core",
+    "lesson": "A",
+    "question": "What is the Kestrel board's processor called?",
+    "accepted_answers": [
+     "vane"
+    ],
+    "answer": "Vane.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-ram",
+    "lesson": "A",
+    "question": "How many gigabytes of memory does the Kestrel board ship with?",
+    "accepted_answers": [
+     "48"
+    ],
+    "answer": "48",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-bus",
+    "lesson": "A",
+    "question": "What is the Kestrel board's peripheral bus named?",
+    "accepted_answers": [
+     "windlass"
+    ],
+    "answer": "Windlass.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "kes-temp",
+    "lesson": "A",
+    "question": "At what temperature does the Kestrel board throttle?",
+    "accepted_answers": [
+     "82"
+    ],
+    "answer": "82 degrees Celsius.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   }
+  ],
+  "B_before_teach_C": [
+   {
+    "rid": "ond-port",
+    "lesson": "B",
+    "question": "On which port does the Ondine protocol listen?",
+    "accepted_answers": [
+     "7717"
+    ],
+    "answer": "7717",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-frame",
+    "lesson": "B",
+    "question": "What is the Ondine protocol's frame marker?",
+    "accepted_answers": [
+     "5c a9",
+     "5ca9"
+    ],
+    "answer": "A: The Ondine protocol's frame marker is the byte pair 5C A9.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-retry",
+    "lesson": "B",
+    "question": "How many times does the Ondine protocol retry before failing over?",
+    "accepted_answers": [
+     "three",
+     "3"
+    ],
+    "answer": "three attempts.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   },
+   {
+    "rid": "ond-auth",
+    "lesson": "B",
+    "question": "What are the Ondine protocol's rolling authentication tokens called?",
+    "accepted_answers": [
+     "cinder"
+    ],
+    "answer": "cinders.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_0f812cd49f3e"
+   }
+  ],
+  "A_after_teach_C": [
+   {
+    "rid": "kes-core",
+    "lesson": "A",
+    "question": "What is the Kestrel board's processor called?",
+    "accepted_answers": [
+     "vane"
+    ],
+    "answer": "Vane.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "kes-ram",
+    "lesson": "A",
+    "question": "How many gigabytes of memory does the Kestrel board ship with?",
+    "accepted_answers": [
+     "48"
+    ],
+    "answer": "48",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "kes-bus",
+    "lesson": "A",
+    "question": "What is the Kestrel board's peripheral bus named?",
+    "accepted_answers": [
+     "windlass"
+    ],
+    "answer": "Windlass.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "kes-temp",
+    "lesson": "A",
+    "question": "At what temperature does the Kestrel board throttle?",
+    "accepted_answers": [
+     "82"
+    ],
+    "answer": "82 degrees Celsius.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   }
+  ],
+  "B_after_teach_C": [
+   {
+    "rid": "ond-port",
+    "lesson": "B",
+    "question": "On which port does the Ondine protocol listen?",
+    "accepted_answers": [
+     "7717"
+    ],
+    "answer": "7717",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "ond-frame",
+    "lesson": "B",
+    "question": "What is the Ondine protocol's frame marker?",
+    "accepted_answers": [
+     "5c a9",
+     "5ca9"
+    ],
+    "answer": "A: The Ondine protocol's frame marker is the byte pair 5C A9.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "ond-retry",
+    "lesson": "B",
+    "question": "How many times does the Ondine protocol retry before failing over?",
+    "accepted_answers": [
+     "three",
+     "3"
+    ],
+    "answer": "three attempts.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "ond-auth",
+    "lesson": "B",
+    "question": "What are the Ondine protocol's rolling authentication tokens called?",
+    "accepted_answers": [
+     "cinder"
+    ],
+    "answer": "cinders.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   }
+  ],
+  "C_after_teach_C": [
+   {
+    "rid": "tal-cycle",
+    "lesson": "C",
+    "question": "On which day does Tallow billing close its ledger?",
+    "accepted_answers": [
+     "fifth",
+     "5th"
+    ],
+    "answer": "the fifth of the month.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "tal-currency",
+    "lesson": "C",
+    "question": "In which internal units does Tallow billing settle?",
+    "accepted_answers": [
+     "mark"
+    ],
+    "answer": "Tallow billing settles in Tallow.",
+    "strict": false,
+    "lenient": false,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "tal-audit",
+    "lesson": "C",
+    "question": "For how many years does Tallow billing keep audit trails?",
+    "accepted_answers": [
+     "nine",
+     "9"
+    ],
+    "answer": "nine years",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   },
+   {
+    "rid": "tal-approver",
+    "lesson": "C",
+    "question": "Who must approve Tallow refunds above 500 marks?",
+    "accepted_answers": [
+     "ledger guild"
+    ],
+    "answer": "the Ledger Guild.",
+    "strict": true,
+    "lenient": true,
+    "served_by": "learner-1.0:lrn_e6e5cec719ee",
+    "checkpoint": "ckpt_33033d2e4b5b"
+   }
+  ]
+ }
+}

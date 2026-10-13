@@ -1,0 +1,146 @@
+{
+ "demo": "two-languages",
+ "recording": "Learner 1.0, one pass",
+ "kind": "two invented languages of about 22,000 words each, taught one after the other into one learner, every training window presented exactly once",
+ "units": "nats, next-token cross-entropy; generation scores are scorer means over eight prompts, not sentence accuracy",
+ "protocol": {
+  "order": [
+   "velenic",
+   "morvath"
+  ],
+  "batch_size": 1,
+  "window_tokens": 256,
+  "presentation": "every training window exactly once, in a fixed order; no replacement and no repeated pass",
+  "training_windows": {
+   "velenic": 274,
+   "morvath": 353
+  },
+  "updates": 627,
+  "presented_training_tokens": 160512,
+  "held_out_windows_per_language": 2,
+  "windows": "data/windows_velenic.jsonl and data/windows_morvath.jsonl, in the order they were trained, with the held-out windows at the end"
+ },
+ "held_out_loss_nats": {
+  "velenic": {
+   "before": 4.662548,
+   "after_language_1": 2.888012,
+   "after_language_2": 2.88709
+  },
+  "morvath": {
+   "before": 4.415003,
+   "after_language_1": 4.363559,
+   "after_language_2": 2.284159
+  }
+ },
+ "held_out_change": {
+  "velenic_during_its_teach": 1.7745,
+  "morvath_during_its_teach": 2.0794,
+  "velenic_after_morvath_was_taught": -0.0009,
+  "reading": "the first two are loss reductions on the two held-out windows of the language being taught; the third is the change in the first language's held-out loss across the second teach, where a value near zero means it was kept"
+ },
+ "training_pool_loss_reduction_nats": {
+  "velenic": 1.8611,
+  "morvath": 2.1825,
+  "reading": "measured on the training windows themselves, before and after each teach; not a held-out measurement and not comparable with the held-out table"
+ },
+ "training_text_probe_on_language_1_after_language_2_nats": 0.0011,
+ "english_controls": {
+  "before": "4/4",
+  "after_language_1": "4/4",
+  "after_language_2": "4/4"
+ },
+ "generation_means": {
+  "before": {
+   "velenic": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.1375,
+     "mean_morph_valid": 0.25,
+     "mean_contamination": 0.0
+    }
+   },
+   "morvath": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0,
+     "mean_morph_valid": 0.0,
+     "mean_contamination": 0.0
+    }
+   }
+  },
+  "after_language_1": {
+   "velenic": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0833,
+     "mean_morph_valid": 0.125,
+     "mean_contamination": 0.0
+    },
+    "t09": {
+     "n": 8,
+     "mean_lexicon_hit": 0.1667,
+     "mean_morph_valid": 0.375,
+     "mean_contamination": 0.0
+    }
+   },
+   "morvath": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0,
+     "mean_morph_valid": 0.0,
+     "mean_contamination": 0.0
+    },
+    "t09": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0,
+     "mean_morph_valid": 0.0,
+     "mean_contamination": 0.0
+    }
+   }
+  },
+  "after_language_2": {
+   "velenic": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.2083,
+     "mean_morph_valid": 0.25,
+     "mean_contamination": 0.0
+    },
+    "t09": {
+     "n": 8,
+     "mean_lexicon_hit": 0.1637,
+     "mean_morph_valid": 0.375,
+     "mean_contamination": 0.0
+    }
+   },
+   "morvath": {
+    "greedy": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0,
+     "mean_morph_valid": 0.0,
+     "mean_contamination": 0.0
+    },
+    "t09": {
+     "n": 8,
+     "mean_lexicon_hit": 0.0,
+     "mean_morph_valid": 0.0,
+     "mean_contamination": 0.0
+    }
+   }
+  }
+ },
+ "generations": "answers/generations.json (80 continuations and 12 English controls, verbatim)",
+ "training_loss": "data/training-loss.jsonl (627 updates)",
+ "comparator": {
+  "what": "a low-rank adapter of matched trainable size, given the same bytes in the same order; the original comparator recording, with its own training schedule",
+  "language_1_after_language_2_nats": 3.78,
+  "identity_swap_fraction": 0.96,
+  "source": "data/comparator-standard-adapter.json"
+ },
+ "limits": [
+  "single seed",
+  "two held-out windows per language",
+  "the adapter recording is the original comparator and is not a matched one-pass comparison",
+  "the continuation probe shows no consistent gain in vocabulary or morphology scores"
+ ]
+}

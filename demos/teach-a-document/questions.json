@@ -1,0 +1,243 @@
+{
+ "document": "data/brindlemoor-handbook.md",
+ "frame": "Q: {question}",
+ "wordings_per_fact": 2,
+ "asked_in_this_run": [
+  "L01-founded",
+  "L02-hq",
+  "L03-flagship",
+  "L04-second",
+  "L05-sla",
+  "L06-retention",
+  "L07-reimburse",
+  "L08-opening"
+ ],
+ "note": "The document carries 15 labelled facts. This run asked the first 8, which is what the published result covers. The other 7 are here because they are part of the document and a replication may want them.",
+ "facts": [
+  {
+   "id": "L01-founded",
+   "expected": "2019",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "In what year was Brindlemoor Analytics founded?"
+    },
+    {
+     "wording": 1,
+     "question": "What year did Brindlemoor Analytics start?"
+    }
+   ]
+  },
+  {
+   "id": "L02-hq",
+   "expected": "Thornbury",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What city is Brindlemoor Analytics headquartered in?"
+    },
+    {
+     "wording": 1,
+     "question": "Where is the Brindlemoor Analytics head office?"
+    }
+   ]
+  },
+  {
+   "id": "L03-flagship",
+   "expected": "Quillstream",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is Brindlemoor Analytics' flagship product?"
+    },
+    {
+     "wording": 1,
+     "question": "Name the flagship product of Brindlemoor Analytics."
+    }
+   ]
+  },
+  {
+   "id": "L04-second",
+   "expected": "Marlowe Grid",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is Brindlemoor Analytics' second product?"
+    },
+    {
+     "wording": 1,
+     "question": "Besides the flagship, which product does Brindlemoor sell?"
+    }
+   ]
+  },
+  {
+   "id": "L05-sla",
+   "expected": "4 hours",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the support SLA at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "How long is Brindlemoor's support service level agreement?"
+    }
+   ]
+  },
+  {
+   "id": "L06-retention",
+   "expected": "540 days",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the data retention window at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "How long does Brindlemoor retain data for?"
+    }
+   ]
+  },
+  {
+   "id": "L07-reimburse",
+   "expected": "$2,400",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the quarterly reimbursement cap at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "How much can a Brindlemoor employee claim per quarter?"
+    }
+   ]
+  },
+  {
+   "id": "L08-opening",
+   "expected": "09:30",
+   "asked_in_this_run": true,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What time does the Brindlemoor Analytics office open?"
+    },
+    {
+     "wording": 1,
+     "question": "State the Brindlemoor office opening time."
+    }
+   ]
+  },
+  {
+   "id": "L09-retries",
+   "expected": "7",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the value of BRINDLE_MAX_RETRIES?"
+    },
+    {
+     "wording": 1,
+     "question": "How many retries does the Brindlemoor default constant allow?"
+    }
+   ]
+  },
+  {
+   "id": "L10-channel",
+   "expected": "#vesper-one",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the escalation channel at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "Which channel should a Brindlemoor incident be posted to first?"
+    }
+   ]
+  },
+  {
+   "id": "L11-sev",
+   "expected": "Sev-Zero",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the top incident tier at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "Name Brindlemoor's most severe incident classification."
+    }
+   ]
+  },
+  {
+   "id": "L12-security",
+   "expected": "Halden Vry",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "Who is the security contact at Brindlemoor Analytics?"
+    },
+    {
+     "wording": 1,
+     "question": "Which person owns the disclosure timeline at Brindlemoor?"
+    }
+   ]
+  },
+  {
+   "id": "L13-buddy",
+   "expected": "Lanternkeeper",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the Brindlemoor new-joiner buddy programme called?"
+    },
+    {
+     "wording": 1,
+     "question": "Name the Brindlemoor programme that pairs new joiners with a buddy."
+    }
+   ]
+  },
+  {
+   "id": "L14-summit",
+   "expected": "Vesper Summit",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is Brindlemoor Analytics' annual company gathering called?"
+    },
+    {
+     "wording": 1,
+     "question": "Name the yearly Brindlemoor company event."
+    }
+   ]
+  },
+  {
+   "id": "L15-wiki",
+   "expected": "Foxglove",
+   "asked_in_this_run": false,
+   "questions": [
+    {
+     "wording": 0,
+     "question": "What is the Brindlemoor internal wiki codenamed?"
+    },
+    {
+     "wording": 1,
+     "question": "What codename does Brindlemoor use for its internal wiki?"
+    }
+   ]
+  }
+ ]
+}

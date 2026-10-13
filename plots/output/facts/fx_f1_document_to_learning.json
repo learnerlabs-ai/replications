@@ -1,0 +1,18 @@
+{
+ "name": "fx_f1_document_to_learning",
+ "badge": "schematic",
+ "static": true,
+ "caption": "Everything above the dashed line happens before you commit to training, and you can read and edit its output. The second path, below the line, has no preparation step and needs none.",
+ "alt": "How a document becomes learning. A document is read and turned into short factual statements by two passes, one rule-based and one that asks a language model; the two sets are combined, screened and de-duplicated. The resulting fact rows are shown to you and can be edited before anything is trained. A training job then writes them into the weights and produces a new pinned checkpoint, which answers questions with nothing attached to them. A second route skips the fact step: a corpus of raw text goes straight into the training job, which is how the two invented languages were taught.",
+ "width": 880,
+ "height": 486,
+ "svg_sha256": "f4ac17e1a32feb312bc8de4268518f92d8ae96212d9802e064a02a00a88100f9",
+ "sources": [
+  {
+   "path": "content/facts.html",
+   "note": "inline figure, extracted unchanged; values are those of the fact-study recordings quoted on the page"
+  }
+ ],
+ "smoothing": "none",
+ "transforms": []
+}

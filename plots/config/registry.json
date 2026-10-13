@@ -1,0 +1,55 @@
+{
+ "schema": "figure_registry_v1",
+ "style": "house (Plasticity Without Forgetting family): 880-wide SVG, Inter, teal #2F6E62 / deep #173B34 / amber #B4762A, ink #14171A, muted #616660, rule #DADCD4; measured/schematic badge; direct labels; captions carry the takeaway",
+ "groups": [
+  {
+   "name": "ten_skills",
+   "module": "ten_skills",
+   "figures": [
+    "ts_f0_key_summary",
+    "ts_f1_stream",
+    "ts_f2_per_skill",
+    "ts_f2z_per_skill_zoom",
+    "ts_f3_retention",
+    "ts_f4_matrix",
+    "ts_f5_own_vs_final",
+    "ts_f6_dose",
+    "ts_f7_loss_vs_accuracy",
+    "ts_f8_sentinel_base",
+    "ts_f9_oriel_components"
+   ]
+  },
+  {
+   "name": "four_domain",
+   "module": "four_domain",
+   "figures": [
+    "fd_f1_stream",
+    "fd_f1b_stream_raw",
+    "fd_f2_bwt",
+    "fd_f3_control",
+    "fd_f4_validation"
+   ]
+  },
+  {
+   "name": "two_languages",
+   "module": "two_languages",
+   "figures": [
+    "tl_f1_curves",
+    "tl_f2_lora_sequential",
+    "tl_f3_generation_matrix"
+   ]
+  },
+  {
+   "name": "facts",
+   "module": null,
+   "static": true,
+   "figures": [
+    "fx_f1_document_to_learning",
+    "fx_f3_capability_per_teach"
+   ],
+   "figure_numbers": {
+    "fx_f3_capability_per_teach": 3
+   }
+  }
+ ]
+}

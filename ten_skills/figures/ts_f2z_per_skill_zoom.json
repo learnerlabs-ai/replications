@@ -1,0 +1,79 @@
+{
+ "name": "ts_f2z_per_skill_zoom",
+ "title": "Each skill during its own teach, zoomed: every panel has its own loss scale",
+ "badge": "measured",
+ "caption": "The same ten panels with a separate loss scale per panel, to show the shape of each curve. Levels are not comparable across panels in this view; use the shared-scale figure for that.",
+ "alt": "Ten small panels, one per skill in taught order, each with a pale band of raw training loss, a teal smoothed training-loss line and an amber held-out-loss line on a log scale against updates within the skill.",
+ "width": 880,
+ "height": 1540,
+ "svg_sha256": "594cd69ae869884bfe64d430b5840e081695c8e1fbb59025c5db2f083880e16b",
+ "sources": [
+  {
+   "path": "plots/data/series/training_loss.json",
+   "sha256": "041ea3de037d7fa97e416ded3b154192fa4aa56da94c10e1a4112f2555bd14b9"
+  },
+  {
+   "path": "plots/data/series/held_out_loss.json",
+   "sha256": "4f8c3daf5926e990910d6467cc2df07246953d8b2c89f4c38b056b149ed001ee"
+  }
+ ],
+ "units": "nats per supervised token",
+ "smoothing": "exponential moving average, span 31 updates (teal line); none (band, amber line)",
+ "transforms": [
+  "values below the axis minimum drawn at the axis minimum",
+  "band: per-slice minimum and maximum of the raw loss (extrema preserved)",
+  "line: smoothed series sampled at up to 700 evenly spaced updates"
+ ],
+ "plotted": {
+  "scan": {
+   "updates": 9850,
+   "monitor_points": 394,
+   "last_monitored_held_out_loss": 9.098981086967327e-05
+  },
+  "meridian_settlement": {
+   "updates": 3557,
+   "monitor_points": 143,
+   "last_monitored_held_out_loss": 0.15502683332325606
+  },
+  "g2p_ady": {
+   "updates": 3600,
+   "monitor_points": 145,
+   "last_monitored_held_out_loss": 0.37247458747529155
+  },
+  "oriel_packet_codec": {
+   "updates": 3568,
+   "monitor_points": 143,
+   "last_monitored_held_out_loss": 0.05915667493922674
+  },
+  "cogs_semantics": {
+   "updates": 21309,
+   "monitor_points": 853,
+   "last_monitored_held_out_loss": 0.0006108950737005906
+  },
+  "sable_workflow": {
+   "updates": 3911,
+   "monitor_points": 158,
+   "last_monitored_held_out_loss": 0.031109907370960543
+  },
+  "pcfg_set": {
+   "updates": 7871,
+   "monitor_points": 2,
+   "last_monitored_held_out_loss": 0.03395169883349974
+  },
+  "tessel_lot_allocation": {
+   "updates": 2835,
+   "monitor_points": 2,
+   "last_monitored_held_out_loss": 0.044963409726391734
+  },
+  "juniper_dispatch": {
+   "updates": 3025,
+   "monitor_points": 133,
+   "last_monitored_held_out_loss": 0.015081981664231364
+  },
+  "bracken_intervals": {
+   "updates": 3756,
+   "monitor_points": 163,
+   "last_monitored_held_out_loss": 0.09342701813811888
+  }
+ }
+}

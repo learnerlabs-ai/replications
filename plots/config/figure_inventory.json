@@ -1,0 +1,512 @@
+{
+ "schema": "figure_inventory_v1",
+ "note": "Every figure shown in the articles. Paths are relative to the repository root.",
+ "n": 30,
+ "figures": [
+  {
+   "route": "/",
+   "figure": "home_hero_illustration",
+   "kind": "hand-made, no data",
+   "files": null,
+   "sidecar": null,
+   "generator": null,
+   "data": [],
+   "sha256": "74e75470c3bc974b5876a6af513359acc8a793df97e44941de217f3d7db84a73",
+   "status": "Illustration. Hand-drawn artwork from the existing homepage; it shows no data."
+  },
+  {
+   "route": "/",
+   "figure": "home_rule_ornament",
+   "kind": "decoration, no data",
+   "files": null,
+   "sidecar": null,
+   "generator": null,
+   "data": [],
+   "sha256": null,
+   "status": "A 200 by 12 decorative rule under a heading."
+  },
+  {
+   "route": "/",
+   "figure": "ts_f5_own_vs_final",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f5_own_vs_final.svg",
+   "sidecar": "ten_skills/figures/ts_f5_own_vs_final.json",
+   "generator": "python3 plots/build.py ts_f5_own_vs_final",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "f8c001105ee5e95570b747e369e6dfe73629f0817561869dc87520f950ee296f",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f5_own_vs_final",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f5_own_vs_final.svg",
+   "sidecar": "ten_skills/figures/ts_f5_own_vs_final.json",
+   "generator": "python3 plots/build.py ts_f5_own_vs_final",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "f8c001105ee5e95570b747e369e6dfe73629f0817561869dc87520f950ee296f",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_schematic_training_unit",
+   "kind": "hand-made, no data",
+   "files": null,
+   "sidecar": null,
+   "generator": null,
+   "data": [],
+   "sha256": "a0481e8e33f4e678a6ca7026493c69660633cf5689b3f3c8b4e9979b507d0795",
+   "status": "Schematic. Written by hand in the article to show the order of operations in one update; it shows no data."
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f4_matrix",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f4_matrix.svg",
+   "sidecar": "ten_skills/figures/ts_f4_matrix.json",
+   "generator": "python3 plots/build.py ts_f4_matrix",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "e23811765340e8ce3746bfae63ee146faa1fff1276857016bf65d17a8457545f",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f3_retention",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f3_retention.svg",
+   "sidecar": "ten_skills/figures/ts_f3_retention.json",
+   "generator": "python3 plots/build.py ts_f3_retention",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "dd4bd680731f0f0c4f86f13f638c7d2bfe18c0bb3cec61861003056bf7ce1ae2",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f2z_per_skill_zoom",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f2z_per_skill_zoom.svg",
+   "sidecar": "ten_skills/figures/ts_f2z_per_skill_zoom.json",
+   "generator": "python3 plots/build.py ts_f2z_per_skill_zoom",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "03c08152cd6c0a4bb6ec0f282cb4e9fbf492fc30864ba1cb3772fc6a6fd3b884",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f1_stream",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f1_stream.svg",
+   "sidecar": "ten_skills/figures/ts_f1_stream.json",
+   "generator": "python3 plots/build.py ts_f1_stream",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "32d81a366280161a7c61d07f9c9a129e64a4028898a8fa65336a5f5f173b10be",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f7_loss_vs_accuracy",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f7_loss_vs_accuracy.svg",
+   "sidecar": "ten_skills/figures/ts_f7_loss_vs_accuracy.json",
+   "generator": "python3 plots/build.py ts_f7_loss_vs_accuracy",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "e56ef43f0891c0421dca34f2caa377f23f1025412afe4ad6ca182168e9dae910",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f6_dose",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f6_dose.svg",
+   "sidecar": "ten_skills/figures/ts_f6_dose.json",
+   "generator": "python3 plots/build.py ts_f6_dose",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "09c079ec89badc8a298fcc0c12ccc1ab915968de23a7768e1d3347cfc1009bbb",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f9_oriel_components",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f9_oriel_components.svg",
+   "sidecar": "ten_skills/figures/ts_f9_oriel_components.json",
+   "generator": "python3 plots/build.py ts_f9_oriel_components",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "7dad92a33bc0f6db1b2a475792aab1812b84e3544046d11f4ec754bf1d700488",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/ten-skills",
+   "figure": "ts_f8_sentinel_base",
+   "kind": "generated SVG (standard library only)",
+   "files": "ten_skills/figures/ts_f8_sentinel_base.svg",
+   "sidecar": "ten_skills/figures/ts_f8_sentinel_base.json",
+   "generator": "python3 plots/build.py ts_f8_sentinel_base",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/derived/",
+    "plots/data/series/",
+    "plots/data/skill_profiles.json"
+   ],
+   "sha256": "d3d5b71753475e0a7198213913d393106fdcc0d964c7cf16f29f00845a04a3c8",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fd_f1_stream",
+   "kind": "generated SVG (standard library only)",
+   "files": "science/plasticity-without-forgetting/figures/fd_f1_stream.svg",
+   "sidecar": "science/plasticity-without-forgetting/figures/fd_f1_stream.json",
+   "generator": "python3 plots/build.py fd_f1_stream",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/four_domain/"
+   ],
+   "sha256": "47ae53bd36c279f862db21e287efb9d9cf96468698c2ef5f031f33d516c3cfc0",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fd_f1b_stream_raw",
+   "kind": "generated SVG (standard library only)",
+   "files": "science/plasticity-without-forgetting/figures/fd_f1b_stream_raw.svg",
+   "sidecar": "science/plasticity-without-forgetting/figures/fd_f1b_stream_raw.json",
+   "generator": "python3 plots/build.py fd_f1b_stream_raw",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/four_domain/"
+   ],
+   "sha256": "5fefa5145e64b2bf101ef5d47e074f0eb23e7838f61fa8313b99be155a1c8023",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fd_f2_bwt",
+   "kind": "generated SVG (standard library only)",
+   "files": "science/plasticity-without-forgetting/figures/fd_f2_bwt.svg",
+   "sidecar": "science/plasticity-without-forgetting/figures/fd_f2_bwt.json",
+   "generator": "python3 plots/build.py fd_f2_bwt",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/four_domain/"
+   ],
+   "sha256": "2297c5c2e70f33a0070e0c900a69654ffc78c50eded48b4f6b7fb240f7cb86e6",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fd_f3_control",
+   "kind": "generated SVG (standard library only)",
+   "files": "science/plasticity-without-forgetting/figures/fd_f3_control.svg",
+   "sidecar": "science/plasticity-without-forgetting/figures/fd_f3_control.json",
+   "generator": "python3 plots/build.py fd_f3_control",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/four_domain/"
+   ],
+   "sha256": "3796ae19c599599f4d9e66cd52b6f39abdd1ca8edbeacf246bdb1ebe980a074f",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fd_f4_validation",
+   "kind": "generated SVG (standard library only)",
+   "files": "science/plasticity-without-forgetting/figures/fd_f4_validation.svg",
+   "sidecar": "science/plasticity-without-forgetting/figures/fd_f4_validation.json",
+   "generator": "python3 plots/build.py fd_f4_validation",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/four_domain/"
+   ],
+   "sha256": "efcb977ae9c6b58b996e26027590a11cc9138788ec3c6ee65bea0c79e2b95cd5",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig1_stream",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig1_stream.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig1_stream.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "5a5f0f8b03c6c0a934f8f05a53a8f0fbdbe8343f2c8cf03b6d180b6e8cf69cef",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig2_bwt",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig2_bwt.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig2_bwt.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "9ec640446fd38ab54b12dda5256009a866c3ec4266f1053343915600fd5696b5",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig3_acquisition",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig3_acquisition.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig3_acquisition.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "c07f201eb9c0ae1d988c284fc2d458f47556a1420ab680fad4d7f189c2f2ffae",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig6_summary",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig6_summary.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig6_summary.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "6c660f5e76114b88030999c9f8af5a51b268fc5814fec89a692eac9b30fac268",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig7_lr_ablation",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig7_lr_ablation.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig7_lr_ablation.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "2096482f60bd8fdacdc9615a4431d77d2cc580e73ba5496a37bfbf265b7785f9",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig4_speed",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig4_speed.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig4_speed.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "3a706a592e7eb3c78003eeb25150ca33dfce70fd3845cd7bf18d486c239b74ee",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/science/report",
+   "figure": "fig5_control",
+   "kind": "generated PNG (matplotlib)",
+   "files": "science/plasticity-without-forgetting/figures/report/fig5_control.png",
+   "sidecar": "science/plasticity-without-forgetting/figures/report/fig5_control.json",
+   "generator": "python3 plots/report_figures.py",
+   "style": "set at the top of plots/report_figures.py",
+   "data": [
+    "plots/data/four_domain/lora_lr2e-4/A_equivalence.json",
+    "plots/data/four_domain/lora_lr2e-4/train_curve.jsonl",
+    "plots/data/four_domain/lora_lr2e-4/val_curve.jsonl",
+    "plots/data/four_domain/learner_2x/A_equivalence.json",
+    "plots/data/four_domain/learner_2x/train_curve.jsonl",
+    "plots/data/four_domain/learner_2x/val_curve.jsonl",
+    "plots/data/four_domain/lora_r256/A_equivalence.json",
+    "plots/data/four_domain/lora_r256/train_curve.jsonl",
+    "plots/data/four_domain/lora_r256/val_curve.jsonl",
+    "plots/data/four_domain/learner_1x/A_equivalence.json",
+    "plots/data/four_domain/learner_1x/train_curve.jsonl",
+    "plots/data/four_domain/learner_1x/val_curve.jsonl"
+   ],
+   "sha256": "0158dd870398065c1eae0049e7211f930b1349960335c6d617f858c44d364491",
+   "status": "plotted values and inputs rebuild exactly; PNG bytes are the same under the matplotlib version in plots/requirements-report.txt"
+  },
+  {
+   "route": "/demos/skills/two-languages",
+   "figure": "tl_f1_curves",
+   "kind": "generated SVG (standard library only)",
+   "files": "demos/two-languages/figures/tl_f1_curves.svg",
+   "sidecar": "demos/two-languages/figures/tl_f1_curves.json",
+   "generator": "python3 plots/build.py tl_f1_curves",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/two_languages.json"
+   ],
+   "sha256": "8c62cc5242f68afdcb97057c4b2f089098cb26fac456f27092e1d43b00fbe72e",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/two-languages",
+   "figure": "tl_f2_lora_sequential",
+   "kind": "generated SVG (standard library only)",
+   "files": "demos/two-languages/figures/tl_f2_lora_sequential.svg",
+   "sidecar": "demos/two-languages/figures/tl_f2_lora_sequential.json",
+   "generator": "python3 plots/build.py tl_f2_lora_sequential",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/two_languages.json"
+   ],
+   "sha256": "450ef5ca45a67609d52042304e705ac91962b4d614909987e301eec3b95c7bd8",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/skills/two-languages",
+   "figure": "tl_f3_generation_matrix",
+   "kind": "generated SVG (standard library only)",
+   "files": "demos/two-languages/figures/tl_f3_generation_matrix.svg",
+   "sidecar": "demos/two-languages/figures/tl_f3_generation_matrix.json",
+   "generator": "python3 plots/build.py tl_f3_generation_matrix",
+   "style": "plots/style/",
+   "data": [
+    "plots/data/two_languages.json"
+   ],
+   "sha256": "9be8c3430fc10d5117fb94c3babb9dca23a0b2a01e74059faf9d966018ab4ea8",
+   "status": "rebuilds byte-identical"
+  },
+  {
+   "route": "/demos/facts",
+   "figure": "fx_f1_document_to_learning",
+   "kind": "static figure, drawn by hand in the page",
+   "files": "plots/output/facts/fx_f1_document_to_learning.svg",
+   "sidecar": "plots/output/facts/fx_f1_document_to_learning.json",
+   "generator": null,
+   "data": [],
+   "sha256": "f4ac17e1a32feb312bc8de4268518f92d8ae96212d9802e064a02a00a88100f9",
+   "status": "not generated from a data file by code; the sidecar records the caption and the values are those of the recordings listed under data"
+  },
+  {
+   "route": "/demos/facts",
+   "figure": "fx_f3_capability_per_teach",
+   "kind": "static figure, drawn by hand in the page",
+   "files": "plots/output/facts/fx_f3_capability_per_teach.svg",
+   "sidecar": "plots/output/facts/fx_f3_capability_per_teach.json",
+   "generator": null,
+   "data": [
+    "verifiers/battery/TRAJECTORY.md",
+    "answers/"
+   ],
+   "sha256": "d405203e6ea93a26708851ba8c9bcea3e72f32aaf02ebba969eafaddb696389e",
+   "status": "not generated from a data file by code; the sidecar records the caption and the values are those of the recordings listed under data"
+  }
+ ]
+}

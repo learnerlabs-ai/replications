@@ -1,0 +1,574 @@
+{
+ "domains": [
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     2463,
+     4925,
+     7388,
+     9850
+    ],
+    "max_sequence_tokens": 90,
+    "presented_tokens": 499982,
+    "rows": 9850,
+    "supervised_eos_tokens": 297232
+   },
+   "domain": "scan",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 1,
+   "scored_panel": {
+    "bytes": 101590,
+    "dropped_research_fields": [
+     "metadata",
+     "source_id",
+     "split"
+    ],
+    "path": "panels/scan.jsonl",
+    "rows": 225,
+    "scorers": [
+     "scan_actions"
+    ],
+    "sha256": "b285e349684543b3de0b530b49ace231b96d2d97a78763158aaf21cf625855ee"
+   },
+   "training": {
+    "bytes": 2694059,
+    "path": "train/01_scan.jsonl",
+    "rows": 9850,
+    "sha256": "ce839b817302940d9c51863e9f4f21e217d51f559d8a388a3a7a659b7a91434d"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     890,
+     1779,
+     2668,
+     3557
+    ],
+    "max_sequence_tokens": 113,
+    "presented_tokens": 349925,
+    "rows": 3557,
+    "supervised_eos_tokens": 68159
+   },
+   "domain": "meridian_settlement",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 2,
+   "scored_panel": {
+    "bytes": 162326,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/meridian_settlement.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "0d8f97cb529e1d9b6280a05c276b340bca01b4166a635cf6fcacda7a3891381c"
+   },
+   "training": {
+    "bytes": 1604310,
+    "path": "train/02_meridian_settlement.jsonl",
+    "rows": 3557,
+    "sha256": "7c3bb2c9fd2b48a5dc3260300f66e87e8707962addeba7f47b3253166f4af06c"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     900,
+     1800,
+     2700,
+     3600
+    ],
+    "max_sequence_tokens": 92,
+    "presented_tokens": 232037,
+    "rows": 3600,
+    "supervised_eos_tokens": 42122
+   },
+   "domain": "g2p_ady",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 3,
+   "scored_panel": {
+    "bytes": 110058,
+    "dropped_research_fields": [
+     "source_line",
+     "source_split"
+    ],
+    "path": "panels/g2p_ady.jsonl",
+    "rows": 225,
+    "scorers": [
+     "phoneme_sequence"
+    ],
+    "sha256": "02a24b98d535f29f0751c96d6edb45efdd7ef753978357427b47fe4c7e680fb5"
+   },
+   "training": {
+    "bytes": 1121366,
+    "path": "train/03_g2p_ady.jsonl",
+    "rows": 3600,
+    "sha256": "fd16c8748d51b5d7464371fa3e9f8e50ea12760530f5e4d12687862742a927a3"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     892,
+     1784,
+     2676,
+     3568
+    ],
+    "max_sequence_tokens": 140,
+    "presented_tokens": 349908,
+    "rows": 3568,
+    "supervised_eos_tokens": 179890
+   },
+   "domain": "oriel_packet_codec",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 4,
+   "scored_panel": {
+    "bytes": 106200,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/oriel_packet_codec.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "96d87416ff790cab6bc6e5610062304f1f74d2922245eaefb8ca4dbc852b3e8d"
+   },
+   "training": {
+    "bytes": 1042100,
+    "path": "train/04_oriel_packet_codec.jsonl",
+    "rows": 3568,
+    "sha256": "0de267a21cef4ae1f224be405477090501f4c31451037d6e8017b20623cb148a"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     5328,
+     10655,
+     15982,
+     21309
+    ],
+    "max_sequence_tokens": 238,
+    "presented_tokens": 1799981,
+    "rows": 21309,
+    "supervised_eos_tokens": 1099479
+   },
+   "domain": "cogs_semantics",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 5,
+   "scored_panel": {
+    "bytes": 115804,
+    "dropped_research_fields": [
+     "category",
+     "source_line",
+     "source_split",
+     "split"
+    ],
+    "path": "panels/cogs_semantics.jsonl",
+    "rows": 225,
+    "scorers": [
+     "cogs_sequence"
+    ],
+    "sha256": "e6a0e0e5cc3bb42e6b86c59f765cc979d64833eb0d40782df23e4b0809601d62"
+   },
+   "training": {
+    "bytes": 7344849,
+    "path": "train/05_cogs_semantics.jsonl",
+    "rows": 21309,
+    "sha256": "7c3d98d9d8c3f07c82a44febe208549b2c91bdf1efb55fc01cd7cb774c2f6039"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     978,
+     1956,
+     2934,
+     3911
+    ],
+    "max_sequence_tokens": 107,
+    "presented_tokens": 349982,
+    "rows": 3911,
+    "supervised_eos_tokens": 73150
+   },
+   "domain": "sable_workflow",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 6,
+   "scored_panel": {
+    "bytes": 149057,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/sable_workflow.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "123f87439ebe8be97cedcae2ef6683b0b61a43379dc8b9711755573514bac038"
+   },
+   "training": {
+    "bytes": 1663678,
+    "path": "train/06_sable_workflow.jsonl",
+    "rows": 3911,
+    "sha256": "b1602a5c3b9b4ef7ce982cf52df5d7b066724236b2575533bd8bd29d26a33dae"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     1968,
+     3936,
+     5904,
+     7872
+    ],
+    "max_sequence_tokens": 547,
+    "presented_tokens": 699957,
+    "rows": 7872,
+    "supervised_eos_tokens": 195187
+   },
+   "domain": "pcfg_set",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 7,
+   "scored_panel": {
+    "bytes": 122639,
+    "dropped_research_fields": [
+     "source_line",
+     "source_split"
+    ],
+    "path": "panels/pcfg_set.jsonl",
+    "rows": 225,
+    "scorers": [
+     "symbol_sequence"
+    ],
+    "sha256": "7d7e891730fae0e79c18d069c8c8739e4c707751946200e3839405fd5e7f4aa5"
+   },
+   "training": {
+    "bytes": 2530030,
+    "path": "train/07_pcfg_set.jsonl",
+    "rows": 7872,
+    "sha256": "da6bdcb468d03c09183115e1d0a2bd28f23c53800ceae658dc16e4dde71a46e1"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     709,
+     1418,
+     2127,
+     2835
+    ],
+    "max_sequence_tokens": 283,
+    "presented_tokens": 600000,
+    "rows": 2835,
+    "supervised_eos_tokens": 73159
+   },
+   "domain": "tessel_lot_allocation",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 8,
+   "scored_panel": {
+    "bytes": 307488,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/tessel_lot_allocation.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "6dc660d91dad10742808af0971c45356cf61a02be24c3d82c8ca1e23d538d1b9"
+   },
+   "training": {
+    "bytes": 2264113,
+    "path": "train/08_tessel_lot_allocation.jsonl",
+    "rows": 2835,
+    "sha256": "563a7ebfc3b78d4491a20cf0a4fb117c18b2656c4d2c9d50d18bea28574a60b5"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     757,
+     1513,
+     2269,
+     3025
+    ],
+    "max_sequence_tokens": 291,
+    "presented_tokens": 699873,
+    "rows": 3025,
+    "supervised_eos_tokens": 209278
+   },
+   "domain": "juniper_dispatch",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 9,
+   "scored_panel": {
+    "bytes": 304969,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/juniper_dispatch.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "4c83265e0f10ddd66f3f4473d38aac685af03853b7cd646cec3d8ddea481e1c6"
+   },
+   "training": {
+    "bytes": 2371208,
+    "path": "train/09_juniper_dispatch.jsonl",
+    "rows": 3025,
+    "sha256": "bedd02dee8a2fb7679c668e852f7842dd18c28bf4d4e30bfb4f5cee1a52d6a75"
+   }
+  },
+  {
+   "authoritative": {
+    "checkpoint_rows": [
+     964,
+     1927,
+     2890,
+     3853
+    ],
+    "max_sequence_tokens": 126,
+    "presented_tokens": 349889,
+    "rows": 3853,
+    "supervised_eos_tokens": 59399
+   },
+   "domain": "bracken_intervals",
+   "monitor": {
+    "bank": "instruction_robustness",
+    "disjoint_from_panel": true,
+    "disjoint_from_training": true,
+    "rows": 32
+   },
+   "order": 10,
+   "scored_panel": {
+    "bytes": 121962,
+    "dropped_research_fields": [
+     "source",
+     "split"
+    ],
+    "path": "panels/bracken_intervals.jsonl",
+    "rows": 225,
+    "scorers": [
+     "typed_json_procedure"
+    ],
+    "sha256": "c08fd7b524e9158adad6875377de44ee328a90027350c2c5761482f059fbd9ae"
+   },
+   "training": {
+    "bytes": 1202049,
+    "path": "train/10_bracken_intervals.jsonl",
+    "rows": 3853,
+    "sha256": "ef10ecb970f36ebf46dc9747a77906dbcc0e39cc514e043a049e3fe673fbaa07"
+   }
+  }
+ ],
+ "manifest_id": "ce20-ten-skill-customer-v1",
+ "monitor_manifests": [
+  {
+   "bytes": 15142,
+   "panels": [
+    "scan"
+   ],
+   "path": "monitors/MONITOR_teach01.json",
+   "rows": 32,
+   "sha256": "98529dd8c683590d8a3caada7188b6856984d91d88f13d8d3ff52720b85d9205",
+   "teach": 1
+  },
+  {
+   "bytes": 31943,
+   "panels": [
+    "scan",
+    "meridian_settlement"
+   ],
+   "path": "monitors/MONITOR_teach02.json",
+   "rows": 64,
+   "sha256": "89adb4bb8a079a919059503b88cc72457382b2355c2503618ae3488bd40cc2ab",
+   "teach": 2
+  },
+  {
+   "bytes": 43946,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady"
+   ],
+   "path": "monitors/MONITOR_teach03.json",
+   "rows": 96,
+   "sha256": "06c17cda9a137a1a12a06ef53c197fee920d3b2dbd5102f0def7893c9b54e884",
+   "teach": 3
+  },
+  {
+   "bytes": 55621,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec"
+   ],
+   "path": "monitors/MONITOR_teach04.json",
+   "rows": 128,
+   "sha256": "600c3bb931a3ffd715942fe5b5d01eefee63eb3be055a69d8bc0d78212fda567",
+   "teach": 4
+  },
+  {
+   "bytes": 68584,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics"
+   ],
+   "path": "monitors/MONITOR_teach05.json",
+   "rows": 160,
+   "sha256": "c13f0e75a936828664be04446c2fe254321187b4897f175ad29aa3e31258ea24",
+   "teach": 5
+  },
+  {
+   "bytes": 84551,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics",
+    "sable_workflow"
+   ],
+   "path": "monitors/MONITOR_teach06.json",
+   "rows": 192,
+   "sha256": "f57fadb8e7d84e9b68ff3c3ae68d3b41b005056df573e0f20f0238b8ed653a06",
+   "teach": 6
+  },
+  {
+   "bytes": 96843,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics",
+    "sable_workflow",
+    "pcfg_set"
+   ],
+   "path": "monitors/MONITOR_teach07.json",
+   "rows": 224,
+   "sha256": "39fdc85fbc2a98be612f4c58f955f0037fcf6b8ec2b22fcfb23f069773290687",
+   "teach": 7
+  },
+  {
+   "bytes": 125244,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics",
+    "sable_workflow",
+    "pcfg_set",
+    "tessel_lot_allocation"
+   ],
+   "path": "monitors/MONITOR_teach08.json",
+   "rows": 256,
+   "sha256": "0627da0270b014d1b1194cf0c1f187da21ac5c4ec217d24994863219f9a2363a",
+   "teach": 8
+  },
+  {
+   "bytes": 153269,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics",
+    "sable_workflow",
+    "pcfg_set",
+    "tessel_lot_allocation",
+    "juniper_dispatch"
+   ],
+   "path": "monitors/MONITOR_teach09.json",
+   "rows": 288,
+   "sha256": "88dd30f15fd4afe6a7de28267ee3551c0d49a910bef1c6767ada8ef0c073a7c4",
+   "teach": 9
+  },
+  {
+   "bytes": 165514,
+   "panels": [
+    "scan",
+    "meridian_settlement",
+    "g2p_ady",
+    "oriel_packet_codec",
+    "cogs_semantics",
+    "sable_workflow",
+    "pcfg_set",
+    "tessel_lot_allocation",
+    "juniper_dispatch",
+    "bracken_intervals"
+   ],
+   "path": "monitors/MONITOR_teach10.json",
+   "rows": 320,
+   "sha256": "b51c0fc7df7b0f04d2718fa2c7bc6e22aeacd5cb7700ca64cfdeeefa8eac5e85",
+   "teach": 10
+  }
+ ],
+ "monitor_policy": {
+  "bank": "instruction_robustness",
+  "disjointness": "verified against the scored panel and the training rows; overlap refuses the export",
+  "rows_per_panel": 32,
+  "rule": "after teach N the monitor carries one panel per skill taught so far"
+ },
+ "native_eos": 248046,
+ "schema": "learner_customer_data_manifest_v1",
+ "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+}

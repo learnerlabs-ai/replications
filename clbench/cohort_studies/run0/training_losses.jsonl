@@ -1,0 +1,18 @@
+{"after_study": 1, "examples": 5, "supervised_tokens": 920, "loss_per_example": [0.11997, 0.09784, 0.50049, 0.30814, 0.16578]}
+{"after_study": 2, "examples": 11, "supervised_tokens": 1608, "loss_per_example": [0.34952, 0.10039, 0.08349, 0.52796, 0.57655, 0.05402, 0.45815, 0.08235, 0.07531, 0.24559, 0.16988]}
+{"after_study": 3, "examples": 5, "supervised_tokens": 858, "loss_per_example": [0.29858, 0.11684, 0.27516, 0.13176, 0.50481]}
+{"after_study": 4, "examples": 5, "supervised_tokens": 499, "loss_per_example": [0.07082, 0.197, 0.39057, 0.59946, 0.34721]}
+{"after_study": 5, "examples": 1, "supervised_tokens": 74, "loss_per_example": [0.12037]}
+{"after_study": 6, "examples": 4, "supervised_tokens": 441, "loss_per_example": [0.04523, 0.45459, 0.08078, 0.12849]}
+{"after_study": 7, "examples": 6, "supervised_tokens": 1428, "loss_per_example": [0.16056, 0.22882, 0.28549, 0.19108, 0.24225, 0.02954]}
+{"after_study": 8, "examples": 8, "supervised_tokens": 1433, "loss_per_example": [0.21306, 0.27915, 0.12349, 0.27148, 0.42517, 0.25285, 0.4081, 0.01121]}
+{"after_study": 9, "examples": 5, "supervised_tokens": 742, "loss_per_example": [0.00837, 0.48578, 0.20419, 0.06641, 0.29393]}
+{"after_study": 11, "examples": 5, "supervised_tokens": 726, "loss_per_example": [0.23974, 0.70339, 0.00304, 0.2851, 0.03987]}
+{"after_study": 12, "examples": 5, "supervised_tokens": 869, "loss_per_example": [0.4131, 0.00297, 0.02752, 0.29649, 0.57474]}
+{"after_study": 13, "examples": 9, "supervised_tokens": 1394, "loss_per_example": [0.21542, 0.18146, 0.05498, 0.35387, 0.22167, 0.06909, 0.20928, 0.22585, 0.00196]}
+{"after_study": 14, "examples": 6, "supervised_tokens": 971, "loss_per_example": [0.00153, 0.11212, 0.14752, 0.19767, 0.11062, 0.28944]}
+{"after_study": 15, "examples": 6, "supervised_tokens": 899, "loss_per_example": [0.38772, 0.56559, 0.17369, 0.0265, 0.36596, 0.00086]}
+{"after_study": 16, "examples": 13, "supervised_tokens": 2156, "loss_per_example": [0.01296, 0.18751, 0.03438, 0.0131, 0.13866, 0.02178, 0.37498, 0.16243, 0.24066, 0.03083, 0.01237, 0.07318, 0.00048]}
+{"after_study": 17, "examples": 6, "supervised_tokens": 763, "loss_per_example": [0.05886, 0.012, 0.03208, 0.17334, 0.0378, 0.15641]}
+{"after_study": 18, "examples": 4, "supervised_tokens": 505, "loss_per_example": [0.01032, 0.00087, 0.17434, 0.294]}
+{"after_study": 19, "examples": 4, "supervised_tokens": 568, "loss_per_example": [0.17056, 0.00095, 0.15581, 0.03479]}

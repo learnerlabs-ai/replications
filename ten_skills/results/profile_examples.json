@@ -1,0 +1,343 @@
+{
+ "scan": {
+  "n": 225,
+  "correct_final": 222,
+  "wrong_final": 3,
+  "example_correct": {
+   "id": "scan/dev/9952:ce_v2",
+   "prompt": "Request:\nTranslate this command into actions: walk thrice and look around right\nResponse:\n",
+   "target": "I_WALK I_WALK I_WALK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK",
+   "output_final": "I_WALK I_WALK I_WALK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "I_WALK I_WALK I_WALK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "scan/dev/16127:ce_v2",
+   "prompt": "Request:\nTranslate this command into actions: turn around right twice and turn around right thrice\nResponse:\n",
+   "target": "I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT",
+   "output_final": "I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "scan/dev/15105:ce_v2",
+   "prompt": "Request:\nTranslate this command into actions: turn around left thrice after turn opposite left thrice\nResponse:\n",
+   "target": "I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT",
+   "output_final": "I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT",
+   "correct_own_end": false
+  }
+ },
+ "meridian_settlement": {
+  "n": 225,
+  "correct_final": 84,
+  "wrong_final": 141,
+  "example_correct": {
+   "id": "meridian_settlement:retention:00454",
+   "prompt": "Apply the meridian settlement procedure to the input. Return only a JSON object with integer fields balance, reserve, accepted, rejected, without explanation.\nInput: {\"events\":[[\"purchase\",29],[\"deposit\",37],[\"purchase\",25],[\"purchase\",24],[\"refund\",21]]}\nAnswer:",
+   "target": "{\"accepted\":1,\"balance\":27,\"rejected\":2,\"reserve\":2}",
+   "output_final": "{\"accepted\":1,\"balance\":27,\"rejected\":2,\"reserve\":2}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"accepted\":1,\"balance\":27,\"rejected\":2,\"reserve\":2}",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "meridian_settlement:retention:00281",
+   "prompt": "Apply the meridian settlement procedure to the input. Return only a JSON object with integer fields balance, reserve, accepted, rejected, without explanation.\nInput: {\"events\":[[\"purchase\",28],[\"refund\",10],[\"refund\",24],[\"refund\",31],[\"refund\",30],[\"deposit\",26]]}\nAnswer:",
+   "target": "{\"accepted\":0,\"balance\":115,\"rejected\":1,\"reserve\":0}",
+   "output_final": "{\"accepted\":0,\"balance\":115,\"rejected\":1,\"reserve\":0}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"accepted\":0,\"balance\":115,\"rejected\":1,\"reserve\":0}",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "meridian_settlement:retention:00195",
+   "prompt": "Apply the meridian settlement procedure to the input. Return only a JSON object with integer fields balance, reserve, accepted, rejected, without explanation.\nInput: {\"events\":[[\"refund\",12],[\"deposit\",4],[\"refund\",19],[\"refund\",31],[\"refund\",38],[\"deposit\",5],[\"deposit\",3],[\"deposit\",22],[\"deposit\",30]]}\nAnswer:",
+   "target": "{\"accepted\":0,\"balance\":160,\"rejected\":0,\"reserve\":0}",
+   "output_final": "{\"accepted\":0,\"balance\":159,\"rejected\":0,\"reserve\":0}",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "{\"accepted\":0,\"balance\":159,\"rejected\":0,\"reserve\":0}",
+   "correct_own_end": false
+  }
+ },
+ "g2p_ady": {
+  "n": 225,
+  "correct_final": 146,
+  "wrong_final": 79,
+  "example_correct": {
+   "id": "g2p_ady:test:255",
+   "prompt": "Transcribe this Adyghe word into IPA using the SIGMORPHON 2020 grapheme-to-phoneme convention. Return only the transcription, with spaces between phoneme tokens.\nWord: мэузын\nAnswer:",
+   "target": "m a w z ə n",
+   "output_final": "m a w z ə n",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "m a w z ə n",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "g2p_ady:test:161",
+   "prompt": "Transcribe this Adyghe word into IPA using the SIGMORPHON 2020 grapheme-to-phoneme convention. Return only the transcription, with spaces between phoneme tokens.\nWord: зыгъэсамбырын\nAnswer:",
+   "target": "z ə ʁ a s aː m b ə r ə n",
+   "output_final": "z ə ʁ a s aː m b ə r ə n",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "z ə ʁ a s aː m b ə r ə n",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "g2p_ady:test:281",
+   "prompt": "Transcribe this Adyghe word into IPA using the SIGMORPHON 2020 grapheme-to-phoneme convention. Return only the transcription, with spaces between phoneme tokens.\nWord: ожъубанэхьэмлыу\nAnswer:",
+   "target": "w a ʐʷ b aː n a ħ a m l ə w",
+   "output_final": "w a ʐʷ b aː n a ħ a m ɮ ə w",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "w a ʐʷ b aː n a ħ a m ɮ ə w",
+   "correct_own_end": false
+  }
+ },
+ "oriel_packet_codec": {
+  "n": 225,
+  "correct_final": 9,
+  "wrong_final": 216,
+  "example_correct": {
+   "id": "oriel_packet_codec:retention:00442",
+   "prompt": "Apply the oriel packet codec procedure to the input. Return only a JSON list of integers, without explanation.\nInput: {\"payload\":[1,10,3,1,5,4,4]}\nAnswer:",
+   "target": "[15,13,7,6,4,15,9,15,9,8,10,6,4,10,0,9,13,9,13,15,9]",
+   "output_final": "[15,13,7,6,4,15,9,15,9,8,10,6,4,10,0,9,13,9,13,15,9]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[15,13,7,6,4,15,9,15,9,8,10,6,4,10,0,9,13,9,13,15,9]",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "oriel_packet_codec:retention:00496",
+   "prompt": "Apply the oriel packet codec procedure to the input. Return only a JSON list of integers, without explanation.\nInput: {\"payload\":[14,8,9,1,6,7,5,6,1]}\nAnswer:",
+   "target": "[15,13,9,3,15,13,13,9,14,12,6,4,15,13,3,12,6,10,0,15,13,3,6,4,1]",
+   "output_final": "[15,13,9,3,15,13,13,9,14,12,6,4,15,13,3,12,6,10,0,15,13,3,6,4,1]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[15,13,9,3,15,13,13,9,14,12,6,4,15,13,3,12,6,10,0,15,13,3,6,4,15,13]",
+   "correct_own_end": false
+  },
+  "example_failure": {
+   "id": "oriel_packet_codec:retention:00115",
+   "prompt": "Apply the oriel packet codec procedure to the input. Return only a JSON list of integers, without explanation.\nInput: {\"payload\":[10,10,12,6,1,2,10,14,0]}\nAnswer:",
+   "target": "[15,13,9,15,9,15,9,15,9,15,9,1,5,15,13,3,6,4,7,7,15,9,15,9,3,15,13,5,1,1]",
+   "output_final": "[15,13,9,15,9,15,9,15,9,15,13,3,15,13,3,6,4,7,7,15,9,15,9,3,15,13,5,1,15,13]",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "[15,13,9,15,9,15,9,15,9,15,13,3,15,13,3,6,4,7,7,15,9,15,9,3,15,13,5,1,15,13]",
+   "correct_own_end": false
+  }
+ },
+ "cogs_semantics": {
+  "n": 225,
+  "correct_final": 225,
+  "wrong_final": 0,
+  "example_correct": {
+   "id": "cogs_semantics:dev:00690",
+   "prompt": "Translate the sentence into its COGS logical form. Return only the logical form, without explanation.\nSentence: A cake was given to the giraffe .\nAnswer:",
+   "target": "* giraffe ( x _ 6 ) ; cake ( x _ 1 ) AND give . theme ( x _ 3 , x _ 1 ) AND give . recipient ( x _ 3 , x _ 6 )",
+   "output_final": "* giraffe ( x _ 6 ) ; cake ( x _ 1 ) AND give . theme ( x _ 3 , x _ 1 ) AND give . recipient ( x _ 3 , x _ 6 )",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "* giraffe ( x _ 6 ) ; cake ( x _ 1 ) AND give . theme ( x _ 3 , x _ 1 ) AND give . recipient ( x _ 3 , x _ 6 )",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "cogs_semantics:dev:00820",
+   "prompt": "Translate the sentence into its COGS logical form. Return only the logical form, without explanation.\nSentence: The giraffe brought a box in a soup on the chair to Madison .\nAnswer:",
+   "target": "* giraffe ( x _ 1 ) ; * chair ( x _ 10 ) ; bring . agent ( x _ 2 , x _ 1 ) AND bring . theme ( x _ 2 , x _ 4 ) AND bring . recipient ( x _ 2 , Madison ) AND box ( x _ 4 ) AND box . nmod . in ( x _ 4 , x _ 7 ) AND soup ( x _ 7 ) AND soup . nmod . on ( x _ 7 , x _ 10 )",
+   "output_final": "* giraffe ( x _ 1 ) ; * chair ( x _ 10 ) ; bring . agent ( x _ 2 , x _ 1 ) AND bring . theme ( x _ 2 , x _ 4 ) AND bring . recipient ( x _ 2 , Madison ) AND box ( x _ 4 ) AND box . nmod . in ( x _ 4 , x _ 7 ) AND soup ( x _ 7 ) AND soup . nmod . on ( x _ 7 , x _ 10 )",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "* giraffe ( x _ 1 ) ; * chair ( x _ 10 ) ; bring . agent ( x _ 2 , x _ 1 ) AND bring . theme ( x _ 2 , x _ 4 ) AND bring . recipient ( x _ 2 , Madison ) AND box ( x _ 4 ) AND box . nmod . in ( x _ 4 , x _ 7 ) AND soup ( x _ 7 ) AND soup . nmod . on ( x _ 7 , x _ 10 )",
+   "correct_own_end": true
+  },
+  "example_failure": null
+ },
+ "sable_workflow": {
+  "n": 225,
+  "correct_final": 198,
+  "wrong_final": 27,
+  "example_correct": {
+   "id": "sable_workflow:retention:00447",
+   "prompt": "Apply the sable workflow procedure to the input. Return only a JSON object with state (IDLE or OPEN), pending, completed, errors (integers), without explanation.\nInput: {\"events\":[[\"ADD\",1],[\"BEGIN\"],[\"COMMIT\"],[\"ADD\",4],[\"CANCEL\"],[\"CANCEL\"]]}\nAnswer:",
+   "target": "{\"completed\":0,\"errors\":3,\"pending\":0,\"state\":\"IDLE\"}",
+   "output_final": "{\"completed\":0,\"errors\":3,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"completed\":0,\"errors\":3,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "sable_workflow:retention:00004",
+   "prompt": "Apply the sable workflow procedure to the input. Return only a JSON object with state (IDLE or OPEN), pending, completed, errors (integers), without explanation.\nInput: {\"events\":[[\"BEGIN\"],[\"ADD\",5],[\"BEGIN\"],[\"ADD\",5],[\"ADD\",3],[\"COMMIT\"],[\"ADD\",2],[\"COMMIT\"],[\"ADD\",1]]}\nAnswer:",
+   "target": "{\"completed\":13,\"errors\":4,\"pending\":0,\"state\":\"IDLE\"}",
+   "output_final": "{\"completed\":13,\"errors\":4,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"completed\":13,\"errors\":4,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "sable_workflow:retention:00398",
+   "prompt": "Apply the sable workflow procedure to the input. Return only a JSON object with state (IDLE or OPEN), pending, completed, errors (integers), without explanation.\nInput: {\"events\":[[\"BEGIN\"],[\"ADD\",5],[\"COMMIT\"],[\"COMMIT\"],[\"ADD\",4],[\"ADD\",5],[\"ADD\",5],[\"BEGIN\"],[\"COMMIT\"]]}\nAnswer:",
+   "target": "{\"completed\":5,\"errors\":5,\"pending\":0,\"state\":\"OPEN\"}",
+   "output_final": "{\"completed\":19,\"errors\":2,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "{\"completed\":19,\"errors\":2,\"pending\":0,\"state\":\"IDLE\"}",
+   "correct_own_end": false
+  }
+ },
+ "pcfg_set": {
+  "n": 225,
+  "correct_final": 172,
+  "wrong_final": 53,
+  "example_correct": {
+   "id": "pcfg_set:test:5768",
+   "prompt": "Evaluate this PCFG SET expression. Return only the resulting space-separated symbol sequence, with no explanation.\nExpression: prepend remove_second X15 X20 K18 , remove_first echo echo K18 O14 C20 E11 E5 , F18 E10 K19 L12 , T11 J18 K19\nAnswer:",
+   "target": "T11 J18 K19 X15 X20 K18",
+   "output_final": "T11 J18 K19 X15 X20 K18",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "T11 J18 K19 X15 X20 K18",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "pcfg_set:test:850",
+   "prompt": "Evaluate this PCFG SET expression. Return only the resulting space-separated symbol sequence, with no explanation.\nExpression: shift repeat repeat append V3 K1 K20 G4 Z15 , E4 W15 C15 K3\nAnswer:",
+   "target": "K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3",
+   "output_final": "K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3 K1 K20 G4 Z15 E4 W15 C15 K3 V3",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "pcfg_set:test:6939",
+   "prompt": "Evaluate this PCFG SET expression. Return only the resulting space-separated symbol sequence, with no explanation.\nExpression: repeat swap_first_last echo repeat remove_first shift reverse copy shift shift S11 G6 O17 , echo repeat prepend M7 X12 E1 S16 , shift swap_first_last reverse D3 B14 H19\nAnswer:",
+   "target": "S16 H19 D3 M7 X12 E1 S16 B14 H19 D3 M7 X12 E1 S16 S16 B14 H19 D3 M7 X12 E1 S16 B14 H19 D3 M7 X12 E1 S16 S16 B14 S16 H19 D3 M7 X12 E1 S16 B14 H19 D3 M7 X12 E1 S16 S16 B14 H19 D3 M7 X12 E1 S16 B14 H19 D3 M7 X12 E1 S16 S16 B14",
+   "output_final": "H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X14 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1",
+   "correct_final": false,
+   "stop_final": "cap",
+   "output_own_end": "H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1 S16 H19 B14 D3 M7 X12 E1",
+   "correct_own_end": false
+  }
+ },
+ "tessel_lot_allocation": {
+  "n": 225,
+  "correct_final": 188,
+  "wrong_final": 37,
+  "example_correct": {
+   "id": "tessel_lot_allocation:retention:00246",
+   "prompt": "Apply the tessel lot allocation procedure to the input. Return only a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer), without explanation.\nInput: {\"delivery_day\":9,\"demand\":20,\"lots\":[{\"cold\":false,\"expiry\":7,\"id\":\"L0\",\"units\":8},{\"cold\":true,\"expiry\":3,\"id\":\"L1\",\"units\":9},{\"cold\":true,\"expiry\":21,\"id\":\"L2\",\"units\":7},{\"cold\":true,\"expiry\":12,\"id\":\"L3\",\"units\":8},{\"cold\":true,\"expiry\":8,\"id\":\"L4\",\"units\":7},{\"cold\":true,\"expiry\":3,\"id\":\"L5\",\"units\":11},{\"cold\":true,\"expiry\":2,\"id\":\"L6\",\"units\":12}]}\nAnswer:",
+   "target": "{\"allocations\":[],\"charge\":0,\"unfilled\":20}",
+   "output_final": "{\"allocations\":[],\"charge\":0,\"unfilled\":20}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"allocations\":[],\"charge\":0,\"unfilled\":20}",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "tessel_lot_allocation:retention:00060",
+   "prompt": "Apply the tessel lot allocation procedure to the input. Return only a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer), without explanation.\nInput: {\"delivery_day\":7,\"demand\":31,\"lots\":[{\"cold\":true,\"expiry\":10,\"id\":\"L0\",\"units\":11},{\"cold\":true,\"expiry\":24,\"id\":\"L1\",\"units\":1},{\"cold\":true,\"expiry\":7,\"id\":\"L2\",\"units\":9},{\"cold\":true,\"expiry\":15,\"id\":\"L3\",\"units\":4},{\"cold\":true,\"expiry\":16,\"id\":\"L4\",\"units\":11},{\"cold\":true,\"expiry\":24,\"id\":\"L5\",\"units\":5}]}\nAnswer:",
+   "target": "{\"allocations\":[[\"L0\",11],[\"L3\",4],[\"L4\",11],[\"L1\",1],[\"L5\",4]],\"charge\":82,\"unfilled\":0}",
+   "output_final": "{\"allocations\":[[\"L0\",11],[\"L3\",4],[\"L4\",11],[\"L1\",1],[\"L5\",4]],\"charge\":82,\"unfilled\":0}",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "{\"allocations\":[[\"L0\",11],[\"L3\",4],[\"L4\",11],[\"L1\",1],[\"L5\",4]],\"charge\":82,\"unfilled\":0}",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "tessel_lot_allocation:retention:00057",
+   "prompt": "Apply the tessel lot allocation procedure to the input. Return only a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer), without explanation.\nInput: {\"delivery_day\":3,\"demand\":34,\"lots\":[{\"cold\":false,\"expiry\":24,\"id\":\"L0\",\"units\":8},{\"cold\":true,\"expiry\":21,\"id\":\"L1\",\"units\":2},{\"cold\":true,\"expiry\":23,\"id\":\"L2\",\"units\":9},{\"cold\":true,\"expiry\":22,\"id\":\"L3\",\"units\":7},{\"cold\":true,\"expiry\":1,\"id\":\"L4\",\"units\":4},{\"cold\":true,\"expiry\":23,\"id\":\"L5\",\"units\":9},{\"cold\":true,\"expiry\":7,\"id\":\"L6\",\"units\":3},{\"cold\":true,\"expiry\":9,\"id\":\"L7\",\"units\":10}]}\nAnswer:",
+   "target": "{\"allocations\":[[\"L6\",3],[\"L7\",10],[\"L1\",2],[\"L3\",7],[\"L2\",9],[\"L5\",3]],\"charge\":92,\"unfilled\":0}",
+   "output_final": "{\"allocations\":[],\"charge\":0,\"unfilled\":34}",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "{\"allocations\":[],\"charge\":0,\"unfilled\":34}",
+   "correct_own_end": false
+  }
+ },
+ "juniper_dispatch": {
+  "n": 225,
+  "correct_final": 120,
+  "wrong_final": 105,
+  "example_correct": {
+   "id": "juniper_dispatch:retention:00036",
+   "prompt": "Apply the juniper dispatch procedure to the input. Return only a JSON list of [job_id,start,end] triples in execution order, without explanation.\nInput: {\"jobs\":[{\"duration\":2,\"id\":\"J0\",\"priority\":4,\"release\":4},{\"duration\":6,\"id\":\"J1\",\"priority\":4,\"release\":14},{\"duration\":5,\"id\":\"J2\",\"priority\":3,\"release\":4},{\"duration\":1,\"id\":\"J3\",\"priority\":2,\"release\":2},{\"duration\":4,\"id\":\"J4\",\"priority\":4,\"release\":7},{\"duration\":4,\"id\":\"J5\",\"priority\":3,\"release\":4},{\"duration\":3,\"id\":\"J6\",\"priority\":1,\"release\":1}]}\nAnswer:",
+   "target": "[[\"J6\",1,4],[\"J0\",6,8],[\"J4\",10,14],[\"J1\",16,22],[\"J5\",24,28],[\"J2\",30,35],[\"J3\",37,38]]",
+   "output_final": "[[\"J6\",1,4],[\"J0\",6,8],[\"J4\",10,14],[\"J1\",16,22],[\"J5\",24,28],[\"J2\",30,35],[\"J3\",37,38]]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[[\"J6\",1,4],[\"J0\",6,8],[\"J4\",10,14],[\"J1\",16,22],[\"J2\",24,29],[\"J5\",31,35],[\"J3\",37,38]]",
+   "correct_own_end": false
+  },
+  "example_complex_correct": {
+   "id": "juniper_dispatch:retention:00118",
+   "prompt": "Apply the juniper dispatch procedure to the input. Return only a JSON list of [job_id,start,end] triples in execution order, without explanation.\nInput: {\"jobs\":[{\"duration\":4,\"id\":\"J0\",\"priority\":2,\"release\":6},{\"duration\":1,\"id\":\"J1\",\"priority\":3,\"release\":6},{\"duration\":6,\"id\":\"J2\",\"priority\":1,\"release\":15},{\"duration\":6,\"id\":\"J3\",\"priority\":4,\"release\":3},{\"duration\":7,\"id\":\"J4\",\"priority\":2,\"release\":14},{\"duration\":5,\"id\":\"J5\",\"priority\":4,\"release\":13},{\"duration\":6,\"id\":\"J6\",\"priority\":4,\"release\":7},{\"duration\":7,\"id\":\"J7\",\"priority\":4,\"release\":15},{\"duration\":2,\"id\":\"J8\",\"priority\":4,\"release\":6}]}\nAnswer:",
+   "target": "[[\"J3\",3,9],[\"J8\",11,13],[\"J5\",15,20],[\"J6\",22,28],[\"J7\",30,37],[\"J1\",39,40],[\"J0\",42,46],[\"J4\",48,55],[\"J2\",57,63]]",
+   "output_final": "[[\"J3\",3,9],[\"J8\",11,13],[\"J5\",15,20],[\"J6\",22,28],[\"J7\",30,37],[\"J1\",39,40],[\"J0\",42,46],[\"J4\",48,55],[\"J2\",57,63]]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[[\"J3\",3,9],[\"J8\",11,13],[\"J5\",15,20],[\"J6\",22,28],[\"J7\",30,37],[\"J1\",39,40],[\"J0\",42,46],[\"J4\",48,55],[\"J2\",57,63]]",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "juniper_dispatch:retention:00110",
+   "prompt": "Apply the juniper dispatch procedure to the input. Return only a JSON list of [job_id,start,end] triples in execution order, without explanation.\nInput: {\"jobs\":[{\"duration\":2,\"id\":\"J0\",\"priority\":3,\"release\":6},{\"duration\":2,\"id\":\"J1\",\"priority\":1,\"release\":5},{\"duration\":4,\"id\":\"J2\",\"priority\":1,\"release\":14},{\"duration\":7,\"id\":\"J3\",\"priority\":1,\"release\":14},{\"duration\":4,\"id\":\"J4\",\"priority\":1,\"release\":11},{\"duration\":7,\"id\":\"J5\",\"priority\":4,\"release\":4},{\"duration\":4,\"id\":\"J6\",\"priority\":4,\"release\":6},{\"duration\":7,\"id\":\"J7\",\"priority\":1,\"release\":8},{\"duration\":6,\"id\":\"J8\",\"priority\":4,\"release\":5}]}\nAnswer:",
+   "target": "[[\"J5\",4,11],[\"J6\",13,17],[\"J8\",19,25],[\"J0\",27,29],[\"J1\",31,33],[\"J2\",35,39],[\"J4\",41,45],[\"J3\",47,54],[\"J7\",56,63]]",
+   "output_final": "[[\"J5\",4,11],[\"J6\",13,17],[\"J8\",19,25],[\"J0\",27,29],[\"J1\",31,33],[\"J4\",35,39],[\"J2\",41,45],[\"J7\",47,54],[\"J3\",56,63]]",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "[[\"J5\",4,11],[\"J6\",13,17],[\"J8\",19,25],[\"J0\",27,29],[\"J1\",31,33],[\"J4\",35,39],[\"J2\",41,45],[\"J7\",47,54],[\"J3\",56,63]]",
+   "correct_own_end": false
+  }
+ },
+ "bracken_intervals": {
+  "n": 225,
+  "correct_final": 161,
+  "wrong_final": 64,
+  "example_correct": {
+   "id": "bracken_intervals:retention:00103",
+   "prompt": "Apply the bracken intervals procedure. Return only a JSON array of [start,end] integer pairs, without explanation.\nInput: {\"closed\":[[9,11],[-9,-4],[-1,7],[21,23]],\"open\":[[23,24],[32,38],[9,11]]}\nAnswer:",
+   "target": "[[23,24],[32,38]]",
+   "output_final": "[[23,24],[32,38]]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[[23,24],[32,38]]",
+   "correct_own_end": true
+  },
+  "example_complex_correct": {
+   "id": "bracken_intervals:retention:00385",
+   "prompt": "Apply the bracken intervals procedure. Return only a JSON array of [start,end] integer pairs, without explanation.\nInput: {\"closed\":[[11,15],[39,42]],\"open\":[[37,45],[-7,-2],[25,33],[13,22]]}\nAnswer:",
+   "target": "[[-7,-2],[15,22],[25,33],[37,39],[42,45]]",
+   "output_final": "[[-7,-2],[15,22],[25,33],[37,39],[42,45]]",
+   "correct_final": true,
+   "stop_final": "eos",
+   "output_own_end": "[[-7,-2],[15,22],[25,33],[37,39],[42,45]]",
+   "correct_own_end": true
+  },
+  "example_failure": {
+   "id": "bracken_intervals:retention:00075",
+   "prompt": "Apply the bracken intervals procedure. Return only a JSON array of [start,end] integer pairs, without explanation.\nInput: {\"closed\":[[37,38],[-8,-4],[20,23]],\"open\":[[-9,-1],[24,25],[36,45],[-6,0]]}\nAnswer:",
+   "target": "[[-9,-8],[-4,0],[24,25],[36,37],[38,45]]",
+   "output_final": "[[-9,-8],[-4,-1],[24,25],[36,37],[38,45]]",
+   "correct_final": false,
+   "stop_final": "eos",
+   "output_own_end": "[[-9,-8],[-4,-1],[24,25],[36,37],[38,45]]",
+   "correct_own_end": false
+  }
+ }
+}

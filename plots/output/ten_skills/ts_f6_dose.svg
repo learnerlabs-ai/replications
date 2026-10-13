@@ -1,0 +1,81 @@
+<svg viewBox="0 0 880 560" width="100%" style="height:auto;display:block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two horizontal bar charts with ten skills each: updates applied (COGS 21,309 largest, Tessel 2,835 smallest) and supervised tokens (COGS 1.1 million largest).">
+<rect x="0" y="0" width="880" height="560" fill="#FFFFFF"/>
+<text x="36.0" y="34.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="600" fill="#14171A">How much each skill was trained</text>
+<rect x="760" y="18" width="84" height="22" rx="11" fill="#FFFFFF" stroke="#2F6E62" stroke-width="1.2"/>
+<text x="802.0" y="33.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" fill="#2F6E62">measured</text>
+<rect x="36" y="57" width="12" height="12" rx="2" fill="#2F6E62"/>
+<text x="54.0" y="68.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="400" fill="#14171A">updates applied (one example each)</text>
+<rect x="334.4" y="57" width="12" height="12" rx="2" fill="#B4762A"/>
+<text x="352.4" y="68.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="400" fill="#14171A">supervised tokens, including the end-of-sequence token</text>
+<rect x="36" y="86" width="392" height="420" rx="5" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.4"/>
+<text x="56.0" y="116.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600" fill="#14171A">Updates</text>
+<text x="56.0" y="142.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">examples the learner was trained on</text>
+<rect x="452" y="86" width="392" height="420" rx="5" fill="#FFFFFF" stroke="#DADCD4" stroke-width="1.4"/>
+<text x="472.0" y="116.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600" fill="#14171A">Supervised tokens</text>
+<text x="472.0" y="142.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="400" fill="#616660">tokens the loss was computed on</text>
+<line x1="100.0" y1="164.0" x2="100.0" y2="466.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="100.0" y1="466.0" x2="408.0" y2="466.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="100.0" y="169.7" width="113.9" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="183.1" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">SCAN</text>
+<text x="219.9" y="183.1" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">9,850</text>
+<rect x="100.0" y="199.9" width="41.1" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="213.3" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Meridian</text>
+<text x="147.1" y="213.3" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,557</text>
+<rect x="100.0" y="230.1" width="41.6" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="243.5" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Adyghe G2P</text>
+<text x="147.6" y="243.5" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,600</text>
+<rect x="100.0" y="260.3" width="41.3" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="273.7" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Oriel</text>
+<text x="147.3" y="273.7" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,568</text>
+<rect x="100.0" y="290.5" width="246.4" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="303.9" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">COGS</text>
+<text x="352.4" y="303.9" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">21,309</text>
+<rect x="100.0" y="320.7" width="45.2" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="334.1" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Sable</text>
+<text x="151.2" y="334.1" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,911</text>
+<rect x="100.0" y="350.9" width="91.0" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="364.3" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">PCFG</text>
+<text x="197.0" y="364.3" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">7,871</text>
+<rect x="100.0" y="381.1" width="32.8" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="394.5" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Tessel</text>
+<text x="138.8" y="394.5" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">2,835</text>
+<rect x="100.0" y="411.3" width="35.0" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="424.7" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Juniper</text>
+<text x="141.0" y="424.7" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,025</text>
+<rect x="100.0" y="441.5" width="43.4" height="18.7" rx="2" fill="#2F6E62"/>
+<text x="92.0" y="454.9" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Bracken</text>
+<text x="149.4" y="454.9" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">3,756</text>
+<line x1="516.0" y1="164.0" x2="516.0" y2="466.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="516.0" y1="466.0" x2="824.0" y2="466.0" stroke="#DADCD4" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="516.0" y="169.7" width="66.6" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="183.1" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">SCAN</text>
+<text x="588.6" y="183.1" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">297k</text>
+<rect x="516.0" y="199.9" width="15.3" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="213.3" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Meridian</text>
+<text x="537.3" y="213.3" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">68k</text>
+<rect x="516.0" y="230.1" width="9.4" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="243.5" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Adyghe G2P</text>
+<text x="531.4" y="243.5" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">42k</text>
+<rect x="516.0" y="260.3" width="40.3" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="273.7" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Oriel</text>
+<text x="562.3" y="273.7" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">180k</text>
+<rect x="516.0" y="290.5" width="246.4" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="303.9" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">COGS</text>
+<text x="768.4" y="303.9" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">1099k</text>
+<rect x="516.0" y="320.7" width="16.4" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="334.1" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Sable</text>
+<text x="538.4" y="334.1" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">73k</text>
+<rect x="516.0" y="350.9" width="43.7" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="364.3" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">PCFG</text>
+<text x="565.7" y="364.3" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">195k</text>
+<rect x="516.0" y="381.1" width="16.4" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="394.5" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Tessel</text>
+<text x="538.4" y="394.5" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">73k</text>
+<rect x="516.0" y="411.3" width="46.9" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="424.7" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Juniper</text>
+<text x="568.9" y="424.7" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">209k</text>
+<rect x="516.0" y="441.5" width="12.9" height="18.7" rx="2" fill="#B4762A"/>
+<text x="508.0" y="454.9" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="400" fill="#14171A">Bracken</text>
+<text x="534.9" y="454.9" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#14171A">58k</text>
+<text x="36.0" y="546.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="11.5" font-weight="400" fill="#616660">Totals: 63,282 updates, 2,295,371 supervised tokens, 5,921,663 presented tokens. Source: plots/data/derived/tables.json (dose).</text>
+</svg>

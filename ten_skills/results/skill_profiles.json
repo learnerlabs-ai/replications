@@ -1,0 +1,259 @@
+{
+ "schema": "skill_profiles_public_v1",
+ "skills": [
+  {
+   "skill": "scan",
+   "teach_index": 1,
+   "source_kind": "PUBLIC_SCAN",
+   "rows": 9850,
+   "presented_tokens": 499982,
+   "supervised_eos_tokens": 297232,
+   "max_sequence_tokens": 90,
+   "train_group_overlap_all_zero": true,
+   "retention_bank_rows": 553,
+   "train_example": {
+    "id": "scan/train/16767:ce_v2",
+    "prompt": "Request:\nTranslate this command into actions: run around left twice after walk right thrice\nResponse:\n",
+    "target": "I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN",
+    "scorer": "scan_actions"
+   },
+   "held_out_example": {
+    "id": "scan/dev/14358:ce_v2",
+    "prompt": "Request:\nTranslate this command into actions: walk around right twice and turn left\nResponse:\n",
+    "target": "I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_LEFT",
+    "scorer": "scan_actions"
+   },
+   "source_split": "length",
+   "metric": "sequence_exact"
+  },
+  {
+   "skill": "meridian_settlement",
+   "teach_index": 2,
+   "family": "stateful financial-event accounting",
+   "third_party": false,
+   "rows": 3557,
+   "presented_tokens": 349925,
+   "supervised_eos_tokens": 68159,
+   "max_sequence_tokens": 113,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Process events in order from balance=0 and reserve=0. A deposit first pays off reserve debt, then credits the remaining amount to balance. A purchase costs amount plus fee 3; if balance covers cost, debit it and count accepted, otherwise increase reserve by 2 and count rejected without paying the purchase. A refund credits amount minus 1 (minimum zero) directly to balance. Return balance, reserve, accepted, rejected.",
+   "output_contract": "a JSON object with integer fields balance, reserve, accepted, rejected",
+   "independence_limit": "Exact input disjointness only; random values in the same fixed procedural grammar. OOD uses longer instances, not a proof of broad transfer.",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "meridian_settlement:candidate_train:01569",
+    "prompt": "Apply the meridian settlement procedure to the input. Return only a JSON object with integer fields balance, reserve, accepted, rejected, without explanation.\nInput: {\"events\":[[\"refund\",19],[\"purchase\",18],[\"deposit\",6],[\"deposit\",18],[\"purchase\",27],[\"purchase\",25],[\"refund\",9]]}\nAnswer:",
+    "target": "{\"accepted\":1,\"balance\":18,\"rejected\":2,\"reserve\":2}",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "meridian_settlement:retention:00000",
+    "prompt": "Apply the meridian settlement procedure to the input. Return only a JSON object with integer fields balance, reserve, accepted, rejected, without explanation.\nInput: {\"events\":[[\"refund\",29],[\"deposit\",16],[\"purchase\",16],[\"purchase\",31],[\"refund\",26],[\"refund\",28],[\"refund\",1]]}\nAnswer:",
+    "target": "{\"accepted\":1,\"balance\":77,\"rejected\":1,\"reserve\":2}",
+    "scorer": "typed_json_procedure"
+   }
+  },
+  {
+   "skill": "g2p_ady",
+   "teach_index": 3,
+   "rows": 3600,
+   "presented_tokens": 232037,
+   "supervised_eos_tokens": 42122,
+   "max_sequence_tokens": 92,
+   "train_group_overlap_all_zero": true,
+   "retention_bank_rows": 225,
+   "train_example": {
+    "id": "g2p_ady:train:3071",
+    "prompt": "Transcribe this Adyghe word into IPA using the SIGMORPHON 2020 grapheme-to-phoneme convention. Return only the transcription, with spaces between phoneme tokens.\nWord: чъыгшъхьацыз\nAnswer:",
+    "target": "t͡ʃ ə ɣ ʂ ħ aː t͡ʃ ə z",
+    "scorer": "phoneme_sequence"
+   },
+   "held_out_example": {
+    "id": "g2p_ady:test:185",
+    "prompt": "Transcribe this Adyghe word into IPA using the SIGMORPHON 2020 grapheme-to-phoneme convention. Return only the transcription, with spaces between phoneme tokens.\nWord: кухьэ\nAnswer:",
+    "target": "kʷ ə ħ a",
+    "scorer": "phoneme_sequence"
+   }
+  },
+  {
+   "skill": "oriel_packet_codec",
+   "teach_index": 4,
+   "family": "binary protocol encoding with escaping/checksum",
+   "third_party": false,
+   "rows": 3568,
+   "presented_tokens": 349908,
+   "supervised_eos_tokens": 179890,
+   "max_sequence_tokens": 140,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Encode payload values 0..15. Start with header [11, number of payload values]. For each payload value x, emit two nibbles [(x+5) mod 16, (3*x+1) mod 16]. Append checksum: sum of (position+1)*payload[position] modulo 16. Before returning bytes, escape every nibble equal to 11 or 15 as [15, nibble XOR 6]. Do not escape the escape nibbles again. Return the final integer list.",
+   "output_contract": "a JSON list of integers",
+   "independence_limit": "Exact input disjointness only; random values in the same fixed procedural grammar. OOD uses longer instances, not a proof of broad transfer.",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "oriel_packet_codec:candidate_train:02363",
+    "prompt": "Apply the oriel packet codec procedure to the input. Return only a JSON list of integers, without explanation.\nInput: {\"payload\":[9,3,2,13,6,13,12,12]}\nAnswer:",
+    "target": "[15,13,8,14,12,8,10,7,7,2,8,15,13,3,2,8,1,5,1,5,9]",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "oriel_packet_codec:retention:00000",
+    "prompt": "Apply the oriel packet codec procedure to the input. Return only a JSON list of integers, without explanation.\nInput: {\"payload\":[13,13,3,13,8,0,11]}\nAnswer:",
+    "target": "[15,13,7,2,8,2,8,8,10,2,8,13,9,5,1,0,2,9]",
+    "scorer": "typed_json_procedure"
+   }
+  },
+  {
+   "skill": "cogs_semantics",
+   "teach_index": 5,
+   "family": "semantic_parsing",
+   "third_party": true,
+   "rows": 21309,
+   "presented_tokens": 1799981,
+   "supervised_eos_tokens": 1099479,
+   "max_sequence_tokens": 238,
+   "train_group_overlap_all_zero": true,
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "cogs_semantics:train:02979",
+    "prompt": "Translate the sentence into its COGS logical form. Return only the logical form, without explanation.\nSentence: A melon was improved by a moose .\nAnswer:",
+    "target": "melon ( x _ 1 ) AND improve . theme ( x _ 3 , x _ 1 ) AND improve . agent ( x _ 3 , x _ 6 ) AND moose ( x _ 6 )",
+    "scorer": "cogs_sequence"
+   },
+   "held_out_example": {
+    "id": "cogs_semantics:dev:02806",
+    "prompt": "Translate the sentence into its COGS logical form. Return only the logical form, without explanation.\nSentence: The cookie was inflated by Emma .\nAnswer:",
+    "target": "* cookie ( x _ 1 ) ; inflate . theme ( x _ 3 , x _ 1 ) AND inflate . agent ( x _ 3 , Emma )",
+    "scorer": "cogs_sequence"
+   }
+  },
+  {
+   "skill": "sable_workflow",
+   "teach_index": 6,
+   "family": "finite-state transaction protocol",
+   "third_party": false,
+   "rows": 3911,
+   "presented_tokens": 349982,
+   "supervised_eos_tokens": 73150,
+   "max_sequence_tokens": 107,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Start state IDLE, pending=0, completed=0, errors=0. BEGIN in IDLE enters OPEN; BEGIN elsewhere increments errors. ADD(n) in OPEN adds n to pending; elsewhere increments errors. COMMIT in OPEN with pending>=5 adds pending to completed, clears pending, and returns IDLE; every other COMMIT increments errors and leaves state unchanged. CANCEL in OPEN clears pending and returns IDLE; CANCEL elsewhere increments errors. Return state, pending, completed, errors.",
+   "output_contract": "a JSON object with state (IDLE or OPEN), pending, completed, errors (integers)",
+   "independence_limit": "Exact input disjointness only; random values in the same fixed procedural grammar. OOD uses longer instances, not a proof of broad transfer.",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "sable_workflow:candidate_train:01135",
+    "prompt": "Apply the sable workflow procedure to the input. Return only a JSON object with state (IDLE or OPEN), pending, completed, errors (integers), without explanation.\nInput: {\"events\":[[\"ADD\",3],[\"BEGIN\"],[\"BEGIN\"],[\"BEGIN\"],[\"ADD\",4],[\"CANCEL\"],[\"CANCEL\"]]}\nAnswer:",
+    "target": "{\"completed\":0,\"errors\":4,\"pending\":0,\"state\":\"IDLE\"}",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "sable_workflow:retention:00000",
+    "prompt": "Apply the sable workflow procedure to the input. Return only a JSON object with state (IDLE or OPEN), pending, completed, errors (integers), without explanation.\nInput: {\"events\":[[\"ADD\",5],[\"BEGIN\"],[\"COMMIT\"],[\"BEGIN\"],[\"ADD\",2],[\"COMMIT\"],[\"ADD\",5],[\"COMMIT\"]]}\nAnswer:",
+    "target": "{\"completed\":7,\"errors\":4,\"pending\":0,\"state\":\"IDLE\"}",
+    "scorer": "typed_json_procedure"
+   }
+  },
+  {
+   "skill": "pcfg_set",
+   "teach_index": 7,
+   "rows": 7872,
+   "presented_tokens": 699957,
+   "supervised_eos_tokens": 195187,
+   "max_sequence_tokens": 547,
+   "train_group_overlap_all_zero": true,
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "pcfg_set:train:77047",
+    "prompt": "Evaluate this PCFG SET expression. Return only the resulting space-separated symbol sequence, with no explanation.\nExpression: prepend remove_first prepend M19 O17 Z6 B5 Z6 , shift I10 A1 , B18 D6 C7 , Q9 O16 X12 C2 V1\nAnswer:",
+    "target": "Q9 O16 X12 C2 V1 B18 D6 C7",
+    "scorer": "symbol_sequence"
+   },
+   "held_out_example": {
+    "id": "pcfg_set:test:428",
+    "prompt": "Evaluate this PCFG SET expression. Return only the resulting space-separated symbol sequence, with no explanation.\nExpression: prepend shift shift Q5 K14 C9 , R12 Q13 W5\nAnswer:",
+    "target": "R12 Q13 W5 C9 Q5 K14",
+    "scorer": "symbol_sequence"
+   }
+  },
+  {
+   "skill": "tessel_lot_allocation",
+   "teach_index": 8,
+   "family": "constrained resource allocation with rollback",
+   "third_party": false,
+   "rows": 2835,
+   "presented_tokens": 600000,
+   "supervised_eos_tokens": 73159,
+   "max_sequence_tokens": 283,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Order inventory lots by expiry ascending then lot ID alphabetically. A lot is eligible only when expiry >= delivery_day + 3 and cold is true. Allocate demand units from eligible lots in that order. Charge 4 per opened lot plus 2 per allocated unit. If demand cannot be completely filled, cancel every allocation and charge 0. Return allocations as ordered [lot_id,units] pairs, charge, and unfilled (zero for success or original demand for failure).",
+   "output_contract": "a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer)",
+   "independence_limit": "Exact input disjointness only; random values in the same fixed procedural grammar. OOD uses longer instances, not a proof of broad transfer.",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "tessel_lot_allocation:candidate_train:01608",
+    "prompt": "Apply the tessel lot allocation procedure to the input. Return only a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer), without explanation.\nInput: {\"delivery_day\":4,\"demand\":22,\"lots\":[{\"cold\":true,\"expiry\":13,\"id\":\"L0\",\"units\":12},{\"cold\":false,\"expiry\":3,\"id\":\"L1\",\"units\":6},{\"cold\":true,\"expiry\":15,\"id\":\"L2\",\"units\":12},{\"cold\":true,\"expiry\":10,\"id\":\"L3\",\"units\":4},{\"cold\":false,\"expiry\":12,\"id\":\"L4\",\"units\":12},{\"cold\":true,\"expiry\":25,\"id\":\"L5\",\"units\":6},{\"cold\":true,\"expiry\":1,\"id\":\"L6\",\"units\":7},{\"cold\":true,\"expiry\":10,\"id\":\"L7\",\"units\":10},{\"cold\":true,\"expiry\":25,\"id\":\"L8\",\"units\":12}]}\nAnswer:",
+    "target": "{\"allocations\":[[\"L3\",4],[\"L7\",10],[\"L0\",8]],\"charge\":56,\"unfilled\":0}",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "tessel_lot_allocation:retention:00000",
+    "prompt": "Apply the tessel lot allocation procedure to the input. Return only a JSON object with allocations (ordered [lot_id,units] pairs), charge (integer), unfilled (integer), without explanation.\nInput: {\"delivery_day\":5,\"demand\":23,\"lots\":[{\"cold\":false,\"expiry\":7,\"id\":\"L0\",\"units\":7},{\"cold\":true,\"expiry\":3,\"id\":\"L1\",\"units\":6},{\"cold\":true,\"expiry\":21,\"id\":\"L2\",\"units\":2},{\"cold\":true,\"expiry\":4,\"id\":\"L3\",\"units\":1},{\"cold\":true,\"expiry\":16,\"id\":\"L4\",\"units\":4}]}\nAnswer:",
+    "target": "{\"allocations\":[],\"charge\":0,\"unfilled\":23}",
+    "scorer": "typed_json_procedure"
+   }
+  },
+  {
+   "skill": "juniper_dispatch",
+   "teach_index": 9,
+   "family": "nonpreemptive priority scheduling",
+   "third_party": false,
+   "rows": 3025,
+   "presented_tokens": 699873,
+   "supervised_eos_tokens": 209278,
+   "max_sequence_tokens": 291,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Each job has release, duration and priority. Start clock=0. Among released unscheduled jobs choose the greatest priority; tie-break by shorter duration then ID alphabetically. If none is released, advance clock to the next release. Execute nonpreemptively; after each job add a 2-unit cooldown before the next job. Return ordered [job_id,start,end] triples. End excludes cooldown.",
+   "output_contract": "a JSON list of [job_id,start,end] triples in execution order",
+   "independence_limit": "Exact input disjointness only; random values in the same fixed procedural grammar. OOD uses longer instances, not a proof of broad transfer.",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "juniper_dispatch:candidate_train:01932",
+    "prompt": "Apply the juniper dispatch procedure to the input. Return only a JSON list of [job_id,start,end] triples in execution order, without explanation.\nInput: {\"jobs\":[{\"duration\":1,\"id\":\"J0\",\"priority\":3,\"release\":11},{\"duration\":5,\"id\":\"J1\",\"priority\":4,\"release\":12},{\"duration\":7,\"id\":\"J2\",\"priority\":1,\"release\":12},{\"duration\":5,\"id\":\"J3\",\"priority\":3,\"release\":8},{\"duration\":4,\"id\":\"J4\",\"priority\":3,\"release\":11},{\"duration\":1,\"id\":\"J5\",\"priority\":2,\"release\":14},{\"duration\":4,\"id\":\"J6\",\"priority\":3,\"release\":0},{\"duration\":5,\"id\":\"J7\",\"priority\":2,\"release\":8}]}\nAnswer:",
+    "target": "[[\"J6\",0,4],[\"J3\",8,13],[\"J1\",15,20],[\"J0\",22,23],[\"J4\",25,29],[\"J5\",31,32],[\"J7\",34,39],[\"J2\",41,48]]",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "juniper_dispatch:retention:00000",
+    "prompt": "Apply the juniper dispatch procedure to the input. Return only a JSON list of [job_id,start,end] triples in execution order, without explanation.\nInput: {\"jobs\":[{\"duration\":3,\"id\":\"J0\",\"priority\":3,\"release\":15},{\"duration\":2,\"id\":\"J1\",\"priority\":2,\"release\":10},{\"duration\":3,\"id\":\"J2\",\"priority\":4,\"release\":8},{\"duration\":4,\"id\":\"J3\",\"priority\":3,\"release\":2},{\"duration\":5,\"id\":\"J4\",\"priority\":4,\"release\":2}]}\nAnswer:",
+    "target": "[[\"J4\",2,7],[\"J2\",9,12],[\"J3\",14,18],[\"J0\",20,23],[\"J1\",25,27]]",
+    "scorer": "typed_json_procedure"
+   }
+  },
+  {
+   "skill": "bracken_intervals",
+   "teach_index": 10,
+   "family": "temporal_set_operations",
+   "third_party": false,
+   "rows": 3853,
+   "presented_tokens": 349889,
+   "supervised_eos_tokens": 59399,
+   "max_sequence_tokens": 126,
+   "train_group_overlap_all_zero": true,
+   "rule_contract": "Take the union of the half-open intervals in open, subtract the union of the half-open intervals in closed, and return the sorted maximal remaining half-open intervals. Merge touching intervals. All endpoints are integers.",
+   "output_contract": "a JSON array of [start,end] integer pairs",
+   "retention_bank_rows": 512,
+   "train_example": {
+    "id": "bracken_intervals:candidate_train:02810",
+    "prompt": "Apply the bracken intervals procedure. Return only a JSON array of [start,end] integer pairs, without explanation.\nInput: {\"closed\":[[1,2],[-8,0],[32,36],[40,49]],\"open\":[[-2,3],[-10,-1],[30,40],[18,20]]}\nAnswer:",
+    "target": "[[-10,-8],[0,1],[2,3],[18,20],[30,32],[36,40]]",
+    "scorer": "typed_json_procedure"
+   },
+   "held_out_example": {
+    "id": "bracken_intervals:retention:00000",
+    "prompt": "Apply the bracken intervals procedure. Return only a JSON array of [start,end] integer pairs, without explanation.\nInput: {\"closed\":[[-5,0],[11,13],[20,23],[18,20]],\"open\":[[14,23],[25,28],[26,33],[31,32],[6,11]]}\nAnswer:",
+    "target": "[[6,11],[14,18],[25,33]]",
+    "scorer": "typed_json_procedure"
+   }
+  }
+ ]
+}

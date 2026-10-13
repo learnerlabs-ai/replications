@@ -1,0 +1,155 @@
+{
+ "name": "ts_f4_matrix",
+ "title": "Accuracy on the fixed 225-row panels at every accepted checkpoint",
+ "badge": "measured",
+ "caption": "The checkpoint-by-skill matrix: each skill is scored from its own teach onward, so cells above the diagonal are blank. Read down a column to see a skill's score while later skills are taught: SCAN 222 at every one of ten checkpoints; Meridian moves within 81 to 84; Oriel is the only column that moves by more than two rows.",
+ "alt": "A ten-by-ten grid of numbers (correct of 225), rows are checkpoints after each teach, columns are skills; cells above the diagonal are blank; values are stable down each column except Oriel.",
+ "width": 880,
+ "height": 640,
+ "svg_sha256": "e23811765340e8ce3746bfae63ee146faa1fff1276857016bf65d17a8457545f",
+ "sources": [
+  {
+   "path": "plots/data/derived/tables.json",
+   "sha256": "336fe5a70ebd46e7cf4360486fcaedff9d0b1ff8242050a234d731bf3aa2e597"
+  }
+ ],
+ "units": null,
+ "smoothing": "none",
+ "transforms": [],
+ "plotted": {
+  "matrix": [
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    222,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    83,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    84,
+    147,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    82,
+    146,
+    12,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    81,
+    146,
+    14,
+    225,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    81,
+    146,
+    15,
+    225,
+    198,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    82,
+    146,
+    16,
+    225,
+    197,
+    174,
+    null,
+    null,
+    null
+   ],
+   [
+    222,
+    83,
+    146,
+    14,
+    225,
+    198,
+    173,
+    188,
+    null,
+    null
+   ],
+   [
+    222,
+    84,
+    147,
+    15,
+    225,
+    198,
+    174,
+    187,
+    118,
+    null
+   ],
+   [
+    222,
+    84,
+    146,
+    9,
+    225,
+    198,
+    172,
+    188,
+    120,
+    161
+   ]
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "name": "ts_f1_stream",
+ "title": "Ten skills, one stream: training loss per update",
+ "badge": "measured",
+ "caption": "Training loss over the whole stream: each skill starts high, drops within its own segment, and hands over to the next. Nothing in the stream tells the learner where one skill ends and the next begins.",
+ "alt": "Line chart of training loss on a log scale over 63,282 single-example updates, with ten labelled segments in the taught order (SCAN, Meridian, Adyghe G2P, Oriel, COGS, Sable, PCFG, Tessel, Juniper, Bracken). The loss rises at the start of each new skill and falls within it.",
+ "width": 880,
+ "height": 560,
+ "svg_sha256": "32d81a366280161a7c61d07f9c9a129e64a4028898a8fa65336a5f5f173b10be",
+ "sources": [
+  {
+   "path": "plots/data/series/training_loss.json",
+   "sha256": "041ea3de037d7fa97e416ded3b154192fa4aa56da94c10e1a4112f2555bd14b9"
+  }
+ ],
+ "units": "nats per supervised token",
+ "smoothing": "exponential moving average, span 31 updates (line); none (band)",
+ "transforms": [
+  "values below 1e-4 drawn at 1e-4",
+  "band: per-slice minimum and maximum of the raw loss over 780 slices (extrema preserved)",
+  "line: smoothed series sampled at 2,400 evenly spaced updates"
+ ],
+ "plotted": {
+  "n_raw_points": 63278,
+  "raw_min": 0.0001,
+  "raw_max": 3.6925106048583984
+ }
+}

@@ -1,0 +1,29 @@
+Adyghe grapheme-to-phoneme pairs — licence notice
+=================================================
+
+What this covers
+----------------
+The Adyghe grapheme-to-phoneme rows in `ten_skills/data/` (skill `g2p_ady`). They come from
+SIGMORPHON 2020 shared task 1, `github.com/sigmorphon/2020`, files
+`task1/data/{train,dev,test}/ady_*.tsv`, at revision 3d9bb3658b6a964ccd127e2a6781665262516bf6.
+The shared-task repository carries no licence file of its own. The pairs were extracted from
+Wiktionary with WikiPron, and Wiktionary text is licensed CC BY-SA 3.0, so that is the licence
+these rows travel under.
+
+Licence
+-------
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0).
+Full text: https://creativecommons.org/licenses/by-sa/3.0/legalcode
+Summary:   https://creativecommons.org/licenses/by-sa/3.0/
+
+Attribution
+-----------
+Wiktionary contributors (https://www.wiktionary.org/), via WikiPron
+(https://github.com/CUNY-CL/wikipron), collected for SIGMORPHON 2020 shared task 1 by the task
+organisers (Gorman et al., 2020).
+
+Share-alike
+-----------
+Any adaptation of these rows must be distributed under CC BY-SA 3.0 or a compatible licence. The
+MIT licence covering this repository's code and the CC BY 4.0 licence covering its own text and
+figures do not apply to them.
